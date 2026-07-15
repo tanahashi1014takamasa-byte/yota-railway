@@ -35,6 +35,29 @@ export default function Home() {
 
         </>
       )}
+
+{scene === "arrive" && (
+  <>
+    <p>🚉 北千住葉大駅に到着しました</p>
+
+    <p>🚃｜🚪</p>
+
+    <button
+      onClick={() => setScene("door")}
+    >
+      ドアを開ける
+    </button>
+  </>
+)}
+
+{scene === "door" && (
+  <>
+    <p>🚪 ドアが開きました</p>
+
+    <p>「プシュー」</p>
+  </>
+)}
+
     </main>
   );
 }
