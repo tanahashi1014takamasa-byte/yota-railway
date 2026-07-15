@@ -26,6 +26,13 @@ export default function Home() {
           <p>🚃 電車が走っています</p>
 
           <p>🌳🏠🌳🏠🌳</p>
+
+      <button
+        onClick={() => setScene("arrive")}
+    >
+      到着する
+    </button>
+
         </>
       )}
     </main>
