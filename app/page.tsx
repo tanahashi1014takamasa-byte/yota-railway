@@ -55,6 +55,13 @@ export default function Home() {
     <p>🚪 ドアが開きました</p>
 
     <p>「プシュー」</p>
+
+ <img
+      src="/images/hamukappa.png"
+      alt="ハムカッパ"
+      width={150}
+    />
+
   </>
 )}
 
