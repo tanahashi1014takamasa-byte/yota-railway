@@ -60,38 +60,39 @@ export default function Home() {
 )}
 
 {scene === "intro" && (
+ <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+  }}
+>
+  <img
+    src="/images/kappa.png"
+    alt="ハムカッパ"
+    width={100}
+  />
+
   <div
+    onClick={() => {
+      if (messageIndex < messages.length - 1) {
+        setMessageIndex(messageIndex + 1);
+      } else {
+        setScene("trainSelect");
+      }
+    }}
     style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      minHeight: "80vh",
+      background: "white",
+      color: "black",
+      padding: "15px",
+      borderRadius: "15px",
+      marginLeft: "15px",
+      fontSize: "24px",
+      cursor: "pointer",
     }}
   >
-    <img
-      src="/images/kappa.png"
-      alt="ハムカッパ"
-      width={100}
-    />
-
-    <p
-      onClick={() => {
-        if (messageIndex < messages.length - 1) {
-          setMessageIndex(messageIndex + 1);
-        } else {
-          setScene("trainSelect");
-        }
-      }}
-      style={{
-        color: "white",
-        fontSize: "24px",
-        cursor: "pointer",
-      }}
-    >
-      {messages[messageIndex]}
-    </p>
+    {messages[messageIndex]}
   </div>
+</div>
 )}
 
 
