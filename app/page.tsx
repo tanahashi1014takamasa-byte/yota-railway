@@ -60,38 +60,39 @@ export default function Home() {
 )}
 
 {scene === "intro" && (
-  <>
-  <img
-  src="/images/kappa.png"
-  alt="ハムカッパ"
-  width={100}
-/>
-   <p
-  onClick={() => {
-    if (messageIndex < messages.length - 1) {
-      setMessageIndex(messageIndex + 1);
-    } else {
-      setScene("trainSelect");
-    }
-  }}
-  style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
->
-  {messages[messageIndex]}
-</p>
-  </>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      minHeight: "80vh",
+    }}
+  >
+    <img
+      src="/images/kappa.png"
+      alt="ハムカッパ"
+      width={100}
+    />
+
+    <p
+      onClick={() => {
+        if (messageIndex < messages.length - 1) {
+          setMessageIndex(messageIndex + 1);
+        } else {
+          setScene("trainSelect");
+        }
+      }}
+      style={{
+        color: "white",
+        fontSize: "24px",
+        cursor: "pointer",
+      }}
+    >
+      {messages[messageIndex]}
+    </p>
+  </div>
 )}
-
-      {scene === "station" && (
-        <>
-          <p>🚉 北千住葉大駅</p>
-
-          <button
-            onClick={() => setScene("running")}
-          >
-            発車する
-          </button>
-        </>
-      )}
 
 
       {scene === "trainSelect" && (
