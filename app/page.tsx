@@ -27,12 +27,19 @@ export default function Home() {
       style={{ marginBottom: "10px" }}
     />
 
-    <img
-      src="/images/banner①.png"
-      alt="バナー"
-      width={340}
-      style={{ marginBottom: "20px" }}
-    />
+    <div
+  style={{
+    borderRadius: "20px",
+    overflow: "hidden",
+    marginBottom: "20px",
+  }}
+>
+  <img
+    src="/images/banner①.png"
+    alt="バナー"
+    width={340}
+  />
+</div>
 
     <img
       src="/images/start.png"
