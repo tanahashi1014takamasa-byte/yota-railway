@@ -31,7 +31,11 @@ export default function Home() {
       src="/images/banner.png"
       alt="バナー"
       width={340}
-      style={{ marginBottom: "20px" }}
+      style={{ 
+        marginBottom: "20px", 
+         animation: "float 2s ease-in-out infinite",
+      }}
+        
     />
 
     <img
@@ -99,6 +103,20 @@ export default function Home() {
 
   </>
 )}
+
+<style jsx>{`
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+`}</style>
 
     </main>
   );
