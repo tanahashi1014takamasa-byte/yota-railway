@@ -130,14 +130,18 @@ export default function Home() {
   />
 
   <button
-    style={{
-      fontSize: "20px",
-      padding: "10px 30px",
-      marginTop: "10px",
-    }}
-  >
-    ハムカッパでんしゃ
-  </button>
+  style={{
+    fontSize: "20px",
+    padding: "10px 30px",
+    marginTop: "10px",
+    color: "white",
+    background: "black",
+    border: "2px solid white",
+    borderRadius: "10px",
+  }}
+>
+  ハムカッパでんしゃ
+</button>
 </div>
 
     <img
