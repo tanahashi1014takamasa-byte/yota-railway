@@ -103,28 +103,37 @@ export default function Home() {
 
       {scene === "trainSelect" && (
   <>
-    <p style={{ color: "white", fontSize: "24px" }}>
+<div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  }}
+>
+
+<p style={{ color: "white", fontSize: "24px" }}>
       でんしゃを えらんでね！
     </p>
 
     <div
   style={{
     display: "flex",
+    flexDirection: "column",
     alignItems: "center",
-    gap: "15px",
-    marginBottom: "20px",
+    marginBottom: "30px",
   }}
 >
   <img
     src="/images/train_ver1.png"
     alt="でんしゃ1"
-    width={120}
+    width={180}
   />
 
   <button
     style={{
       fontSize: "20px",
-      padding: "10px 20px",
+      padding: "10px 30px",
+      marginTop: "10px",
     }}
   >
     ハムカッパでんしゃ
@@ -144,12 +153,13 @@ export default function Home() {
     />
 
         <img
-      src="/images/yonezu.png"
-      alt="でんしゃ4"
-      width={160}
-    />
+  src="/images/yonezu.png"
+  alt="でんしゃ4"
+  width={160}
+/>
 
-  </>
+</div>
+</>
 )}
 
       {scene === "running" && (
