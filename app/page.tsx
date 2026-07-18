@@ -1,8 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Home() {
+
+  const bgmRef = useRef<HTMLAudioElement | null>(null);
+
   const [scene, setScene] = useState("opening");
   const [messageIndex, setMessageIndex] = useState(0);
 
@@ -14,6 +17,16 @@ export default function Home() {
 ];
 
   return (
+
+  <>
+    <audio
+      ref={bgmRef}
+      src="/sounds/bgm_op.mp3"
+      loop
+    />
+
+
+
     <main
   style={{
     display: "flex",
@@ -53,7 +66,10 @@ export default function Home() {
   src="/images/start.png"
   alt="START"
   width={180}
-  onClick={() => setScene("intro")}
+  onClick={() => {
+    bgmRef.current?.play();
+    setScene("intro");
+  }}
   style={{ cursor: "pointer" }}
 />
   </>
@@ -280,5 +296,6 @@ export default function Home() {
 )}
 
     </main>
+    </>
   );
 }
