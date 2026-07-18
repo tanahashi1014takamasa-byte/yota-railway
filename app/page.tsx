@@ -131,6 +131,11 @@ export default function Home() {
       width={160}
     />
 
+
+<p style={{ color: "red", fontSize: "30px" }}>
+  よねず
+</p>
+
   </>
 )}
 
