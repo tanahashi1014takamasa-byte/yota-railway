@@ -24,12 +24,14 @@ export default function Home() {
       src="/images/logo.png"
       alt="ロゴ"
       width={200}
+      style={{ marginBottom: "10px" }}
     />
 
     <img
       src="/images/banner.png"
       alt="バナー"
       width={340}
+      style={{ marginBottom: "20px" }}
     />
 
     <img
