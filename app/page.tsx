@@ -108,19 +108,19 @@ export default function Home() {
     </p>
 
     <img
-      src="/images/train1.png"
+      src="/images/train_ver1.png"
       alt="でんしゃ1"
       width={160}
     />
 
     <img
-      src="/images/train2.png"
+      src="/images/train_ver2.png"
       alt="でんしゃ2"
       width={160}
     />
 
     <img
-      src="/images/train3.png"
+      src="/images/train_ver3.png"
       alt="でんしゃ3"
       width={160}
     />
