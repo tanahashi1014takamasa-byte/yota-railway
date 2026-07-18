@@ -92,9 +92,13 @@ export default function Home() {
   onClick={() => {
     if (bgmRef.current) {
       bgmRef.current.volume = 0.1;
+      bgmRef.current.currentTime = 0;
       bgmRef.current.play();
     }
-    setScene("intro");
+
+    setTimeout(() => {
+      setScene("intro");
+    }, 300);
   }}
   style={{ cursor: "pointer" }}
 />
