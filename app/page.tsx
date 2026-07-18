@@ -20,27 +20,44 @@ export default function Home() {
 
       {scene === "opening" && (
   <>
-    <img
-      src="/images/logo.png"
-      alt="ロゴ"
-      width={200}
-      style={{ marginBottom: "10px" }}
-    />
+    <div
+  style={{
+    position: "relative",
+    width: "340px",
+    marginBottom: "20px",
+  }}
+>
+  <img
+    src="/images/banner.png"
+    alt="バナー"
+    width={340}
+    style={{
+      display: "block",
+    }}
+  />
 
-    <img
-      src="/images/banner.png"
-      alt="バナー"
-      width={340}
-      style={{ marginBottom: "20px" }}
-    />
+  <img
+    src="/images/smoke1.png"
+    alt="煙1"
+    width={340}
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+    }}
+  />
 
-    <img
-      src="/images/start.png"
-      alt="START"
-      width={180}
-      onClick={() => setScene("station")}
-      style={{ cursor: "pointer" }}
-    />
+  <img
+    src="/images/smoke2.png"
+    alt="煙2"
+    width={340}
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+    }}
+  />
+</div>
   </>
 )}
 
