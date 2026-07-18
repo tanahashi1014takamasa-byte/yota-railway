@@ -43,12 +43,8 @@ export default function Home() {
 
 <button
   onClick={() => {
-  if (bgmRef.current) {
-    bgmRef.current.pause();
-    bgmRef.current.currentTime = 0;
-  }
-  setScene("opening");
-}}
+    window.location.reload();
+  }}
   style={{
     position: "fixed",
     top: "20px",
