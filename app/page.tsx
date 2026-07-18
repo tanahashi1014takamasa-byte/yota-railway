@@ -34,8 +34,10 @@ export default function Home() {
     position: "fixed",
     top: "20px",
     left: "20px",
-    fontSize: "28px",
-    padding: "10px 20px",
+    fontSize: "60px",
+    color: "white",
+    background: "transparent",
+    border: "none",
     zIndex: 10000,
     cursor: "pointer",
   }}
