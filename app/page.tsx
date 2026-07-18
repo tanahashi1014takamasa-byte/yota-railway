@@ -28,7 +28,7 @@ export default function Home() {
     />
 
     <img
-      src="/images/banner.png"
+      src="/images/banner①.png"
       alt="バナー"
       width={340}
       style={{ marginBottom: "20px" }}
