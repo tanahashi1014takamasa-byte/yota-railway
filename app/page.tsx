@@ -13,6 +13,7 @@ export default function Home() {
     alignItems: "center",
     justifyContent: "center",
     minHeight: "100vh",
+    background: "black",
   }}
 >
 
