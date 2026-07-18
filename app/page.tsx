@@ -12,7 +12,7 @@ export default function Home() {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-start",
-    minHeight: "100vh",
+    minHeight: "auto",
     background: "black",
     paddingTop: "20px",
   }}
