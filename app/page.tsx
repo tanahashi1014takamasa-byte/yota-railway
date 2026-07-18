@@ -12,6 +12,7 @@ export default function Home() {
   "/images/train_ver2.1.png",
   "/images/train_ver3.1.png",
   "/images/yonezu_1.png",
+  "/images/kappa_1.png",
 ];
 
   images.forEach((src) => {
