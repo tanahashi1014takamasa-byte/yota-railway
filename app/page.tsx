@@ -39,7 +39,10 @@ export default function Home() {
       alt="START"
       width={180}
       onClick={() => setScene("station")}
-      style={{ cursor: "pointer" }}
+      style={{ 
+    cursor: "pointer",
+    marginBottom: "-20px"
+  }}
     />
   </>
 )}
