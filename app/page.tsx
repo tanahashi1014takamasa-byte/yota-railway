@@ -11,9 +11,10 @@ export default function Home() {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     minHeight: "100vh",
     background: "black",
+    paddingTop: "20px",
   }}
 >
 
