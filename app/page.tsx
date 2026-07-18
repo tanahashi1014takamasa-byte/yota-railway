@@ -164,6 +164,11 @@ export default function Home() {
 
       {scene === "trainSelect" && (
   <>
+    <img src="/images/train_ver1.png" style={{ display: "none" }} />
+    <img src="/images/train_ver2.png" style={{ display: "none" }} />
+    <img src="/images/train_ver3.png" style={{ display: "none" }} />
+    <img src="/images/yonezu.png" style={{ display: "none" }} />
+
 <div
   style={{
     display: "flex",
