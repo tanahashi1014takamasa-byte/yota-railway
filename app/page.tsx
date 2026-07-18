@@ -6,8 +6,15 @@ export default function Home() {
   const [scene, setScene] = useState("opening");
 
   return (
-    <main>
-      <h1>北千住葉大鉄道</h1>
+    <main
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    minHeight: "100vh",
+  }}
+>
 
       {scene === "opening" && (
   <>
