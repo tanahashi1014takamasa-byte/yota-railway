@@ -4,6 +4,14 @@ import { useState } from "react";
 
 export default function Home() {
   const [scene, setScene] = useState("opening");
+  const [messageIndex, setMessageIndex] = useState(0);
+
+  const messages = [
+  "こんにちは！",
+  "ぼくは ハムカッパ！",
+  "でんしゃで あそぼう！",
+  "すきな でんしゃを えらんでね！",
+];
 
   return (
     <main
@@ -41,13 +49,24 @@ export default function Home() {
   />
 </div>
 
-    <img
-      src="/images/start.png"
-      alt="START"
-      width={180}
-      onClick={() => setScene("station")}
-      style={{ cursor: "pointer" }}
-    />
+  <img
+  src="/images/start.png"
+  alt="START"
+  width={180}
+  onClick={() => setScene("intro")}
+  style={{ cursor: "pointer" }}
+/>
+  </>
+)}
+
+{scene === "intro" && (
+  <>
+    <p
+      onClick={() => setMessageIndex(messageIndex + 1)}
+      style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
+    >
+      {messages[messageIndex]}
+    </p>
   </>
 )}
 
