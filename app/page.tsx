@@ -8,12 +8,11 @@ export default function Home() {
 
   useEffect(() => {
   const images = [
-
-    "/images/train_ver1.png",
-    "/images/train_ver2.png",
-    "/images/train_ver3.png",
-    "/images/yonezu.png",
-  ];
+  "/images/train_ver1.1.png",
+  "/images/train_ver2.1.png",
+  "/images/train_ver3.1.png",
+  "/images/yonezu_1.png",
+];
 
   images.forEach((src) => {
     const img = new Image();
@@ -164,10 +163,7 @@ export default function Home() {
 
       {scene === "trainSelect" && (
   <>
-    <img src="/images/train_ver1.1.png" style={{ display: "none" }} />
-    <img src="/images/train_ver2.1.png" style={{ display: "none" }} />
-    <img src="/images/train_ver3.1.png" style={{ display: "none" }} />
-    <img src="/images/yonezu_1.png" style={{ display: "none" }} />
+  
 
 <div
   style={{
