@@ -23,7 +23,7 @@ export default function Home() {
     <img
       src="/images/logo.png"
       alt="ロゴ"
-      width={320}
+      width={260}
     />
 
     <img
