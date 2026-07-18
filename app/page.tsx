@@ -124,6 +124,13 @@ export default function Home() {
       alt="でんしゃ3"
       width={160}
     />
+
+        <img
+      src="/images/yonezu.png"
+      alt="でんしゃ4"
+      width={160}
+    />
+
   </>
 )}
 
