@@ -12,7 +12,7 @@ export default function Home() {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-start",
-    minHeight: "auto",
+    minHeight: "100vh",
     background: "black",
     paddingTop: "20px",
   }}
@@ -39,10 +39,7 @@ export default function Home() {
       alt="START"
       width={180}
       onClick={() => setScene("station")}
-      style={{ 
-    cursor: "pointer",
-    marginBottom: "-20px"
-  }}
+      style={{ cursor: "pointer" }}
     />
   </>
 )}
