@@ -64,9 +64,9 @@ export default function Home() {
   style={{
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
     minHeight: "100vh",
     width: "100%",
+    paddingLeft: "40px",
   }}
 >
   <img
