@@ -21,7 +21,7 @@ export default function Home() {
   <>
     <audio
   ref={bgmRef}
-  src="/sounds/bgm_op.mp3"
+  src="/sounds/bgm_op_ver1.mp3"
   loop
   preload="auto"
 />
