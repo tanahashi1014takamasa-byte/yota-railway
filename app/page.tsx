@@ -61,6 +61,11 @@ export default function Home() {
 
 {scene === "intro" && (
   <>
+  <img
+  src="/images/kappa.png"
+  alt="ハムカッパ"
+  width={100}
+/>
    <p
   onClick={() => {
     if (messageIndex < messages.length - 1) {
