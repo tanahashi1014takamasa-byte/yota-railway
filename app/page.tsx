@@ -48,6 +48,7 @@ export default function Home() {
     bgmRef.current.currentTime = 0;
   }
   setScene("opening");
+  setMessageIndex(0);
 }}
   style={{
     position: "fixed",
