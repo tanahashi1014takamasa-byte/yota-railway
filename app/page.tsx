@@ -82,6 +82,33 @@ export default function Home() {
         </>
       )}
 
+
+      {scene === "trainSelect" && (
+  <>
+    <p style={{ color: "white", fontSize: "24px" }}>
+      でんしゃを えらんでね！
+    </p>
+
+    <img
+      src="/images/train1.png"
+      alt="でんしゃ1"
+      width={160}
+    />
+
+    <img
+      src="/images/train2.png"
+      alt="でんしゃ2"
+      width={160}
+    />
+
+    <img
+      src="/images/train3.png"
+      alt="でんしゃ3"
+      width={160}
+    />
+  </>
+)}
+
       {scene === "running" && (
         <>
           <p>🚃 電車が走っています</p>
