@@ -91,6 +91,7 @@ export default function Home() {
       marginLeft: "15px",
       fontSize: "24px",
       cursor: "pointer",
+      maxWidth: "250px",
     }}
   >
     {messages[messageIndex]}
