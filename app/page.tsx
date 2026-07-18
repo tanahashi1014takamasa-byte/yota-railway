@@ -131,7 +131,7 @@ export default function Home() {
   }}
 >
   <img
-    src="/images/kappa.png"
+    src="/images/kappa_1.png"
     alt="ハムカッパ"
     width={100}
   />
@@ -164,10 +164,10 @@ export default function Home() {
 
       {scene === "trainSelect" && (
   <>
-    <img src="/images/train_ver1.png" style={{ display: "none" }} />
-    <img src="/images/train_ver2.png" style={{ display: "none" }} />
-    <img src="/images/train_ver3.png" style={{ display: "none" }} />
-    <img src="/images/yonezu.png" style={{ display: "none" }} />
+    <img src="/images/train_ver1.1.png" style={{ display: "none" }} />
+    <img src="/images/train_ver2.1.png" style={{ display: "none" }} />
+    <img src="/images/train_ver3.1.png" style={{ display: "none" }} />
+    <img src="/images/yonezu_1.png" style={{ display: "none" }} />
 
 <div
   style={{
@@ -190,7 +190,7 @@ export default function Home() {
   }}
 >
   <img
-    src="/images/train_ver1.png"
+    src="/images/train_ver1.1.png"
     alt="でんしゃ1"
     width={180}
   />
@@ -219,7 +219,7 @@ export default function Home() {
   }}
 >
   <img
-    src="/images/train_ver2.png"
+    src="/images/train_ver2.1.png"
     alt="でんしゃ2"
     width={180}
   />
@@ -248,7 +248,7 @@ export default function Home() {
   }}
 >
   <img
-    src="/images/train_ver3.png"
+    src="/images/train_ver3.1.png"
     alt="でんしゃ3"
     width={180}
   />
@@ -277,7 +277,7 @@ export default function Home() {
   }}
 >
   <img
-    src="/images/yonezu.png"
+    src="/images/yonezu_1.png"
     alt="でんしゃ4"
     width={180}
   />
