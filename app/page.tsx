@@ -26,9 +26,29 @@ export default function Home() {
   preload="auto"
 />
 
+<button
+  onClick={() => {
+    setScene("opening");
+  }}
+  style={{
+    position: "fixed",
+    top: "20px",
+    left: "20px",
+    fontSize: "28px",
+    padding: "10px 20px",
+    zIndex: 10000,
+    cursor: "pointer",
+  }}
+>
+  ↻
+</button>
+
 
 
     <main
+
+
+
   style={{
     display: "flex",
     flexDirection: "column",
