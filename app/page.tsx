@@ -144,23 +144,92 @@ export default function Home() {
 </button>
 </div>
 
-    <img
-      src="/images/train_ver2.png"
-      alt="でんしゃ2"
-      width={160}
-    />
+    <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    marginBottom: "30px",
+  }}
+>
+  <img
+    src="/images/train_ver2.png"
+    alt="でんしゃ2"
+    width={180}
+  />
 
-    <img
-      src="/images/train_ver3.png"
-      alt="でんしゃ3"
-      width={160}
-    />
+  <button
+    style={{
+      fontSize: "20px",
+      padding: "10px 30px",
+      marginTop: "10px",
+      color: "white",
+      background: "black",
+      border: "2px solid white",
+      borderRadius: "10px",
+    }}
+  >
+    しんかんせん
+  </button>
+</div>
 
-        <img
-  src="/images/yonezu.png"
-  alt="でんしゃ4"
-  width={160}
-/>
+    <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    marginBottom: "30px",
+  }}
+>
+  <img
+    src="/images/train_ver3.png"
+    alt="でんしゃ3"
+    width={180}
+  />
+
+  <button
+    style={{
+      fontSize: "20px",
+      padding: "10px 30px",
+      marginTop: "10px",
+      color: "white",
+      background: "black",
+      border: "2px solid white",
+      borderRadius: "10px",
+    }}
+  >
+    トーマス
+  </button>
+</div>
+
+        <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    marginBottom: "30px",
+  }}
+>
+  <img
+    src="/images/yonezu.png"
+    alt="でんしゃ4"
+    width={180}
+  />
+
+  <button
+    style={{
+      fontSize: "20px",
+      padding: "10px 30px",
+      marginTop: "10px",
+      color: "white",
+      background: "black",
+      border: "2px solid white",
+      borderRadius: "10px",
+    }}
+  >
+    よねづけんし
+  </button>
+</div>
 
 </div>
 </>
