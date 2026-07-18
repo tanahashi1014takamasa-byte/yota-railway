@@ -68,7 +68,10 @@ export default function Home() {
   alt="START"
   width={180}
   onClick={() => {
-    bgmRef.current?.play();
+    if (bgmRef.current) {
+      bgmRef.current.volume = 0.1;
+      bgmRef.current.play();
+    }
     setScene("intro");
   }}
   style={{ cursor: "pointer" }}
