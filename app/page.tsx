@@ -61,12 +61,18 @@ export default function Home() {
 
 {scene === "intro" && (
   <>
-    <p
-      onClick={() => setMessageIndex(messageIndex + 1)}
-      style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
-    >
-      {messages[messageIndex]}
-    </p>
+   <p
+  onClick={() => {
+    if (messageIndex < messages.length - 1) {
+      setMessageIndex(messageIndex + 1);
+    } else {
+      setScene("trainSelect");
+    }
+  }}
+  style={{ color: "white", fontSize: "24px", cursor: "pointer" }}
+>
+  {messages[messageIndex]}
+</p>
   </>
 )}
 
