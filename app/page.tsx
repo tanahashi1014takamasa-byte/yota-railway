@@ -107,11 +107,29 @@ export default function Home() {
       でんしゃを えらんでね！
     </p>
 
-    <img
-      src="/images/train_ver1.png"
-      alt="でんしゃ1"
-      width={160}
-    />
+    <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "15px",
+    marginBottom: "20px",
+  }}
+>
+  <img
+    src="/images/train_ver1.png"
+    alt="でんしゃ1"
+    width={120}
+  />
+
+  <button
+    style={{
+      fontSize: "20px",
+      padding: "10px 20px",
+    }}
+  >
+    ハムカッパでんしゃ
+  </button>
+</div>
 
     <img
       src="/images/train_ver2.png"
