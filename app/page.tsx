@@ -1,10 +1,25 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Home() {
 
   const bgmRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+  const images = [
+    
+    "/images/train_ver1.png",
+    "/images/train_ver2.png",
+    "/images/train_ver3.png",
+    "/images/yonezu.png",
+  ];
+
+  images.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+}, []);
 
   const [scene, setScene] = useState("opening");
   const [messageIndex, setMessageIndex] = useState(0);
