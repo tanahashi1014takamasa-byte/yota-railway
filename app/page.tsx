@@ -84,15 +84,16 @@ export default function Home() {
       }
     }}
     style={{
-      background: "white",
-      color: "black",
-      padding: "15px",
-      borderRadius: "15px",
-      marginLeft: "15px",
-      fontSize: "24px",
-      cursor: "pointer",
-      maxWidth: "250px",
-    }}
+  background: "black",
+  color: "white",
+  border: "3px solid white",
+  padding: "15px",
+  borderRadius: "15px",
+  marginLeft: "15px",
+  fontSize: "24px",
+  cursor: "pointer",
+  maxWidth: "250px",
+}}
   >
     {messages[messageIndex]}
   </div>
