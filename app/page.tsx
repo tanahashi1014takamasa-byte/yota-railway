@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
   const images = [
-    
+
     "/images/train_ver1.png",
     "/images/train_ver2.png",
     "/images/train_ver3.png",
@@ -43,8 +43,12 @@ export default function Home() {
 
 <button
   onClick={() => {
-    setScene("opening");
-  }}
+  if (bgmRef.current) {
+    bgmRef.current.pause();
+    bgmRef.current.currentTime = 0;
+  }
+  setScene("opening");
+}}
   style={{
     position: "fixed",
     top: "20px",
