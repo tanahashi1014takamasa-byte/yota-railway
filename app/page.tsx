@@ -3,11 +3,35 @@
 import { useState } from "react";
 
 export default function Home() {
-  const [scene, setScene] = useState("station");
+  const [scene, setScene] = useState("opening");
 
   return (
     <main>
       <h1>北千住葉大鉄道</h1>
+
+      {scene === "opening" && (
+  <>
+    <img
+      src="/images/logo.png"
+      alt="ロゴ"
+      width={320}
+    />
+
+    <img
+      src="/images/banner.png"
+      alt="バナー"
+      width={340}
+    />
+
+    <img
+      src="/images/start.png"
+      alt="START"
+      width={180}
+      onClick={() => setScene("station")}
+      style={{ cursor: "pointer" }}
+    />
+  </>
+)}
 
       {scene === "station" && (
         <>
