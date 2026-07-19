@@ -30,19 +30,19 @@ useEffect(() => {
   const savedData = localStorage.getItem("yotaRailwaySave");
 
   if (savedData) {
-    console.log("保存データ発見:", JSON.parse(savedData));
+    setSaveData(JSON.parse(savedData));
   }
 }, []);
 
   const [scene, setScene] = useState("opening");
   const [messageIndex, setMessageIndex] = useState(0);
 
-  const saveData = {
+  const [saveData, setSaveData] = useState({
   selectedTrain: "",
   level: 1,
   distance: 0,
   retiredTrains: [],
-};
+});
 
 const saveGame = () => {
   localStorage.setItem(
@@ -137,6 +137,19 @@ const saveGame = () => {
       bgmRef.current.currentTime = 0;
       bgmRef.current.play();
     }
+
+    <img
+  src="/images/continue.png"
+  alt="つづきから"
+  width={180}
+  onClick={() => {
+    setScene("trainSelect");
+  }}
+  style={{
+    cursor: "pointer",
+    marginTop: "20px",
+  }}
+/>
 
     setScene("intro");
   }}
