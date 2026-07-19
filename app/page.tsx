@@ -44,6 +44,10 @@ useEffect(() => {
   retiredTrains: [],
 });
 
+
+
+
+
 const saveGame = () => {
   localStorage.setItem(
     "yotaRailwaySave",
@@ -51,9 +55,35 @@ const saveGame = () => {
   );
 };
 
+const trains = [
+  
+  {
+    name: "ハムカッパでんしゃ",
+    image: "/images/train_ver1.1.png",
+  },
+  {
+    name: "しんかんせん",
+    image: "/images/train_ver2.1.png",
+  },
+  {
+    name: "トーマス",
+    image: "/images/train_ver3.1.png",
+  },
+  {
+    name: "よねづけんし",
+    image: "/images/yonezu_1.png",
+  },
+];
+
+
+const selectedTrain = trains.find(
+  (train) => train.name === saveData.selectedTrain
+);
+
+
   const messages = [
   "こんにちは！",
-  "ぼくは ハムカッパ！",
+  "よーたくん！！",
   "でんしゃで あそぼう！",
   "すきな でんしゃを えらんでね！",
 ];
@@ -161,6 +191,8 @@ const saveGame = () => {
 )}
 
 {scene === "intro" && (
+
+
  <div
   style={{
     display: "flex",
@@ -219,141 +251,44 @@ const saveGame = () => {
       でんしゃを えらんでね！
     </p>
 
-    <div
-  style={{
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    marginBottom: "30px",
-  }}
->
-  <img
-    src="/images/train_ver1.1.png"
-    alt="でんしゃ1"
-    width={180}
-    loading="eager"
-  />
-
-  <button
-  onClick={() => {
-  saveData.selectedTrain = "ハムカッパでんしゃ";
-  saveGame();
-}}
-  style={{
-    fontSize: "20px",
-    padding: "10px 30px",
-    marginTop: "10px",
-    color: "white",
-    background: "black",
-    border: "2px solid white",
-    borderRadius: "10px",
-  }}
->
-  ハムカッパでんしゃ
-</button>
-</div>
-
-    <div
-  style={{
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    marginBottom: "30px",
-  }}
->
-  <img
-    src="/images/train_ver2.1.png"
-    alt="でんしゃ2"
-    width={180}
-    loading="eager"
-  />
-
-  <button
-  onClick={() => {
-  saveData.selectedTrain = "しんかんせん";
-  saveGame();
-}}
+    {trains.map((train) => (
+  <div
+    key={train.name}
     style={{
-      fontSize: "20px",
-      padding: "10px 30px",
-      marginTop: "10px",
-      color: "white",
-      background: "black",
-      border: "2px solid white",
-      borderRadius: "10px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      marginBottom: "30px",
     }}
   >
-    しんかんせん
-  </button>
-</div>
+    <img
+      src={train.image}
+      alt={train.name}
+      width={180}
+      loading="eager"
+    />
 
-    <div
-  style={{
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    marginBottom: "30px",
-  }}
->
-  <img
-    src="/images/train_ver3.1.png"
-    alt="でんしゃ3"
-    width={180}
-    loading="eager"
-  />
-
-  <button
-    onClick={() => {
-      saveData.selectedTrain = "トーマス";
-      saveGame();
-    }}
-    style={{
-      fontSize: "20px",
-      padding: "10px 30px",
-      marginTop: "10px",
-      color: "white",
-      background: "black",
-      border: "2px solid white",
-      borderRadius: "10px",
-    }}
-  >
-    トーマス
-  </button>
-</div>
-
-        <div
-  style={{
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    marginBottom: "30px",
-  }}
->
-  <img
-    src="/images/yonezu_1.png"
-    alt="でんしゃ4"
-    width={180}
-    loading="eager"
-  />
-
-  <button
-  onClick={() => {
-  saveData.selectedTrain = "よねづけんし";
-  saveGame();
-}}
-    style={{
-      fontSize: "20px",
-      padding: "10px 30px",
-      marginTop: "10px",
-      color: "white",
-      background: "black",
-      border: "2px solid white",
-      borderRadius: "10px",
-    }}
-  >
-    よねづけんし
-  </button>
-</div>
+    <button
+      onClick={() => {
+        setSaveData({
+          ...saveData,
+          selectedTrain: train.name,
+        });
+      }}
+      style={{
+        fontSize: "20px",
+        padding: "10px 30px",
+        marginTop: "10px",
+        color: "white",
+        background: "black",
+        border: "2px solid white",
+        borderRadius: "10px",
+      }}
+    >
+      {train.name}
+    </button>
+  </div>
+))}
 
 </div>
 </>
@@ -361,7 +296,15 @@ const saveGame = () => {
 
       {scene === "running" && (
         <>
-          <p>🚃 電車が走っています</p>
+          <img
+  src={selectedTrain?.image}
+  width={200}
+  alt="選択した電車"
+/>
+
+<p style={{ color: "white", fontSize: "24px" }}>
+  🚃 電車が走っています
+</p>
 
           <p>🌳🏠🌳🏠🌳</p>
 
