@@ -230,6 +230,17 @@ steam.play();
   }}
 />
 
+<img
+  src="/images/collection.png"
+  alt="コレクション"
+  width={180}
+  style={{
+    cursor: "pointer",
+    marginTop: "10px",
+  }}
+/>
+
+
   </>
 )}
 
