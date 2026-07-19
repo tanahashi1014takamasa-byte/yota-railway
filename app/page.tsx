@@ -402,7 +402,7 @@ steam.play();
       style={{
         width: "853px",
         height: "1844px",
-        objectFit: "contain",
+        objectFit: "cover",
       }}
     />
   </>
