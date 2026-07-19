@@ -111,6 +111,17 @@ const popKeyframes = `
   <>
 <style>{popKeyframes}</style>
 
+<style>{`
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+  height: 100%;
+}
+`}</style>
+
     <audio
   ref={bgmRef}
   src="/sounds/bgm_op_ver1.mp3"
