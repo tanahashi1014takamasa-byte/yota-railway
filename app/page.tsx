@@ -171,7 +171,7 @@ const popKeyframes = `
   }}
 >
   <img
-    src="/images/banner①.png"
+    src="/images/banner_1.png"
     alt="バナー"
     width={340}
   />
@@ -206,6 +206,7 @@ steam.onended = () => {
 };
 
 steam.play();
+
 
 
   }}
