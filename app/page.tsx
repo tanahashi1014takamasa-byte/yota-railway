@@ -140,9 +140,6 @@ const popKeyframes = `
 
 
     <main
-
-
-
   style={{
     display: "flex",
     flexDirection: "column",
@@ -150,7 +147,8 @@ const popKeyframes = `
     justifyContent: "flex-start",
     minHeight: "100vh",
     background: "black",
-    paddingTop: "20px",
+    paddingTop: "0px",
+    margin: "0",
   }}
 >
 
@@ -412,6 +410,7 @@ steam.play();
     style={{
       height: "100vh",
       width: "auto",
+      display: "block",
     }}
   />
 </div>
