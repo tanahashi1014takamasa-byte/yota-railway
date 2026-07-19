@@ -417,7 +417,7 @@ steam.play();
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
-        width: "200px",
+        width: "120px",
       }}
     />
   </div>
@@ -427,7 +427,7 @@ steam.play();
         <>
           <img
   src={selectedTrain?.image}
-  width={200}
+  width={120}
   alt="選択した電車"
 />
 
