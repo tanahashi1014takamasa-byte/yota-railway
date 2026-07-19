@@ -200,6 +200,27 @@ const popKeyframes = `
   style={{ cursor: "pointer" }}
 />
 
+<img
+  src="/images/newgame.png"
+  alt="ニューゲーム"
+  width={180}
+  onClick={() => {
+    setSaveData({
+      selectedTrain: "",
+      level: 1,
+      distance: 0,
+      retiredTrains: [],
+    });
+
+    setMessageIndex(0);
+    setScene("intro");
+  }}
+  style={{
+    cursor: "pointer",
+    marginTop: "10px",
+  }}
+/>
+
 
 <img
   src="/images/continue.png"
