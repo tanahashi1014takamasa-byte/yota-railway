@@ -113,9 +113,7 @@ export default function Home() {
       bgmRef.current.play();
     }
 
-    setTimeout(() => {
-      setScene("intro");
-    }, 300);
+    setScene("intro");
   }}
   style={{ cursor: "pointer" }}
 />
