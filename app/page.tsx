@@ -182,10 +182,14 @@ body {
   }}
 >
   <img
-    src="/images/banner①.png"
-    alt="バナー"
-    width={340}
-  />
+  src="/images/banner①.png"
+  alt="バナー"
+  width={340}
+  style={{
+    height: "auto",
+    flexShrink: 0,
+  }}
+/>
 </div>
 
   <img
