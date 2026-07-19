@@ -106,10 +106,27 @@ const popKeyframes = `
 }
 `;
 
+const trainKeyframes = `
+@keyframes trainMove {
+  0% {
+    margin-left: -40px;
+  }
+  50% {
+    margin-left: 40px;
+  }
+  100% {
+    margin-left: -40px;
+  }
+}
+`;
+
   return (
 
   <>
-<style>{popKeyframes}</style>
+<style>
+  {popKeyframes}
+  {trainKeyframes}
+</style>
 
     <audio
   ref={bgmRef}
@@ -418,6 +435,7 @@ steam.play();
         left: "50%",
         transform: "translate(-50%, -50%)",
         width: "120px",
+        animation: "trainMove 3s ease-in-out infinite",
       }}
     />
   </div>
