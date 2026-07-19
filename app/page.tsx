@@ -111,15 +111,6 @@ const popKeyframes = `
   <>
 <style>{popKeyframes}</style>
 
-<style>{`
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background: black;
-}
-`}</style>
-
     <audio
   ref={bgmRef}
   src="/sounds/bgm_op_ver1.mp3"
@@ -157,10 +148,9 @@ body {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-start",
-    height: "100dvh",
+    minHeight: "100vh",
     background: "black",
     paddingTop: "20px",
-    overflow: "visible",
   }}
 >
 
@@ -181,14 +171,10 @@ body {
   }}
 >
   <img
-  src="/images/banner①.png"
-  alt="バナー"
-  style={{
-    width: "340px",
-    height: "auto",
-    display: "block",
-  }}
-/>
+    src="/images/banner①.png"
+    alt="バナー"
+    width={340}
+  />
 </div>
 
   <img
@@ -212,16 +198,6 @@ body {
   steam.play();
 }}
   style={{ cursor: "pointer" }}
-/>
-
-<img
-  src="/images/newgame.png"
-  alt="ニューゲーム"
-  width={180}
-  style={{
-    cursor: "pointer",
-    marginTop: "10px",
-  }}
 />
 
 
