@@ -396,15 +396,25 @@ steam.play();
 
 {scene === "frame" && (
   <>
-    <img
-      src="/images/frame.png"
-      alt="フレーム"
-      style={{
-        height: "100vh",
-        width: "auto",
-        objectFit: "contain",
-      }}
-    />
+   <div
+  style={{
+    height: "100vh",
+    width: "100vw",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    overflow: "hidden",
+  }}
+>
+  <img
+    src="/images/frame.png"
+    alt="フレーム"
+    style={{
+      height: "100vh",
+      width: "auto",
+    }}
+  />
+</div>
   </>
 )}
 
