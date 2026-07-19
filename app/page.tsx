@@ -246,6 +246,10 @@ const saveGame = () => {
   />
 
   <button
+  onClick={() => {
+  saveData.selectedTrain = "しんかんせん";
+  saveGame();
+}}
     style={{
       fontSize: "20px",
       padding: "10px 30px",
@@ -276,6 +280,10 @@ const saveGame = () => {
   />
 
   <button
+    onClick={() => {
+      saveData.selectedTrain = "トーマス";
+      saveGame();
+    }}
     style={{
       fontSize: "20px",
       padding: "10px 30px",
@@ -306,6 +314,10 @@ const saveGame = () => {
   />
 
   <button
+  onClick={() => {
+  saveData.selectedTrain = "よねづけんし";
+  saveGame();
+}}
     style={{
       fontSize: "20px",
       padding: "10px 30px",
