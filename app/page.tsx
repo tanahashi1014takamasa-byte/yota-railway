@@ -26,6 +26,14 @@ export default function Home() {
 });
 }, []);
 
+useEffect(() => {
+  const savedData = localStorage.getItem("yotaRailwaySave");
+
+  if (savedData) {
+    console.log("保存データ発見:", JSON.parse(savedData));
+  }
+}, []);
+
   const [scene, setScene] = useState("opening");
   const [messageIndex, setMessageIndex] = useState(0);
 
