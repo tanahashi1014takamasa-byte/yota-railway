@@ -192,7 +192,24 @@ const popKeyframes = `
     });
 
     setMessageIndex(0);
+const steam = new Audio("/sounds/steam_train.mp3");
+steam.volume = 0.3;
+
+steam.onended = () => {
+  if (bgmRef.current) {
+    bgmRef.current.volume = 0.1;
+    bgmRef.current.currentTime = 0;
+    bgmRef.current.play();
+  }
+
+  setScene("intro");
+};
+
+steam.play();
+
     setScene("intro");
+
+
   }}
   style={{
     cursor: "pointer",
