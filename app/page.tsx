@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 export default function Home() {
 
   const bgmRef = useRef<HTMLAudioElement | null>(null);
+  const imageCache = useRef<HTMLImageElement[]>([]);
 
   useEffect(() => {
   const images = [
@@ -16,9 +17,10 @@ export default function Home() {
 ];
 
   images.forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
+  const img = new Image();
+  img.src = src;
+  imageCache.current.push(img);
+});
 }, []);
 
   const [scene, setScene] = useState("opening");
