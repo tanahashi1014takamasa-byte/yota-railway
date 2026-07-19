@@ -400,9 +400,9 @@ steam.play();
       src="/images/frame.png"
       alt="フレーム"
       style={{
-        width: "853px",
-        height: "1844px",
-        objectFit: "cover",
+        height: "100vh",
+        width: "auto",
+        objectFit: "contain",
       }}
     />
   </>
