@@ -161,21 +161,22 @@ const selectedTrain = trains.find(
   src="/images/start.png"
   alt="START"
   width={180}
-  onClick={() => {
+ onClick={() => {
+  const steam = new Audio("/sounds/steam_train.mp3");
+  steam.volume = 0.3;
+
+  steam.onended = () => {
     if (bgmRef.current) {
       bgmRef.current.volume = 0.1;
       bgmRef.current.currentTime = 0;
-      
-
-      const steam = new Audio("/sounds/steam_train.mp3");
-steam.volume = 0.3;
-steam.play();
+      bgmRef.current.play();
     }
 
-    setTimeout(() => {
-  setScene("intro");
-}, 2600);
-  }}
+    setScene("intro");
+  };
+
+  steam.play();
+}}
   style={{ cursor: "pointer" }}
 />
 
