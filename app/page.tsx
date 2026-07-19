@@ -138,7 +138,13 @@ const saveGame = () => {
       bgmRef.current.play();
     }
 
-    <img
+    setScene("intro");
+  }}
+  style={{ cursor: "pointer" }}
+/>
+
+
+<img
   src="/images/continue.png"
   alt="つづきから"
   width={180}
@@ -151,10 +157,6 @@ const saveGame = () => {
   }}
 />
 
-    setScene("intro");
-  }}
-  style={{ cursor: "pointer" }}
-/>
   </>
 )}
 
