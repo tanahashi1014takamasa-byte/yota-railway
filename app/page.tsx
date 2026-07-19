@@ -153,7 +153,7 @@ const saveGame = () => {
   }}
   style={{
     cursor: "pointer",
-    marginTop: "5px",
+    marginTop: "-10px",
   }}
 />
 
