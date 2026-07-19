@@ -172,7 +172,9 @@ steam.volume = 0.3;
 steam.play();
     }
 
-    setScene("intro");
+    setTimeout(() => {
+  setScene("intro");
+}, 2600);
   }}
   style={{ cursor: "pointer" }}
 />
@@ -187,7 +189,7 @@ steam.play();
   }}
   style={{
     cursor: "pointer",
-    marginTop: "-10px",
+    marginTop: "10px",
   }}
 />
 
