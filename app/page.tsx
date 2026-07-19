@@ -34,7 +34,16 @@ useEffect(() => {
   }
 }, []);
 
-useEffect(() => {
+
+
+  const [scene, setScene] = useState("opening");
+  const [trainX, setTrainX] = useState(0);
+  const [messageIndex, setMessageIndex] = useState(0);
+  const [showTrains, setShowTrains] = useState(false);
+
+  useEffect(() => {
+
+  if (scene !== "frame") return;
 
   const timer = setInterval(() => {
 
@@ -44,12 +53,7 @@ useEffect(() => {
 
   return () => clearInterval(timer);
 
-}, []);
-
-  const [scene, setScene] = useState("opening");
-  const [trainX, setTrainX] = useState(0);
-  const [messageIndex, setMessageIndex] = useState(0);
-  const [showTrains, setShowTrains] = useState(false);
+}, [scene]);
 
   const [saveData, setSaveData] = useState({
   selectedTrain: "",
@@ -380,8 +384,9 @@ steam.play();
     bell.volume = 1.0;
 
     bell.onended = () => {
-      setScene("frame");
-    };
+  setTrainX(0);
+  setScene("frame");
+};
 
     bell.play();
 
