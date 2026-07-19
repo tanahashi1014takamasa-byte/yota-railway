@@ -359,16 +359,17 @@ steam.play();
       loading="eager"
     />
 
-    <button
-      onClick={() => {
-        const door = new Audio("/sounds/door.mp3");
-door.volume = 1.0;
-door.play();
-        setSaveData({
-          ...saveData,
-          selectedTrain: train.name,
-        });
-      }}
+   <button
+  onClick={() => {
+    const bell = new Audio("/sounds/bell.mp3");
+    bell.volume = 1.0;
+    bell.play();
+
+    setSaveData({
+      ...saveData,
+      selectedTrain: train.name,
+    });
+  }}
       style={{
         fontSize: "20px",
         padding: "10px 30px",
