@@ -207,8 +207,6 @@ steam.onended = () => {
 
 steam.play();
 
-    setScene("intro");
-
 
   }}
   style={{
