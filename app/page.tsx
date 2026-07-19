@@ -139,14 +139,16 @@ const popKeyframes = `
 
 
 
- <main
+    <main
+
+
+
   style={{
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-start",
-    height: "100vh",
-    overflow: "hidden",
+    minHeight: "100vh",
     background: "black",
     paddingTop: "20px",
   }}
