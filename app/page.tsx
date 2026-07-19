@@ -19,6 +19,9 @@ export default function Home() {
   images.forEach((src) => {
   const img = new Image();
   img.src = src;
+  img.onload = () => {
+    console.log("読み込み完了:", src);
+  };
   imageCache.current.push(img);
 });
 }, []);
