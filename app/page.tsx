@@ -93,9 +93,24 @@ const trainPopStyle = {
   animation: "popIn 0.4s ease-out",
 };
 
+const popKeyframes = `
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+`;
+
   return (
 
   <>
+<style>{popKeyframes}</style>
+
     <audio
   ref={bgmRef}
   src="/sounds/bgm_op_ver1.mp3"
