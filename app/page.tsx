@@ -363,6 +363,11 @@ steam.play();
   onClick={() => {
     const bell = new Audio("/sounds/bell.mp3");
     bell.volume = 1.0;
+
+    bell.onended = () => {
+      setScene("frame");
+    };
+
     bell.play();
 
     setSaveData({
@@ -387,6 +392,20 @@ steam.play();
 
 </div>
 </>
+)}
+
+{scene === "frame" && (
+  <>
+    <img
+      src="/images/frame.png"
+      alt="フレーム"
+      style={{
+        width: "853px",
+        height: "1844px",
+        objectFit: "contain",
+      }}
+    />
+  </>
 )}
 
       {scene === "running" && (
