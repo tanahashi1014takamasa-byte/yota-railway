@@ -32,3 +32,11 @@ body {
   overflow-x: hidden;
   background: black;
 }
+
+html {
+  overscroll-behavior: none;
+}
+
+body {
+  overscroll-behavior: none;
+}
