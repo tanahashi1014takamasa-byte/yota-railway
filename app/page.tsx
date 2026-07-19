@@ -29,6 +29,20 @@ export default function Home() {
   const [scene, setScene] = useState("opening");
   const [messageIndex, setMessageIndex] = useState(0);
 
+  const saveData = {
+  selectedTrain: "",
+  level: 1,
+  distance: 0,
+  retiredTrains: [],
+};
+
+const saveGame = () => {
+  localStorage.setItem(
+    "yotaRailwaySave",
+    JSON.stringify(saveData)
+  );
+};
+
   const messages = [
   "こんにちは！",
   "ぼくは ハムカッパ！",
@@ -198,6 +212,10 @@ export default function Home() {
   />
 
   <button
+  onClick={() => {
+  saveData.selectedTrain = "ハムカッパでんしゃ";
+  saveGame();
+}}
   style={{
     fontSize: "20px",
     padding: "10px 30px",
