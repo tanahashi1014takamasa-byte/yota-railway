@@ -36,6 +36,7 @@ useEffect(() => {
 
   const [scene, setScene] = useState("opening");
   const [messageIndex, setMessageIndex] = useState(0);
+  const [showTrains, setShowTrains] = useState(false);
 
   const [saveData, setSaveData] = useState({
   selectedTrain: "",
@@ -87,6 +88,10 @@ const selectedTrain = trains.find(
   "でんしゃで あそぼう！",
   "すきな でんしゃを えらんでね！",
 ];
+
+const trainPopStyle = {
+  animation: "popIn 0.4s ease-out",
+};
 
   return (
 
@@ -220,9 +225,10 @@ const selectedTrain = trains.find(
     onClick={() => {
       if (messageIndex < messages.length - 1) {
         setMessageIndex(messageIndex + 1);
-      } else {
-        setScene("trainSelect");
-      }
+     } else {
+  setScene("trainSelect");
+  setShowTrains(true);
+    }
     }}
     style={{
   background: "black",
@@ -292,8 +298,8 @@ const selectedTrain = trains.find(
 <p style={{ color: "white", fontSize: "24px" }}>
       でんしゃを えらんでね！
     </p>
-
-    {trains.map((train) => (
+    
+    {showTrains && trains.map((train) => (
   <div
     key={train.name}
     style={{
@@ -301,6 +307,7 @@ const selectedTrain = trains.find(
       flexDirection: "column",
       alignItems: "center",
       marginBottom: "30px",
+        ...trainPopStyle,
     }}
   >
     <img
