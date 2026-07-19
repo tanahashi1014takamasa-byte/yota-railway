@@ -34,7 +34,20 @@ useEffect(() => {
   }
 }, []);
 
+useEffect(() => {
+
+  const timer = setInterval(() => {
+
+    setTrainX((x) => x + 5);
+
+  }, 100);
+
+  return () => clearInterval(timer);
+
+}, []);
+
   const [scene, setScene] = useState("opening");
+  const [trainX, setTrainX] = useState(0);
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
 
@@ -106,26 +119,13 @@ const popKeyframes = `
 }
 `;
 
-const trainKeyframes = `
-@keyframes trainMove {
-  0% {
-    margin-left: -40px;
-  }
-  50% {
-    margin-left: 40px;
-  }
-  100% {
-    margin-left: -40px;
-  }
-}
-`;
+
 
   return (
 
   <>
 <style>
   {popKeyframes}
-  {trainKeyframes}
 </style>
 
     <audio
@@ -433,9 +433,9 @@ steam.play();
         position: "absolute",
         top: "40%",
         left: "50%",
-        transform: "translate(-50%, -50%)",
+        transform: `translate(calc(-50% + ${trainX}px), -50%)`,
         width: "120px",
-        animation: "trainMove 3s ease-in-out infinite",
+        
       }}
     />
   </div>
