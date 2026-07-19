@@ -166,6 +166,10 @@ const selectedTrain = trains.find(
       bgmRef.current.volume = 0.1;
       bgmRef.current.currentTime = 0;
       bgmRef.current.play();
+
+      const steam = new Audio("/sounds/steam_train.mp3");
+steam.volume = 0.3;
+steam.play();
     }
 
     setScene("intro");
@@ -255,6 +259,9 @@ const selectedTrain = trains.find(
 
     <button
       onClick={() => {
+        const steam = new Audio("/sounds/steam_train.mp3");
+        steam.volume = 0.3;
+        steam.play();
         setScene("running");
       }}
       style={{
