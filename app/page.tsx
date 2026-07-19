@@ -361,6 +361,8 @@ steam.play();
 
     <button
       onClick={() => {
+        const door = new Audio("/sounds/door.mp3");
+        door.play();
         setSaveData({
           ...saveData,
           selectedTrain: train.name,
