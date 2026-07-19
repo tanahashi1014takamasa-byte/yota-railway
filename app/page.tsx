@@ -179,7 +179,7 @@ const selectedTrain = trains.find(
   alt="つづきから"
   width={180}
   onClick={() => {
-    setScene("trainSelect");
+    setScene("save");
   }}
   style={{
     cursor: "pointer",
@@ -234,7 +234,39 @@ const selectedTrain = trains.find(
 </div>
 )}
 
+{scene === "save" && (
+  <>
+    <p style={{ color: "white", fontSize: "28px" }}>
+      🚃 セーブデータ
+    </p>
 
+    <p style={{ color: "white", fontSize: "22px" }}>
+      でんしゃ：
+      {saveData.selectedTrain || "なし"}
+    </p>
+
+    <p style={{ color: "white", fontSize: "22px" }}>
+      レベル：{saveData.level}
+    </p>
+
+    <p style={{ color: "white", fontSize: "22px" }}>
+      走行距離：{saveData.distance}km
+    </p>
+
+    <button
+      onClick={() => {
+        setScene("running");
+      }}
+      style={{
+        fontSize: "20px",
+        padding: "10px 30px",
+        marginTop: "20px",
+      }}
+    >
+      このデータで遊ぶ
+    </button>
+  </>
+)}
       {scene === "trainSelect" && (
   <>
   
