@@ -393,28 +393,34 @@ steam.play();
 )}
 
 {scene === "frame" && (
-  <>
-   <div
-  style={{
-    height: "100vh",
-    width: "100vw",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "flex-start",
-    overflow: "hidden",
-  }}
->
-  <img
-    src="/images/frame.png"
-    alt="フレーム"
+  <div
     style={{
+      position: "relative",
       height: "100vh",
-      width: "auto",
-      display: "block",
     }}
-  />
-</div>
-  </>
+  >
+    <img
+      src="/images/frame.png"
+      alt="フレーム"
+      style={{
+        height: "100vh",
+        width: "auto",
+        display: "block",
+      }}
+    />
+
+    <img
+      src={selectedTrain?.image}
+      alt="選んだ電車"
+      style={{
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        width: "200px",
+      }}
+    />
+  </div>
 )}
 
       {scene === "running" && (
