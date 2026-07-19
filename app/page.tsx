@@ -133,10 +133,11 @@ export default function Home() {
   }}
 >
   <img
-    src="/images/kappa_1.png"
-    alt="ハムカッパ"
-    width={100}
-  />
+  src="/images/kappa_1.png"
+  alt="ハムカッパ"
+  width={100}
+  loading="eager"
+/>
 
   <div
     onClick={() => {
@@ -192,6 +193,7 @@ export default function Home() {
     src="/images/train_ver1.1.png"
     alt="でんしゃ1"
     width={180}
+    loading="eager"
   />
 
   <button
@@ -221,6 +223,7 @@ export default function Home() {
     src="/images/train_ver2.1.png"
     alt="でんしゃ2"
     width={180}
+    loading="eager"
   />
 
   <button
@@ -250,6 +253,7 @@ export default function Home() {
     src="/images/train_ver3.1.png"
     alt="でんしゃ3"
     width={180}
+    loading="eager"
   />
 
   <button
@@ -279,6 +283,7 @@ export default function Home() {
     src="/images/yonezu_1.png"
     alt="でんしゃ4"
     width={180}
+    loading="eager"
   />
 
   <button
