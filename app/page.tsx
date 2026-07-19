@@ -36,8 +36,6 @@ useEffect(() => {
 
   const [scene, setScene] = useState("opening");
   const [messageIndex, setMessageIndex] = useState(0);
-  const [showKappa, setShowKappa] = useState(false);
-  const [showMessage, setShowMessage] = useState(false);
   const [showTrains, setShowTrains] = useState(false);
 
   const [saveData, setSaveData] = useState({
@@ -193,13 +191,8 @@ const popKeyframes = `
       bgmRef.current.currentTime = 0;
       bgmRef.current.play();
     }
-    setShowKappa(true);
 
-setTimeout(() => {
-  setShowMessage(true);
-}, 400);
-
-setScene("intro");
+    setScene("intro");
   };
 
   steam.play();
@@ -241,7 +234,6 @@ setScene("intro");
   alt="ハムカッパ"
   width={100}
   loading="eager"
-  style={trainPopStyle}
 />
 
   <div
@@ -265,7 +257,7 @@ setScene("intro");
   maxWidth: "250px",
 }}
   >
-    {showMessage && messages[messageIndex]}
+    {messages[messageIndex]}
   </div>
 </div>
 )}
