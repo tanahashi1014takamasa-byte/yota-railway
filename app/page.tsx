@@ -160,6 +160,7 @@ body {
     height: "100dvh",
     background: "black",
     paddingTop: "20px",
+    overflow: "visible",
   }}
 >
 
