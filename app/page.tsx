@@ -159,7 +159,7 @@ body {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-start",
-    minHeight: "100vh",
+    height: "100dvh",
     background: "black",
     paddingTop: "20px",
   }}
