@@ -200,6 +200,16 @@ const popKeyframes = `
   style={{ cursor: "pointer" }}
 />
 
+<img
+  src="/images/newgame.png"
+  alt="ニューゲーム"
+  width={180}
+  style={{
+    cursor: "pointer",
+    marginTop: "10px",
+  }}
+/>
+
 
 <img
   src="/images/continue.png"
