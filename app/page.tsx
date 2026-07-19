@@ -116,9 +116,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background: black;
-  height: 100%;
 }
 `}</style>
 
