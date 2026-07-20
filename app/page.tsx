@@ -6,6 +6,7 @@ export default function Home() {
 
   const bgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
+  const [leverAngle, setLeverAngle] = useState(0);
 
   useEffect(() => {
   const images = [
@@ -422,12 +423,28 @@ steam.play();
       <img
   src="/images/lever.png"
   alt="レバー"
+  onPointerMove={(e) => {
+    if (e.buttons !== 1) return;
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+
+    const diff = e.clientX - centerX;
+
+    const angle = Math.max(-35, Math.min(35, diff / 2));
+
+    setLeverAngle(angle);
+  }}
+  onPointerUp={() => setLeverAngle(0)}
   style={{
     position: "absolute",
     width: "70px",
     left: "50%",
     bottom: "30px",
-    transform: "translateX(-50%)",
+    transform: `translateX(-50%) rotate(${leverAngle}deg)`,
+    transformOrigin: "50% 90%",
+    touchAction: "none",
+    cursor: "grab",
   }}
 />
 
