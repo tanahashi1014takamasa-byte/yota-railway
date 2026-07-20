@@ -431,8 +431,8 @@ steam.play();
      <div
   style={{
     position: "absolute",
-    bottom: "20px",
-    left: "50%",
+    bottom: "40px",
+    left: "30%",
     transform: "translateX(-50%)",
     display: "flex",
     gap: "20px",
@@ -440,21 +440,21 @@ steam.play();
 >
   <img
     src="/images/lever_l.png"
-    width={70}
+    width={50}
     onClick={() => setLeverState("left")}
     style={{ cursor: "pointer" }}
   />
 
   <img
     src="/images/lever.png"
-    width={70}
+    width={50}
     onClick={() => setLeverState("center")}
     style={{ cursor: "pointer" }}
   />
 
   <img
     src="/images/lever_r.png"
-    width={70}
+    width={50}
     onClick={() => setLeverState("right")}
     style={{ cursor: "pointer" }}
   />
