@@ -428,30 +428,37 @@ steam.play();
       }}
     />
 
-     <img
-  src={leverImage}
-  alt="レバー"
-  onClick={(e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-
-    if (x < rect.width / 3) {
-      setLeverState("left");
-    } else if (x > (rect.width * 2) / 3) {
-      setLeverState("right");
-    } else {
-      setLeverState("center");
-    }
-  }}
+     <div
   style={{
     position: "absolute",
-    width: "70px",
+    bottom: "20px",
     left: "50%",
-    bottom: "30px",
     transform: "translateX(-50%)",
-    cursor: "pointer",
+    display: "flex",
+    gap: "20px",
   }}
-/>
+>
+  <img
+    src="/images/lever_l.png"
+    width={70}
+    onClick={() => setLeverState("left")}
+    style={{ cursor: "pointer" }}
+  />
+
+  <img
+    src="/images/lever.png"
+    width={70}
+    onClick={() => setLeverState("center")}
+    style={{ cursor: "pointer" }}
+  />
+
+  <img
+    src="/images/lever_r.png"
+    width={70}
+    onClick={() => setLeverState("right")}
+    style={{ cursor: "pointer" }}
+  />
+</div>
 
     <img
       src={selectedTrain?.image}
