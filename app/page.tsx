@@ -431,8 +431,8 @@ steam.play();
      <div
   style={{
     position: "absolute",
-    bottom: "40px",
-    left: "30%",
+    bottom: "35px",
+    left: "42%",
     transform: "translateX(-50%)",
     display: "flex",
     gap: "20px",
