@@ -6,6 +6,7 @@ export default function Home() {
 
   const bgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
+  const frameRef = useRef<HTMLImageElement | null>(null);
 
   useEffect(() => {
   const images = [
@@ -61,7 +62,7 @@ useEffect(() => {
   setTrainFlip(false);
 }
 
-      return x + 5 * trainDirection;
+      return x + 2 * trainDirection;
 
     });
 
@@ -438,14 +439,15 @@ steam.play();
     }}
   >
     <img
-      src="/images/frame.png"
-      alt="フレーム"
-      style={{
-        height: "100vh",
-        width: "auto",
-        display: "block",
-      }}
-    />
+  ref={frameRef}
+  src="/images/frame.png"
+  alt="フレーム"
+  style={{
+    height: "100vh",
+    width: "auto",
+    display: "block",
+  }}
+/>
 
     <img
       src={selectedTrain?.image}
