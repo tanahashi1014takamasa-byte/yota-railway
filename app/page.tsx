@@ -42,6 +42,7 @@ useEffect(() => {
   const [trainFlip, setTrainFlip] = useState(false);
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
+  const [lever, setLever] = useState("center");
 
   const [saveData, setSaveData] = useState({
   selectedTrain: "",
@@ -417,6 +418,31 @@ steam.play();
         display: "block",
       }}
     />
+
+    <img
+  src={
+    lever === "left"
+      ? "/images/lever_l.png"
+      : lever === "right"
+      ? "/images/lever_r.png"
+      : "/images/lever.png"
+  }
+  alt="レバー"
+  onClick={() => {
+    if (lever === "center") {
+      setLever("right");
+    } else {
+      setLever("center");
+    }
+  }}
+  style={{
+    position: "absolute",
+    right: "80px",
+    bottom: "250px",
+    width: "100px",
+    cursor: "pointer",
+  }}
+/>
 
     <img
       src={selectedTrain?.image}
