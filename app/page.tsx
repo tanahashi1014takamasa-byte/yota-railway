@@ -91,7 +91,7 @@ const selectedTrain = trains.find(
   "こんにちは！",
   "よーたくん！！",
   "でんしゃで あそぼう！",
-  "すきな でんしゃを えらんでね！",
+  "すきな のりものを えらんでね！",
 ];
 
 const trainPopStyle = {
@@ -345,7 +345,7 @@ steam.play();
 >
 
 <p style={{ color: "white", fontSize: "24px" }}>
-      でんしゃを えらんでね！
+      すきな のりものを えらんでね！
     </p>
     
     {showTrains && trains.map((train) => (
