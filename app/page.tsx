@@ -57,7 +57,7 @@ useEffect(() => {
   retiredTrains: [],
 });
 
-const isRightFacing = saveData.selectedTrain === "よねづけんし";
+
 
 
 useEffect(() => {
@@ -459,9 +459,9 @@ steam.play();
   <img
     src="/images/lever_l.png"
     width={50}
-    onClick={() => {
+   onClick={() => {
   setLeverState("left");
-  setTrainFlip(true);
+  setTrainFlip(saveData.selectedTrain !== "よねづけんし");
 }}
     style={{ cursor: "pointer" }}
   />
@@ -478,7 +478,7 @@ steam.play();
     width={50}
     onClick={() => {
   setLeverState("right");
-  setTrainFlip(false);
+  setTrainFlip(saveData.selectedTrain === "よねづけんし");
 }}
     style={{ cursor: "pointer" }}
   />
@@ -493,7 +493,7 @@ steam.play();
         left: "50%",
         transform: `
   translate(calc(-50% + ${trainX}px), -50%)
-  scaleX(${(isRightFacing ? !trainFlip : trainFlip) ? -1 : 1})
+  scaleX(${trainFlip ? -1 : 1})
 `,
         width: "130px",
         
