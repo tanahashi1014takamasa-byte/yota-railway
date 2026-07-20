@@ -43,34 +43,6 @@ useEffect(() => {
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
 
-  useEffect(() => {
-
-  if (scene !== "frame") return;
-
-  const timer = setInterval(() => {
-
-    setTrainX((x) => {
-
-      if (x > 150) {
-  setTrainDirection(-1);
-  setTrainFlip(true);
-}
-
-      if (x < -150) {
-  setTrainDirection(1);
-  setTrainFlip(false);
-}
-
-      return x + 5 * trainDirection;
-
-    });
-
-  }, 100);
-
-  return () => clearInterval(timer);
-
-}, [scene, trainDirection]);
-
   const [saveData, setSaveData] = useState({
   selectedTrain: "",
   level: 1,
