@@ -38,6 +38,9 @@ useEffect(() => {
 
 
 
+
+
+
   const [scene, setScene] = useState("opening");
   const [trainX, setTrainX] = useState(0);
   const [trainDirection, setTrainDirection] = useState(1);
@@ -54,7 +57,19 @@ useEffect(() => {
 });
 
 
+useEffect(() => {
+  const timer = setInterval(() => {
+    if (scene !== "frame") return;
 
+    if (leverState === "left") {
+      setTrainX((x) => x - 2);
+    } else if (leverState === "right") {
+      setTrainX((x) => x + 2);
+    }
+  }, 16);
+
+  return () => clearInterval(timer);
+}, [leverState, scene]);
 
 
 const saveGame = () => {
