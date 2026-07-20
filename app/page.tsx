@@ -430,7 +430,7 @@ steam.play();
   translate(calc(-50% + ${trainX}px), -50%)
   scaleX(${trainFlip ? -1 : 1})
 `,
-        width: "140px",
+        width: "130px",
         
       }}
     />
