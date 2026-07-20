@@ -7,6 +7,7 @@ export default function Home() {
   const bgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
   const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
+
   
 
   useEffect(() => {
@@ -55,6 +56,8 @@ useEffect(() => {
   distance: 0,
   retiredTrains: [],
 });
+
+const isRightFacing = saveData.selectedTrain === "よねづけんし";
 
 
 useEffect(() => {
@@ -490,7 +493,7 @@ steam.play();
         left: "50%",
         transform: `
   translate(calc(-50% + ${trainX}px), -50%)
-  scaleX(${trainFlip ? -1 : 1})
+  scaleX(${(isRightFacing ? !trainFlip : trainFlip) ? -1 : 1})
 `,
         width: "130px",
         
