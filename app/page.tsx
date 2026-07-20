@@ -38,6 +38,7 @@ useEffect(() => {
 
   const [scene, setScene] = useState("opening");
   const [trainX, setTrainX] = useState(0);
+  const [trainDirection, setTrainDirection] = useState(1);
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
 
@@ -47,13 +48,25 @@ useEffect(() => {
 
   const timer = setInterval(() => {
 
-    setTrainX((x) => x + 5);
+    setTrainX((x) => {
+
+      if (x > 150) {
+        setTrainDirection(-1);
+      }
+
+      if (x < -150) {
+        setTrainDirection(1);
+      }
+
+      return x + 5 * trainDirection;
+
+    });
 
   }, 100);
 
   return () => clearInterval(timer);
 
-}, [scene]);
+}, [scene, trainDirection]);
 
   const [saveData, setSaveData] = useState({
   selectedTrain: "",
