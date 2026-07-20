@@ -422,13 +422,10 @@ steam.play();
     <div
   style={{
     position: "absolute",
-    right: "120px",
-    top: "1150px",
-    width: "100px",
-    height: "220px",
+    right: "80px",
+    bottom: "200px",
   }}
 >
-
 <img
   src={
     lever === "left"
@@ -438,29 +435,6 @@ steam.play();
       : "/images/lever.png"
   }
   alt="レバー"
-  style={{
-    width: "100px",
-  }}
-/>
-
-<div
-  onClick={() => {
-    setLever("left");
-
-    setTimeout(() => {
-      setLever("center");
-    }, 500);
-  }}
-  style={{
-    position:"absolute",
-    left:0,
-    top:0,
-    width:"50px",
-    height:"220px",
-  }}
-/>
-
-<div
   onClick={() => {
     setLever("right");
 
@@ -469,14 +443,10 @@ steam.play();
     }, 500);
   }}
   style={{
-    position:"absolute",
-    right:0,
-    top:0,
-    width:"50px",
-    height:"220px",
+    width: "100px",
+    cursor: "pointer",
   }}
 />
-
 </div>
 
     <img
