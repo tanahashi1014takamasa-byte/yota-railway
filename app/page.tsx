@@ -419,7 +419,17 @@ steam.play();
       }}
     />
 
-    <img
+    <div
+  style={{
+    position: "absolute",
+    right: "120px",
+    top: "1150px",
+    width: "100px",
+    height: "220px",
+  }}
+>
+
+<img
   src={
     lever === "left"
       ? "/images/lever_l.png"
@@ -428,21 +438,46 @@ steam.play();
       : "/images/lever.png"
   }
   alt="レバー"
-  onClick={() => {
-    if (lever === "center") {
-      setLever("right");
-    } else {
-      setLever("center");
-    }
-  }}
   style={{
-    position: "absolute",
-    right: "80px",
-    bottom: "250px",
     width: "100px",
-    cursor: "pointer",
   }}
 />
+
+<div
+  onClick={() => {
+    setLever("left");
+
+    setTimeout(() => {
+      setLever("center");
+    }, 500);
+  }}
+  style={{
+    position:"absolute",
+    left:0,
+    top:0,
+    width:"50px",
+    height:"220px",
+  }}
+/>
+
+<div
+  onClick={() => {
+    setLever("right");
+
+    setTimeout(() => {
+      setLever("center");
+    }, 500);
+  }}
+  style={{
+    position:"absolute",
+    right:0,
+    top:0,
+    width:"50px",
+    height:"220px",
+  }}
+/>
+
+</div>
 
     <img
       src={selectedTrain?.image}
