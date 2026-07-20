@@ -424,9 +424,9 @@ steam.play();
   alt="レバー"
   style={{
     position: "absolute",
-    width: "100px",
+    width: "70px",
     left: "50%",
-    bottom: "40px",
+    bottom: "30px",
     transform: "translateX(-50%)",
   }}
 />
