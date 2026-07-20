@@ -42,6 +42,7 @@ useEffect(() => {
   const [trainX, setTrainX] = useState(0);
   const [trainDirection, setTrainDirection] = useState(1);
   const [trainFlip, setTrainFlip] = useState(false);
+  const trainWidth = 120;
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
 
@@ -53,12 +54,12 @@ useEffect(() => {
 
     setTrainX((x) => {
 
-     if (x > frameWidth / 2 - 80) {
+     if (x > frameWidth / 2 - trainWidth / 2) {
   setTrainDirection(-1);
   setTrainFlip(true);
 }
 
-if (x < -frameWidth / 2 + 80) {
+if (x < -frameWidth / 2 + trainWidth / 2) {
   setTrainDirection(1);
   setTrainFlip(false);
 }
@@ -466,7 +467,7 @@ steam.play();
   translate(calc(-50% + ${trainX}px), -50%)
   scaleX(${trainFlip ? -1 : 1})
 `,
-        width: "120px",
+        width: `${trainWidth}px`,
         height: "auto",
       }}
     />
