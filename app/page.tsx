@@ -426,7 +426,7 @@ steam.play();
     position: "absolute",
     width: "100px",
     left: "50%",
-    bottom: "80px",
+    bottom: "40px",
     transform: "translateX(-50%)",
   }}
 />
