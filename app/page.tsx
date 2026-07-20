@@ -62,11 +62,11 @@ useEffect(() => {
     if (scene !== "frame") return;
 
     if (leverState === "left") {
-      setTrainX((x) => x - 2);
+      setTrainX((x) => x - 1);
     } else if (leverState === "right") {
-      setTrainX((x) => x + 2);
+      setTrainX((x) => x + 1);
     }
-  }, 16);
+  }, 30);
 
   return () => clearInterval(timer);
 }, [leverState, scene]);
@@ -456,7 +456,10 @@ steam.play();
   <img
     src="/images/lever_l.png"
     width={50}
-    onClick={() => setLeverState("left")}
+    onClick={() => {
+  setLeverState("left");
+  setTrainFlip(true);
+}}
     style={{ cursor: "pointer" }}
   />
 
@@ -470,7 +473,10 @@ steam.play();
   <img
     src="/images/lever_r.png"
     width={50}
-    onClick={() => setLeverState("right")}
+    onClick={() => {
+  setLeverState("right");
+  setTrainFlip(false);
+}}
     style={{ cursor: "pointer" }}
   />
 </div>
