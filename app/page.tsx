@@ -54,14 +54,16 @@ useEffect(() => {
 
     setTrainX((x) => {
 
-     if (x > frameWidth / 2 - trainWidth / 2) {
+    if (x > frameWidth / 3) {
   setTrainDirection(-1);
   setTrainFlip(true);
+  return frameWidth / 3;
 }
 
-if (x < -frameWidth / 2 + trainWidth / 2) {
+if (x < -frameWidth / 3) {
   setTrainDirection(1);
   setTrainFlip(false);
+  return -frameWidth / 3;
 }
 
       return x + 2 * trainDirection;
