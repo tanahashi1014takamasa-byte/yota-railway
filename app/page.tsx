@@ -7,6 +7,7 @@ export default function Home() {
   const bgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
   const frameRef = useRef<HTMLImageElement | null>(null);
+  const [frameWidth, setFrameWidth] = useState(0);
 
   useEffect(() => {
   const images = [
@@ -52,12 +53,12 @@ useEffect(() => {
 
     setTrainX((x) => {
 
-      if (x > 150) {
+     if (x > frameWidth / 2 - 80) {
   setTrainDirection(-1);
   setTrainFlip(true);
 }
 
-      if (x < -150) {
+if (x < -frameWidth / 2 + 80) {
   setTrainDirection(1);
   setTrainFlip(false);
 }
@@ -442,6 +443,11 @@ steam.play();
   ref={frameRef}
   src="/images/frame.png"
   alt="フレーム"
+  onLoad={() => {
+    if (frameRef.current) {
+      setFrameWidth(frameRef.current.clientWidth);
+    }
+  }}
   style={{
     height: "100vh",
     width: "auto",
@@ -461,7 +467,7 @@ steam.play();
   scaleX(${trainFlip ? -1 : 1})
 `,
         width: "120px",
-        
+        height: "auto",
       }}
     />
   </div>
