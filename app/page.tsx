@@ -6,7 +6,8 @@ export default function Home() {
 
   const bgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
-  const [leverAngle, setLeverAngle] = useState(0);
+  const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
+  
 
   useEffect(() => {
   const images = [
@@ -87,6 +88,13 @@ const trains = [
 const selectedTrain = trains.find(
   (train) => train.name === saveData.selectedTrain
 );
+
+const leverImage =
+  leverState === "left"
+    ? "/images/lever_l.png"
+    : leverState === "right"
+    ? "/images/lever_r.png"
+    : "/images/lever.png";
 
 
   const messages = [
@@ -420,31 +428,28 @@ steam.play();
       }}
     />
 
-      <img
-  src="/images/lever.png"
+     <img
+  src={leverImage}
   alt="レバー"
-  onPointerMove={(e) => {
-    if (e.buttons !== 1) return;
-
+  onClick={(e) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
+    const x = e.clientX - rect.left;
 
-    const diff = e.clientX - centerX;
-
-    const angle = Math.max(-35, Math.min(35, diff / 2));
-
-    setLeverAngle(angle);
+    if (x < rect.width / 3) {
+      setLeverState("left");
+    } else if (x > (rect.width * 2) / 3) {
+      setLeverState("right");
+    } else {
+      setLeverState("center");
+    }
   }}
-  onPointerUp={() => setLeverAngle(0)}
   style={{
     position: "absolute",
     width: "70px",
     left: "50%",
     bottom: "30px",
-    transform: `translateX(-50%) rotate(${leverAngle}deg)`,
-    transformOrigin: "50% 90%",
-    touchAction: "none",
-    cursor: "grab",
+    transform: "translateX(-50%)",
+    cursor: "pointer",
   }}
 />
 
