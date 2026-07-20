@@ -6,8 +6,6 @@ export default function Home() {
 
   const bgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
-  const frameRef = useRef<HTMLImageElement | null>(null);
-  const [frameWidth, setFrameWidth] = useState(0);
 
   useEffect(() => {
   const images = [
@@ -42,7 +40,6 @@ useEffect(() => {
   const [trainX, setTrainX] = useState(0);
   const [trainDirection, setTrainDirection] = useState(1);
   const [trainFlip, setTrainFlip] = useState(false);
-  const trainWidth = 120;
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
 
@@ -54,19 +51,17 @@ useEffect(() => {
 
     setTrainX((x) => {
 
-    if (x > frameWidth / 3) {
+      if (x > 150) {
   setTrainDirection(-1);
   setTrainFlip(true);
-  return frameWidth / 3;
 }
 
-if (x < -frameWidth / 3) {
+      if (x < -150) {
   setTrainDirection(1);
   setTrainFlip(false);
-  return -frameWidth / 3;
 }
 
-      return x + 2 * trainDirection;
+      return x + 5 * trainDirection;
 
     });
 
@@ -443,20 +438,14 @@ steam.play();
     }}
   >
     <img
-  ref={frameRef}
-  src="/images/frame.png"
-  alt="フレーム"
-  onLoad={() => {
-    if (frameRef.current) {
-      setFrameWidth(frameRef.current.clientWidth);
-    }
-  }}
-  style={{
-    height: "100vh",
-    width: "auto",
-    display: "block",
-  }}
-/>
+      src="/images/frame.png"
+      alt="フレーム"
+      style={{
+        height: "100vh",
+        width: "auto",
+        display: "block",
+      }}
+    />
 
     <img
       src={selectedTrain?.image}
@@ -469,8 +458,8 @@ steam.play();
   translate(calc(-50% + ${trainX}px), -50%)
   scaleX(${trainFlip ? -1 : 1})
 `,
-        width: `${trainWidth}px`,
-        height: "auto",
+        width: "120px",
+        
       }}
     />
   </div>
