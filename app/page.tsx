@@ -126,7 +126,8 @@ const trains = [
  {
   name: "よねづけんし",
   image: "/images/yonezu_1.png",
-  offsetX: -4.5,
+  leftOffset: 3,
+  rightOffset: 0,
 },
 ];
 
@@ -524,7 +525,7 @@ steam.play();
         top: "40%",
         left: "50%",
         transform: `
-  translate(calc(-50% + ${trainX + (selectedTrain?.offsetX ?? 0)}px), -50%)
+  translate(calc(-50% + ${trainX - (selectedTrain?.leftOffset ?? 0) + (selectedTrain?.rightOffset ?? 0)}px), -50%)
   scaleX(${trainFlip ? -1 : 1})
 `,
         width: "130px",
