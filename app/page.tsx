@@ -384,13 +384,19 @@ steam.play();
         const steam = new Audio("/sounds/steam_train.mp3");
         steam.volume = 0.3;
         steam.play();
+        if (bgmRef.current) {
+  bgmRef.current.volume = 0.05;
+  bgmRef.current.play();
+}
         setScene("frame");
       }}
       style={{
-        fontSize: "20px",
-        padding: "10px 30px",
-        marginTop: "20px",
-      }}
+  color: "white",
+  background: "black",
+  border: "2px solid white",
+  borderRadius: "10px",
+  padding: "10px 30px",
+}}
     >
       このデータで遊ぶ
     </button>
