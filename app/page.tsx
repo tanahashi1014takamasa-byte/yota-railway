@@ -35,6 +35,8 @@ useEffect(() => {
   if (savedData) {
     setSaveData(JSON.parse(savedData));
   }
+
+  setSaveLoaded(true);
 }, []);
 
 
@@ -58,6 +60,8 @@ useEffect(() => {
   distance: 0,
   retiredTrains: [],
 });
+
+const [saveLoaded, setSaveLoaded] = useState(false);
 
 
 
@@ -373,7 +377,7 @@ steam.play();
 </div>
 )}
 
-{scene === "save" && (
+{scene === "save" && saveLoaded && (
   <div
     style={{
       display: "flex",
