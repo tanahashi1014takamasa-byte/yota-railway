@@ -515,22 +515,6 @@ steam.play();
   }}
 />
 
-<button
-  onClick={() => {
-    alert("電車ボタン");
-  }}
-  style={{
-    position: "absolute",
-    left: "0px",
-    top: "840px",
-    width: "194px",
-    height: "420px",
-    background: "rgba(255,0,0,0.3)",
-    border: "2px solid red",
-    zIndex: 20,
-  }}
->
-</button>
 
 <img
   src="/images/save.png"
