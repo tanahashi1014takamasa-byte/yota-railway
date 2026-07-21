@@ -374,7 +374,15 @@ steam.play();
 )}
 
 {scene === "save" && (
-  <>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      minHeight: "100vh",
+    }}
+  >
     <p style={{ color: "white", fontSize: "28px" }}>
       🚃 セーブデータ
     </p>
@@ -413,7 +421,7 @@ steam.play();
     >
       このデータで遊ぶ
     </button>
-  </>
+    </div>
 )}
       {scene === "trainSelect" && (
   <>
