@@ -521,9 +521,9 @@ steam.play();
   }}
   style={{
     position: "absolute",
-    left: "28px",
-    top: "390px",
-    width: "80px",
+    left: "27px",
+    top: "395px",
+    width: "75px",
     height: "80px",
     borderRadius: "50%",
     background: "rgba(255,0,0,0.5)",
