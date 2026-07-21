@@ -446,6 +446,8 @@ steam.play();
   <div
     style={{
       position: "relative",
+      width: "100vw",
+      overflow: "hidden",
       height: "100vh",
     }}
   >
