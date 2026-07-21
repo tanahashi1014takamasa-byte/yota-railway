@@ -473,7 +473,7 @@ steam.play();
     position: "absolute",
     top: "-10px",
     right: "-10px",
-    width: "90px",
+    width: "75px",
     height: "auto",
     zIndex: 10,
   }}
