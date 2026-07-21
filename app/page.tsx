@@ -471,9 +471,9 @@ steam.play();
   alt="セーブ"
   style={{
     position: "absolute",
-    top: "5px",
-    right: "6px",
-    width: "100px",
+    top: "3px",
+    right: "4px",
+    width: "95px",
     height: "auto",
     zIndex: 10,
   }}
