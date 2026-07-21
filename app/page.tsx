@@ -455,6 +455,7 @@ steam.play();
       style={{
         height: "100vh",
         width: "auto",
+        objectFit: "cover",
         display: "block",
       }}
     />
