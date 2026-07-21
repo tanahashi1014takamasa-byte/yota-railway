@@ -525,8 +525,8 @@ steam.play();
     top: "840px",
     width: "194px",
     height: "420px",
-    background: "transparent",
-    border: "none",
+    background: "rgba(255,0,0,0.3)",
+    border: "2px solid red",
     zIndex: 20,
   }}
 >
