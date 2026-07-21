@@ -71,6 +71,12 @@ useEffect(() => {
         if (x <= LEFT_WALL) {
           return RIGHT_WALL;
         }
+
+        setSaveData((data) => ({
+  ...data,
+  distance: data.distance + 1,
+}));
+
         return x - 1;
       });
 
