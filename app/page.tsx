@@ -591,7 +591,7 @@ steam.play();
       alt="選んだ電車"
       style={{
         position: "absolute",
-        top: "33%",
+        top: "43%",
         left: "50%",
         transform: `
   translate(calc(-50% + ${trainX}px), -50%)
