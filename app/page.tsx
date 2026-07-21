@@ -255,12 +255,25 @@ const popKeyframes = `
   alt="ニューゲーム"
   width={180}
   onClick={() => {
-    setSaveData({
-      selectedTrain: "",
-      level: 1,
-      distance: 0,
-      retiredTrains: [],
-    });
+
+  const saved = localStorage.getItem("yotaRailwaySave");
+
+  if (saved) {
+    const ok = window.confirm(
+      "セーブデータがあります。\nほんとうに あたらしく はじめますか？"
+    );
+
+    if (!ok) {
+      return;
+    }
+  }
+
+  setSaveData({
+    selectedTrain: "",
+    level: 1,
+    distance: 0,
+    retiredTrains: [],
+  });
 
     setMessageIndex(0);
 const steam = new Audio("/sounds/steam_train.mp3");
