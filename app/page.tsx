@@ -533,6 +533,24 @@ steam.play();
 >
 </button>
 
+<button
+  onClick={() => {
+    alert("星ボタン");
+  }}
+  style={{
+    position: "absolute",
+    left: "120px",
+    top: "410px",
+    width: "70px",
+    height: "80px",
+    borderRadius: "50%",
+    background: "rgba(255,0,0,0.5)",
+    border: "2px solid red",
+    zIndex: 20,
+  }}
+>
+</button>
+
 <img
   src="/images/save.png"
   alt="セーブ"
