@@ -61,8 +61,8 @@ useEffect(() => {
 
 
 
-const LEFT_WALL = -120;
-const RIGHT_WALL = 120;
+const LEFT_WALL = -80;
+const RIGHT_WALL = 80;
 
 useEffect(() => {
   const timer = setInterval(() => {
