@@ -48,6 +48,8 @@ useEffect(() => {
   const [trainFlip, setTrainFlip] = useState(false);
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
+  const LEFT_WALL = -200;
+  const RIGHT_WALL = 200;
   
 
   const [saveData, setSaveData] = useState({
@@ -65,15 +67,26 @@ useEffect(() => {
     if (scene !== "frame") return;
 
     if (leverState === "left") {
-      setTrainX((x) => x - 1);
+      setTrainX((x) => {
+        if (x <= LEFT_WALL) {
+          return RIGHT_WALL;
+        }
+        return x - 1;
+      });
+
     } else if (leverState === "right") {
-      setTrainX((x) => x + 1);
+      setTrainX((x) => {
+        if (x >= RIGHT_WALL) {
+          return LEFT_WALL;
+        }
+        return x + 1;
+      });
     }
+
   }, 30);
 
   return () => clearInterval(timer);
 }, [leverState, scene]);
-
 
 const saveGame = () => {
   localStorage.setItem(
