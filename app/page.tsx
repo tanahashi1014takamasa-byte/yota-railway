@@ -447,20 +447,18 @@ steam.play();
     style={{
       position: "relative",
       width: "100vw",
-      overflow: "hidden",
-      height: "100vh",
     }}
   >
     <img
-      src="/images/frame.png"
-      alt="フレーム"
-      style={{
-        height: "100vh",
-        width: "auto",
-        objectFit: "cover",
-        display: "block",
-      }}
-    />
+  src="/images/frame.png"
+  alt="フレーム"
+  style={{
+    width: "100vw",
+    height: "100vh",
+    objectFit: "fill",
+    display: "block",
+  }}
+/>
 
      <div
   style={{
