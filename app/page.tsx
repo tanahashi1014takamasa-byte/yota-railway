@@ -127,6 +127,12 @@ const leverImage =
     ? "/images/lever_r.png"
     : "/images/lever.png";
 
+  const playLeverSound = () => {
+  const sound = new Audio("/sounds/lever.mp3");
+  sound.volume = 0.5;
+  sound.play();
+};
+
 
   const messages = [
   "こんにちは！よーたくん！",
@@ -474,6 +480,7 @@ steam.play();
     src="/images/lever_l.png"
     width={50}
    onClick={() => {
+  playLeverSound();
   setLeverState("left");
   setTrainFlip(
     saveData.selectedTrain === "よねづけんし" ? true : false
@@ -485,7 +492,10 @@ steam.play();
   <img
     src="/images/lever.png"
     width={50}
-    onClick={() => setLeverState("center")}
+    onClick={() => {
+  playLeverSound();
+  setLeverState("center");
+}}
     style={{ cursor: "pointer" }}
   />
 
@@ -493,6 +503,7 @@ steam.play();
     src="/images/lever_r.png"
     width={50}
     onClick={() => {
+  playLeverSound();
   setLeverState("right");
   setTrainFlip(
     saveData.selectedTrain === "よねづけんし" ? false : true
