@@ -46,6 +46,7 @@ useEffect(() => {
   const [trainX, setTrainX] = useState(0);
   const [trainDirection, setTrainDirection] = useState(1);
   const [trainFlip, setTrainFlip] = useState(false);
+
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
   
@@ -60,15 +61,38 @@ useEffect(() => {
 
 
 
+const LEFT_WALL = -120;
+const RIGHT_WALL = 120;
+
 useEffect(() => {
   const timer = setInterval(() => {
     if (scene !== "frame") return;
 
     if (leverState === "left") {
-      setTrainX((x) => x - 1);
+      setTrainX((x) => {
+        const next = x - 1;
+
+        if (next <= LEFT_WALL) {
+          setLeverState("center");
+          return LEFT_WALL;
+        }
+
+        return next;
+      });
+
     } else if (leverState === "right") {
-      setTrainX((x) => x + 1);
+      setTrainX((x) => {
+        const next = x + 1;
+
+        if (next >= RIGHT_WALL) {
+          setLeverState("center");
+          return RIGHT_WALL;
+        }
+
+        return next;
+      });
     }
+
   }, 30);
 
   return () => clearInterval(timer);
