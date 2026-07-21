@@ -129,7 +129,7 @@ const leverImage =
 
   const playLeverSound = () => {
   const sound = new Audio("/sounds/lever.mp3");
-  sound.volume = 0.5;
+  sound.volume = 3.0;
   sound.play();
 };
 
