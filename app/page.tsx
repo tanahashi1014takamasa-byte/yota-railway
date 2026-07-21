@@ -528,10 +528,11 @@ steam.play();
 <p
   style={{
     position: "absolute",
-    top: "70px",
+    top: "80px",
     left: "20px",
-    color: "darkgreen",
+    color: "#006400",
     fontSize: "24px",
+    fontWeight: "bold",
     zIndex: 10,
   }}
 >
