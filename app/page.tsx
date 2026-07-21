@@ -250,7 +250,7 @@ steam.volume = 0.3;
 
 steam.onended = () => {
   if (bgmRef.current) {
-    bgmRef.current.volume = 0.1;
+    bgmRef.current.volume = 0.05;;
     bgmRef.current.currentTime = 0;
     bgmRef.current.play();
   }
