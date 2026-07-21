@@ -507,13 +507,13 @@ steam.play();
       alt="選んだ電車"
       style={{
         position: "absolute",
-        top: "40%",
+        top: "30%",
         left: "50%",
         transform: `
   translate(calc(-50% + ${trainX}px), -50%)
   scaleX(${trainFlip ? -1 : 1})
 `,
-        width: "130px",
+        width: "180px",
         
       }}
     />
