@@ -109,21 +109,25 @@ const saveGame = () => {
 const trains = [
   
   {
-    name: "ハムカッパでんしゃ",
-    image: "/images/train_ver1.1.png",
-  },
+  name: "ハムカッパでんしゃ",
+  image: "/images/train_ver1.1.png",
+  offsetX: 0,
+},
   {
-    name: "しんかんせん",
-    image: "/images/train_ver2.1.png",
-  },
+  name: "しんかんせん",
+  image: "/images/train_ver2.1.png",
+  offsetX: 0,
+},
   {
-    name: "トーマス",
-    image: "/images/train_ver3.1.png",
-  },
-  {
-    name: "よねづけんし",
-    image: "/images/yonezu_1.png",
-  },
+  name: "トーマス",
+  image: "/images/train_ver3.1.png",
+  offsetX: 0,
+},
+ {
+  name: "よねづけんし",
+  image: "/images/yonezu_1.png",
+  offsetX: -10,
+},
 ];
 
 
@@ -520,7 +524,7 @@ steam.play();
         top: "40%",
         left: "50%",
         transform: `
-  translate(calc(-50% + ${trainX}px), -50%)
+  translate(calc(-50% + ${trainX + (selectedTrain?.offsetX ?? 0)}px), -50%)
   scaleX(${trainFlip ? -1 : 1})
 `,
         width: "130px",
