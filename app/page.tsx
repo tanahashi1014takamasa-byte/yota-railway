@@ -469,6 +469,7 @@ steam.play();
 <img
   src="/images/save.png"
   alt="セーブ"
+  onClick={saveGame}
   style={{
     position: "absolute",
     top: "2px",
