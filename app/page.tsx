@@ -530,7 +530,7 @@ steam.play();
     position: "absolute",
     top: "70px",
     left: "20px",
-    color: "white",
+    color: "darkgreen",
     fontSize: "24px",
     zIndex: 10,
   }}
