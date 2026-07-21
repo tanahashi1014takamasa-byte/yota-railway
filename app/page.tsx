@@ -551,7 +551,7 @@ steam.play();
 >
   <img
     src="/images/lever_l.png"
-    width={50}
+    width={80}
    onClick={() => {
   playLeverSound();
   setLeverState("left");
@@ -564,7 +564,7 @@ steam.play();
 
   <img
     src="/images/lever.png"
-    width={50}
+    width={80}
     onClick={() => {
   playLeverSound();
   setLeverState("center");
@@ -574,7 +574,7 @@ steam.play();
 
   <img
     src="/images/lever_r.png"
-    width={50}
+    width={80}
     onClick={() => {
   playLeverSound();
   setLeverState("right");
