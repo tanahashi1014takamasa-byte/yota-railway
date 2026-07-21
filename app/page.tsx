@@ -79,6 +79,12 @@ useEffect(() => {
         if (x >= RIGHT_WALL) {
           return LEFT_WALL;
         }
+
+        setSaveData((data) => ({
+  ...data,
+  distance: data.distance + 1,
+}));
+
         return x + 1;
       });
     }
@@ -485,6 +491,19 @@ steam.play();
     zIndex: 10,
   }}
 />
+
+<p
+  style={{
+    position: "absolute",
+    top: "70px",
+    left: "20px",
+    color: "white",
+    fontSize: "24px",
+    zIndex: 10,
+  }}
+>
+  走行距離：{saveData.distance}km
+</p>
 
      <div
   style={{
