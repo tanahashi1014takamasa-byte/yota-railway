@@ -89,10 +89,16 @@ useEffect(() => {
 }, [leverState, scene]);
 
 const saveGame = () => {
+
+  const sound = new Audio("/sounds/save.mp3");
+  sound.volume = 0.5;
+  sound.play();
+
   localStorage.setItem(
     "yotaRailwaySave",
     JSON.stringify(saveData)
   );
+
 };
 
 const trains = [
