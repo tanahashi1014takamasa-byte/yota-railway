@@ -197,9 +197,9 @@ const popKeyframes = `
   }}
   style={{
     position: "fixed",
-    top: "20px",
+    top: "5px",
     left: "20px",
-    fontSize: "60px",
+    fontSize: "30px",
     color: "white",
     background: "transparent",
     border: "none",
@@ -384,7 +384,7 @@ steam.play();
         const steam = new Audio("/sounds/steam_train.mp3");
         steam.volume = 0.3;
         steam.play();
-        setScene("running");
+        setScene("frame");
       }}
       style={{
         fontSize: "20px",
