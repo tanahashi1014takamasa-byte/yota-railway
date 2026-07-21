@@ -466,6 +466,19 @@ steam.play();
   }}
 />
 
+<img
+  src="/images/save.png"
+  alt="セーブ"
+  style={{
+    position: "absolute",
+    top: "20px",
+    right: "20px",
+    width: "80px",
+    height: "auto",
+    zIndex: 10,
+  }}
+/>
+
      <div
   style={{
     position: "absolute",
