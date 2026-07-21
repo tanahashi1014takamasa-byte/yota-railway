@@ -46,7 +46,6 @@ useEffect(() => {
   const [trainX, setTrainX] = useState(0);
   const [trainDirection, setTrainDirection] = useState(1);
   const [trainFlip, setTrainFlip] = useState(false);
-
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
   
@@ -61,38 +60,15 @@ useEffect(() => {
 
 
 
-const LEFT_WALL = -60;
-const RIGHT_WALL = 60;
-
 useEffect(() => {
   const timer = setInterval(() => {
     if (scene !== "frame") return;
 
     if (leverState === "left") {
-      setTrainX((x) => {
-        const next = x - 1;
-
-        if (next <= LEFT_WALL) {
-          setLeverState("center");
-          return LEFT_WALL;
-        }
-
-        return next;
-      });
-
+      setTrainX((x) => x - 1);
     } else if (leverState === "right") {
-      setTrainX((x) => {
-        const next = x + 1;
-
-        if (next >= RIGHT_WALL) {
-          setLeverState("center");
-          return RIGHT_WALL;
-        }
-
-        return next;
-      });
+      setTrainX((x) => x + 1);
     }
-
   }, 30);
 
   return () => clearInterval(timer);
@@ -109,26 +85,21 @@ const saveGame = () => {
 const trains = [
   
   {
-  name: "ハムカッパでんしゃ",
-  image: "/images/train_ver1.1.png",
-  offsetX: 0,
-},
+    name: "ハムカッパでんしゃ",
+    image: "/images/train_ver1.1.png",
+  },
   {
-  name: "しんかんせん",
-  image: "/images/train_ver2.1.png",
-  offsetX: 0,
-},
+    name: "しんかんせん",
+    image: "/images/train_ver2.1.png",
+  },
   {
-  name: "トーマス",
-  image: "/images/train_ver3.1.png",
-  offsetX: 0,
-},
- {
-  name: "よねづけんし",
-  image: "/images/yonezu_1.png",
-  leftOffset: 6,
-  rightOffset: 3,
-},
+    name: "トーマス",
+    image: "/images/train_ver3.1.png",
+  },
+  {
+    name: "よねづけんし",
+    image: "/images/yonezu_1.png",
+  },
 ];
 
 
@@ -525,7 +496,7 @@ steam.play();
         top: "40%",
         left: "50%",
         transform: `
-  translate(calc(-50% + ${trainX - (selectedTrain?.leftOffset ?? 0) + (selectedTrain?.rightOffset ?? 0)}px), -50%)
+  translate(calc(-50% + ${trainX}px), -50%)
   scaleX(${trainFlip ? -1 : 1})
 `,
         width: "130px",
