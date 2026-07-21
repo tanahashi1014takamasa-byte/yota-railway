@@ -580,8 +580,8 @@ steam.play();
     width: "70px",
     height: "80px",
     borderRadius: "50%",
-    background: "rgba(255,0,0,0.5)",
-    border: "2px solid red",
+    background: "transparent",
+    border: "none",
     zIndex: 20,
   }}
 >
