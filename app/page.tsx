@@ -463,7 +463,7 @@ steam.play();
     </p>
 
     <p style={{ color: "white", fontSize: "22px" }}>
-      でんしゃ：
+      のりもの：
       {saveData.selectedTrain || "なし"}
     </p>
 
@@ -861,12 +861,14 @@ steam.play();
 
       <button
         onClick={() => {
-          setShopIndex(
-            shopIndex === 0
-            ? shopVehicles.length - 1
-            : shopIndex - 1
-          );
-        }}
+  const prevIndex =
+    shopIndex === 0
+      ? shopVehicles.length - 1
+      : shopIndex - 1;
+
+  setShopIndex(prevIndex);
+  setVehicleDescription(shopVehicles[prevIndex].description);
+}}
       >
         ◀
       </button>
@@ -885,12 +887,14 @@ steam.play();
 
       <button
         onClick={() => {
-          setShopIndex(
-            shopIndex === shopVehicles.length - 1
-            ? 0
-            : shopIndex + 1
-          );
-        }}
+  const nextIndex =
+    shopIndex === shopVehicles.length - 1
+      ? 0
+      : shopIndex + 1;
+
+  setShopIndex(nextIndex);
+  setVehicleDescription(shopVehicles[nextIndex].description);
+}}
       >
         ▶
       </button>
