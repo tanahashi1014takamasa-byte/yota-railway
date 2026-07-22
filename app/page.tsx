@@ -833,31 +833,21 @@ steam.play();
         display:"flex",
         alignItems:"center",
         gap:"30px",
-        marginTop:"30px",
+        marginTop:"20px",
       }}
     >
 
-     <button
-  onClick={() => {
-    setShopIndex(
-      shopIndex === 0
-      ? shopVehicles.length - 1
-      : shopIndex - 1
-    );
-  }}
-  style={{
-    fontSize:"40px",
-    color:"white",
-    background:"black",
-    border:"3px solid white",
-    borderRadius:"50%",
-    width:"60px",
-    height:"60px",
-    cursor:"pointer",
-  }}
->
-  ◀
-</button>
+      <button
+        onClick={() => {
+          setShopIndex(
+            shopIndex === 0
+            ? shopVehicles.length - 1
+            : shopIndex - 1
+          );
+        }}
+      >
+        ◀
+      </button>
 
 
       <img
@@ -868,26 +858,16 @@ steam.play();
 
 
       <button
-  onClick={() => {
-    setShopIndex(
-      shopIndex === 0
-      ? shopVehicles.length - 1
-      : shopIndex - 1
-    );
-  }}
-  style={{
-    fontSize:"40px",
-    color:"white",
-    background:"black",
-    border:"3px solid white",
-    borderRadius:"50%",
-    width:"60px",
-    height:"60px",
-    cursor:"pointer",
-  }}
->
-  ▶
-</button>
+        onClick={() => {
+          setShopIndex(
+            shopIndex === shopVehicles.length - 1
+            ? 0
+            : shopIndex + 1
+          );
+        }}
+      >
+        ▶
+      </button>
 
     </div>
 
