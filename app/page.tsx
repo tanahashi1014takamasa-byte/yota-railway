@@ -274,7 +274,7 @@ const popKeyframes = `
 
     <audio
   ref={customShopBgmRef}
-  src="/sounds/Back To The Future.mp3"
+  src="/sounds/BackToTheFuture.mp3"
   loop
   preload="auto"
 />
@@ -418,9 +418,11 @@ steam.play();
   alt="カスタムショップ"
   width={180}
   onClick={() => {
-  setScene("customShop");
   bgmRef.current?.pause();
+
   customShopBgmRef.current?.play();
+
+  setScene("customShop");
 }}
   style={{
     cursor: "pointer",
