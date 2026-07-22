@@ -862,10 +862,14 @@ steam.play();
 
 
       <img
-        src={currentVehicle.image}
-        alt={currentVehicle.name}
-        width={250}
-      />
+  src={currentVehicle.image}
+  alt={currentVehicle.name}
+  width={250}
+  onClick={() => {
+    alert(currentVehicle.name);
+  }}
+  style={{ cursor: "pointer" }}
+/>
 
 
       <button
