@@ -810,7 +810,7 @@ steam.play();
   }}
   style={{
     color: "white",
-    fontSize: "16px",
+    fontSize: "14px",
     border: "3px solid white",
     borderRadius: "15px",
     padding: "10px",
