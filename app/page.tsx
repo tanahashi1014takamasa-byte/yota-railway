@@ -799,6 +799,8 @@ steam.play();
     marginLeft: "15px",
     position: "relative",
     cursor: "pointer",
+    width: "220px",
+    height: "90px",
   }}
 >
   {doctorMessages[doctorPage].map((text, index) => (
