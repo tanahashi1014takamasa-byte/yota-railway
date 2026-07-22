@@ -822,9 +822,9 @@ steam.play();
   }}
 >
   {vehicleDescription ? (
-  <div>
-    {vehicleDescription}
-  </div>
+  <div style={{ whiteSpace: "pre-line" }}>
+  {vehicleDescription}
+</div>
 ) : (
   doctorMessages[doctorPage].map((text, index) => (
     <div key={index}>
