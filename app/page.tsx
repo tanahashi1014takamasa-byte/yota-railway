@@ -161,7 +161,7 @@ const shopVehicles = [
   {
     name: "GSE 70000形ロマンスカー",
     image: "/images/GSE_70000形_ロマンスカー.png",
-    description: "ここにGSEの説明",
+    description: "これは GSE（ジーエスイー）！\nオレンジいろの かっこいい ロマンスカーだよ。\nおおきな まどから けしきを ながめながら、\nすてきな たびに つれていってくれる でんしゃだよ。",
   },
   {
     name: "江ノ電",
