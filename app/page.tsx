@@ -156,7 +156,7 @@ const shopVehicles = [
   {
   name: "D51-498",
   image: "/images/D51-498蒸気機関車.png",
-  description: "D51-498蒸気機関車は、むかし たくさんの ひとや\nにもつを はこんだ じょうききかんしゃだよ！\nくろい からだと おおきな けむりが\nかっこいい きかんしゃだね！"
+  description: "D51-498蒸気機関車！！\nむかし たくさんの ひとや\nにもつを はこんだ じょうききかんしゃだよ！\nくろい からだと \nおおきな けむりが\nかっこいい きかんしゃだね！"
 },
   {
   name: "GAL",
@@ -177,6 +177,11 @@ const shopVehicles = [
     name: "江ノ電（2両編成）",
     image: "/images/enodenniki.png",
     description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！"
+  },
+  {
+    name: "メタスラ",
+    image: "/images/メタスラ.png",
+    description: "これは メタルスラッグという\nゲームにでてくるメカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
   },
 ];
 
