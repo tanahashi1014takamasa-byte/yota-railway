@@ -156,7 +156,7 @@ const shopVehicles = [
   {
   name: "GAL",
   image: "/images/gal.png",
-  description: "これはギャルのでんしゃ ギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
+  description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
 },
   {
     name: "GSE 70000形ロマンスカー",
