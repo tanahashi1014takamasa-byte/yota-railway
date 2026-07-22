@@ -51,6 +51,17 @@ useEffect(() => {
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
   const [doctorPage, setDoctorPage] = useState(0);
+  const [doctorTalking, setDoctorTalking] = useState(false);
+  useEffect(() => {
+  setDoctorTalking(true);
+
+  const timer = setInterval(() => {
+    setDoctorTalking((talking) => !talking);
+  }, 200);
+
+  return () => clearInterval(timer);
+}, [doctorPage]);
+
   const LEFT_WALL = -200;
   const RIGHT_WALL = 200;
   const [shopIndex, setShopIndex] = useState(0);
@@ -781,10 +792,10 @@ steam.play();
     >
 
       <img
-        src="/images/doc1.png"
-        alt="博士"
-        width={100}
-      />
+        src={doctorTalking ? "/images/doc2.png" : "/images/doc1.png"}
+          alt="博士"
+          width={100}
+/>
 
       <div
   onClick={() => {
