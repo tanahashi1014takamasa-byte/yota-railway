@@ -715,29 +715,41 @@ steam.play();
         fontSize: "30px",
       }}
     >
-      🛠️ 博士の研究ショップ
+      カスタムショップ
     </p>
+
+    <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    position: "absolute",
+    left: "20px",
+    bottom: "100px",
+  }}
+></div>
 
     <img
       src="/images/doc1.png"
       alt="博士"
-      width={180}
+      width={100}
     />
 
-    <p
-      style={{
-        color: "white",
-        fontSize: "24px",
-        border: "3px solid white",
-        borderRadius: "15px",
-        padding: "15px",
-      }}
-    >
+   <p
+  style={{
+    color: "white",
+    fontSize: "20px",
+    border: "3px solid white",
+    borderRadius: "15px",
+    padding: "15px",
+    marginLeft: "15px",
+  }}
+>
       おつで〜す<br />
       ハカセだにょーん<br />
       よーたくん げんきかなー？<br />
-      まあ げんきじゃなくてもタイヨーは<br />
-      のぼるしまたしずむけどね<br />
+      まあ げんきじゃなくても<br />
+      タイヨーはのぼるし<br />
+      またしずむけどね<br />
     </p>
 
   </div>
