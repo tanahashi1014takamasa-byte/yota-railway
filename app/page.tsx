@@ -395,8 +395,9 @@ steam.play();
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      justifyContent: "center",
+      justifyContent: "flex-start",
       minHeight: "100vh",
+      paddingTop: "50px",
     }}
   >
     <p style={{ color: "white", fontSize: "28px" }}>
@@ -710,13 +711,17 @@ steam.play();
   >
 
     <p
-      style={{
-        color: "white",
-        fontSize: "30px",
-      }}
-    >
-      カスタムショップ
-    </p>
+  style={{
+    color: "white",
+    fontSize: "30px",
+    border: "3px solid white",
+    borderRadius: "15px",
+    padding: "10px 30px",
+    background: "black",
+  }}
+>
+  カスタムショップ
+</p>
 
     <div
       style={{
@@ -724,7 +729,7 @@ steam.play();
         alignItems: "center",
         position: "absolute",
         left: "20px",
-        bottom: "100px",
+        bottom: "30px",
       }}
     >
 
@@ -737,10 +742,10 @@ steam.play();
       <p
         style={{
           color: "white",
-          fontSize: "20px",
+          fontSize: "16px",
           border: "3px solid white",
           borderRadius: "15px",
-          padding: "15px",
+          padding: "10px",
           marginLeft: "15px",
         }}
       >
