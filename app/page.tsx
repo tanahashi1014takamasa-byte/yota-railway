@@ -910,7 +910,7 @@ steam.play();
     fontSize: "50px",
     padding: 0,
     cursor: "pointer",
-    transform: "translateX(-20px)",
+    transform: "translateX(-35px)",
   }}
 >
   ▷
