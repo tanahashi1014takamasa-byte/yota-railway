@@ -328,6 +328,15 @@ steam.play();
   }}
 />
 
+<img
+  src="/images/customshop.png"
+  alt="カスタムショップ"
+  width={180}
+  style={{
+    cursor: "pointer",
+    marginTop: "10px",
+  }}
+/>
 
   </>
 )}
