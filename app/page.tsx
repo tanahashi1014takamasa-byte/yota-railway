@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 export default function Home() {
 
   const bgmRef = useRef<HTMLAudioElement | null>(null);
+  const customShopBgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
   const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
 
@@ -40,11 +41,27 @@ useEffect(() => {
 }, []);
 
 
+ 
+
 
 
 
 
   const [scene, setScene] = useState("opening");
+
+  useEffect(() => {
+  if (scene === "customShop") {
+    bgmRef.current?.pause();
+    customShopBgmRef.current?.play();
+  } else {
+    customShopBgmRef.current?.pause();
+
+    if (scene === "opening") {
+      bgmRef.current?.play();
+    }
+  }
+}, [scene]);
+
   const [trainX, setTrainX] = useState(0);
   const [trainDirection, setTrainDirection] = useState(1);
   const [trainFlip, setTrainFlip] = useState(false);
@@ -265,6 +282,13 @@ const popKeyframes = `
     <audio
   ref={bgmRef}
   src="/sounds/bgm_op_ver1.mp3"
+  loop
+  preload="auto"
+/>
+
+<audio
+  ref={customShopBgmRef}
+  src="/sounds/Back To The Future.mp3"
   loop
   preload="auto"
 />
