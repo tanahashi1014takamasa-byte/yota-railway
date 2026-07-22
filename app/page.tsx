@@ -717,11 +717,12 @@ steam.play();
     left: "50%",
     transform: "translateX(-50%)",
     color: "white",
-    fontSize: "30px",
+    fontSize: "28px",
     border: "3px solid white",
     borderRadius: "15px",
     padding: "10px 30px",
     background: "black",
+    whiteSpace: "nowrap",
   }}
 >
   カスタムショップ
