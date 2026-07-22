@@ -719,38 +719,40 @@ steam.play();
     </p>
 
     <div
-  style={{
-    display: "flex",
-    alignItems: "center",
-    position: "absolute",
-    left: "20px",
-    bottom: "100px",
-  }}
-></div>
+      style={{
+        display: "flex",
+        alignItems: "center",
+        position: "absolute",
+        left: "20px",
+        bottom: "100px",
+      }}
+    >
 
-    <img
-      src="/images/doc1.png"
-      alt="博士"
-      width={100}
-    />
+      <img
+        src="/images/doc1.png"
+        alt="博士"
+        width={100}
+      />
 
-   <p
-  style={{
-    color: "white",
-    fontSize: "20px",
-    border: "3px solid white",
-    borderRadius: "15px",
-    padding: "15px",
-    marginLeft: "15px",
-  }}
->
-      おつで〜す<br />
-      ハカセだにょーん<br />
-      よーたくん げんきかなー？<br />
-      まあ げんきじゃなくても<br />
-      タイヨーはのぼるし<br />
-      またしずむけどね<br />
-    </p>
+      <p
+        style={{
+          color: "white",
+          fontSize: "20px",
+          border: "3px solid white",
+          borderRadius: "15px",
+          padding: "15px",
+          marginLeft: "15px",
+        }}
+      >
+        おつで〜す<br />
+        ハカセだにょーん<br />
+        よーたくん げんきかなー？<br />
+        まあ げんきじゃなくても<br />
+        タイヨーはのぼるし<br />
+        またしずむけどね<br />
+      </p>
+
+    </div>
 
   </div>
 )}
