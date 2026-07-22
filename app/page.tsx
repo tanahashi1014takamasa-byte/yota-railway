@@ -678,8 +678,9 @@ steam.play();
   );
 
   if (ok) {
-    setScene("opening");
-  }
+  bgmRef.current?.pause();
+  setScene("opening");
+}
 }}
   style={{
     position: "absolute",
