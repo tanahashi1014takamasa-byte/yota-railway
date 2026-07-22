@@ -833,7 +833,7 @@ steam.play();
         display:"flex",
         alignItems:"center",
         gap:"30px",
-        marginTop:"20px",
+        marginTop:"10px",
       }}
     >
 
