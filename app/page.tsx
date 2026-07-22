@@ -571,8 +571,10 @@ steam.play();
 
 <button
   onClick={() => {
-    alert("ホームボタン");
-  }}
+  setTrainX(0);
+  setLeverState("center");
+  setScene("opening");
+}}
   style={{
     position: "absolute",
     left: "278px",
