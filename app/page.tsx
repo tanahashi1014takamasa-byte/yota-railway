@@ -860,18 +860,26 @@ steam.play();
     >
 
       <button
-        onClick={() => {
-  const prevIndex =
-    shopIndex === 0
-      ? shopVehicles.length - 1
-      : shopIndex - 1;
+  onClick={() => {
+    const prevIndex =
+      shopIndex === 0
+        ? shopVehicles.length - 1
+        : shopIndex - 1;
 
-  setShopIndex(prevIndex);
-  setVehicleDescription(shopVehicles[prevIndex].description);
-}}
-      >
-        ◀
-      </button>
+    setShopIndex(prevIndex);
+    setVehicleDescription(shopVehicles[prevIndex].description);
+  }}
+  style={{
+    background: "transparent",
+    border: "none",
+    color: "white",
+    fontSize: "50px",
+    padding: 0,
+    cursor: "pointer",
+  }}
+>
+  ◁
+</button>
 
 
       <img
@@ -886,18 +894,26 @@ steam.play();
 
 
       <button
-        onClick={() => {
-  const nextIndex =
-    shopIndex === shopVehicles.length - 1
-      ? 0
-      : shopIndex + 1;
+  onClick={() => {
+    const nextIndex =
+      shopIndex === shopVehicles.length - 1
+        ? 0
+        : shopIndex + 1;
 
-  setShopIndex(nextIndex);
-  setVehicleDescription(shopVehicles[nextIndex].description);
-}}
-      >
-        ▶
-      </button>
+    setShopIndex(nextIndex);
+    setVehicleDescription(shopVehicles[nextIndex].description);
+  }}
+  style={{
+    background: "transparent",
+    border: "none",
+    color: "white",
+    fontSize: "50px",
+    padding: 0,
+    cursor: "pointer",
+  }}
+>
+  ▷
+</button>
 
     </div>
 
