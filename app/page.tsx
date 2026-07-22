@@ -180,7 +180,7 @@ const shopVehicles = [
   },
   {
     name: "メタスラ",
-    image: "/images/メタスラ.png",
+    image: "/images/メタスラ.gif",
     description: "これは メタルスラッグという\nゲームにでてくるメカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
   },
 ];
