@@ -699,11 +699,48 @@ steam.play();
 )}
 
 {scene === "customShop" && (
-  <>
-    <p style={{ color: "white", fontSize: "30px" }}>
-      CUSTOM SHOP
+  <div
+    style={{
+      minHeight: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+
+    <p
+      style={{
+        color: "white",
+        fontSize: "30px",
+      }}
+    >
+      🛠️ 博士の研究ショップ
     </p>
-  </>
+
+    <img
+      src="/images/doc1.png"
+      alt="博士"
+      width={180}
+    />
+
+    <p
+      style={{
+        color: "white",
+        fontSize: "24px",
+        border: "3px solid white",
+        borderRadius: "15px",
+        padding: "15px",
+      }}
+    >
+      おつで〜す<br />
+      ハカセだにょーん<br />
+      よーたくん げんきかなー？<br />
+      まあ げんきじゃなくてもタイヨーは<br />
+      のぼるしまたしずむけどね<br />
+    </p>
+
+  </div>
 )}
 
       {scene === "running" && (
