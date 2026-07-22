@@ -889,7 +889,10 @@ steam.play();
   onClick={() => {
   setVehicleDescription(currentVehicle.description);
 }}
-  style={{ cursor: "pointer" }}
+  style={{
+  cursor: "pointer",
+  transform: "translateX(-20px)",
+}}
 />
 
 
