@@ -154,6 +154,11 @@ const trains = [
 
 const shopVehicles = [
   {
+  name: "D51-498",
+  image: "/images/D51-498蒸気機関車.png",
+  description: "D51-498蒸気機関車は、むかし たくさんの ひとや\nにもつを はこんだ じょうききかんしゃだよ！\nくろい からだと おおきな けむりが\nかっこいい きかんしゃだね！"
+},
+  {
   name: "GAL",
   image: "/images/gal.png",
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
