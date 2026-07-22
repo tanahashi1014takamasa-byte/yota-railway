@@ -821,13 +821,13 @@ steam.play();
     minHeight: "90px",
   }}
 >
-  {vehicleDescription ? (
+ {vehicleDescription ? (
   <div style={{ whiteSpace: "pre-line" }}>
-  {vehicleDescription}
-</div>
+    {vehicleDescription}
+  </div>
 ) : (
   doctorMessages[doctorPage].map((text, index) => (
-    <div key={index}>
+    <div key={index} style={{ whiteSpace: "pre-line" }}>
       {text}
     </div>
   ))
