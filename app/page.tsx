@@ -571,9 +571,13 @@ steam.play();
 
 <button
   onClick={() => {
-  setTrainX(0);
-  setLeverState("center");
-  setScene("opening");
+  const ok = window.confirm(
+    "ほんとうに ホームに もどりますか？"
+  );
+
+  if (ok) {
+    setScene("opening");
+  }
 }}
   style={{
     position: "absolute",
