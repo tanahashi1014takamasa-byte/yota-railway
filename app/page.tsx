@@ -332,6 +332,9 @@ steam.play();
   src="/images/customshop.png"
   alt="カスタムショップ"
   width={180}
+  onClick={() => {
+  setScene("customShop");
+}}
   style={{
     cursor: "pointer",
     marginTop: "10px",
@@ -693,6 +696,14 @@ steam.play();
       }}
     />
   </div>
+)}
+
+{scene === "customShop" && (
+  <>
+    <p style={{ color: "white", fontSize: "30px" }}>
+      CUSTOM SHOP
+    </p>
+  </>
 )}
 
       {scene === "running" && (
