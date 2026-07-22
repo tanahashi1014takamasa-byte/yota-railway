@@ -710,8 +710,12 @@ steam.play();
     }}
   >
 
-    <p
+   <p
   style={{
+    position: "absolute",
+    top: "30px",
+    left: "50%",
+    transform: "translateX(-50%)",
     color: "white",
     fontSize: "30px",
     border: "3px solid white",
