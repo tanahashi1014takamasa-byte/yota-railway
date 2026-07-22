@@ -48,20 +48,6 @@ useEffect(() => {
 
 
   const [scene, setScene] = useState("opening");
-
-  useEffect(() => {
-  if (scene === "customShop") {
-    bgmRef.current?.pause();
-    customShopBgmRef.current?.play();
-  } else {
-    customShopBgmRef.current?.pause();
-
-    if (scene === "opening") {
-      bgmRef.current?.play();
-    }
-  }
-}, [scene]);
-
   const [trainX, setTrainX] = useState(0);
   const [trainDirection, setTrainDirection] = useState(1);
   const [trainFlip, setTrainFlip] = useState(false);
@@ -286,12 +272,13 @@ const popKeyframes = `
   preload="auto"
 />
 
-<audio
+    <audio
   ref={customShopBgmRef}
   src="/sounds/Back To The Future.mp3"
   loop
   preload="auto"
 />
+
 
 <button
   onClick={() => {
@@ -431,6 +418,8 @@ steam.play();
   alt="カスタムショップ"
   width={180}
   onClick={() => {
+  bgmRef.current?.pause();
+  customShopBgmRef.current?.play();
   setScene("customShop");
 }}
   style={{
