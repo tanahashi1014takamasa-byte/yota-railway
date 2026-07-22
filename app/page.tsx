@@ -800,7 +800,7 @@ steam.play();
     position: "relative",
     cursor: "pointer",
     width: "220px",
-    height: "90px",
+    minHeight: "90px",
   }}
 >
   {doctorMessages[doctorPage].map((text, index) => (
