@@ -183,7 +183,13 @@ const shopVehicles = [
     image: "/images/メタスラ.gif",
     description: "これは メタルスラッグという\nゲームにでてくるメカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
   },
+  {
+    name: "メタスラ2",
+    image: "/images/メタスラ2.gif",
+    description: "これは メタルスラッグという\nゲームにでてくるメカだ\nのってるのはマルコだ！！",
+  },
 ];
+
 
 const currentVehicle = shopVehicles[shopIndex];
 
