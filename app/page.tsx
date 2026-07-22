@@ -53,6 +53,7 @@ useEffect(() => {
   const [doctorPage, setDoctorPage] = useState(0);
   const LEFT_WALL = -200;
   const RIGHT_WALL = 200;
+  const [shopIndex, setShopIndex] = useState(0);
   
 
   const [saveData, setSaveData] = useState({
@@ -158,6 +159,7 @@ const shopVehicles = [
   },
 ];
 
+const currentVehicle = shopVehicles[shopIndex];
 
 const selectedTrain = trains.find(
   (train) => train.name === saveData.selectedTrain
@@ -822,6 +824,50 @@ steam.play();
     </div>
   )}
 </div>
+
+    </div>
+
+
+    <div
+      style={{
+        display:"flex",
+        alignItems:"center",
+        gap:"30px",
+        marginTop:"40px",
+      }}
+    >
+
+      <button
+        onClick={() => {
+          setShopIndex(
+            shopIndex === 0
+            ? shopVehicles.length - 1
+            : shopIndex - 1
+          );
+        }}
+      >
+        ◀
+      </button>
+
+
+      <img
+        src={currentVehicle.image}
+        alt={currentVehicle.name}
+        width={250}
+      />
+
+
+      <button
+        onClick={() => {
+          setShopIndex(
+            shopIndex === shopVehicles.length - 1
+            ? 0
+            : shopIndex + 1
+          );
+        }}
+      >
+        ▶
+      </button>
 
     </div>
 
