@@ -800,23 +800,18 @@ steam.play();
     }}
   >
 
-   <p
+  <img
+  src="/images/CS.png"
+  alt="カスタムショップ"
   style={{
     position: "absolute",
     top: "30px",
     left: "50%",
     transform: "translateX(-50%)",
-    color: "white",
-    fontSize: "28px",
-    border: "3px solid white",
-    borderRadius: "15px",
-    padding: "10px 30px",
-    background: "black",
-    whiteSpace: "nowrap",
+    width: "280px", // 好みで調整
+    height: "auto",
   }}
->
-  カスタムショップ
-</p>
+/>
 
     <div
       style={{
