@@ -50,6 +50,7 @@ useEffect(() => {
   const [trainFlip, setTrainFlip] = useState(false);
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
+  const [doctorPage, setDoctorPage] = useState(0);
   const LEFT_WALL = -200;
   const RIGHT_WALL = 200;
   
@@ -138,6 +139,26 @@ const trains = [
 ];
 
 
+const shopVehicles = [
+  {
+    name: "GAL",
+    image: "/images/gal.png",
+  },
+  {
+    name: "GSE 70000形ロマンスカー",
+    image: "/images/GSE_70000形_ロマンスカー.png",
+  },
+  {
+    name: "江ノ電",
+    image: "/images/enoden.png",
+  },
+  {
+    name: "江ノ電（2両編成）",
+    image: "/images/enodenniki.png",
+  },
+];
+
+
 const selectedTrain = trains.find(
   (train) => train.name === saveData.selectedTrain
 );
@@ -160,6 +181,25 @@ const leverImage =
   "こんにちは！よーたくん！",
   "いっしょに あそぼう～！",
   "すきな のりものを えらんでね！",
+];
+
+const doctorMessages = [
+  [
+    "おつで〜す",
+    "ハカセだにょーん",
+    "よーたくん げんきかなー？",
+  ],
+  [
+    "まあ げんきじゃなくても",
+    "タイヨーは のぼるし",
+    "また しずむけどね",
+  ],
+  [
+    "それはさておき…",
+  ],
+  [
+    "カスタムショップへ ようこそ！",
+  ],
 ];
 
 const trainPopStyle = {
@@ -744,23 +784,42 @@ steam.play();
         width={100}
       />
 
-      <p
-        style={{
-          color: "white",
-          fontSize: "16px",
-          border: "3px solid white",
-          borderRadius: "15px",
-          padding: "10px",
-          marginLeft: "15px",
-        }}
-      >
-        おつで〜す<br />
-        ハカセだにょーん<br />
-        よーたくん げんきかなー？<br />
-        まあ げんきじゃなくても<br />
-        タイヨーはのぼるし<br />
-        またしずむけどね<br />
-      </p>
+      <div
+  onClick={() => {
+    if (doctorPage < doctorMessages.length - 1) {
+      setDoctorPage(doctorPage + 1);
+    }
+  }}
+  style={{
+    color: "white",
+    fontSize: "16px",
+    border: "3px solid white",
+    borderRadius: "15px",
+    padding: "10px",
+    marginLeft: "15px",
+    position: "relative",
+    cursor: "pointer",
+  }}
+>
+  {doctorMessages[doctorPage].map((text, index) => (
+    <div key={index}>
+      {text}
+    </div>
+  ))}
+
+  {doctorPage < doctorMessages.length - 1 && (
+    <div
+      style={{
+        position: "absolute",
+        right: "8px",
+        bottom: "3px",
+        fontSize: "20px",
+      }}
+    >
+      ▽
+    </div>
+  )}
+</div>
 
     </div>
 
