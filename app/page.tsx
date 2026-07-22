@@ -418,9 +418,9 @@ steam.play();
   alt="カスタムショップ"
   width={180}
   onClick={() => {
+  setScene("customShop");
   bgmRef.current?.pause();
   customShopBgmRef.current?.play();
-  setScene("customShop");
 }}
   style={{
     cursor: "pointer",
