@@ -51,6 +51,7 @@ useEffect(() => {
   const [messageIndex, setMessageIndex] = useState(0);
   const [showTrains, setShowTrains] = useState(false);
   const [doctorPage, setDoctorPage] = useState(0);
+  const [vehicleDescription, setVehicleDescription] = useState("");
   const [doctorTalking, setDoctorTalking] = useState(false);
   useEffect(() => {
   setDoctorTalking(true);
@@ -153,20 +154,24 @@ const trains = [
 
 const shopVehicles = [
   {
-    name: "GAL",
-    image: "/images/gal.png",
-  },
+  name: "GAL",
+  image: "/images/gal.png",
+  description: "これはギャルのでんしゃ ギャルでん 季節や気圧にやられる～♪うちらまだまだかわいい～♪",
+},
   {
     name: "GSE 70000形ロマンスカー",
     image: "/images/GSE_70000形_ロマンスカー.png",
+    description: "ここにGSEの説明",
   },
   {
     name: "江ノ電",
     image: "/images/enoden.png",
+    description: "ここに江ノ電の説明",
   },
   {
     name: "江ノ電（2両編成）",
     image: "/images/enodenniki.png",
+    description: "ここに江ノ電2両編成の説明",
   },
 ];
 
@@ -816,11 +821,17 @@ steam.play();
     minHeight: "90px",
   }}
 >
-  {doctorMessages[doctorPage].map((text, index) => (
+  {vehicleDescription ? (
+  <div>
+    {vehicleDescription}
+  </div>
+) : (
+  doctorMessages[doctorPage].map((text, index) => (
     <div key={index}>
       {text}
     </div>
-  ))}
+  ))
+)}
 
   {doctorPage < doctorMessages.length - 1 && (
     <div
@@ -866,8 +877,8 @@ steam.play();
   alt={currentVehicle.name}
   width={250}
   onClick={() => {
-    alert(currentVehicle.name);
-  }}
+  setVehicleDescription(currentVehicle.description);
+}}
   style={{ cursor: "pointer" }}
 />
 
