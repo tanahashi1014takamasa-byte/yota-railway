@@ -998,17 +998,6 @@ steam.play();
     </div>
   )}
 </div>
-<p
-  style={{
-    color: "white",
-    fontSize: "18px",
-    marginTop: "10px",
-    marginLeft: "115px",
-    textAlign: "center",
-  }}
->
-  ※ほしい のりもの の なまえを タップしてね！
-</p>
 
     </div>
 
