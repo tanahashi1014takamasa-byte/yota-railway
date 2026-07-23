@@ -822,7 +822,7 @@ steam.play();
   }}
   style={{
     position: "absolute",
-    top: "95px",
+    top: "75px",
     left: "50%",
     transform: "translateX(-50%)",
     width: "170px",
