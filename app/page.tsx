@@ -197,13 +197,13 @@ const shopVehicles = [
   {
     name: "メタスラ",
     image: "/images/メタスラ.gif",
-    description: "これは メタルスラッグという\nゲームにでてくるメカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
+    description: "これは…\nめっさカックィー メカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
     price : 100,
   },
   {
     name: "メタスラ2",
     image: "/images/メタスラ2.gif",
-    description: "これは メタルスラッグという\nゲームにでてくるメカだ\nのってるのはマルコだ！！",
+    description: "これは…\nあれだ…すげーメカだ\nうん…\nのってるのはマルコだ！！",
     price : 100,
   },
   {
@@ -221,7 +221,7 @@ const shopVehicles = [
    {
     name: "キッチンカー（ケバブ）",
     image: "/images/ケバブ.png",
-    description: "かまた駅のケバブは\nめっさ肉大盛り\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイストだにょん\n",
+    description: "かまた駅のケバブは\nめっさ にく おおもり\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイストだにょん\n",
     price : 100,
   },
    {
@@ -234,13 +234,13 @@ const shopVehicles = [
 {
     name: "アイシールド21",
     image: "/images/アイシールド21.gif",
-    description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ英雄だった\nホームやかいだんは\nはしらないでね！",
+    description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ\n英雄だった\nホームやかいだんは\nはしらないでね！",
     price : 100,
   },
 {
   name: "清掃台車ニキ",
   image: "/images/清掃台車ニキ.png",
-  description: "だいしゃはりょうて で おそうね！",
+  description: "だいしゃ はりょうて で おそうね！",
   price : 100,
 },
 {
