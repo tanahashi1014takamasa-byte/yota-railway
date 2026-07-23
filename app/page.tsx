@@ -167,62 +167,52 @@ const shopVehicles = [
   {
   name: "D51-498",
   image: "/images/D51-498蒸気機関車.png",
-  description: "D51-498蒸気機関車！！\nむかし たくさんの ひとや\nにもつを はこんだ じょうききかんしゃだよ！\nくろい からだと \nおおきな けむりが\nかっこいい きかんしゃだね！",
-  price: 100,
+  description: "D51-498蒸気機関車！！\nむかし たくさんの ひとや\nにもつを はこんだ じょうききかんしゃだよ！\nくろい からだと \nおおきな けむりが\nかっこいい きかんしゃだね！"
 },
   {
   name: "GAL",
   image: "/images/gal.png",
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
-  price: 100,
 },
   {
-    name: "GSE 70000形ロマンスカー",
+    name: "\n",
     image: "/images/GSE_70000形_ロマンスカー.png",
     description: "これはGSE 70000形ロマンスカー\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
-    price: 100,
   },
   {
     name: "江ノ電",
     image: "/images/enoden.png",
-    description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪",
-    price: 100,
+    description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪"
   },
   {
     name: "江ノ電（2両編成）",
     image: "/images/enodenniki.png",
-    description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！",
-    price: 100,
+    description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！"
   },
   {
     name: "メタスラ",
     image: "/images/メタスラ.gif",
     description: "これは メタルスラッグという\nゲームにでてくるメカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
-    price: 100,
   },
   {
     name: "メタスラ2",
     image: "/images/メタスラ2.gif",
     description: "これは メタルスラッグという\nゲームにでてくるメカだ\nのってるのはマルコだ！！",
-    price: 100,
   },
   {
     name: "ハイエース",
     image: "/images/ハイエース.png",
     description: "ハイエース！！\nすげーがんじょうだ！\nキャンプでつかう\nひともいれば\nバンドのきざいしゃにもなる\nタナハシもうんてんしたことあるらしいぞ",
-    price: 100,
   },
    {
     name: "UFO",
     image: "/images/UFO.png",
     description: "みかくにんひこうぶったい\nこれはまちがいなく\nみかくにんひこう…\nまちがいなく…\nみかくにん…???\nU.F.O.の軌道に乗って♪\nあーなーたーと逃避行～♪",
-    price: 100,
   },
    {
     name: "ケバブ",
     image: "/images/ケバブ.png",
     description: "キッチンカーのケバブやさん\nかまた駅のケバブは\nめっさ肉大盛り\nみなみすなまち駅は\nキャベツばっかり\nありゃサギだぜ\nみなみせんじゅ駅のケバブは\nベリーグッドテイストだにょーん\n",
-    price: 100,
   },
 ];
 
@@ -766,13 +756,13 @@ steam.play();
     position: "absolute",
     top: "120px",
     left: "20px",
-    color: "#d4a000",
+    color: "#006400",
     fontSize: "24px",
     fontWeight: "bold",
     zIndex: 10,
   }}
 >
-  💰 おかね：￥{saveData.money}
+  🪙 おかね：{saveData.money}
 </p>
 
 
@@ -979,6 +969,18 @@ steam.play();
 </button>
 
 
+      <img
+  src={currentVehicle.image}
+  alt={currentVehicle.name}
+  width={250}
+  onClick={() => {
+  setVehicleDescription(currentVehicle.description);
+}}
+  style={{
+  cursor: "pointer",
+  transform: "translateX(-20px)",
+}}
+/>
 
 
       <button
