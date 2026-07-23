@@ -227,7 +227,8 @@ const shopVehicles = [
    {
   name: "新しい学校のリーダーズ",
   type: "video",
-  description: "個性や自由ではみ出していく\nはみ出しちゃいけないのは…\n車線だけなんだぜ\nいつかは花になるアマリリス～♪ハァッ！！！！",
+  image: "/videos/otona_blue.mp4",
+  description: "個性や自由ではみ出していく\nはみ出しちゃいけないのは…\n車線だけなんだぜ\nいつかは花になる\nアマリリス～♪ハァッ！！",
   price : 100,
 },
 ];
@@ -1004,17 +1005,7 @@ steam.play();
   <video
     src={currentVehicle.image}
     width={250}
-    autoPlay
-    loop
-    muted
-    playsInline
-    onClick={() => {
-      setVehicleDescription(currentVehicle.description);
-    }}
-    style={{
-      cursor: "pointer",
-      transform: "translateX(-20px)",
-    }}
+    controls
   />
 ) : (
   <img
