@@ -191,6 +191,16 @@ const shopVehicles = [
     image: "/images/メタスラ2.gif",
     description: "これは メタルスラッグという\nゲームにでてくるメカだ\nのってるのはマルコだ！！",
   },
+  {
+    name: "ハイエース",
+    image: "/images/ハイエース.png",
+    description: "ハイエース！！\nすげーがんじょうだ！\nキャンプでつかうひともいれば\nバンドのきざいしゃにもなる\nタナハシもうんてんしたことあるらしいぞ",
+  },
+   {
+    name: "UFO",
+    image: "/images/UFO.png",
+    description: "みかくにんひこうぶったい\nこれはまちがいなく みかくにんひこう…\nまちがいなく…みかくにん…???\nUFOの軌道に乗って♪あーなーたーと逃避行～♪",
+  },
 ];
 
 
