@@ -779,7 +779,7 @@ steam.play();
     zIndex: 10,
   }}
 >
-  🪙 おかね：{saveData.money}
+  💰 おかね：{saveData.money}
 </p>
 
 
