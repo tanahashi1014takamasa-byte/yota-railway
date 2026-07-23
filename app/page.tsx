@@ -171,14 +171,14 @@ const shopVehicles = [
   price : 100,
 },
   {
-  name: "GAL",
+  name: "ギャルでん",
   image: "/images/gal.png",
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
 },
   {
-    name: "これはGSE 70000形ロマンスカー",
+    name: "GSE70000形ロマンスカー",
     image: "/images/GSE_70000形_ロマンスカー.png",
-    description: "これはGSE 70000形ロマンスカー\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
+    description: "オレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
   },
   {
     name: "江ノ電",
@@ -186,7 +186,7 @@ const shopVehicles = [
     description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪",
   },
   {
-    name: "江ノ電（2両編成）",
+    name: "江ノ電ニキ（2両編成）",
     image: "/images/enodenniki.png",
     description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！",
   },
@@ -203,17 +203,17 @@ const shopVehicles = [
   {
     name: "ハイエース",
     image: "/images/ハイエース.png",
-    description: "ハイエース！！\nすげーがんじょうだ！\nキャンプでつかう\nひともいれば\nバンドのきざいしゃにもなる\nタナハシもうんてんしたことあるらしいぞ",
+    description: "ハイエース！！\nすげーがんじょうだ！\nキャンプでつかう\nひともいれば\nバンドのきざいしゃにもなる\nタナハシもうんてんしたことあるらしいぞ\n鞭を打つ代わりに投与～♪\n怪物って名前の飲料～♪",
   },
    {
-    name: "UFO",
+    name: "U.F.O.",
     image: "/images/UFO.png",
     description: "みかくにんひこうぶったい\nこれはまちがいなく\nみかくにんひこう…\nまちがいなく…\nみかくにん…???\nU.F.O.の軌道に乗って♪\nあーなーたーと逃避行～♪",
   },
    {
-    name: "ケバブ",
+    name: "キッチンカー（ケバブ）",
     image: "/images/ケバブ.png",
-    description: "キッチンカーのケバブやさん\nかまた駅のケバブは\nめっさ肉大盛り\nみなみすなまち駅は\nキャベツばっかり\nありゃサギだぜ\nみなみせんじゅ駅のケバブは\nベリーグッドテイストだにょーん\n",
+    description: "かまた駅のケバブは\nめっさ肉大盛り\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイストだにょん\n",
   },
 ];
 
@@ -876,7 +876,7 @@ steam.play();
 <p
   style={{
     position: "absolute",
-    top: "250px",
+    top: "155px",
     left: "50%",
     transform: "translateX(-50%)",
     color: "white",
@@ -890,7 +890,7 @@ steam.play();
 <p
   style={{
     position: "absolute",
-    top: "285px",
+    top: "190px",
     left: "50%",
     transform: "translateX(-50%)",
     color: "#d4a000",
@@ -898,7 +898,7 @@ steam.play();
     fontWeight: "bold",
   }}
 >
-  🪙 ￥{currentVehicle.price}
+  💰 ￥{currentVehicle.price}
 </p>
 
 
