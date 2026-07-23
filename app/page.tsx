@@ -224,6 +224,12 @@ const shopVehicles = [
     description: "かまた駅のケバブは\nめっさ肉大盛り\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイストだにょん\n",
     price : 100,
   },
+   {
+  name: "新しい学校のリーダーズ",
+  type: "video",
+  description: "個性や自由ではみ出していく\nはみ出しちゃいけないのは…\n車線だけなんだぜ\nいつかは花になるアマリリス～♪ハァッ！！！！",
+  price : 100,
+},
 ];
 
 
@@ -994,18 +1000,36 @@ steam.play();
 </button>
 
 
-      <img
-  src={currentVehicle.image}
-  alt={currentVehicle.name}
-  width={250}
-  onClick={() => {
-  setVehicleDescription(currentVehicle.description);
-}}
-  style={{
-  cursor: "pointer",
-  transform: "translateX(-20px)",
-}}
-/>
+      {currentVehicle.type === "video" ? (
+  <video
+    src={currentVehicle.image}
+    width={250}
+    autoPlay
+    loop
+    muted
+    playsInline
+    onClick={() => {
+      setVehicleDescription(currentVehicle.description);
+    }}
+    style={{
+      cursor: "pointer",
+      transform: "translateX(-20px)",
+    }}
+  />
+) : (
+  <img
+    src={currentVehicle.image}
+    alt={currentVehicle.name}
+    width={250}
+    onClick={() => {
+      setVehicleDescription(currentVehicle.description);
+    }}
+    style={{
+      cursor: "pointer",
+      transform: "translateX(-20px)",
+    }}
+  />
+)}
 
 
       <button
