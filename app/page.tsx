@@ -234,7 +234,7 @@ const shopVehicles = [
 {
     name: "アイシールド21",
     image: "/images/アイシールド21.gif",
-    description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ英雄だった",
+    description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ英雄だった\nホームやかいだんは\nはしらないでね！",
     price : 100,
   },
 ];
