@@ -167,7 +167,7 @@ const shopVehicles = [
   {
   name: "D51-498",
   image: "/images/D51-498蒸気機関車.png",
-  description: "D51-498蒸気機関車！！\nむかし たくさんの ひとや\nにもつを はこんだ じょうききかんしゃだよ！\nくろい からだと \nおおきな けむりが\nかっこいい きかんしゃだね！"
+  description: "D51-498蒸気機関車！！\nむかし たくさんの ひとや\nにもつを はこんだ じょうききかんしゃだよ！\nくろい からだと \nおおきな けむりが\nかっこいい きかんしゃだね！",
 },
   {
   name: "GAL",
@@ -178,16 +178,17 @@ const shopVehicles = [
     name: "\n",
     image: "/images/GSE_70000形_ロマンスカー.png",
     description: "これはGSE 70000形ロマンスカー\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
+    price: 500,
   },
   {
     name: "江ノ電",
     image: "/images/enoden.png",
-    description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪"
+    description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪",
   },
   {
     name: "江ノ電（2両編成）",
     image: "/images/enodenniki.png",
-    description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！"
+    description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！",
   },
   {
     name: "メタスラ",
@@ -969,18 +970,48 @@ steam.play();
 </button>
 
 
-      <img
+      <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  }}
+>
+
+<p
+  style={{
+    color: "white",
+    fontSize: "24px",
+    fontWeight: "bold",
+  }}
+>
+  {currentVehicle.name}
+</p>
+
+<p
+  style={{
+    color: "#d4a000",
+    fontSize: "24px",
+    fontWeight: "bold",
+  }}
+>
+  🪙 ￥{currentVehicle.price}
+</p>
+
+<img
   src={currentVehicle.image}
   alt={currentVehicle.name}
   width={250}
   onClick={() => {
-  setVehicleDescription(currentVehicle.description);
-}}
+    setVehicleDescription(currentVehicle.description);
+  }}
   style={{
-  cursor: "pointer",
-  transform: "translateX(-20px)",
-}}
+    cursor: "pointer",
+    transform: "translateX(-20px)",
+  }}
 />
+
+</div>
 
 
       <button
