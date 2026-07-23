@@ -756,13 +756,13 @@ steam.play();
     position: "absolute",
     top: "120px",
     left: "20px",
-    color: "#006400",
+    color: "#d4a000",
     fontSize: "24px",
     fontWeight: "bold",
     zIndex: 10,
   }}
 >
-  🪙 おかね：{saveData.money}
+  💰 おかね：￥{saveData.money}
 </p>
 
 
