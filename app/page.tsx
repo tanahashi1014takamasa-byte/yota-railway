@@ -1074,50 +1074,8 @@ steam.play();
   width={120}
   alt="選択した電車"
 />
-
-<p style={{ color: "white", fontSize: "24px" }}>
-  🚃 電車が走っています
-</p>
-
-          <p>🌳🏠🌳🏠🌳</p>
-
-      <button
-        onClick={() => setScene("arrive")}
-    >
-      到着する
-    </button>
-
         </>
       )}
-
-{scene === "arrive" && (
-  <>
-    <p>🚉 北千住葉大駅に到着しました</p>
-
-    <p>🚃｜🚪</p>
-
-    <button
-      onClick={() => setScene("door")}
-    >
-      ドアを開ける
-    </button>
-  </>
-)}
-
-{scene === "door" && (
-  <>
-    <p>🚪 ドアが開きました</p>
-
-    <p>「プシュー」</p>
-
- <img
-      src="/images/hamukappa.png"
-      alt="ハムカッパ"
-      width={150}
-    />
-
-  </>
-)}
 
     </main>
     </>
