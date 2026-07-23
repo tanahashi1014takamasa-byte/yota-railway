@@ -168,6 +168,7 @@ const shopVehicles = [
   name: "D51-498",
   image: "/images/D51-498蒸気機関車.png",
   description: "D51-498蒸気機関車！！\nむかし たくさんの ひとや\nにもつを はこんだ じょうききかんしゃだよ！\nくろい からだと \nおおきな けむりが\nかっこいい きかんしゃだね！",
+  price : 100,
 },
   {
   name: "GAL",
@@ -175,10 +176,9 @@ const shopVehicles = [
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
 },
   {
-    name: "\n",
+    name: "これはGSE 70000形ロマンスカー",
     image: "/images/GSE_70000形_ロマンスカー.png",
     description: "これはGSE 70000形ロマンスカー\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
-    price: 500,
   },
   {
     name: "江ノ電",
@@ -873,6 +873,34 @@ steam.play();
   }}
 />
 
+<p
+  style={{
+    position: "absolute",
+    top: "250px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    color: "white",
+    fontSize: "24px",
+    fontWeight: "bold",
+  }}
+>
+  {currentVehicle.name}
+</p>
+
+<p
+  style={{
+    position: "absolute",
+    top: "285px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    color: "#d4a000",
+    fontSize: "24px",
+    fontWeight: "bold",
+  }}
+>
+  🪙 ￥{currentVehicle.price}
+</p>
+
 
     <div
       style={{
@@ -970,48 +998,18 @@ steam.play();
 </button>
 
 
-      <div
-  style={{
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  }}
->
-
-<p
-  style={{
-    color: "white",
-    fontSize: "24px",
-    fontWeight: "bold",
-  }}
->
-  {currentVehicle.name}
-</p>
-
-<p
-  style={{
-    color: "#d4a000",
-    fontSize: "24px",
-    fontWeight: "bold",
-  }}
->
-  🪙 ￥{currentVehicle.price}
-</p>
-
-<img
+      <img
   src={currentVehicle.image}
   alt={currentVehicle.name}
   width={250}
   onClick={() => {
-    setVehicleDescription(currentVehicle.description);
-  }}
+  setVehicleDescription(currentVehicle.description);
+}}
   style={{
-    cursor: "pointer",
-    transform: "translateX(-20px)",
-  }}
+  cursor: "pointer",
+  transform: "translateX(-20px)",
+}}
 />
-
-</div>
 
 
       <button
