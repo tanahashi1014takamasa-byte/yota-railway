@@ -805,13 +805,31 @@ steam.play();
   alt="カスタムショップ"
   style={{
     position: "absolute",
-    top: "30px",
+    top: "20px",
     left: "50%",
     transform: "translateX(-50%)",
     width: "280px", // 好みで調整
     height: "auto",
   }}
 />
+<img
+  src="/images/CSHOME.png"
+  alt="ホーム"
+  onClick={() => {
+    customShopBgmRef.current?.pause();
+    customShopBgmRef.current!.currentTime = 0;
+    setScene("opening");
+  }}
+  style={{
+    position: "absolute",
+    top: "95px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    width: "170px",
+    cursor: "pointer",
+  }}
+/>
+
 
     <div
       style={{
