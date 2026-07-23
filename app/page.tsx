@@ -75,6 +75,7 @@ useEffect(() => {
   selectedTrain: "",
   level: 1,
   distance: 0,
+  money: 0,
   retiredTrains: [],
 });
 
@@ -377,6 +378,7 @@ const popKeyframes = `
     level: 1,
     distance: 0,
     retiredTrains: [],
+    money: 0,
   });
 
     setMessageIndex(0);
@@ -499,9 +501,8 @@ steam.play();
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      justifyContent: "flex-start",
+      justifyContent: "center",
       minHeight: "100vh",
-      paddingTop: "50px",
     }}
   >
     <p style={{ color: "white", fontSize: "28px" }}>
@@ -520,6 +521,8 @@ steam.play();
     <p style={{ color: "white", fontSize: "22px" }}>
       走行距離：{saveData.distance}km
     </p>
+
+    <p>所持金：{saveData.money}円</p>
 
     <button
       onClick={() => {
