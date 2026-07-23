@@ -174,46 +174,55 @@ const shopVehicles = [
   name: "ギャルでん",
   image: "/images/gal.png",
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
+  price : 100,
 },
   {
     name: "GSE70000形ロマンスカー",
     image: "/images/GSE_70000形_ロマンスカー.png",
-    description: "オレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
+    description: "GSE70000形ロマンスカー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
+    price : 100,
   },
   {
     name: "江ノ電",
     image: "/images/enoden.png",
     description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪",
+    price : 100,
   },
   {
-    name: "江ノ電ニキ（2両編成）",
+    name: "江ノ電ニキ",
     image: "/images/enodenniki.png",
     description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！",
+    price : 100,
   },
   {
     name: "メタスラ",
     image: "/images/メタスラ.gif",
     description: "これは メタルスラッグという\nゲームにでてくるメカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
+    price : 100,
   },
   {
     name: "メタスラ2",
     image: "/images/メタスラ2.gif",
     description: "これは メタルスラッグという\nゲームにでてくるメカだ\nのってるのはマルコだ！！",
+    price : 100,
   },
   {
     name: "ハイエース",
     image: "/images/ハイエース.png",
     description: "ハイエース！！\nすげーがんじょうだ！\nキャンプでつかう\nひともいれば\nバンドのきざいしゃにもなる\nタナハシもうんてんしたことあるらしいぞ\n鞭を打つ代わりに投与～♪\n怪物って名前の飲料～♪",
+    price : 100,
   },
    {
     name: "U.F.O.",
     image: "/images/UFO.png",
     description: "みかくにんひこうぶったい\nこれはまちがいなく\nみかくにんひこう…\nまちがいなく…\nみかくにん…???\nU.F.O.の軌道に乗って♪\nあーなーたーと逃避行～♪",
+    price : 100,
   },
    {
     name: "キッチンカー（ケバブ）",
     image: "/images/ケバブ.png",
     description: "かまた駅のケバブは\nめっさ肉大盛り\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイストだにょん\n",
+    price : 100,
   },
 ];
 
@@ -877,7 +886,7 @@ steam.play();
 <p
   style={{
     position: "absolute",
-    top: "190px",
+    top: "150px",
     left: "50%",
     transform: "translateX(-50%)",
     color: "#d4a000",
