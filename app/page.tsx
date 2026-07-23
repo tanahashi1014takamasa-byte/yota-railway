@@ -984,18 +984,6 @@ steam.play();
   ))
 )}
 
-<p
-  style={{
-    position: "absolute",
-    left: "135px",
-    bottom: "10px",
-    color: "white",
-    fontSize: "18px",
-    whiteSpace: "nowrap",
-  }}
->
-  ※ほしい のりものをタップしてね！
-</p>
 
   {doctorPage < doctorMessages.length - 1 && (
     <div
@@ -1010,6 +998,17 @@ steam.play();
     </div>
   )}
 </div>
+<p
+  style={{
+    color: "white",
+    fontSize: "18px",
+    marginTop: "10px",
+    marginLeft: "115px",
+    textAlign: "center",
+  }}
+>
+  ※ほしい のりもの の なまえを タップしてね！
+</p>
 
     </div>
 
