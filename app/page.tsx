@@ -978,6 +978,25 @@ steam.play();
   ◁
 </button>
 
+<p
+  style={{
+    color: "white",
+    fontSize: "24px",
+    fontWeight: "bold",
+  }}
+>
+  {currentVehicle.name}
+</p>
+
+<p
+  style={{
+    color: "#d4a000",
+    fontSize: "24px",
+    fontWeight: "bold",
+  }}
+>
+  🪙 ￥{currentVehicle.price}
+</p>
 
       <img
   src={currentVehicle.image}
