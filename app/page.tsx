@@ -749,6 +749,20 @@ steam.play();
   走行距離：{saveData.distance}km
 </p>
 
+<p
+  style={{
+    position: "absolute",
+    top: "120px",
+    left: "20px",
+    color: "#006400",
+    fontSize: "24px",
+    fontWeight: "bold",
+    zIndex: 10,
+  }}
+>
+  おかね：{saveData.money}円
+</p>
+
      <div
   style={{
     position: "absolute",
