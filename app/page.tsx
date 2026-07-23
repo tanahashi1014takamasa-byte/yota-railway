@@ -1000,7 +1000,15 @@ steam.play();
 
     </div>
 
-
+<p
+  style={{
+    color: "white",
+    fontSize: "18px",
+    marginTop: "-10px",
+  }}
+>
+  ※ほしい のりものをタップしてね！
+</p>
     <div
       style={{
         display:"flex",
