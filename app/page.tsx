@@ -921,12 +921,17 @@ steam.play();
     top: "155px",
     left: "50%",
     transform: "translateX(-50%)",
-    color: "#d4a000",
+    color: "white",
     fontSize: "24px",
     fontWeight: "bold",
+
+    background: "black",
+    border: "3px solid white",
+    borderRadius: "15px",
+    padding: "10px 25px",
   }}
 >
-  💰 ￥{currentVehicle.price}
+  {currentVehicle.name}
 </p>
 
 
