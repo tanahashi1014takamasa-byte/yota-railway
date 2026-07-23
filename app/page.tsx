@@ -221,7 +221,7 @@ const shopVehicles = [
    {
     name: "キッチンカー（ケバブ）",
     image: "/images/ケバブ.png",
-    description: "かまた駅のケバブは\nめっさ にく おおもり\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイストだにょん\n",
+    description: "かまた駅のケバブは\nめっさ にく おおもり\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイスト\nだにょ～ん\n",
     price : 100,
   },
    {
@@ -240,13 +240,13 @@ const shopVehicles = [
 {
   name: "清掃台車ニキ",
   image: "/images/清掃台車ニキ.png",
-  description: "だいしゃ はりょうて で おそうね！",
+  description: "だいしゃ はりょうて で \nおそうね！",
   price : 100,
 },
 {
   name: "自分探し",
   image: "/images/自分探し.gif",
-  description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい握りしめて～♪\nゆっくりゆっくり下ってく～♪",
+  description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい\n握りしめて～♪\nゆっくりゆっくり下ってく～♪",
   price : 100,
 },
 
@@ -909,7 +909,7 @@ steam.play();
     top: "75px",
     left: "50%",
     transform: "translateX(-50%)",
-    width: "170px",
+    width: "140px",
     cursor: "pointer",
   }}
 />
