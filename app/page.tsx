@@ -34,8 +34,13 @@ useEffect(() => {
   const savedData = localStorage.getItem("yotaRailwaySave");
 
   if (savedData) {
-    setSaveData(JSON.parse(savedData));
-  }
+  const data = JSON.parse(savedData);
+
+  setSaveData({
+    ...data,
+    money: data.money ?? 0,
+  });
+}
 
   setSaveLoaded(true);
 }, []);
@@ -522,7 +527,9 @@ steam.play();
       走行距離：{saveData.distance}km
     </p>
 
-    <p>所持金：{saveData.money}円</p>
+    <p style={{ color: "white", fontSize: "22px" }}>
+  所持金：{saveData.money}円
+  </p>
 
     <button
       onClick={() => {
