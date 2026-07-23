@@ -873,19 +873,6 @@ steam.play();
   }}
 />
 
-<p
-  style={{
-    position: "absolute",
-    top: "155px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    color: "white",
-    fontSize: "24px",
-    fontWeight: "bold",
-  }}
->
-  {currentVehicle.name}
-</p>
 
 <p
   style={{
