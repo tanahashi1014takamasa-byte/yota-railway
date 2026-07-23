@@ -237,6 +237,25 @@ const shopVehicles = [
     description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ英雄だった\nホームやかいだんは\nはしらないでね！",
     price : 100,
   },
+{
+  name: "清掃台車ニキ",
+  image: "/images/清掃台車ニキ.png",
+  description: "だいしゃはりょうて で おそうね！",
+  price : 100,
+},
+{
+  name: "自分探し",
+  image: "/images/自分探し.png",
+  description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい握りしめて～♪\nゆっくりゆっくり下ってく～♪",
+  price : 100,
+},
+
+{
+  name: "きょだいロボ",
+  image: "/images/きょだいロボ.gif",
+  description: "……………………\nえ…なにこれ…\nこわ\nこんなのつくったかな…",
+  price : 100,
+},
 ];
 
 
