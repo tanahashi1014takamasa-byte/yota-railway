@@ -102,6 +102,7 @@ useEffect(() => {
         setSaveData((data) => ({
   ...data,
   distance: data.distance + 1,
+  money: data.money + 1,
 }));
 
         return x - 1;
@@ -116,6 +117,7 @@ useEffect(() => {
         setSaveData((data) => ({
   ...data,
   distance: data.distance + 1,
+  money: data.money + 1,
 }));
 
         return x + 1;
@@ -528,7 +530,7 @@ steam.play();
     </p>
 
     <p style={{ color: "white", fontSize: "22px" }}>
-  所持金：{saveData.money}円
+  おかね：{saveData.money}円
   </p>
 
     <button
@@ -746,7 +748,21 @@ steam.play();
     zIndex: 10,
   }}
 >
-  走行距離：{saveData.distance}km
+  🚃 走行距離：{saveData.distance}km
+</p>
+
+<p
+  style={{
+    position: "absolute",
+    top: "120px",
+    left: "20px",
+    color: "#006400",
+    fontSize: "24px",
+    fontWeight: "bold",
+    zIndex: 10,
+  }}
+>
+  🪙 おかね：{saveData.money}
 </p>
 
 <p
