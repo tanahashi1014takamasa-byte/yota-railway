@@ -195,13 +195,13 @@ const shopVehicles = [
     price : 100,
   },
   {
-    name: "メタスラ",
+    name: "メタ〇スラ〇〇",
     image: "/images/メタスラ.gif",
     description: "これは…\nめっさカックィー メカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
     price : 100,
   },
   {
-    name: "メタスラ2",
+    name: "メタ〇スラ〇〇２",
     image: "/images/メタスラ2.gif",
     description: "これは…\nあれだ…すげーメカだ\nうん…\nのってるのはマルコだ！！",
     price : 100,
@@ -232,19 +232,19 @@ const shopVehicles = [
   price : 100,
 },
 {
-    name: "アイシールド21",
+    name: "ヒーロー",
     image: "/images/アイシールド21.gif",
     description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ\n英雄だった\nホームやかいだんは\nはしらないでね！",
     price : 100,
   },
 {
-  name: "清掃台車ニキ",
+  name: "せいそう だいしゃニキ",
   image: "/images/清掃台車ニキ.png",
   description: "だいしゃ はりょうて で \nおそうね！",
   price : 100,
 },
 {
-  name: "自分探し",
+  name: "だいがくせい",
   image: "/images/自分探し.gif",
   description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい\n握りしめて～♪\nゆっくりゆっくり下ってく～♪",
   price : 100,
@@ -918,17 +918,19 @@ steam.play();
 <p
   style={{
     position: "absolute",
-    top: "155px",
+    top: "130px",
     left: "50%",
     transform: "translateX(-50%)",
     color: "white",
-    fontSize: "24px",
+    fontSize: "20px",
     fontWeight: "bold",
 
     background: "black",
     border: "3px solid white",
     borderRadius: "15px",
     padding: "10px 25px",
+
+     whiteSpace: "nowrap", // ← 改行させない
   }}
 >
   {currentVehicle.name}
