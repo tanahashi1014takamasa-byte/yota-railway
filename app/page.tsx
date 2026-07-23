@@ -245,7 +245,7 @@ const shopVehicles = [
 },
 {
   name: "自分探し",
-  image: "/images/自分探し.png",
+  image: "/images/自分探し.gif",
   description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい握りしめて～♪\nゆっくりゆっくり下ってく～♪",
   price : 100,
 },
