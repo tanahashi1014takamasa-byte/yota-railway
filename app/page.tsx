@@ -78,6 +78,7 @@ useEffect(() => {
   const [buyIndex, setBuyIndex] = useState(0);
   const [cart, setCart] = useState<any[]>([]);
   const [selectedVehicle, setSelectedVehicle] = useState<any>(null);
+  const [showCartDialog, setShowCartDialog] = useState(false);
   
 
   const [saveData, setSaveData] = useState({
@@ -1168,7 +1169,7 @@ steam.play();
   style={{
     textAlign: "center",
     marginTop: "20px",
-    fontSize: "20px",
+    fontSize: "10px",
   }}
 >
   商品をタップしてカートに追加してください
@@ -1196,8 +1197,9 @@ steam.play();
   <p
     key={vehicle.name}
      onClick={() => {
-    setSelectedVehicle(vehicle);
-  }}
+  setSelectedVehicle(vehicle);
+  setShowCartDialog(true);
+}}
     style={{
       display: "flex",
       alignItems: "center",
@@ -1218,59 +1220,59 @@ steam.play();
     </span>
   </p>
 ))}
+
+
+{showCartDialog && (
+  <div
+    style={{
+      position: "fixed",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      background: "black",
+      color: "white",
+      border: "3px solid white",
+      borderRadius: "15px",
+      padding: "20px",
+      textAlign: "center",
+      zIndex: 9999,
+      minWidth: "250px",
+    }}
+  >
+    <p>カートに追加しますか？</p>
+
+    <button
+      onClick={() => {
+        setShowCartDialog(false);
+      }}
+      style={{
+        marginTop: "15px",
+        padding: "10px 20px",
+      }}
+    >
+      カートに追加
+    </button>
+
+    <br />
+
+    <button
+      onClick={() => {
+        setShowCartDialog(false);
+      }}
+      style={{
+        marginTop: "10px",
+        padding: "10px 20px",
+      }}
+    >
+      キャンセル
+    </button>
+  </div>
+)}
+
 </div>
 
  
 
-    <button
-  onClick={() => {
-
-  if (saveData.money >= currentVehicle.price) {
-
-    setSaveData({
-      ...saveData,
-      money: saveData.money - currentVehicle.price,
-    });
-
-    alert("かった！");
-
-  } else {
-
-    alert("おかねが たりないよ！");
-
-  }
-
-}}
-  style={{
-    marginTop: "20px",
-    fontSize: "24px",
-    padding: "10px 40px",
-    background: "black",
-    color: "white",
-    border: "2px solid white",
-    borderRadius: "10px",
-  }}
->
-  はい
-</button>
-
-<button
-  onClick={() => {
-    setShopMode("main");
-  }}
-  style={{
-    marginTop: "20px",
-    marginLeft: "20px",
-    fontSize: "24px",
-    padding: "10px 40px",
-    background: "black",
-    color: "white",
-    border: "2px solid white",
-    borderRadius: "10px",
-  }}
->
-  いいえ
-</button>
 
   </div>
 )}
