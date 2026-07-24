@@ -1233,7 +1233,7 @@ steam.play();
       padding: "30px",
       width: "300px",
       textAlign: "center",
-      zIndex: 100,
+      zIndex: 1000,
     }}
   >
     <p style={{ fontSize: "28px" }}>
@@ -1244,32 +1244,29 @@ steam.play();
       {selectedVehicle.price}円
     </p>
 
-   
+    <button
+      style={{
+        display: "block",
+        margin: "15px auto",
+        fontSize: "24px",
+      }}
+    >
+      かう
+    </button>
 
-   <button
-  style={{
-    display: "block",
-    margin: "15px auto",
-    fontSize: "24px",
-    padding: "10px 40px",
-  }}
->
-  かう
-</button>
+    <button
+      onClick={() => {
+        setSelectedVehicle(null);
+      }}
+      style={{
+        display: "block",
+        margin: "15px auto",
+        fontSize: "24px",
+      }}
+    >
+      かわない
+    </button>
 
-<button
-  onClick={() => {
-    setSelectedVehicle(null);
-  }}
-  style={{
-    display: "block",
-    margin: "15px auto",
-    fontSize: "24px",
-    padding: "10px 40px",
-  }}
->
-  かわない
-</button>
   </div>
 )}
 
