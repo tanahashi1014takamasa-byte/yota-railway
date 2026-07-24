@@ -1163,12 +1163,20 @@ steam.play();
       どれを かいますか？
     </p>
 
-    {shopVehicles.map((vehicle, index) => (
-  <p key={vehicle.name}>
-    {buyIndex === index ? "▶ " : "  "}
-    {vehicle.name}　{vehicle.price}円
-  </p>
-))}
+    <div
+  style={{
+    textAlign: "left",
+    width: "300px",
+    margin: "0 auto",
+  }}
+>
+  {shopVehicles.map((vehicle, index) => (
+    <p key={vehicle.name}>
+      {buyIndex === index ? "▶ " : "  "}
+      {vehicle.name}　{vehicle.price}円
+    </p>
+  ))}
+</div>
 
     <p>
       おかね：{saveData.money}円
