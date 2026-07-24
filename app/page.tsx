@@ -1195,15 +1195,17 @@ steam.play();
 }
 
 }}
-  style={{
-    marginTop: "20px",
-    fontSize: "24px",
-    padding: "10px 40px",
-    background: "black",
-    color: "white",
-    border: "2px solid white",
-    borderRadius: "10px",
-  }}
+style={{
+  marginTop: "20px",
+  fontSize: "24px",
+  padding: "10px 40px",
+  background: "black",
+  color: "white",
+  border: "2px solid white",
+  borderRadius: "10px",
+  position: "relative",
+  zIndex: 100,
+}}
 >
   はい
 </button>
