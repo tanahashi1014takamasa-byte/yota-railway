@@ -954,6 +954,9 @@ steam.play();
   }}
 />
 
+{shopMode === "main" && (
+<>
+
 <p
   style={{
     position: "absolute",
@@ -1133,6 +1136,9 @@ steam.play();
 
     </div>
 
+    </>
+)}
+
     {shopMode === "buy" && (
   <div
     style={{
@@ -1161,8 +1167,43 @@ steam.play();
     </p>
 
     <p>
-      所持金：{saveData.money}円
+      おかね：{saveData.money}円
     </p>
+
+    <button
+  onClick={() => {
+
+  }}
+  style={{
+    marginTop: "20px",
+    fontSize: "24px",
+    padding: "10px 40px",
+    background: "black",
+    color: "white",
+    border: "2px solid white",
+    borderRadius: "10px",
+  }}
+>
+  はい
+</button>
+
+<button
+  onClick={() => {
+    setShopMode("main");
+  }}
+  style={{
+    marginTop: "20px",
+    marginLeft: "20px",
+    fontSize: "24px",
+    padding: "10px 40px",
+    background: "black",
+    color: "white",
+    border: "2px solid white",
+    borderRadius: "10px",
+  }}
+>
+  いいえ
+</button>
 
   </div>
 )}
