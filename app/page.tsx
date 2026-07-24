@@ -953,11 +953,11 @@ steam.play();
 <p
   style={{
     position: "absolute",
-    top: "130px",
+    top: "140px",
     left: "50%",
     transform: "translateX(-50%)",
     color: "white",
-    fontSize: "20px",
+    fontSize: "16px",
     fontWeight: "bold",
 
     background: "black",
