@@ -75,6 +75,7 @@ useEffect(() => {
   const RIGHT_WALL = 200;
   const [shopIndex, setShopIndex] = useState(0);
   const [shopMode, setShopMode] = useState("main");
+  const [buyIndex, setBuyIndex] = useState(0);
   
 
   const [saveData, setSaveData] = useState({
@@ -273,6 +274,10 @@ const shopVehicles = [
 
 
 const currentVehicle = shopVehicles[shopIndex];
+
+const buyVehicle = shopVehicles[buyIndex];
+
+
 
 const selectedTrain = trains.find(
   (train) => train.name === saveData.selectedTrain
@@ -1158,13 +1163,12 @@ steam.play();
       どれを かいますか？
     </p>
 
-    <p>
-      ▶ {currentVehicle.name}
-    </p>
-
-    <p>
-      💰 {currentVehicle.price}円
-    </p>
+    {shopVehicles.map((vehicle, index) => (
+  <p key={vehicle.name}>
+    {buyIndex === index ? "▶ " : "  "}
+    {vehicle.name}　{vehicle.price}円
+  </p>
+))}
 
     <p>
       おかね：{saveData.money}円
