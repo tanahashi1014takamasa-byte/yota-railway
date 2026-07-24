@@ -1148,7 +1148,7 @@ steam.play();
   <div
     style={{
       position: "absolute",
-      top: "250px",
+      top: "150px",
       left: "50%",
       transform: "translateX(-50%)",
       color: "white",
@@ -1156,7 +1156,7 @@ steam.play();
     }}
   >
     <h2>
-      🚃 のりものショップ
+      カスタムショップ
     </h2>
 
     <p>
