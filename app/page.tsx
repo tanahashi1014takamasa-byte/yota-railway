@@ -1148,7 +1148,7 @@ steam.play();
   <div
     style={{
       position: "absolute",
-      top: "150px",
+      top: "130px",
       left: "50%",
       transform: "translateX(-50%)",
       color: "white",
@@ -1159,9 +1159,13 @@ steam.play();
       カスタムショップ
     </h2>
 
-    <p>
-      どれを かいますか？
-    </p>
+    <p
+  style={{
+    marginBottom: "20px",
+  }}
+>
+  どれを かいますか？
+</p>
 
     <div
   style={{
