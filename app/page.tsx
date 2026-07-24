@@ -1173,7 +1173,22 @@ steam.play();
     <button
   onClick={() => {
 
-  }}
+  if (saveData.money >= currentVehicle.price) {
+
+    setSaveData({
+      ...saveData,
+      money: saveData.money - currentVehicle.price,
+    });
+
+    alert("かった！");
+
+  } else {
+
+    alert("おかねが たりないよ！");
+
+  }
+
+}}
   style={{
     marginTop: "20px",
     fontSize: "24px",
