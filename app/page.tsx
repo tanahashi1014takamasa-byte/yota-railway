@@ -1197,7 +1197,8 @@ steam.play();
       fontSize: "23px",
     }}
   >
-   
+    <span style={{ width: "30px" }}>
+</span>
 
     <span style={{ width: "180px" }}>
       {vehicle.name}
