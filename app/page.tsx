@@ -83,7 +83,6 @@ useEffect(() => {
   distance: 0,
   money: 0,
   retiredTrains: [],
-  ownedVehicles: [] as string[],
 });
 
 const [saveLoaded, setSaveLoaded] = useState(false);
@@ -437,13 +436,12 @@ const popKeyframes = `
   }
 
   setSaveData({
-  selectedTrain: "",
-  level: 1,
-  distance: 0,
-  retiredTrains: [],
-  money: 0,
-  ownedVehicles: [],
-});
+    selectedTrain: "",
+    level: 1,
+    distance: 0,
+    retiredTrains: [],
+    money: 0,
+  });
 
     setMessageIndex(0);
 const steam = new Audio("/sounds/steam_train.mp3");
@@ -1177,35 +1175,29 @@ steam.play();
 
   if (saveData.money >= currentVehicle.price) {
 
-  setSaveData({
-    ...saveData,
-    money: saveData.money - currentVehicle.price,
-    ownedVehicles: [
-      ...saveData.ownedVehicles,
-      currentVehicle.name,
-    ],
-  });
+    setSaveData({
+      ...saveData,
+      money: saveData.money - currentVehicle.price,
+    });
 
-  alert("かった！");
+    alert("かった！");
 
-} else {
+  } else {
 
-  alert("おかねが たりないよ！");
+    alert("おかねが たりないよ！");
 
-}
+  }
 
 }}
-style={{
-  marginTop: "20px",
-  fontSize: "24px",
-  padding: "10px 40px",
-  background: "black",
-  color: "white",
-  border: "2px solid white",
-  borderRadius: "10px",
-  position: "relative",
-  zIndex: 100,
-}}
+  style={{
+    marginTop: "20px",
+    fontSize: "24px",
+    padding: "10px 40px",
+    background: "black",
+    color: "white",
+    border: "2px solid white",
+    borderRadius: "10px",
+  }}
 >
   はい
 </button>
