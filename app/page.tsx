@@ -1197,9 +1197,7 @@ steam.play();
       fontSize: "23px",
     }}
   >
-    <span style={{ width: "30px" }}>
-      {buyIndex === index ? "▶" : ""}
-    </span>
+   
 
     <span style={{ width: "180px" }}>
       {vehicle.name}
