@@ -1193,8 +1193,8 @@ steam.play();
     style={{
       display: "flex",
       alignItems: "center",
-      margin: "40px 0",
-      fontSize: "50px",
+      margin: "30px 0",
+      fontSize: "30px",
     }}
   >
     <span style={{ width: "30px" }}>
