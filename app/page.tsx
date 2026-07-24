@@ -259,7 +259,7 @@ const shopVehicles = [
 {
   name: "回転寿司",
   image: "/images/回転寿司.gif",
-  description: "おすしー！むしろ…おしすー！\nすし ならまいにちだってくえるぜ\nはむかっぱも\nすしはだいすきだってさ",
+  description: "おすしー！\nむしろ…おしすー！\nすし なら\nまいにちだってくえるぜ\nはむかっぱも\nすしはだいすきだってさ",
   price : 100,
 },
 ];
