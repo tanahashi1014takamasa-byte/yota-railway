@@ -232,7 +232,7 @@ const shopVehicles = [
   price : 100,
 },
 {
-    name: "光速ヒーロー",
+    name: "アイシールド２１",
     image: "/images/アイシールド21.gif",
     description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ\n英雄だった\nホームやかいだんは\nはしらないでね！",
     price : 100,
