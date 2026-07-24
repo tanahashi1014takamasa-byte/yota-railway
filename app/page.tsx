@@ -932,7 +932,7 @@ steam.play();
   style={{
     position: "absolute",
     top: "65px",
-    left: "calc(60% + 50px)",
+    left: "calc(63% + 50px)",
     width: "70px",
     cursor: "pointer",
   }}
