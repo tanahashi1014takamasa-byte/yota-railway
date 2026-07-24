@@ -1156,15 +1156,17 @@ steam.play();
     }}
   >
     <h2>
-      カスタムショップ
+      どれを かいますか？
     </h2>
 
     <p
   style={{
-    marginBottom: "20px",
+    textAlign: "left",
+    width: "300px",
+    margin: "0 auto 20px",
   }}
 >
-  どれを かいますか？
+  💰 もってる おかね：{saveData.money}円
 </p>
 
     <div
