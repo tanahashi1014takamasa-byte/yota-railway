@@ -1219,47 +1219,42 @@ steam.play();
 ))}
 </div>
 
- {selectedVehicle && (
+{selectedVehicle && (
   <div
     style={{
-      marginTop: "30px",
-      fontSize: "24px",
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      background: "black",
+      color: "white",
+      border: "3px solid white",
+      borderRadius: "15px",
+      padding: "30px",
+      width: "300px",
       textAlign: "center",
+      zIndex: 100,
     }}
   >
-    <p>
+    <p style={{ fontSize: "28px" }}>
       {selectedVehicle.name}
     </p>
 
-    <p>
+    <p style={{ fontSize: "24px" }}>
       {selectedVehicle.price}円
     </p>
 
     <p>
-      {selectedVehicle.name}を
       かいますか？
     </p>
 
-    <button
-      onClick={() => {
-        alert(`${selectedVehicle.name} ゲット！`);
-      }}
-      style={{
-        fontSize: "24px",
-        padding: "10px 40px",
-      }}
-    >
+    <button>
       かう
     </button>
 
     <button
       onClick={() => {
         setSelectedVehicle(null);
-      }}
-      style={{
-        fontSize: "24px",
-        padding: "10px 40px",
-        marginLeft: "20px",
       }}
     >
       かわない
@@ -1299,23 +1294,7 @@ steam.play();
   はい
 </button>
 
-<button
-  onClick={() => {
-    setShopMode("main");
-  }}
-  style={{
-    marginTop: "20px",
-    marginLeft: "20px",
-    fontSize: "24px",
-    padding: "10px 40px",
-    background: "black",
-    color: "white",
-    border: "2px solid white",
-    borderRadius: "10px",
-  }}
->
-  いいえ
-</button>
+
 
   </div>
 )}
