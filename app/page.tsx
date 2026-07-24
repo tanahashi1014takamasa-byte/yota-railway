@@ -262,6 +262,12 @@ const shopVehicles = [
   description: "おすしー！\nむしろ…おしすー！\nすし なら\nまいにちだってくえるぜ\nはむかっぱも\nすしはだいすきだってさ",
   price : 100,
 },
+{
+  name: "パッ〇マン",
+  image: "/images/パックマン.gif",
+  description: "……………………\nえー…これは\n…80年代の…ルンバ\nくわしいことは\nおとうさんにきこう！",
+  price : 100,
+},
 ];
 
 
