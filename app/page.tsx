@@ -76,6 +76,7 @@ useEffect(() => {
   const [shopIndex, setShopIndex] = useState(0);
   const [shopMode, setShopMode] = useState("main");
   const [buyIndex, setBuyIndex] = useState(0);
+  const [selectedVehicle, setSelectedVehicle] = useState<any>(null);
   
 
   const [saveData, setSaveData] = useState({
@@ -1193,11 +1194,15 @@ steam.play();
 {shopVehicles.map((vehicle, index) => (
   <p
     key={vehicle.name}
+    onClick={() => {
+      setSelectedVehicle(vehicle);
+    }}
     style={{
       display: "flex",
       alignItems: "center",
       margin: "30px 0",
       fontSize: "23px",
+      cursor: "pointer",
     }}
   >
     <span style={{ width: "30px" }}>
