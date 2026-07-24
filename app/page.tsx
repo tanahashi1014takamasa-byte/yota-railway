@@ -195,13 +195,13 @@ const shopVehicles = [
     price : 100,
   },
   {
-    name: "メタ〇スラ〇〇",
+    name: "メタルスラッグ",
     image: "/images/メタスラ.gif",
     description: "これは…\nめっさカックィー メカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
     price : 100,
   },
   {
-    name: "メタ〇スラ〇〇２",
+    name: "メタルスラッグ２",
     image: "/images/メタスラ2.gif",
     description: "これは…\nあれだ…すげーメカだ\nうん…\nのってるのはマルコだ！！",
     price : 100,
@@ -263,9 +263,9 @@ const shopVehicles = [
   price : 100,
 },
 {
-  name: "パッ〇マン",
+  name: "パックマン",
   image: "/images/パックマン.gif",
-  description: "……………………\nえー…これは\n…80年代の…ルンバ\nくわしいことは\nおとうさんにきこう！",
+  description: "……………………\nえー…これは\n…80年代の…ルンバ\nくわしいことは\nパパにきこう！",
   price : 100,
 },
 ];
@@ -1063,7 +1063,7 @@ steam.play();
     background: "transparent",
     border: "none",
     color: "white",
-    fontSize: "50px",
+    fontSize: "32px",
     padding: 0,
     cursor: "pointer",
   }}
