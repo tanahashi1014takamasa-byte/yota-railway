@@ -1175,7 +1175,7 @@ steam.play();
     textAlign: "left",
     width: "300px",
     margin: "0 auto 20px",
-    fontSize: "28px",
+    fontSize: "18px",
   }}
 >
   💰 もってる おかね：{saveData.money}円
