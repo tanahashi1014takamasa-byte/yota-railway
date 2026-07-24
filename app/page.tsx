@@ -1170,9 +1170,9 @@ steam.play();
   どれを かいますか？
 </p>
 
-    <p
+   <p
   style={{
-    textAlign: "left",
+    textAlign: "center",
     width: "300px",
     margin: "0 auto 20px",
   }}
