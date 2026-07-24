@@ -74,6 +74,7 @@ useEffect(() => {
   const LEFT_WALL = -200;
   const RIGHT_WALL = 200;
   const [shopIndex, setShopIndex] = useState(0);
+  const [shopMode, setShopMode] = useState("main");
   
 
   const [saveData, setSaveData] = useState({
@@ -941,6 +942,9 @@ steam.play();
 <img
   src="/images/buy.png"
   alt="購入"
+   onClick={() => {
+    setShopMode("buy");
+  }}
   style={{
     position: "absolute",
     top: "65px",
