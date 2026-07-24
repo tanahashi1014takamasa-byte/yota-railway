@@ -1155,9 +1155,13 @@ steam.play();
       textAlign: "center",
     }}
   >
-    <h2>
-      どれを かいますか？
-    </h2>
+    <p
+  style={{
+    marginTop: "20px",
+  }}
+>
+  どれを かいますか？
+</p>
 
     <p
   style={{
