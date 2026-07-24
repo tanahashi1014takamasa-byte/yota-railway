@@ -1001,17 +1001,6 @@ steam.play();
   )}
 </div>
 
-<p
-  style={{
-    position: "absolute",
-    left: "40px",
-    bottom: "0px",
-    color: "white",
-    fontSize: "15px",
-  }}
->
-  ※ほしい のりものをタップしてね！
-</p>
 
     </div>
 
