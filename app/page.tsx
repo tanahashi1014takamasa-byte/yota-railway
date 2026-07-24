@@ -1169,7 +1169,7 @@ steam.play();
   style={{
     textAlign: "center",
     marginTop: "20px",
-    fontSize: "10px",
+    fontSize: "17px",
   }}
 >
   商品をタップしてカートに追加してください
@@ -1222,6 +1222,11 @@ steam.play();
 ))}
 
 
+
+
+</div>
+
+ 
 {showCartDialog && (
   <div
     style={{
@@ -1268,11 +1273,6 @@ steam.play();
     </button>
   </div>
 )}
-
-</div>
-
- 
-
 
   </div>
 )}
