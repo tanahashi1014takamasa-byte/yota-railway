@@ -1222,7 +1222,7 @@ steam.play();
 {selectedVehicle && (
   <div
     style={{
-      position: "absolute",
+      position: "fixed",
       top: "50%",
       left: "50%",
       transform: "translate(-50%, -50%)",
@@ -1244,21 +1244,32 @@ steam.play();
       {selectedVehicle.price}円
     </p>
 
-    <p>
-      かいますか？
-    </p>
+   
 
-    <button>
-      かう
-    </button>
+   <button
+  style={{
+    display: "block",
+    margin: "15px auto",
+    fontSize: "24px",
+    padding: "10px 40px",
+  }}
+>
+  かう
+</button>
 
-    <button
-      onClick={() => {
-        setSelectedVehicle(null);
-      }}
-    >
-      かわない
-    </button>
+<button
+  onClick={() => {
+    setSelectedVehicle(null);
+  }}
+  style={{
+    display: "block",
+    margin: "15px auto",
+    fontSize: "24px",
+    padding: "10px 40px",
+  }}
+>
+  かわない
+</button>
   </div>
 )}
 
