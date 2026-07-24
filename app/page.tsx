@@ -1172,10 +1172,10 @@ steam.play();
 
     <p
   style={{
-    textAlign: "left",
+    textAlign: "center",
     width: "300px",
     margin: "0 auto 20px",
-    fontSize: "18px",
+    fontSize: "20px",
   }}
 >
   💰 もってる おかね：{saveData.money}円
