@@ -1133,6 +1133,40 @@ steam.play();
 
     </div>
 
+    {shopMode === "buy" && (
+  <div
+    style={{
+      position: "absolute",
+      top: "250px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      color: "white",
+      textAlign: "center",
+    }}
+  >
+    <h2>
+      🚃 のりものショップ
+    </h2>
+
+    <p>
+      どれを かいますか？
+    </p>
+
+    <p>
+      ▶ {currentVehicle.name}
+    </p>
+
+    <p>
+      💰 {currentVehicle.price}円
+    </p>
+
+    <p>
+      所持金：{saveData.money}円
+    </p>
+
+  </div>
+)}
+
   </div>
 )}
 
