@@ -1221,21 +1221,21 @@ steam.play();
 
 {selectedVehicle && (
   <div
-    style={{
-      position: "fixed",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      background: "black",
-      color: "white",
-      border: "3px solid white",
-      borderRadius: "15px",
-      padding: "30px",
-      width: "300px",
-      textAlign: "center",
-      zIndex: 1000,
-    }}
-  >
+  style={{
+    position: "fixed",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "300px",
+    background: "black",
+    color: "white",
+    border: "3px solid white",
+    borderRadius: "15px",
+    padding: "30px",
+    textAlign: "center",
+    zIndex: 99999,
+  }}
+>
     <p style={{ fontSize: "28px" }}>
       {selectedVehicle.name}
     </p>
