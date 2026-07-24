@@ -232,7 +232,7 @@ const shopVehicles = [
   price : 100,
 },
 {
-    name: "ヒーロー",
+    name: "光速ヒーロー",
     image: "/images/アイシールド21.gif",
     description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ\n英雄だった\nホームやかいだんは\nはしらないでね！",
     price : 100,
@@ -953,6 +953,8 @@ steam.play();
           width={100}
 />
 
+
+
       <div
   onClick={() => {
     if (doctorPage < doctorMessages.length - 1) {
@@ -998,6 +1000,18 @@ steam.play();
     </div>
   )}
 </div>
+
+<p
+  style={{
+    position: "absolute",
+    left: "20px",
+    bottom: "140px",
+    color: "white",
+    fontSize: "18px",
+  }}
+>
+  ※ほしい のりものをタップしてね！
+</p>
 
     </div>
 
