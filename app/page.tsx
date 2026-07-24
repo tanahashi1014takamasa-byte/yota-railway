@@ -914,6 +914,29 @@ steam.play();
   }}
 />
 
+<img
+  src="/images/sell.png"
+  alt="売却"
+  style={{
+    position: "absolute",
+    top: "65px",
+    left: "calc(50% - 170px)",
+    width: "140px",
+    cursor: "pointer",
+  }}
+/>
+
+<img
+  src="/images/buy.png"
+  alt="購入"
+  style={{
+    position: "absolute",
+    top: "65px",
+    left: "calc(50% + 30px)",
+    width: "140px",
+    cursor: "pointer",
+  }}
+/>
 
 <p
   style={{
