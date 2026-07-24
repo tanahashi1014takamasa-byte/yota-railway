@@ -1173,7 +1173,7 @@ steam.play();
    <p
   style={{
     textAlign: "center",
-    width: "400px",
+    width: "550px",
     margin: "0 auto 20px",
   }}
 >
