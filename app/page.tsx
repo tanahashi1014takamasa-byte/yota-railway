@@ -1004,10 +1004,10 @@ steam.play();
 <p
   style={{
     position: "absolute",
-    left: "30px",
-    bottom: "10px",
+    left: "5px",
+    bottom: "5px",
     color: "white",
-    fontSize: "10px",
+    fontSize: "15px",
   }}
 >
   ※ほしい のりものをタップしてね！
