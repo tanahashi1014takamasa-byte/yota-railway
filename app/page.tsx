@@ -1198,7 +1198,6 @@ steam.play();
     key={vehicle.name}
      onClick={() => {
   setSelectedVehicle(vehicle);
-  setShowCartDialog(true);
 }}
     style={{
       display: "flex",
@@ -1227,52 +1226,7 @@ steam.play();
 </div>
 
  
-{showCartDialog && (
-  <div
-    style={{
-      position: "fixed",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      background: "black",
-      color: "white",
-      border: "3px solid white",
-      borderRadius: "15px",
-      padding: "20px",
-      textAlign: "center",
-      zIndex: 9999,
-      minWidth: "250px",
-    }}
-  >
-    <p>カートに追加しますか？</p>
 
-    <button
-      onClick={() => {
-        setShowCartDialog(false);
-      }}
-      style={{
-        marginTop: "15px",
-        padding: "10px 20px",
-      }}
-    >
-      カートに追加
-    </button>
-
-    <br />
-
-    <button
-      onClick={() => {
-        setShowCartDialog(false);
-      }}
-      style={{
-        marginTop: "10px",
-        padding: "10px 20px",
-      }}
-    >
-      キャンセル
-    </button>
-  </div>
-)}
 
   </div>
 )}
