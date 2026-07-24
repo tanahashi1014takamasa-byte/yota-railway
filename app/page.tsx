@@ -1211,9 +1211,7 @@ steam.play();
 ))}
 </div>
 
-    <p>
-      おかね：{saveData.money}円
-    </p>
+ 
 
     <button
   onClick={() => {
