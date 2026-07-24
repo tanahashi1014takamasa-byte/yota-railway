@@ -1164,7 +1164,9 @@ steam.play();
   >
     <p
   style={{
+    textAlign: "center",
     marginTop: "20px",
+    fontSize: "20px",
   }}
 >
   どれを かいますか？
