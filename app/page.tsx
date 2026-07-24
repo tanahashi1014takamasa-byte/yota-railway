@@ -500,6 +500,7 @@ steam.play();
 <img
   src="/images/customshop.png"
   alt="カスタムショップ"
+  
   width={180}
   onClick={() => {
   bgmRef.current?.pause();
@@ -508,6 +509,7 @@ steam.play();
 
   setScene("customShop");
 }}
+
   style={{
     cursor: "pointer",
     marginTop: "10px",
@@ -905,6 +907,11 @@ steam.play();
   <img
   src="/images/CS.png"
   alt="カスタムショップ"
+  onClick={() => {
+    setShopMode("main");
+    setVehicleDescription("");
+  }}
+
   style={{
     position: "absolute",
     top: "20px",
