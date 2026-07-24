@@ -921,7 +921,7 @@ steam.play();
     position: "absolute",
     top: "65px",
     left: "calc(50% - 170px)",
-    width: "140px",
+    width: "100px",
     cursor: "pointer",
   }}
 />
@@ -933,7 +933,7 @@ steam.play();
     position: "absolute",
     top: "65px",
     left: "calc(50% + 30px)",
-    width: "140px",
+    width: "100px",
     cursor: "pointer",
   }}
 />
