@@ -1170,11 +1170,12 @@ steam.play();
   どれを かいますか？
 </p>
 
-   <p
+    <p
   style={{
-    textAlign: "center",
-    width: "550px",
+    textAlign: "left",
+    width: "300px",
     margin: "0 auto 20px",
+    fontSize: "28px",
   }}
 >
   💰 もってる おかね：{saveData.money}円
