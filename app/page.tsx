@@ -83,6 +83,7 @@ useEffect(() => {
   distance: 0,
   money: 0,
   retiredTrains: [],
+  ownedVehicles: [] as string[],
 });
 
 const [saveLoaded, setSaveLoaded] = useState(false);
@@ -436,12 +437,13 @@ const popKeyframes = `
   }
 
   setSaveData({
-    selectedTrain: "",
-    level: 1,
-    distance: 0,
-    retiredTrains: [],
-    money: 0,
-  });
+  selectedTrain: "",
+  level: 1,
+  distance: 0,
+  retiredTrains: [],
+  money: 0,
+  ownedVehicles: [],
+});
 
     setMessageIndex(0);
 const steam = new Audio("/sounds/steam_train.mp3");
@@ -1175,18 +1177,22 @@ steam.play();
 
   if (saveData.money >= currentVehicle.price) {
 
-    setSaveData({
-      ...saveData,
-      money: saveData.money - currentVehicle.price,
-    });
+  setSaveData({
+    ...saveData,
+    money: saveData.money - currentVehicle.price,
+    ownedVehicles: [
+      ...saveData.ownedVehicles,
+      currentVehicle.name,
+    ],
+  });
 
-    alert("かった！");
+  alert("かった！");
 
-  } else {
+} else {
 
-    alert("おかねが たりないよ！");
+  alert("おかねが たりないよ！");
 
-  }
+}
 
 }}
   style={{
