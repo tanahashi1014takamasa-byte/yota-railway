@@ -242,11 +242,11 @@ const shopVehicles = [
 {
   name: "せいそう だいしゃニキ",
   image: "/images/清掃台車ニキ.png",
-  description: "だいしゃ はりょうて で \nおそうね！",
+  description: "だいしゃ に のっては\nいけません！",
   price : 100,
 },
 {
-  name: "だいがくせい",
+  name: "じぶんさがしニキ",
   image: "/images/自分探し.gif",
   description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい\n握りしめて～♪\nゆっくりゆっくり下ってく～♪",
   price : 100,
@@ -1187,12 +1187,28 @@ steam.play();
     margin: "0 auto",
   }}
 >
-  {shopVehicles.map((vehicle, index) => (
-    <p key={vehicle.name}>
-      {buyIndex === index ? "▶ " : "  "}
-      {vehicle.name}　{vehicle.price}円
-    </p>
-  ))}
+{shopVehicles.map((vehicle, index) => (
+  <p
+    key={vehicle.name}
+    style={{
+      display: "flex",
+      alignItems: "center",
+      margin: "8px 0",
+    }}
+  >
+    <span style={{ width: "30px" }}>
+      {buyIndex === index ? "▶" : ""}
+    </span>
+
+    <span style={{ width: "180px" }}>
+      {vehicle.name}
+    </span>
+
+    <span>
+      {vehicle.price}円
+    </span>
+  </p>
+))}
 </div>
 
     <p>
