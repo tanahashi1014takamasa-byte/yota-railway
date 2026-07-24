@@ -1219,7 +1219,53 @@ steam.play();
 ))}
 </div>
 
- 
+ {selectedVehicle && (
+  <div
+    style={{
+      marginTop: "30px",
+      fontSize: "24px",
+      textAlign: "center",
+    }}
+  >
+    <p>
+      {selectedVehicle.name}
+    </p>
+
+    <p>
+      {selectedVehicle.price}円
+    </p>
+
+    <p>
+      {selectedVehicle.name}を
+      かいますか？
+    </p>
+
+    <button
+      onClick={() => {
+        alert(`${selectedVehicle.name} ゲット！`);
+      }}
+      style={{
+        fontSize: "24px",
+        padding: "10px 40px",
+      }}
+    >
+      かう
+    </button>
+
+    <button
+      onClick={() => {
+        setSelectedVehicle(null);
+      }}
+      style={{
+        fontSize: "24px",
+        padding: "10px 40px",
+        marginLeft: "20px",
+      }}
+    >
+      かわない
+    </button>
+  </div>
+)}
 
     <button
   onClick={() => {
