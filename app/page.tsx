@@ -1063,7 +1063,7 @@ steam.play();
     background: "transparent",
     border: "none",
     color: "white",
-    fontSize: "32px",
+    fontSize: "28px",
     padding: 0,
     cursor: "pointer",
   }}
