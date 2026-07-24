@@ -76,7 +76,6 @@ useEffect(() => {
   const [shopIndex, setShopIndex] = useState(0);
   const [shopMode, setShopMode] = useState("main");
   const [buyIndex, setBuyIndex] = useState(0);
-  const [selectedVehicle, setSelectedVehicle] = useState<any>(null);
   
 
   const [saveData, setSaveData] = useState({
@@ -1194,15 +1193,11 @@ steam.play();
 {shopVehicles.map((vehicle, index) => (
   <p
     key={vehicle.name}
-    onClick={() => {
-      setSelectedVehicle(vehicle);
-    }}
     style={{
       display: "flex",
       alignItems: "center",
       margin: "30px 0",
       fontSize: "23px",
-      cursor: "pointer",
     }}
   >
     <span style={{ width: "30px" }}>
@@ -1219,56 +1214,7 @@ steam.play();
 ))}
 </div>
 
-{selectedVehicle && (
-  <div
-  style={{
-    position: "fixed",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "300px",
-    background: "black",
-    color: "white",
-    border: "3px solid white",
-    borderRadius: "15px",
-    padding: "30px",
-    textAlign: "center",
-    zIndex: 99999,
-  }}
->
-    <p style={{ fontSize: "28px" }}>
-      {selectedVehicle.name}
-    </p>
-
-    <p style={{ fontSize: "24px" }}>
-      {selectedVehicle.price}円
-    </p>
-
-    <button
-      style={{
-        display: "block",
-        margin: "15px auto",
-        fontSize: "24px",
-      }}
-    >
-      かう
-    </button>
-
-    <button
-      onClick={() => {
-        setSelectedVehicle(null);
-      }}
-      style={{
-        display: "block",
-        margin: "15px auto",
-        fontSize: "24px",
-      }}
-    >
-      かわない
-    </button>
-
-  </div>
-)}
+ 
 
     <button
   onClick={() => {
@@ -1302,7 +1248,23 @@ steam.play();
   はい
 </button>
 
-
+<button
+  onClick={() => {
+    setShopMode("main");
+  }}
+  style={{
+    marginTop: "20px",
+    marginLeft: "20px",
+    fontSize: "24px",
+    padding: "10px 40px",
+    background: "black",
+    color: "white",
+    border: "2px solid white",
+    borderRadius: "10px",
+  }}
+>
+  いいえ
+</button>
 
   </div>
 )}
