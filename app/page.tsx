@@ -637,10 +637,7 @@ steam.play();
       steam.onended = () => {
 
 
-      setSaveData({
-  ...saveData,
-  selectedTrain: saveData.mainTrain,
-});
+      
 
 
         if (bgmRef.current) {
