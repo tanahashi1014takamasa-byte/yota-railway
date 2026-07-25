@@ -75,6 +75,7 @@ useEffect(() => {
   const RIGHT_WALL = 200;
   const [shopIndex, setShopIndex] = useState(0);
   const [shopMode, setShopMode] = useState("main");
+  const [cartItems, setCartItems] = useState<any[]>([]);
   const [buyIndex, setBuyIndex] = useState(0);
   const [cart, setCart] = useState<any[]>([]);
   const [selectedVehicle, setSelectedVehicle] = useState<any>(null);
@@ -1203,6 +1204,11 @@ steam.play();
   sound.volume = 0.5;
   sound.play();
 
+  setCartItems((prev) => [
+    ...prev,
+    vehicle,
+  ]);
+
   setSelectedVehicle(vehicle);
 }}
     style={{
@@ -1257,7 +1263,10 @@ steam.play();
     style={{
       width: "100vw",
       height: "100vh",
-      background: "white",
+      background: "black",
+      color: "white",
+      position: "relative",
+      overflow: "hidden",
     }}
   >
     <h1
@@ -1269,23 +1278,23 @@ steam.play();
       🛒 カート
     </h1>
 
-      <button
-  onClick={() => {
-    setScene("customShop");
-    setShopMode("buy");
-  }}
-  style={{
-    position: "absolute",
-    bottom: "50px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    fontSize: "20px",
-    padding: "10px 30px",
-    cursor: "pointer",
-  }}
->
-  戻る
-</button>
+    <button
+      onClick={() => {
+        setScene("customShop");
+        setShopMode("buy");
+      }}
+      style={{
+        position: "absolute",
+        bottom: "50px",
+        left: "50%",
+        transform: "translateX(-50%)",
+        fontSize: "20px",
+        padding: "10px 30px",
+        cursor: "pointer",
+      }}
+    >
+      戻る
+    </button>
 
   </div>
 )}
