@@ -955,22 +955,6 @@ steam.play();
   }}
 />
 
-
-<button
-  onClick={() => {
-
-  }}
-  style={{
-    display: "block",
-    margin: "30px auto",
-    fontSize: "20px",
-    padding: "10px 30px",
-    cursor: "pointer",
-  }}
->
-  購入する
-</button>
-
 <img
   src="/images/buy.png"
   alt="購入"
@@ -1282,7 +1266,7 @@ steam.play();
       background: "black",
       color: "white",
       position: "relative",
-      overflowY: "auto",
+      overflow: "hidden",
     }}
   >
     <h1
@@ -1293,16 +1277,6 @@ steam.play();
     >
       🛒 カート
     </h1>
-
-    <p
-  style={{
-    textAlign: "center",
-    fontSize: "22px",
-    marginTop: "20px",
-  }}
->
-  💰 所持金：{saveData.money}円
-</p>
 
 <p
   style={{
@@ -1357,37 +1331,6 @@ steam.play();
 
     </div>
   ))}
-</div>
-
-<div
-  style={{
-    position: "absolute",
-    bottom: "20px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    width: "100%",
-  }}
->
-
-<button
-  onClick={() => {
-
-
-  }}
-  style={{
-    display: "block",
-    margin: "30px auto",
-    fontSize: "20px",
-    padding: "10px 30px",
-    cursor: "pointer",
-  }}
->
-
-
-  
-  購入する
-</button>
-
 </div>
 
    <button
