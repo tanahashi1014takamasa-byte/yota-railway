@@ -972,7 +972,12 @@ steam.play();
   translate(calc(-50% + ${trainX}px), -50%)
   scaleX(${trainFlip ? -1 : 1})
 `,
-        width: "180px",
+        width:
+  saveData.selectedTrain === "オトナブルートレイン" ||
+  saveData.selectedTrain === "回転寿司"
+  
+    ? "300px"
+    : "180px",
         
       }}
     />
