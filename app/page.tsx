@@ -1277,15 +1277,17 @@ steam.play();
     >
       🛒 カート
     </h1>
-   <div
+  <div
   style={{
     width: "320px",
+    height: "500px",
     margin: "100px auto",
     padding: "20px",
     border: "3px solid white",
     borderRadius: "15px",
     background: "black",
     color: "white",
+    overflowY: "auto",
   }}
 >
   {cartItems.map((vehicle, index) => (
