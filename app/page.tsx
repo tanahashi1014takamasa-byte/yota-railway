@@ -1292,6 +1292,17 @@ steam.play();
   )}円
 </p>
 
+
+<p
+  style={{
+    textAlign: "center",
+    fontSize: "22px",
+    marginTop: "10px",
+  }}
+>
+  💰 所持金：{saveData.money}円
+</p>
+
 <div
   style={{
     width: "320px",
