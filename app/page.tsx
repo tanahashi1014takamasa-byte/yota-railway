@@ -102,6 +102,16 @@ useEffect(() => {
   const timer = setInterval(() => {
     if (scene !== "frame") return;
 
+    let speed = 1;
+
+    if (saveData.selectedTrain === "アイシールド21") {
+      speed = 5;
+    }
+
+    if (saveData.selectedTrain === "清掃台車ニキ") {
+      speed = 3;
+    }
+
     if (leverState === "left") {
       setTrainX((x) => {
         if (x <= LEFT_WALL) {
@@ -109,12 +119,12 @@ useEffect(() => {
         }
 
         setSaveData((data) => ({
-  ...data,
-  distance: data.distance + 1,
-  money: data.money + 1,
-}));
+          ...data,
+          distance: data.distance + 1,
+          money: data.money + 1,
+        }));
 
-        return x - 1;
+        return x - speed;
       });
 
     } else if (leverState === "right") {
@@ -124,19 +134,19 @@ useEffect(() => {
         }
 
         setSaveData((data) => ({
-  ...data,
-  distance: data.distance + 1,
-  money: data.money + 1,
-}));
+          ...data,
+          distance: data.distance + 1,
+          money: data.money + 1,
+        }));
 
-        return x + 1;
+        return x + speed;
       });
     }
 
   }, 30);
 
   return () => clearInterval(timer);
-}, [leverState, scene]);
+}, [leverState, scene, saveData.selectedTrain]);
 
 const saveGame = () => {
 
