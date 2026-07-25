@@ -1246,8 +1246,29 @@ steam.play();
   </div>
 )}
 
+   </div>
+)}
+
+{scene === "cart" && (
+  <div
+    style={{
+      width: "100vw",
+      height: "100vh",
+      background: "white",
+    }}
+  >
+    <h1
+      style={{
+        textAlign: "center",
+        marginTop: "50px",
+      }}
+    >
+      🛒 カート
+    </h1>
   </div>
 )}
+
+
 
       {scene === "running" && (
         <>
