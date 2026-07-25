@@ -207,6 +207,7 @@ const shopVehicles = [
     image: "/images/メタスラ.gif",
     description: "これは…\nめっさカックィー メカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
     price : 100,
+    initialFlip: true,
   },
   {
     name: "メタルスラッグ２",
