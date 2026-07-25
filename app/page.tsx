@@ -926,7 +926,7 @@ steam.play();
     onClick={() => {
   playLeverSound();
   setLeverState("right");
-  setTrainFlip(true);
+  setTrainFlip(!selectedTrain?.initialFlip);
 }}
     style={{ cursor: "pointer" }}
   />
