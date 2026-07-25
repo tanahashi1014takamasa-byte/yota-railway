@@ -322,7 +322,7 @@ const doctorMessages = [
     "それはさておき…",
   ],
   [
-    "カスタムショップへ ようこそ！\n\n※ほしい のりものがあったら\n現代のタナハシにいってね！",
+    "カスタムショップへ ようこそ！\n\n※ほしい のりものがあったら\nパパといっしょにかんがえよう！\n紡ぐも、逆もまた自在だよ！",
   ],
 ];
 
@@ -1382,12 +1382,19 @@ steam.play();
       0
     );
 
-    if (saveData.money < total) {
-      alert("おかねがたりません！");
-      return;
-    }
+   if (saveData.money < total) {
+  alert("おかねがたりません！");
+  return;
+}
 
-    alert("購入しました！");
+setSaveData((data) => ({
+  ...data,
+  money: data.money - total,
+}));
+
+alert("購入しました！");
+
+setCartItems([]);
   }}
   style={{
     fontSize: "20px",
