@@ -1359,9 +1359,19 @@ steam.play();
   ))}
 </div>
 
+<div
+  style={{
+    position: "absolute",
+    bottom: "20px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    width: "100%",
+  }}
+>
 
 <button
   onClick={() => {
+
 
   }}
   style={{
@@ -1372,9 +1382,13 @@ steam.play();
     cursor: "pointer",
   }}
 >
+
+
+  
   購入する
 </button>
 
+</div>
 
    <button
   onClick={() => {
