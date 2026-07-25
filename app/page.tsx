@@ -928,8 +928,6 @@ steam.play();
     position: "absolute",
     bottom: "35px",
     left: "42%",
-    color: "white",
-    textShadow: "2px 2px 4px black",
     transform: "translateX(-50%)",
     display: "flex",
     gap: "20px",
