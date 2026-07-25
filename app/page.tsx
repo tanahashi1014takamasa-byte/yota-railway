@@ -1307,7 +1307,7 @@ steam.play();
   style={{
     width: "320px",
     maxHeight: "55vh",
-    margin: "50px auto 0",
+    margin: "20px auto 0",
     color: "white",
     overflowY: "auto",
   }}
