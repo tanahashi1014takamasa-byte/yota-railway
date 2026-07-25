@@ -1268,6 +1268,25 @@ steam.play();
     >
       🛒 カート
     </h1>
+
+      <button
+  onClick={() => {
+    setScene("customShop");
+    setShopMode("buy");
+  }}
+  style={{
+    position: "absolute",
+    bottom: "50px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    fontSize: "20px",
+    padding: "10px 30px",
+    cursor: "pointer",
+  }}
+>
+  戻る
+</button>
+
   </div>
 )}
 
