@@ -687,7 +687,7 @@ steam.play();
   </button>
 ))}
 
-    <button
+   <button
   onClick={() => {
 
     setSaveData({
@@ -706,8 +706,18 @@ steam.play();
 
     setScene("frame");
   }}
+  style={{
+    color: "white",
+    background: "black",
+    border: "3px solid white",
+    borderRadius: "15px",
+    padding: "12px 30px",
+    fontSize: "22px",
+    fontWeight: "bold",
+    cursor: "pointer",
+  }}
 >
-  このデータで遊ぶ
+  このデータであそぶ
 </button>
     </div>
 )}
