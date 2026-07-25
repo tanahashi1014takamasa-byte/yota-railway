@@ -628,7 +628,21 @@ steam.play();
       });
 
       setTrainX(0);
-      setScene("frame");
+
+      const steam = new Audio("/sounds/steam_train.mp3");
+      steam.volume = 0.3;
+
+      steam.onended = () => {
+        if (bgmRef.current) {
+          bgmRef.current.volume = 0.05;
+          bgmRef.current.currentTime = 0;
+          bgmRef.current.play();
+        }
+
+        setScene("frame");
+      };
+
+      steam.play();
 
     }}
     style={{
