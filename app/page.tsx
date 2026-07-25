@@ -195,7 +195,7 @@ const shopVehicles = [
   {
   name: "ギャルでん",
   image: "/images/gal.png",
-  trainSize: 500,
+  trainSize: 400,
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
   price : 100,
 },
@@ -264,13 +264,14 @@ const shopVehicles = [
 {
   name: "せいそう だいしゃニキ",
   image: "/images/清掃台車ニキ.png",
-  trainSize: 250,
+  trainSize: 200,
   description: "だいしゃ に のっては\nいけません！",
   price : 100,
 },
 {
   name: "じぶんさがしニキ",
   image: "/images/自分探し.gif",
+  trainSize: 200,
   description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい\n握りしめて～♪\nゆっくりゆっくり下ってく～♪",
   price : 100,
 },
@@ -285,7 +286,7 @@ const shopVehicles = [
 {
   name: "回転寿司",
   image: "/images/回転寿司.gif",
-  trainSize: 250,
+  trainSize: 450,
   description: "おすしー！\nむしろ…おしすー！\nすし なら\nまいにちだってくえるぜ\nはむかっぱも\nすしはだいすきだってさ",
   price : 100,
 },
