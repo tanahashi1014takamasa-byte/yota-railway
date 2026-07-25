@@ -1282,7 +1282,7 @@ steam.play();
       background: "black",
       color: "white",
       position: "relative",
-      overflow: "hidden",
+      overflowY: "auto",
     }}
   >
     <h1
