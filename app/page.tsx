@@ -1333,21 +1333,56 @@ steam.play();
   ))}
 </div>
 
-   <button
+   <div
+  style={{
+    position: "absolute",
+    bottom: "20px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    display: "flex",
+    gap: "30px",
+  }}
+>
+
+<button
   onClick={() => {
     setScene("customShop");
     setShopMode("buy");
   }}
   style={{
-  display: "block",
-  margin: "30px auto",
-  fontSize: "20px",
-  padding: "10px 30px",
-  cursor: "pointer",
-}}
+    fontSize: "20px",
+    padding: "10px 30px",
+    cursor: "pointer",
+  }}
 >
-  戻る
+  ［戻る］
 </button>
+
+
+<button
+  onClick={() => {
+    const total = cartItems.reduce(
+      (sum, vehicle) => sum + vehicle.price,
+      0
+    );
+
+    if (saveData.money < total) {
+      alert("おかねがたりません！");
+      return;
+    }
+
+    alert("購入しました！");
+  }}
+  style={{
+    fontSize: "20px",
+    padding: "10px 30px",
+    cursor: "pointer",
+  }}
+>
+  ［購入する］
+</button>
+
+</div>
 
   </div>
 )}
