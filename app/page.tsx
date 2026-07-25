@@ -955,6 +955,22 @@ steam.play();
   }}
 />
 
+
+<button
+  onClick={() => {
+
+  }}
+  style={{
+    display: "block",
+    margin: "30px auto",
+    fontSize: "20px",
+    padding: "10px 30px",
+    cursor: "pointer",
+  }}
+>
+  購入する
+</button>
+
 <img
   src="/images/buy.png"
   alt="購入"
@@ -1332,6 +1348,23 @@ steam.play();
     </div>
   ))}
 </div>
+
+
+<button
+  onClick={() => {
+
+  }}
+  style={{
+    display: "block",
+    margin: "30px auto",
+    fontSize: "20px",
+    padding: "10px 30px",
+    cursor: "pointer",
+  }}
+>
+  購入する
+</button>
+
 
    <button
   onClick={() => {
