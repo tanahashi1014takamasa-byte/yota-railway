@@ -976,7 +976,7 @@ steam.play();
   saveData.selectedTrain === "オトナブルートレイン" ||
   saveData.selectedTrain === "回転寿司"
   
-    ? "300px"
+    ? "250px"
     : "180px",
         
       }}
