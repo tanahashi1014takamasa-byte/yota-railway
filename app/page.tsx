@@ -105,7 +105,7 @@ useEffect(() => {
     let speed = 1;
 
     if (saveData.selectedTrain === "アイシールド21") {
-      speed = 5;
+      speed = 20;
     }
 
     if (saveData.selectedTrain === "清掃台車ニキ") {
