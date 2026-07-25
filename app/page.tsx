@@ -1384,6 +1384,7 @@ steam.play();
     width: "120px",
     whiteSpace: "nowrap",
     cursor: "pointer",
+    transform: "translateX(-10px)",
   }}
 >
   ［購入する］
