@@ -830,7 +830,7 @@ steam.play();
 
 <button
   onClick={() => {
-    alert("星ボタン");
+    setScene("quiz");
   }}
   style={{
     position: "absolute",
@@ -997,6 +997,21 @@ steam.play();
         
       }}
     />
+  </div>
+)}
+
+{scene === "quiz" && (
+  <div
+    style={{
+      color: "white",
+      fontSize: "30px",
+      textAlign: "center",
+      marginTop: "200px",
+    }}
+  >
+    ⭐ ミニゲーム
+    <br />
+    クイズ画面
   </div>
 )}
 
