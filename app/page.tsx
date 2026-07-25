@@ -1352,6 +1352,8 @@ steam.play();
   style={{
     fontSize: "20px",
     padding: "10px 30px",
+    width: "120px",
+    whiteSpace: "nowrap",
     cursor: "pointer",
   }}
 >
@@ -1376,6 +1378,8 @@ steam.play();
   style={{
     fontSize: "20px",
     padding: "10px 30px",
+    width: "120px",
+    whiteSpace: "nowrap",
     cursor: "pointer",
   }}
 >
