@@ -285,9 +285,14 @@ const buyVehicle = shopVehicles[buyIndex];
 
 
 
-const selectedTrain = trains.find(
-  (train) => train.name === saveData.selectedTrain
-);
+const selectedTrain =
+  trains.find(
+    (train) => train.name === saveData.selectedTrain
+  )
+  ||
+  saveData.ownedVehicles.find(
+    (vehicle) => vehicle.name === saveData.selectedTrain
+  );
 
 const leverImage =
   leverState === "left"
