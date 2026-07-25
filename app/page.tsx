@@ -904,9 +904,7 @@ steam.play();
    onClick={() => {
   playLeverSound();
   setLeverState("left");
-  setTrainFlip(
-    saveData.selectedTrain === "よねづけんし" ? true : false
-  );
+  setTrainFlip(false);
 }}
     style={{ cursor: "pointer" }}
   />
@@ -927,9 +925,7 @@ steam.play();
     onClick={() => {
   playLeverSound();
   setLeverState("right");
-  setTrainFlip(
-    saveData.selectedTrain === "よねづけんし" ? false : true
-  );
+  setTrainFlip(true);
 }}
     style={{ cursor: "pointer" }}
   />
