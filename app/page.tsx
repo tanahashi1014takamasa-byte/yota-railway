@@ -1277,15 +1277,11 @@ steam.play();
     >
       🛒 カート
     </h1>
-  <div
+<div
   style={{
     width: "320px",
-    height: "500px",
-    margin: "100px auto",
-    padding: "20px",
-    border: "3px solid white",
-    borderRadius: "15px",
-    background: "black",
+    maxHeight: "55vh",
+    margin: "50px auto 0",
     color: "white",
     overflowY: "auto",
   }}
@@ -1310,14 +1306,12 @@ steam.play();
     setShopMode("buy");
   }}
   style={{
-    position: "absolute",
-    bottom: "30px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    fontSize: "20px",
-    padding: "10px 30px",
-    cursor: "pointer",
-  }}
+  display: "block",
+  margin: "30px auto",
+  fontSize: "20px",
+  padding: "10px 30px",
+  cursor: "pointer",
+}}
 >
   戻る
 </button>
