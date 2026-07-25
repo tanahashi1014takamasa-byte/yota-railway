@@ -1277,36 +1277,48 @@ steam.play();
     >
       🛒 カート
     </h1>
-    {cartItems.map((vehicle, index) => (
-  <div
-    key={index}
-    style={{
-      textAlign: "center",
-      marginTop: "30px",
-      fontSize: "20px",
-    }}
-  >
-    {vehicle.name}　{vehicle.price}円
-  </div>
-))}
-
-    <button
-      onClick={() => {
-        setScene("customShop");
-        setShopMode("buy");
-      }}
+   <div
+  style={{
+    width: "320px",
+    margin: "100px auto",
+    padding: "20px",
+    border: "3px solid white",
+    borderRadius: "15px",
+    background: "black",
+    color: "white",
+  }}
+>
+  {cartItems.map((vehicle, index) => (
+    <div
+      key={index}
       style={{
-        position: "absolute",
-        bottom: "50px",
-        left: "50%",
-        transform: "translateX(-50%)",
+        textAlign: "center",
+        marginTop: "30px",
         fontSize: "20px",
-        padding: "10px 30px",
-        cursor: "pointer",
       }}
     >
-      戻る
-    </button>
+      {vehicle.name}　{vehicle.price}円
+    </div>
+  ))}
+</div>
+
+   <button
+  onClick={() => {
+    setScene("customShop");
+    setShopMode("buy");
+  }}
+  style={{
+    position: "absolute",
+    bottom: "30px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    fontSize: "20px",
+    padding: "10px 30px",
+    cursor: "pointer",
+  }}
+>
+  戻る
+</button>
 
   </div>
 )}
