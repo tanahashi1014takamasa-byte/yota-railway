@@ -103,14 +103,17 @@ useEffect(() => {
     if (scene !== "frame") return;
 
     let speed = 1;
+   
 
-    if (saveData.selectedTrain === "アイシールド21") {
+    if (saveData.selectedTrain === "アイシールド２１") {
       speed = 20;
     }
 
-    if (saveData.selectedTrain === "清掃台車ニキ") {
+    if (saveData.selectedTrain === "せいそう だいしゃニキ") {
       speed = 3;
     }
+
+   
 
     if (leverState === "left") {
       setTrainX((x) => {
@@ -1314,7 +1317,7 @@ steam.play();
 <img
   src="/images/CART.png"
   alt="カート"
-  width={120}
+  width={100}
   onClick={() => {
     setScene("cart");
   }}
