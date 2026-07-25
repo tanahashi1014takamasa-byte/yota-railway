@@ -195,7 +195,7 @@ const shopVehicles = [
   {
   name: "ギャルでん",
   image: "/images/gal.png",
-  trainSize: 250,
+  trainSize: 500,
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
   price : 100,
 },
