@@ -235,12 +235,14 @@ const shopVehicles = [
    {
     name: "U.F.O.",
     image: "/images/UFO.png",
+    trainSize: 120,
     description: "みかくにんひこうぶったい\nこれはまちがいなく\nみかくにんひこう…\nまちがいなく…\nみかくにん…???\nU.F.O.の軌道に乗って♪\nあーなーたーと逃避行～♪",
     price : 100,
   },
    {
     name: "キッチンカー（ケバブ）",
     image: "/images/ケバブ.png",
+    trainSize: 200,
     description: "かまた駅のケバブは\nめっさ にく おおもり\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイスト\nだにょ～ん\n",
     price : 100,
   },
@@ -262,6 +264,7 @@ const shopVehicles = [
 {
   name: "せいそう だいしゃニキ",
   image: "/images/清掃台車ニキ.png",
+  speed: 10,
   trainSize: 200,
   description: "だいしゃ に のっては\nいけません！",
   price : 100,
@@ -894,7 +897,8 @@ steam.play();
     position: "absolute",
     top: "80px",
     left: "20px",
-    color: "#006400",
+    color: "white",
+    textShadow: "2px 2px 4px black",
     fontSize: "24px",
     fontWeight: "bold",
     zIndex: 10,
