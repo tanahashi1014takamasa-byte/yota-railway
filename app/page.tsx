@@ -235,7 +235,7 @@ const shopVehicles = [
    {
     name: "U.F.O.",
     image: "/images/UFO.png",
-    trainSize: 120,
+    trainSize: 160,
     description: "みかくにんひこうぶったい\nこれはまちがいなく\nみかくにんひこう…\nまちがいなく…\nみかくにん…???\nU.F.O.の軌道に乗って♪\nあーなーたーと逃避行～♪",
     price : 100,
   },
@@ -264,7 +264,7 @@ const shopVehicles = [
 {
   name: "せいそう だいしゃニキ",
   image: "/images/清掃台車ニキ.png",
-  speed: 10,
+  speed: 7,
   trainSize: 200,
   description: "だいしゃ に のっては\nいけません！",
   price : 100,
@@ -688,26 +688,27 @@ steam.play();
 ))}
 
     <button
-      onClick={() => {
-        const steam = new Audio("/sounds/steam_train.mp3");
-        steam.volume = 0.3;
-        steam.play();
-        if (bgmRef.current) {
-  bgmRef.current.volume = 0.05;
-  bgmRef.current.play();
-}
-        setScene("frame");
-      }}
-      style={{
-  color: "white",
-  background: "black",
-  border: "2px solid white",
-  borderRadius: "10px",
-  padding: "10px 30px",
-}}
-    >
-      このデータで遊ぶ
-    </button>
+  onClick={() => {
+
+    setSaveData({
+      ...saveData,
+      selectedTrain: saveData.mainTrain,
+    });
+
+    const steam = new Audio("/sounds/steam_train.mp3");
+    steam.volume = 0.3;
+    steam.play();
+
+    if (bgmRef.current) {
+      bgmRef.current.volume = 0.05;
+      bgmRef.current.play();
+    }
+
+    setScene("frame");
+  }}
+>
+  このデータで遊ぶ
+</button>
     </div>
 )}
       {scene === "trainSelect" && (
