@@ -1230,6 +1230,9 @@ steam.play();
   src="/images/CART.png"
   alt="カート"
   width={120}
+  onClick={() => {
+    setScene("cart");
+  }}
   style={{
     display: "block",
     margin: "40px auto",
