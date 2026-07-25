@@ -1357,7 +1357,7 @@ steam.play();
     width: "120px",
     whiteSpace: "nowrap",
     cursor: "pointer",
-    transform: "translateX(-15px)",
+    transform: "translateX(-20px)",
   }}
 >
   ［戻る］
