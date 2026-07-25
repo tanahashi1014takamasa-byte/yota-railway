@@ -613,15 +613,32 @@ steam.play();
 </p>
 
 {saveData.ownedVehicles.map((vehicle, index) => (
-  <p
+  <button
     key={index}
+    onClick={() => {
+
+      setSaveData({
+        ...saveData,
+        selectedTrain: vehicle.name,
+      });
+
+      setTrainX(0);
+      setScene("frame");
+
+    }}
     style={{
       color: "white",
+      background: "black",
+      border: "2px solid white",
+      borderRadius: "10px",
       fontSize: "20px",
+      padding: "10px 20px",
+      margin: "5px",
+      cursor: "pointer",
     }}
   >
     {vehicle.name}
-  </p>
+  </button>
 ))}
 
     <button
