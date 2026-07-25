@@ -85,6 +85,7 @@ useEffect(() => {
 
   const [saveData, setSaveData] = useState({
   selectedTrain: "",
+  mainTrain: "",
   level: 1,
   distance: 0,
   money: 0,
@@ -453,6 +454,7 @@ const popKeyframes = `
 
  setSaveData({
   selectedTrain: "",
+  mainTrain: "",
   level: 1,
   distance: 0,
   retiredTrains: [],
@@ -633,6 +635,14 @@ steam.play();
       steam.volume = 0.3;
 
       steam.onended = () => {
+
+
+      setSaveData({
+  ...saveData,
+  selectedTrain: saveData.mainTrain,
+});
+
+
         if (bgmRef.current) {
           bgmRef.current.volume = 0.05;
           bgmRef.current.currentTime = 0;
@@ -730,9 +740,10 @@ steam.play();
     bell.play();
 
     setSaveData({
-      ...saveData,
-      selectedTrain: train.name,
-    });
+  ...saveData,
+  selectedTrain: train.name,
+  mainTrain: train.name,
+});
   }}
       style={{
         fontSize: "20px",
