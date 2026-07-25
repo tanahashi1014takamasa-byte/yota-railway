@@ -260,7 +260,7 @@ const shopVehicles = [
 },
 
 {
-  name: "きょだいロボ",
+  name: "めっさデカいメカ",
   image: "/images/きょだいロボ.gif",
   description: "……………………\nえ…なにこれ…\nこわ\nこんなのつくったかな…",
   price : 100,
