@@ -1296,6 +1296,24 @@ steam.play();
       }}
     >
       {vehicle.name}　{vehicle.price}円
+
+
+<br />
+
+    <button
+      onClick={() => {
+        setCartItems((prev) =>
+          prev.filter((_, i) => i !== index)
+        );
+      }}
+      style={{
+        marginTop: "10px",
+        cursor: "pointer",
+      }}
+    >
+      削除
+    </button>
+
     </div>
   ))}
 </div>
