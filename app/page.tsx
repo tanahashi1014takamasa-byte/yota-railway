@@ -622,15 +622,24 @@ steam.play();
     key={index}
     onClick={() => {
 
-      setSaveData({
-        ...saveData,
-        selectedTrain: vehicle.name,
-      });
+  setSaveData({
+    ...saveData,
+    selectedTrain: vehicle.name,
+  });
 
-      setTrainX(0);
-      setScene("frame");
+  const steam = new Audio("/sounds/steam_train.mp3");
+  steam.volume = 0.3;
+  steam.play();
 
-    }}
+  if (bgmRef.current) {
+    bgmRef.current.volume = 0.05;
+    bgmRef.current.play();
+  }
+
+  setTrainX(0);
+  setScene("frame");
+
+}}
     style={{
       color: "white",
       background: "black",
