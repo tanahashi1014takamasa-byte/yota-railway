@@ -1277,6 +1277,21 @@ steam.play();
     >
       🛒 カート
     </h1>
+
+<p
+  style={{
+    textAlign: "center",
+    fontSize: "22px",
+    marginTop: "20px",
+  }}
+>
+  合計金額：
+  {cartItems.reduce(
+    (total, vehicle) => total + vehicle.price,
+    0
+  )}円
+</p>
+
 <div
   style={{
     width: "320px",
