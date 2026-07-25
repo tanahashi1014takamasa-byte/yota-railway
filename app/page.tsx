@@ -1294,6 +1294,16 @@ steam.play();
       🛒 カート
     </h1>
 
+    <p
+  style={{
+    textAlign: "center",
+    fontSize: "22px",
+    marginTop: "20px",
+  }}
+>
+  💰 所持金：{saveData.money}円
+</p>
+
 <p
   style={{
     textAlign: "center",
