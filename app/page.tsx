@@ -37,9 +37,10 @@ useEffect(() => {
   const data = JSON.parse(savedData);
 
   setSaveData({
-    ...data,
-    money: data.money ?? 0,
-  });
+  ...data,
+  money: data.money ?? 0,
+  ownedVehicles: data.ownedVehicles ?? [],
+});
 }
 
   setSaveLoaded(true);
@@ -88,6 +89,7 @@ useEffect(() => {
   distance: 0,
   money: 0,
   retiredTrains: [],
+  ownedVehicles: [] as any[],
 });
 
 const [saveLoaded, setSaveLoaded] = useState(false);
@@ -444,13 +446,14 @@ const popKeyframes = `
     }
   }
 
-  setSaveData({
-    selectedTrain: "",
-    level: 1,
-    distance: 0,
-    retiredTrains: [],
-    money: 0,
-  });
+ setSaveData({
+  selectedTrain: "",
+  level: 1,
+  distance: 0,
+  retiredTrains: [],
+  money: 0,
+  ownedVehicles: [],
+});
 
     setMessageIndex(0);
 const steam = new Audio("/sounds/steam_train.mp3");
@@ -598,6 +601,28 @@ steam.play();
     <p style={{ color: "white", fontSize: "22px" }}>
   おかね：{saveData.money}円
   </p>
+
+  <p
+  style={{
+    color: "white",
+    fontSize: "22px",
+    marginTop: "30px",
+  }}
+>
+  🚃 所持車両
+</p>
+
+{saveData.ownedVehicles.map((vehicle, index) => (
+  <p
+    key={index}
+    style={{
+      color: "white",
+      fontSize: "20px",
+    }}
+  >
+    {vehicle.name}
+  </p>
+))}
 
     <button
       onClick={() => {
@@ -1390,6 +1415,10 @@ steam.play();
 setSaveData((data) => ({
   ...data,
   money: data.money - total,
+  ownedVehicles: [
+    ...data.ownedVehicles,
+    ...cartItems,
+  ],
 }));
 
 alert("購入しました！");
