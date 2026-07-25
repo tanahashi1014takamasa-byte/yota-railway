@@ -717,7 +717,7 @@ steam.play();
     cursor: "pointer",
   }}
 >
-   {saveData.mainTrain || "このデータであそぶ"}
+   {saveData.mainTrain || "回送列車"}
 </button>
     </div>
 )}
