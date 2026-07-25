@@ -103,16 +103,13 @@ useEffect(() => {
     if (scene !== "frame") return;
 
     let speed = 1;
-   
+  
+    const vehicleSpeed =
+  saveData.ownedVehicles.find(
+    (vehicle) => vehicle.name === saveData.selectedTrain
+  )?.speed ?? 1;
 
-    if (saveData.selectedTrain === "アイシールド２１") {
-      speed = 20;
-    }
-
-    if (saveData.selectedTrain === "せいそう だいしゃニキ") {
-      speed = 3;
-    }
-
+speed = vehicleSpeed;
    
 
     if (leverState === "left") {
@@ -258,6 +255,7 @@ const shopVehicles = [
 {
     name: "アイシールド２１",
     image: "/images/アイシールド21.gif",
+    speed: 20,
     description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ\n英雄だった\nホームやかいだんは\nはしらないでね！",
     price : 100,
   },
