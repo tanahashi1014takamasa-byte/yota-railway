@@ -1277,6 +1277,18 @@ steam.play();
     >
       🛒 カート
     </h1>
+    {cartItems.map((vehicle, index) => (
+  <div
+    key={index}
+    style={{
+      textAlign: "center",
+      marginTop: "30px",
+      fontSize: "20px",
+    }}
+  >
+    {vehicle.name}　{vehicle.price}円
+  </div>
+))}
 
     <button
       onClick={() => {
