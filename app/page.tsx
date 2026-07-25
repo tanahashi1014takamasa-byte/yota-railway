@@ -195,6 +195,7 @@ const shopVehicles = [
   {
   name: "ギャルでん",
   image: "/images/gal.png",
+  trainSize: 250,
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
   price : 100,
 },
@@ -250,6 +251,7 @@ const shopVehicles = [
   name: "オトナブルートレイン",
   type: "video",
   image: "/videos/otona_blue.mp4",
+  trainSize: 300,
   description: "個性や自由ではみ出していく\nはみ出しちゃいけないのは…\n車線だけなんだぜ\nいつかは花になる\nアマリリス～♪ハァッ！！！",
   price : 100,
 },
@@ -262,6 +264,7 @@ const shopVehicles = [
 {
   name: "せいそう だいしゃニキ",
   image: "/images/清掃台車ニキ.png",
+  trainSize: 250,
   description: "だいしゃ に のっては\nいけません！",
   price : 100,
 },
@@ -275,12 +278,14 @@ const shopVehicles = [
 {
   name: "めっさデカいメカ",
   image: "/images/きょだいロボ.gif",
+  trainSize: 350,
   description: "……………………\nえ…なにこれ…\nこわ\nこんなのつくったかな…",
   price : 100,
 },
 {
   name: "回転寿司",
   image: "/images/回転寿司.gif",
+  trainSize: 250,
   description: "おすしー！\nむしろ…おしすー！\nすし なら\nまいにちだってくえるぜ\nはむかっぱも\nすしはだいすきだってさ",
   price : 100,
 },
@@ -968,16 +973,12 @@ steam.play();
         position: "absolute",
         top: "43%",
         left: "50%",
+        width: `${selectedTrain?.trainSize ?? 180}px`,
         transform: `
   translate(calc(-50% + ${trainX}px), -50%)
   scaleX(${trainFlip ? -1 : 1})
 `,
-        width:
-  saveData.selectedTrain === "オトナブルートレイン" ||
-  saveData.selectedTrain === "回転寿司"
-  
-    ? "250px"
-    : "180px",
+       
         
       }}
     />
