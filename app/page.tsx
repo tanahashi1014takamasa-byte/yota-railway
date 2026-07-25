@@ -1199,6 +1199,10 @@ steam.play();
   <p
     key={vehicle.name}
      onClick={() => {
+  const sound = new Audio("/sounds/coin.mp3");
+  sound.volume = 0.5;
+  sound.play();
+
   setSelectedVehicle(vehicle);
 }}
     style={{
