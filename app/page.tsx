@@ -1226,7 +1226,16 @@ steam.play();
   </p>
 ))}
 
-
+<img
+  src="/images/CART.png"
+  alt="カート"
+  width={120}
+  style={{
+    display: "block",
+    margin: "40px auto",
+    cursor: "pointer",
+  }}
+/>
 
 
 </div>
