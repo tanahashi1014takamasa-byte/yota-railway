@@ -95,6 +95,7 @@ useEffect(() => {
   const [cart, setCart] = useState<any[]>([]);
   const [selectedVehicle, setSelectedVehicle] = useState<any>(null);
   const [showCartDialog, setShowCartDialog] = useState(false);
+  const [quizQuestion, setQuizQuestion] = useState("");
   
 
   const [saveData, setSaveData] = useState({
@@ -174,6 +175,24 @@ const saveGame = () => {
   );
 
 };
+
+useEffect(() => {
+  if (scene === "quiz") {
+    fetch("/quiz/train.txt")
+      .then((res) => res.text())
+      .then((text) => {
+        const lines = text.split("\n");
+
+        const qLine = lines.find((line) => line.startsWith("Q:"));
+
+        if (qLine) {
+          setQuizQuestion(
+            qLine.replace("Q:", "").trim()
+          );
+        }
+      });
+  }
+}, [scene]);
 
 const trains = [
   
@@ -1064,11 +1083,7 @@ steam.play();
     textAlign: "left",
   }}
 >
-  もんだいだよ！テステストテストテストテストテストト<br />
-  わかるかな？<br />
-  わかるかな？<br />
-  わかるかな？<br />
-  わかるかな？<br />
+  {quizQuestion}
 </div>
 
 
