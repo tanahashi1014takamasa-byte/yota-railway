@@ -258,7 +258,7 @@ const shopVehicles = [
    {
     name: "キッチンカー（ケバブ）",
     image: "/images/ケバブ.png",
-    trainSize: 200,
+    trainSize: 350,
     description: "かまた駅のケバブは\nめっさ にく おおもり\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイスト\nだにょ～ん\n",
     price : 100,
   },
