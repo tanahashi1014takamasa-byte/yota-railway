@@ -1042,8 +1042,8 @@ steam.play();
   alt="ハムカッパ"
   style={{
     position: "absolute",
-    top: "150px",
-    left: "40px",
+    top: "80px",
+    left: "30px",
   }}
 />
 
@@ -1053,7 +1053,22 @@ steam.play();
     <br />
     クイズ画面
 
+  <br />
+
+<button
+  onClick={() => setScene("frame")}
+  style={{
+    fontSize: "24px",
+    padding: "10px 30px",
+    marginTop: "30px",
+  }}
+>
+  プレイ画面へ戻る
+</button>
+
   </div>
+
+
 )}
 
 {scene === "customShop" && (
