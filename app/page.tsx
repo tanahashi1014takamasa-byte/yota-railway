@@ -1032,7 +1032,7 @@ steam.play();
     textAlign: "center",
     marginTop: "200px",
     position: "relative",
-    height: "100%",
+    height: "100vh",
   }}
 >
 
@@ -1058,9 +1058,12 @@ steam.play();
 <button
   onClick={() => setScene("frame")}
   style={{
+    position: "absolute",
+    bottom: "50px",
+    left: "50%",
+    transform: "translateX(-50%)",
     fontSize: "24px",
     padding: "10px 30px",
-    marginTop: "30px",
   }}
 >
   プレイ画面へ戻る
