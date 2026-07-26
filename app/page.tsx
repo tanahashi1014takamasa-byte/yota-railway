@@ -8,6 +8,9 @@ export default function Home() {
   const customShopBgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
   const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
+  const [scene, setScene] = useState("opening");
+  const [quizKappaMouth, setQuizKappaMouth] = useState(false);
+  
 
   
 
@@ -53,7 +56,7 @@ useEffect(() => {
 
 
 
-  const [scene, setScene] = useState("opening");
+ 
   const [trainX, setTrainX] = useState(0);
   const [trainDirection, setTrainDirection] = useState(1);
   const [trainFlip, setTrainFlip] = useState(false);
@@ -71,6 +74,17 @@ useEffect(() => {
 
   return () => clearInterval(timer);
 }, [doctorPage]);
+
+
+useEffect(() => {
+  if (scene === "quiz") {
+    const timer = setInterval(() => {
+      setQuizKappaMouth((mouth) => !mouth);
+    }, 200);
+
+    return () => clearInterval(timer);
+  }
+}, [scene]);
 
   const LEFT_WALL = -200;
   const RIGHT_WALL = 200;
@@ -1009,9 +1023,19 @@ steam.play();
       marginTop: "200px",
     }}
   >
+
+    <img
+      src={quizKappaMouth ? "/images/quizkappa2.png" : "/images/quizkappa1.png"}
+      width={200}
+      alt="ハムカッパ"
+    />
+
+    <br />
+
     ⭐ ミニゲーム
     <br />
     クイズ画面
+
   </div>
 )}
 
