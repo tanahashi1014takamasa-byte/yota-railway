@@ -1042,8 +1042,8 @@ steam.play();
   alt="ハムカッパ"
   style={{
     position: "absolute",
-    top: "80px",
-    left: "30px",
+    bottom: "50px",
+    left: "20px",
   }}
 />
 
