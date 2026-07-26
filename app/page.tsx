@@ -1054,9 +1054,9 @@ steam.play();
     position: "absolute",
     bottom: "180px",
     left: "140px",
-    background: "white",
-    color: "black",
-    border: "3px solid black",
+    background: "black",
+    color: "white",
+    border: "3px solid white",
     borderRadius: "20px",
     padding: "15px 25px",
     fontSize: "24px",
@@ -1064,7 +1064,11 @@ steam.play();
     textAlign: "left",
   }}
 >
-  もんだいだよ！
+  もんだいだよ！<br />
+  わかるかな？<br />
+  わかるかな？<br />
+  わかるかな？<br />
+  わかるかな？<br />
 </div>
 
     <br />
