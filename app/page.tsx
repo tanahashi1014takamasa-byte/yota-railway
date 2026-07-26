@@ -1115,7 +1115,10 @@ steam.play();
 {quizAnswers.map((answer, index) => (
   <button
     key={index}
-    
+    onClick={() => {
+    const sound = new Audio("/sounds/quiz_answer.mp3");
+    sound.play();
+  }}
     style={{
       background: "black",
       color: "white",
