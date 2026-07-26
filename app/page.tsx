@@ -1071,28 +1071,6 @@ steam.play();
   わかるかな？<br />
 </div>
 
-    <br />
-
-    ⭐ ミニゲーム
-    <br />
-    クイズ画面
-
-  <br />
-
-<button
-  onClick={() => setScene("frame")}
-  style={{
-    position: "absolute",
-    bottom: "50px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    fontSize: "24px",
-    padding: "10px 30px",
-    whiteSpace: "nowrap",
-  }}
->
-  戻る
-</button>
 
   </div>
 
