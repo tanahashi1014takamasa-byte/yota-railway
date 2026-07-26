@@ -1058,8 +1058,8 @@ steam.play();
     color: "white",
     border: "3px solid white",
     borderRadius: "20px",
-    padding: "15px 25px",
-    fontSize: "24px",
+    padding: "10px 15px",
+    fontSize: "18px",
     maxWidth: "350px",
     textAlign: "left",
   }}
