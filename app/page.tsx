@@ -1104,7 +1104,7 @@ steam.play();
 <div
   style={{
     position: "absolute",
-    top: "350px",
+    top: "50px",
     left: "50%",
     transform: "translateX(-50%)",
     width: "100%",
