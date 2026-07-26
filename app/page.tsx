@@ -1025,13 +1025,15 @@ steam.play();
 )}
 
 {scene === "quiz" && (
-  <div
+ <div
   style={{
     color: "white",
     fontSize: "30px",
     textAlign: "center",
-    marginTop: "200px",
-    position: "relative",
+    position: "fixed",
+    top: "0",
+    left: "0",
+    width: "100vw",
     height: "100vh",
   }}
 >
@@ -1064,6 +1066,7 @@ steam.play();
     transform: "translateX(-50%)",
     fontSize: "24px",
     padding: "10px 30px",
+    whiteSpace: "nowrap",
   }}
 >
   プレイ画面へ戻る
