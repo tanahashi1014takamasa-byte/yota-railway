@@ -1052,7 +1052,7 @@ steam.play();
 <div
   style={{
     position: "absolute",
-    bottom: "70px",
+    bottom: "60px",
     left: "140px",
     background: "black",
     color: "white",
@@ -1064,7 +1064,7 @@ steam.play();
     textAlign: "left",
   }}
 >
-  もんだいだよ！<br />
+  もんだいだよ！テステストテストテストテストテストト<br />
   わかるかな？<br />
   わかるかな？<br />
   わかるかな？<br />
