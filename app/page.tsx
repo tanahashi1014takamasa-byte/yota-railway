@@ -1052,7 +1052,7 @@ steam.play();
 <div
   style={{
     position: "absolute",
-    bottom: "180px",
+    bottom: "70px",
     left: "140px",
     background: "black",
     color: "white",
