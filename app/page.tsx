@@ -192,13 +192,14 @@ useEffect(() => {
     );
   }
 
-  const answers = lines
-    .filter((line) =>
-      /^[ABCD]:/.test(line)
-    )
-    .map((line) =>
-      line.substring(2).trim()
-    );
+ const answers = lines
+  .filter((line) =>
+    /^[ABCD]:/.test(line)
+  )
+  .slice(0, 4)
+  .map((line) =>
+    line.substring(2).trim()
+  );
 
   setQuizAnswers(answers);
 });
