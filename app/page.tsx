@@ -1100,9 +1100,22 @@ steam.play();
   {quizQuestion}
 </div>
 
+
+<div
+  style={{
+    position: "absolute",
+    top: "500px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    width: "100%",
+    textAlign: "center",
+  }}
+>
+
 {quizAnswers.map((answer, index) => (
   <button
     key={index}
+    
     style={{
       background: "black",
       color: "white",
@@ -1117,7 +1130,7 @@ steam.play();
     {answer}
   </button>
 ))}
-
+</div>
   </div>
 
 
