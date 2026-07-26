@@ -96,6 +96,7 @@ useEffect(() => {
   const [selectedVehicle, setSelectedVehicle] = useState<any>(null);
   const [showCartDialog, setShowCartDialog] = useState(false);
   const [quizQuestion, setQuizQuestion] = useState("");
+  const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
   
 
   const [saveData, setSaveData] = useState({
@@ -180,19 +181,31 @@ useEffect(() => {
   if (scene === "quiz") {
     fetch("/quiz/train.txt")
       .then((res) => res.text())
-      .then((text) => {
-        const lines = text.split("\n");
+   .then((text) => {
+  const lines = text.split("\n");
 
-        const qLine = lines.find((line) => line.startsWith("Q:"));
+  const qLine = lines.find((line) => line.startsWith("Q:"));
 
-        if (qLine) {
-          setQuizQuestion(
-            qLine.replace("Q:", "").trim()
-          );
-        }
-      });
+  if (qLine) {
+    setQuizQuestion(
+      qLine.replace("Q:", "").trim()
+    );
+  }
+
+  const answers = lines
+    .filter((line) =>
+      /^[ABCD]:/.test(line)
+    )
+    .map((line) =>
+      line.substring(2).trim()
+    );
+
+  setQuizAnswers(answers);
+});
   }
 }, [scene]);
+
+
 
 const trains = [
   
@@ -1086,6 +1099,23 @@ steam.play();
   {quizQuestion}
 </div>
 
+{quizAnswers.map((answer, index) => (
+  <button
+    key={index}
+    style={{
+      background: "black",
+      color: "white",
+      border: "3px solid white",
+      borderRadius: "10px",
+      width: "70%",
+      padding: "15px",
+      margin: "10px",
+      fontSize: "24px",
+    }}
+  >
+    {answer}
+  </button>
+))}
 
   </div>
 
