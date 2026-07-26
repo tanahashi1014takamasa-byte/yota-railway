@@ -1049,6 +1049,24 @@ steam.play();
   }}
 />
 
+<div
+  style={{
+    position: "absolute",
+    bottom: "180px",
+    left: "140px",
+    background: "white",
+    color: "black",
+    border: "3px solid black",
+    borderRadius: "20px",
+    padding: "15px 25px",
+    fontSize: "24px",
+    maxWidth: "350px",
+    textAlign: "left",
+  }}
+>
+  もんだいだよ！
+</div>
+
     <br />
 
     ⭐ ミニゲーム
@@ -1069,7 +1087,7 @@ steam.play();
     whiteSpace: "nowrap",
   }}
 >
-  プレイ画面へ戻る
+  戻る
 </button>
 
   </div>
