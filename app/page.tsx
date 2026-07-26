@@ -1026,19 +1026,26 @@ steam.play();
 
 {scene === "quiz" && (
   <div
-    style={{
-      color: "white",
-      fontSize: "30px",
-      textAlign: "center",
-      marginTop: "200px",
-    }}
-  >
+  style={{
+    color: "white",
+    fontSize: "30px",
+    textAlign: "center",
+    marginTop: "200px",
+    position: "relative",
+    height: "100%",
+  }}
+>
 
-    <img
-      src={quizKappaMouth ? "/images/quizkappa2.png" : "/images/quizkappa1.png"}
-      width={200}
-      alt="ハムカッパ"
-    />
+   <img
+  src={quizKappaMouth ? "/images/quizkappa2.png" : "/images/quizkappa1.png"}
+  width={120}
+  alt="ハムカッパ"
+  style={{
+    position: "absolute",
+    top: "150px",
+    left: "40px",
+  }}
+/>
 
     <br />
 
