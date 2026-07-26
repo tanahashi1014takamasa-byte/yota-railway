@@ -313,6 +313,14 @@ const shopVehicles = [
   description: "……………………\nえー…これは\n…80年代の…ルンバ\nくわしいことは\nパパにきこう！",
   price : 100,
 },
+
+ {
+  name: "メロン2個500円ニキ",
+  image: "/images/メロン2個500円ニキ.png",
+  trainSize: 200,
+  description: "やっ…！！！\nやっすいっすねぇえええ！！！",
+  price : 100,
+},
 ];
 
 
