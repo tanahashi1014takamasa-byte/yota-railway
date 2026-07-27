@@ -806,7 +806,13 @@ steam.play();
     </div>
 )}
       {scene === "trainSelect" && (
+
+
+
+
   <>
+
+  
   
 
 <div
@@ -846,7 +852,7 @@ steam.play();
 
     bell.onended = () => {
   setTrainX(0);
-  setScene("frame");
+  setScene("loading");
 };
 
     bell.play();
@@ -874,6 +880,24 @@ steam.play();
 
 </div>
 </>
+)}
+
+{scene === "loading" && (
+  <div
+    style={{
+      color: "white",
+      fontSize: "30px",
+      textAlign: "center",
+      minHeight: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+    }}
+  >
+    🚃 葉大鉄道
+    <br />
+    しゅっぱつ じゅんび中…
+  </div>
 )}
 
 {scene === "frame" && (
