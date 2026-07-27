@@ -806,16 +806,15 @@ steam.play();
 
     setScene("frame");
   }}
-  style={{
-    color: "white",
-    background: "black",
-    border: "3px solid white",
-    borderRadius: "15px",
-    padding: "12px 30px",
-    fontSize: "22px",
-    fontWeight: "bold",
-    cursor: "pointer",
-  }}
+ style={{
+  color: "white",
+  background: "black",
+  border: "2px solid white",
+  borderRadius: "10px",
+  fontSize: "20px",
+  padding: "10px 20px",
+  cursor: "pointer",
+}}
 >
    {saveData.mainTrain || "回送列車"}
 <br />
