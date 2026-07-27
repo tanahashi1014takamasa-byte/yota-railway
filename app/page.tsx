@@ -97,6 +97,7 @@ useEffect(() => {
   const [showCartDialog, setShowCartDialog] = useState(false);
   const [quizQuestion, setQuizQuestion] = useState("");
   const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
+  const [quizCorrect, setQuizCorrect] = useState(0);
   
 
   const [saveData, setSaveData] = useState({
@@ -191,6 +192,17 @@ useEffect(() => {
       qLine.replace("Q:", "").trim()
     );
   }
+
+    const ansLine = lines.find((line) =>
+    line.startsWith("ANS:")
+  );
+
+  if (ansLine) {
+    setQuizCorrect(
+      Number(ansLine.replace("ANS:", "").trim())
+    );
+  }
+
 
  const answers = lines
   .filter((line) =>
@@ -1116,10 +1128,16 @@ steam.play();
   <button
     key={index}
     onClick={() => {
+  if (index === quizCorrect) {
     const sound = new Audio("/sounds/quiz_answer.mp3");
     sound.volume = 1.0;
     sound.play();
-  }}
+  } else {
+    const sound = new Audio("/sounds/quiz_badanswer.mp3");
+    sound.volume = 1.0;
+    sound.play();
+  }
+}}
     style={{
       background: "black",
       color: "white",
