@@ -1133,7 +1133,7 @@ steam.play();
   }}
 >
 
-{quizAnswers.map((answer, index) => (
+{!quizFinished && quizAnswers.map((answer, index) => (
   <button
     key={index}
     onClick={() => {
@@ -1148,7 +1148,7 @@ steam.play();
   setTimeout(() => {
   setQuizResult("");
 
-  if (quizIndex + 1 >= 8) {
+  if (quizIndex + 1 >= 4) {
     setQuizFinished(true);
   } else {
     setQuizIndex(quizIndex + 1);
