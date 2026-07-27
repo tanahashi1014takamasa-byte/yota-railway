@@ -11,6 +11,7 @@ export default function Home() {
   const [scene, setScene] = useState("opening");
   const [quizKappaMouth, setQuizKappaMouth] = useState(false);
   const [nextScene, setNextScene] = useState("");
+  const [showTrainSelect, setShowTrainSelect] = useState(false);
 
   
 
@@ -952,7 +953,7 @@ setScene("loading");
 
 <button
   onClick={() => {
-    alert("電車ボタン");
+    setShowTrainSelect(true);
   }}
   style={{
     position: "absolute",
@@ -967,6 +968,80 @@ setScene("loading");
   }}
 >
 </button>
+
+{showTrainSelect && (
+  <div
+    style={{
+      position:"absolute",
+      top:"150px",
+      left:"50%",
+      transform:"translateX(-50%)",
+      width:"300px",
+      background:"black",
+      color:"white",
+      border:"3px solid white",
+      borderRadius:"15px",
+      padding:"20px",
+      zIndex:100,
+      textAlign:"center",
+    }}
+  >
+
+    <p style={{fontSize:"24px"}}>
+      🚃 のりかえ
+    </p>
+
+    {[
+      ...trains,
+      ...saveData.ownedVehicles
+    ].map((vehicle) => (
+
+      <button
+        key={vehicle.name}
+        onClick={() => {
+
+          setSaveData({
+            ...saveData,
+            selectedTrain: vehicle.name
+          });
+
+          setTrainX(0);
+
+          setShowTrainSelect(false);
+
+        }}
+        style={{
+          display:"block",
+          width:"100%",
+          margin:"10px 0",
+          padding:"10px",
+          fontSize:"18px",
+          background:"black",
+          color:"white",
+          border:"2px solid white",
+          borderRadius:"10px",
+        }}
+      >
+        {vehicle.name}
+      </button>
+
+    ))}
+
+
+    <button
+      onClick={() => {
+        setShowTrainSelect(false);
+      }}
+      style={{
+        marginTop:"10px",
+        padding:"10px 30px",
+      }}
+    >
+      とじる
+    </button>
+
+  </div>
+)}
 
 <button
   onClick={() => {
