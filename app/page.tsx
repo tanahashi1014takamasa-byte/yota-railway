@@ -744,30 +744,19 @@ steam.play();
 </p>
 
 {trains.map((train) => (
-  <button
+  <div
     key={train.name}
-    onClick={() => {
-      setSaveData({
-        ...saveData,
-        selectedTrain: train.name,
-      });
-    }}
     style={{
-      color: "white",
-      background: "black",
-      border: "2px solid white",
-      borderRadius: "10px",
-      fontSize: "20px",
-      padding: "10px 20px",
-      margin: "5px",
-      cursor: "pointer",
+      color:"white",
+      fontSize:"20px",
+      margin:"5px",
     }}
   >
     {train.name}
     <br />
     走行距離：
     {saveData.vehicleDistances[train.name] ?? 0}km
-  </button>
+  </div>
 ))}
 
 {saveData.ownedVehicles.map((vehicle, index) => (
