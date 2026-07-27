@@ -118,6 +118,7 @@ useEffect(() => {
   distance: 0,
   money: 0,
   miles: 0,
+  vehicleDistances: {},
   retiredTrains: [],
   ownedVehicles: [] as any[],
 });
@@ -568,6 +569,7 @@ const popKeyframes = `
   money: 0,
   miles: 0,
   ownedVehicles: [],
+  vehicleDistances: {},
 });
 
     setMessageIndex(0);
