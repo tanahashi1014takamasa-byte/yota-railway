@@ -10,7 +10,7 @@ export default function Home() {
   const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
   const [scene, setScene] = useState("opening");
   const [quizKappaMouth, setQuizKappaMouth] = useState(false);
-  
+  const [nextScene, setNextScene] = useState("");
 
   
 
@@ -53,12 +53,19 @@ useEffect(() => {
 useEffect(() => {
   if (scene === "loading") {
     const timer = setTimeout(() => {
-      setScene("frame");
+
+      if (nextScene) {
+        setScene(nextScene);
+        setNextScene("");
+      } else {
+        setScene("frame");
+      }
+
     }, 1500);
 
     return () => clearTimeout(timer);
   }
-}, [scene]);
+}, [scene, nextScene]);
 
 
 
@@ -641,7 +648,8 @@ steam.play();
 
   customShopBgmRef.current?.play();
 
-  setScene("customShop");
+  setNextScene("customShop");
+setScene("loading");
 }}
 
   style={{
@@ -916,9 +924,11 @@ steam.play();
       justifyContent: "center",
     }}
   >
-    🚃 葉大鉄道
+    電車がまいります…
     <br />
-    しゅっぱつ じゅんび中…
+    黄色い点字ブロックの内側まで
+    <br />
+    お下がりください
   </div>
 )}
 
