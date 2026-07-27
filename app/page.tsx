@@ -118,7 +118,7 @@ useEffect(() => {
   distance: 0,
   money: 0,
   miles: 0,
-  vehicleDistances: {},
+  vehicleDistances: {} as Record<string, number>,
   retiredTrains: [],
   ownedVehicles: [] as any[],
 });
@@ -149,10 +149,15 @@ speed = vehicleSpeed;
         }
 
         setSaveData((data) => ({
-          ...data,
-          distance: data.distance + 1,
-          money: data.money + 1,
-        }));
+  ...data,
+  distance: data.distance + 1,
+  money: data.money + 1,
+  vehicleDistances: {
+    ...data.vehicleDistances,
+    [data.selectedTrain]:
+      (data.vehicleDistances[data.selectedTrain] ?? 0) + 1,
+  },
+}));
 
         return x - speed;
       });
@@ -164,10 +169,15 @@ speed = vehicleSpeed;
         }
 
         setSaveData((data) => ({
-          ...data,
-          distance: data.distance + 1,
-          money: data.money + 1,
-        }));
+  ...data,
+  distance: data.distance + 1,
+  money: data.money + 1,
+  vehicleDistances: {
+    ...data.vehicleDistances,
+    [data.selectedTrain]:
+      (data.vehicleDistances[data.selectedTrain] ?? 0) + 1,
+  },
+}));
 
         return x + speed;
       });
