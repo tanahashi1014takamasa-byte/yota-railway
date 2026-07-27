@@ -1138,12 +1138,17 @@ steam.play();
 
   // 次の問題へ
 
-} else {
+  }else {
 
   setQuizResult("ざんねん！");
 
   const sound = new Audio("/sounds/quiz_badanswer.mp3");
+  sound.volume = 1.0;
   sound.play();
+
+  setTimeout(() => {
+    setQuizResult("");
+  }, 1500);
 
 }
 }}
