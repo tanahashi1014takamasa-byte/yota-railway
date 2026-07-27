@@ -743,21 +743,7 @@ steam.play();
   🚃 所持車両
 </p>
 
-{trains.map((train) => (
-  <div
-    key={train.name}
-    style={{
-      color:"white",
-      fontSize:"20px",
-      margin:"5px",
-    }}
-  >
-    {train.name}
-    <br />
-    走行距離：
-    {saveData.vehicleDistances[train.name] ?? 0}km
-  </div>
-))}
+
 
 {saveData.ownedVehicles.map((vehicle, index) => (
   <button
