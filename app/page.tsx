@@ -99,6 +99,7 @@ useEffect(() => {
   const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
   const [quizCorrect, setQuizCorrect] = useState(0);
   const [quizResult, setQuizResult] = useState("");
+  const [quizIndex, setQuizIndex] = useState(0);
   
 
   const [saveData, setSaveData] = useState({
@@ -185,8 +186,14 @@ useEffect(() => {
       .then((res) => res.text())
    .then((text) => {
   const lines = text.split("\n");
+  const questions = text.split("\n\n");
 
-  const qLine = lines.find((line) => line.startsWith("Q:"));
+  const currentQuestion = questions[quizIndex];
+const currentLines = currentQuestion.split("\n");
+
+const qLine = currentLines.find((line) =>
+  line.startsWith("Q:")
+);
 
   if (qLine) {
     setQuizQuestion(
@@ -194,9 +201,9 @@ useEffect(() => {
     );
   }
 
-    const ansLine = lines.find((line) =>
-    line.startsWith("ANS:")
-  );
+    const ansLine = currentLines.find((line) =>
+  line.startsWith("ANS:")
+);
 
   if (ansLine) {
     setQuizCorrect(
@@ -205,7 +212,7 @@ useEffect(() => {
   }
 
 
- const answers = lines
+ const answers = currentLines
   .filter((line) =>
     /^[ABCD]:/.test(line)
   )
@@ -217,7 +224,7 @@ useEffect(() => {
   setQuizAnswers(answers);
 });
   }
-}, [scene]);
+}, [scene, quizIndex]);
 
 
 
@@ -1129,12 +1136,17 @@ steam.play();
   <button
     key={index}
     onClick={() => {
-  if (index === quizCorrect) {
+ if (index === quizCorrect) {
 
   setQuizResult("せいかい！");
 
   const sound = new Audio("/sounds/quiz_answer.mp3");
   sound.play();
+
+  setTimeout(() => {
+    setQuizResult("");
+    setQuizIndex(quizIndex + 1);
+  }, 1500);
 
   // 次の問題へ
 
