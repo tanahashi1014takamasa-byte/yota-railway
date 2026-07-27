@@ -788,6 +788,9 @@ steam.play();
     }}
   >
     {vehicle.name}
+<br />
+走行距離：
+{saveData.vehicleDistances[vehicle.name] ?? 0}km
   </button>
 ))}
 
