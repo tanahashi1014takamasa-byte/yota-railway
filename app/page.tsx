@@ -709,7 +709,11 @@ steam.play();
     }}
   >
     <p style={{ color: "white", fontSize: "28px" }}>
-      🌳葉大鉄道🍃
+      <img
+  src="/images/yotairail_logo.png"
+  width={250}
+  alt="葉大鉄道"
+/>
     </p>
 
     <p style={{ color: "white", fontSize: "22px" }}>
