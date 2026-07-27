@@ -710,7 +710,7 @@ steam.play();
   >
     <p style={{ color: "white", fontSize: "28px" }}>
       <img
-  src="/images/yotairail_logo.png"
+  src="/images/yota.png"
   width={250}
   alt="葉大鉄道"
 />
