@@ -1149,10 +1149,11 @@ steam.play();
   setQuizResult("");
 
   if (quizIndex + 1 >= 4) {
-    setQuizFinished(true);
-  } else {
-    setQuizIndex(quizIndex + 1);
-  }
+  setQuizFinished(true);
+  setQuizQuestion("たのしかったね！またあそぼう！");
+} else {
+  setQuizIndex(quizIndex + 1);
+}
 
 }, 1500);
 
