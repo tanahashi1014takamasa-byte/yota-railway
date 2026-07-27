@@ -709,7 +709,7 @@ steam.play();
     }}
   >
     <p style={{ color: "white", fontSize: "28px" }}>
-      葉大鉄道
+      🌳葉大鉄道🍃
     </p>
 
     <p style={{ color: "white", fontSize: "22px" }}>
@@ -818,6 +818,9 @@ steam.play();
   }}
 >
    {saveData.mainTrain || "回送列車"}
+<br />
+走行距離：
+{saveData.vehicleDistances[saveData.mainTrain] ?? 0}km
 </button>
     </div>
 )}
