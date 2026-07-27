@@ -44,6 +44,11 @@ useEffect(() => {
   ...data,
   money: data.money ?? 0,
   ownedVehicles: data.ownedVehicles ?? [],
+  condition: data.condition ?? {
+  clean: 100,
+  status: 100,
+  energy: 100,
+},
 });
 }
 
@@ -129,6 +134,11 @@ useEffect(() => {
   vehicleDistances: {} as Record<string, number>,
   retiredTrains: [],
   ownedVehicles: [] as any[],
+  condition: {
+  clean: 100,
+  status: 100,
+  energy: 100,
+},
 });
 
 const [saveLoaded, setSaveLoaded] = useState(false);
@@ -588,6 +598,11 @@ const popKeyframes = `
   miles: 0,
   ownedVehicles: [],
   vehicleDistances: {},
+  condition: {
+  clean: 100,
+  status: 100,
+  energy: 100,
+},
 });
 
     setMessageIndex(0);
