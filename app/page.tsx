@@ -1158,10 +1158,19 @@ steam.play();
   setQuizFinished(true);
   setQuizQuestion("たのしかったね！またあそぼう！おつハム～");
 
-setSaveData((prev) => ({
+setSaveData((prev) => {
+  const newData = {
     ...prev,
     miles: prev.miles + 10,
-  }));
+  };
+
+  localStorage.setItem(
+    "yotaRailwaySave",
+    JSON.stringify(newData)
+  );
+
+  return newData;
+});
 
 } else {
   setQuizIndex(quizIndex + 1);
