@@ -50,7 +50,15 @@ useEffect(() => {
 }, []);
 
 
- 
+useEffect(() => {
+  if (scene === "loading") {
+    const timer = setTimeout(() => {
+      setScene("frame");
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }
+}, [scene]);
 
 
 
