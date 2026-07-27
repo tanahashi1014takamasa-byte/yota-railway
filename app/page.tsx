@@ -1156,7 +1156,13 @@ steam.play();
 
   if (quizIndex + 1 >= 4) {
   setQuizFinished(true);
-  setQuizQuestion("たのしかったね！またあそぼう！");
+  setQuizQuestion("たのしかったね！またあそぼう！おつハム～");
+
+setSaveData((prev) => ({
+    ...prev,
+    miles: prev.miles + 10,
+  }));
+
 } else {
   setQuizIndex(quizIndex + 1);
 }
