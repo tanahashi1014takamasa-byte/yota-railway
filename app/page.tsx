@@ -722,7 +722,7 @@ steam.play();
     </p>
 
     <p style={{ color: "white", fontSize: "22px" }}>
-      走行距離：{saveData.distance}km
+      全体走行距離：{saveData.distance}km
     </p>
 
     <p style={{ color: "white", fontSize: "22px" }}>
@@ -742,6 +742,33 @@ steam.play();
 >
   🚃 所持車両
 </p>
+
+{trains.map((train) => (
+  <button
+    key={train.name}
+    onClick={() => {
+      setSaveData({
+        ...saveData,
+        selectedTrain: train.name,
+      });
+    }}
+    style={{
+      color: "white",
+      background: "black",
+      border: "2px solid white",
+      borderRadius: "10px",
+      fontSize: "20px",
+      padding: "10px 20px",
+      margin: "5px",
+      cursor: "pointer",
+    }}
+  >
+    {train.name}
+    <br />
+    走行距離：
+    {saveData.vehicleDistances[train.name] ?? 0}km
+  </button>
+))}
 
 {saveData.ownedVehicles.map((vehicle, index) => (
   <button
@@ -1046,7 +1073,7 @@ steam.play();
     zIndex: 10,
   }}
 >
-  🚃 走行距離：{saveData.distance}km
+  🚃 全体走行距離：{saveData.distance}km
 </p>
 
 <p
