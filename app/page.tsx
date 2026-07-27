@@ -758,7 +758,7 @@ steam.play();
           bgmRef.current.play();
         }
 
-        setScene("frame");
+        setScene("loading");
       };
 
       steam.play();
