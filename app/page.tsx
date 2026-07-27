@@ -1189,20 +1189,7 @@ steam.play();
 ))}
 </div>
 
-{quizFinished && (
-  <div
-    style={{
-      color: "white",
-      fontSize: "30px",
-      textAlign: "center",
-    }}
-  >
-    クイズおわり！<br />
-    {quizScore}問正解！<br />
-    たのしかったね！<br />
-    またあそぼう！
-  </div>
-)}
+
 
   </div>
 
