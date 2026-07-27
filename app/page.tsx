@@ -1124,7 +1124,7 @@ steam.play();
     textAlign: "left",
   }}
 >
- {quizResult ? quizResult : quizQuestion}
+{quizResult ? quizResult : quizQuestion || "クイズじゅんび中..."}
 </div>
 
 
@@ -1156,7 +1156,6 @@ steam.play();
 
   if (quizIndex + 1 >= 4) {
   setQuizFinished(true);
-  alert("マイル追加処理");
   setQuizQuestion("10マイルゲット！！\nまたあそぼう！おつハム～");
 
 setSaveData((prev) => {
