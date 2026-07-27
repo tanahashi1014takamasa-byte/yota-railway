@@ -709,16 +709,7 @@ steam.play();
     }}
   >
     <p style={{ color: "white", fontSize: "28px" }}>
-      🚃 セーブデータ
-    </p>
-
-    <p style={{ color: "white", fontSize: "22px" }}>
-      のりもの：
-      {saveData.selectedTrain || "なし"}
-    </p>
-
-    <p style={{ color: "white", fontSize: "22px" }}>
-      レベル：{saveData.level}
+      葉大鉄道
     </p>
 
     <p style={{ color: "white", fontSize: "22px" }}>
