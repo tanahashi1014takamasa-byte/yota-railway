@@ -1156,6 +1156,7 @@ steam.play();
 
   if (quizIndex + 1 >= 4) {
   setQuizFinished(true);
+  alert("マイル追加処理");
   setQuizQuestion("たのしかったね！またあそぼう！おつハム～");
 
 setSaveData((prev) => {
@@ -1210,7 +1211,27 @@ setSaveData((prev) => {
 ))}
 </div>
 
-
+{quizFinished && (
+  <button
+    onClick={() => {
+      setScene("frame");
+      setQuizFinished(false);
+      setQuizIndex(0);
+      setQuizResult("");
+    }}
+    style={{
+      marginTop: "20px",
+      fontSize: "24px",
+      padding: "10px 30px",
+      background: "black",
+      color: "white",
+      border: "3px solid white",
+      borderRadius: "10px",
+    }}
+  >
+    もどる
+  </button>
+)}
 
   </div>
 
