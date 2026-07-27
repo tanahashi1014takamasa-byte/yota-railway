@@ -98,6 +98,7 @@ useEffect(() => {
   const [quizQuestion, setQuizQuestion] = useState("");
   const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
   const [quizCorrect, setQuizCorrect] = useState(0);
+  const [quizResult, setQuizResult] = useState("");
   
 
   const [saveData, setSaveData] = useState({
@@ -1109,7 +1110,7 @@ steam.play();
     textAlign: "left",
   }}
 >
-  {quizQuestion}
+ {quizResult ? quizResult : quizQuestion}
 </div>
 
 
@@ -1129,13 +1130,21 @@ steam.play();
     key={index}
     onClick={() => {
   if (index === quizCorrect) {
+
+    setQuizResult("せいかい！");
+
     const sound = new Audio("/sounds/quiz_answer.mp3");
     sound.volume = 1.0;
     sound.play();
+
   } else {
+
+    setQuizResult("ざんねん！");
+
     const sound = new Audio("/sounds/quiz_badanswer.mp3");
     sound.volume = 1.0;
     sound.play();
+
   }
 }}
     style={{
