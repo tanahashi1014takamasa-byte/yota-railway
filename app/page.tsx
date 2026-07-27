@@ -1157,7 +1157,7 @@ steam.play();
   if (quizIndex + 1 >= 4) {
   setQuizFinished(true);
   alert("マイル追加処理");
-  setQuizQuestion("たのしかったね！またあそぼう！おつハム～");
+  setQuizQuestion("10マイルゲット！！\nまたあそぼう！おつハム～");
 
 setSaveData((prev) => {
   const newData = {
@@ -1210,6 +1210,20 @@ setSaveData((prev) => {
   </button>
 ))}
 </div>
+
+{quizFinished && (
+  <img
+    src="/images/verygood.png"
+    alt="たいへんよくできました"
+    style={{
+      position: "absolute",
+      top: "40%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      width: "250px",
+    }}
+  />
+)}
 
 {quizFinished && (
   <button
