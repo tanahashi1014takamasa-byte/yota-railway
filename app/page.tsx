@@ -1117,6 +1117,7 @@ steam.play();
     key={index}
     onClick={() => {
     const sound = new Audio("/sounds/quiz_answer.mp3");
+    sound.volume = 1.0;
     sound.play();
   }}
     style={{
