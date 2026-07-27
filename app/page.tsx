@@ -109,6 +109,7 @@ useEffect(() => {
   level: 1,
   distance: 0,
   money: 0,
+  miles: 0,
   retiredTrains: [],
   ownedVehicles: [] as any[],
 });
@@ -557,6 +558,7 @@ const popKeyframes = `
   distance: 0,
   retiredTrains: [],
   money: 0,
+  miles: 0,
   ownedVehicles: [],
 });
 
@@ -706,6 +708,10 @@ steam.play();
     <p style={{ color: "white", fontSize: "22px" }}>
   おかね：{saveData.money}円
   </p>
+
+  <p style={{ color: "white", fontSize: "22px" }}>
+   走行マイル：{saveData.miles}
+</p>
 
   <p
   style={{
