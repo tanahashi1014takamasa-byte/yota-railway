@@ -100,7 +100,8 @@ useEffect(() => {
   const [quizCorrect, setQuizCorrect] = useState(0);
   const [quizResult, setQuizResult] = useState("");
   const [quizIndex, setQuizIndex] = useState(0);
-  
+  const [quizScore, setQuizScore] = useState(0);
+  const [quizFinished, setQuizFinished] = useState(false);
 
   const [saveData, setSaveData] = useState({
   selectedTrain: "",
@@ -1139,14 +1140,21 @@ steam.play();
  if (index === quizCorrect) {
 
   setQuizResult("せいかい！");
+  setQuizScore(quizScore + 1);
 
   const sound = new Audio("/sounds/quiz_answer.mp3");
   sound.play();
 
   setTimeout(() => {
-    setQuizResult("");
+  setQuizResult("");
+
+  if (quizIndex + 1 >= 8) {
+    setQuizFinished(true);
+  } else {
     setQuizIndex(quizIndex + 1);
-  }, 1500);
+  }
+
+}, 1500);
 
   // 次の問題へ
 
@@ -1179,6 +1187,22 @@ steam.play();
   </button>
 ))}
 </div>
+
+{quizFinished && (
+  <div
+    style={{
+      color: "white",
+      fontSize: "30px",
+      textAlign: "center",
+    }}
+  >
+    クイズおわり！<br />
+    {quizScore}問正解！<br />
+    たのしかったね！<br />
+    またあそぼう！
+  </div>
+)}
+
   </div>
 
 
