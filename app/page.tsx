@@ -711,7 +711,7 @@ steam.play();
     <p style={{ color: "white", fontSize: "28px" }}>
       <img
   src="/images/yota.png"
-  width={500}
+  width={450}
   alt="葉大鉄道"
 />
     </p>
