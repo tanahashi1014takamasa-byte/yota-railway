@@ -1131,21 +1131,21 @@ steam.play();
     onClick={() => {
   if (index === quizCorrect) {
 
-    setQuizResult("せいかい！");
+  setQuizResult("せいかい！");
 
-    const sound = new Audio("/sounds/quiz_answer.mp3");
-    sound.volume = 1.0;
-    sound.play();
+  const sound = new Audio("/sounds/quiz_answer.mp3");
+  sound.play();
 
-  } else {
+  // 次の問題へ
 
-    setQuizResult("ざんねん！");
+} else {
 
-    const sound = new Audio("/sounds/quiz_badanswer.mp3");
-    sound.volume = 1.0;
-    sound.play();
+  setQuizResult("ざんねん！");
 
-  }
+  const sound = new Audio("/sounds/quiz_badanswer.mp3");
+  sound.play();
+
+}
 }}
     style={{
       background: "black",
