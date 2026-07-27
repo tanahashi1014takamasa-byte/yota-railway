@@ -1162,7 +1162,73 @@ setScene("loading");
 >
   💰 おかね：{saveData.money}
 </p>
+<div
+  style={{
+    position: "absolute",
+    top: "160px",
+    left: "20px",
+    color: "white",
+    fontSize: "18px",
+    textShadow: "2px 2px 4px black",
+    fontWeight: "bold",
+    zIndex: 10,
+  }}
+>
 
+<p>🧼 きれい度</p>
+<div
+  style={{
+    width: "200px",
+    height: "12px",
+    border: "2px solid white",
+  }}
+>
+  <div
+    style={{
+      width: `${saveData.condition.clean}%`,
+      height: "100%",
+      background: "white",
+    }}
+  />
+</div>
+
+
+<p>🔩 調子</p>
+<div
+  style={{
+    width: "200px",
+    height: "12px",
+    border: "2px solid white",
+  }}
+>
+  <div
+    style={{
+      width: `${saveData.condition.status}%`,
+      height: "100%",
+      background: "white",
+    }}
+  />
+</div>
+
+
+<p>⚡ エネルギー</p>
+<div
+  style={{
+    width: "200px",
+    height: "12px",
+    border: "2px solid white",
+  }}
+>
+  <div
+    style={{
+      width: `${saveData.condition.energy}%`,
+      height: "100%",
+      background: "white",
+    }}
+  />
+</div>
+
+</div>
 
      <div
   style={{
