@@ -11,6 +11,7 @@ export default function Home() {
   const [scene, setScene] = useState("opening");
   const [quizKappaMouth, setQuizKappaMouth] = useState(false);
   const [introKappaMouth, setIntroKappaMouth] = useState(false);
+  const [loadingNext, setLoadingNext] = useState("");
   const [nextScene, setNextScene] = useState("");
   const [showTrainSelect, setShowTrainSelect] = useState(false);
 
@@ -60,19 +61,16 @@ useEffect(() => {
 useEffect(() => {
   if (scene === "loading") {
     const timer = setTimeout(() => {
-
-      if (nextScene) {
-        setScene(nextScene);
-        setNextScene("");
+      if (loadingNext) {
+        setScene(loadingNext);
       } else {
         setScene("frame");
       }
-
     }, 1500);
 
     return () => clearTimeout(timer);
   }
-}, [scene, nextScene]);
+}, [scene, loadingNext]);
 
 
 
@@ -629,7 +627,8 @@ steam.onended = () => {
     bgmRef.current.play();
   }
 
-  setScene("intro");
+  setLoadingNext("intro");
+  setScene("loading");
 };
 
 steam.play();
