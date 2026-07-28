@@ -1094,7 +1094,7 @@ steam.play();
 
 <button
   onClick={() => {
-    setScene("quiz");
+    setScene("gameSelect");
   }}
   style={{
     position: "absolute",
@@ -1504,12 +1504,63 @@ setSaveData((prev) => {
 )}
 
 
+  </div>
+)}
+
+
+{scene === "gameSelect" && (
+  <div
+    style={{
+      color: "white",
+      minHeight: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: "20px",
+    }}
+  >
+
+    <h1>🎮 ゲーム</h1>
+
+    <button
+      onClick={() => {
+        setQuizIndex(0);
+        setQuizFinished(false);
+        setQuizResult("");
+        setScene("quiz");
+      }}
+      style={{
+        fontSize:"25px",
+        padding:"20px 50px",
+      }}
+    >
+      クイズゲーム
+    </button>
+
+
+    <button
+      onClick={() => {
+        setScene("scrollGame");
+      }}
+      style={{
+        fontSize:"25px",
+        padding:"20px 50px",
+      }}
+    >
+      ドライブゲーム
+    </button>
+
+
+    <button
+      onClick={() => {
+        setScene("frame");
+      }}
+    >
+      もどる
+    </button>
 
   </div>
-
-
-
-
 )}
 
 
