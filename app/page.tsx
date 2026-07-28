@@ -1487,9 +1487,22 @@ setSaveData((prev) => {
 
     <h1>🔧 メンテナンス</h1>
 
-    <button>
-      🚿 洗車
-    </button>
+    <button
+  onClick={() => {
+    setSaveData((data) => ({
+      ...data,
+      condition: {
+        ...data.condition,
+        clean: Math.min(
+          100,
+          data.condition.clean + 20
+        ),
+      },
+    }));
+  }}
+>
+  🚿 洗車
+</button>
 
     <button>
       🔩 点検
