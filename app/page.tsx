@@ -340,14 +340,14 @@ const shopVehicles = [
     description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪",
     price : 100,
     trainSize: 250,
-    offsetY: 80,
+    offsetY: 70,
   },
   {
     name: "江ノ電ニキ",
     image: "/images/enodenniki.png",
     description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！",
     price : 100,
-    offsetY: 80,
+    offsetY: 70,
   },
   {
     name: "メタルスラッグ",
