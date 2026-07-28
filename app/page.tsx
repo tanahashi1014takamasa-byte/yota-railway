@@ -1174,7 +1174,7 @@ steam.play();
     left: "20px",
     color: "white",
   textShadow: "2px 2px 4px black",
-    fontSize: "24px",
+    fontSize: "18px",
     fontWeight: "bold",
     zIndex: 10,
   }}
@@ -1189,7 +1189,7 @@ steam.play();
     left: "20px",
     color: "white",
     textShadow: "2px 2px 4px black",
-    fontSize: "24px",
+    fontSize: "18px",
     fontWeight: "bold",
     zIndex: 10,
   }}
