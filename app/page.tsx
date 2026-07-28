@@ -733,13 +733,19 @@ setScene("loading");
       minHeight: "100vh",
     }}
   >
-    <p style={{ color: "white", fontSize: "28px" }}>
-      <img
-  src="/images/yota.png"
-  width={450}
-  alt="葉大鉄道"
-/>
-    </p>
+   <p style={{ color: "white", fontSize: "28px" }}>
+  <img
+    src="/images/yota.png"
+    width={450}
+    alt="葉大鉄道"
+    style={{
+      position: "absolute",
+      top: "50px",
+      left: "50%",
+      transform: "translateX(-50%)",
+    }}
+  />
+</p>
 
     <p style={{ color: "white", fontSize: "22px" }}>
       全体走行距離：{saveData.distance}km
