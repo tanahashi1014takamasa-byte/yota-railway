@@ -1079,7 +1079,7 @@ setScene("loading");
 
 <button
   onClick={() => {
-    alert("メンテナンスボタン");
+    setScene("maintenance");
   }}
   style={{
     position: "absolute",
@@ -1462,9 +1462,52 @@ setSaveData((prev) => {
   </button>
 )}
 
+
+
   </div>
 
 
+
+
+)}
+
+
+{scene === "maintenance" && (
+  <div
+    style={{
+      color: "white",
+      textAlign: "center",
+      minHeight: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      gap: "20px",
+    }}
+  >
+
+    <h1>🔧 メンテナンス</h1>
+
+    <button>
+      🚿 洗車
+    </button>
+
+    <button>
+      🔩 点検
+    </button>
+
+    <button>
+      ⚡ チャージ
+    </button>
+
+    <button
+      onClick={() => {
+        setScene("frame");
+      }}
+    >
+      もどる
+    </button>
+
+  </div>
 )}
 
 {scene === "customShop" && (
