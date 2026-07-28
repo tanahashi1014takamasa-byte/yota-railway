@@ -702,8 +702,12 @@ setScene("loading");
     paddingLeft: "40px",
   }}
 >
-  <img
-  src="/images/kappa_1.png"
+ <img
+  src={
+    introKappaMouth
+      ? "/images/quizkappa2.png"
+      : "/images/quizkappa1.png"
+  }
   alt="ハムカッパ"
   width={100}
   loading="eager"
