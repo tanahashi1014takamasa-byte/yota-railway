@@ -293,11 +293,13 @@ const trains = [
   {
     name: "トーマス",
     image: "/images/train_ver3.1.png",
+     trainSize: 100,
+    offsetY: 30,
   },
   {
     name: "よねづけんし",
     image: "/images/yonezu_1.png",
-    trainSize: 250,
+    trainSize: 100,
     offsetY: 30,
   },
 ];
