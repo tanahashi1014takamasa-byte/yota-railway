@@ -1176,7 +1176,9 @@ setScene("loading");
   }}
 >
 
-<p>🧼 きれい度</p>
+<p>
+  🧼 きれい度：{saveData.condition.clean}
+</p>
 <div
   style={{
     width: "200px",
@@ -1194,7 +1196,9 @@ setScene("loading");
 </div>
 
 
-<p>🔩 調子</p>
+<p>
+  🔩 調子：{saveData.condition.status}
+</p>
 <div
   style={{
     width: "200px",
@@ -1212,7 +1216,9 @@ setScene("loading");
 </div>
 
 
-<p>⚡ エネルギー</p>
+<p>
+  ⚡ エネルギー：{saveData.condition.energy}
+</p>
 <div
   style={{
     width: "200px",
