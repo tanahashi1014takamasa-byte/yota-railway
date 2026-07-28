@@ -20,8 +20,8 @@ export default function Home() {
   useEffect(() => {
   const images = [
   "/images/train_ver1.1.png",
-  "/images/train_ver2.1.png",
-  "/images/train_ver3.1.png",
+  "/images/train_ver2.1.gif",
+  "/images/train_ver3.1.gif",
   "/images/yonezu_1.png",
   "/images/kappa_1.png",
 ];
@@ -289,14 +289,14 @@ const trains = [
     offsetY: 70,
   },
   {
-    name: "しんかんせん",
-    image: "/images/train_ver2.1.png",
+    name: "パトカー",
+    image: "/images/train_ver2.1.gif",
     trainSize: 150,
     offsetY: 70,
   },
   {
     name: "トーマス",
-    image: "/images/train_ver3.1.png",
+    image: "/images/train_ver3.1.gif",
      trainSize: 150,
     offsetY: 70,
   },
