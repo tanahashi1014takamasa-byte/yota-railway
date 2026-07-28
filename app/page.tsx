@@ -313,17 +313,18 @@ const shopVehicles = [
   {
   name: "D51-498",
   image: "/images/D51-498蒸気機関車.png",
-  trainSize: 400,
+  trainSize: 300,
+  offsetY: 60,
   description: "D51-498蒸気機関車！！\nむかし たくさんの ひとや\nにもつを はこんだ じょうききかんしゃだよ！\nくろい からだと \nおおきな けむりが\nかっこいい きかんしゃだね！",
   price : 100,
 },
   {
   name: "ギャルでん",
   image: "/images/gal.png",
-  trainSize: 400,
+  trainSize: 300,
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
   price : 100,
-  offsetY: 40,
+  offsetY: 45,
 },
   {
     name: "GSE70000形ロマンスカー",
