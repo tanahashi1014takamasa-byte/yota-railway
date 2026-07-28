@@ -299,8 +299,8 @@ const trains = [
   {
     name: "よねづけんし",
     image: "/images/yonezu_1.png",
-    trainSize: 100,
-    offsetY: 30,
+    trainSize: 150,
+    offsetY: -30,
   },
 ];
 
