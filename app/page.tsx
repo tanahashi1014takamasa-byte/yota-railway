@@ -914,6 +914,7 @@ setScene("loading");
 
     bell.onended = () => {
   setTrainX(0);
+  setLoadingNext("frame");
   setScene("loading");
 };
 
