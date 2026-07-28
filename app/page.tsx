@@ -1186,7 +1186,7 @@ steam.play();
 <p
   style={{
     position: "absolute",
-    top: "95px",
+    top: "105px",
     left: "20px",
     color: "white",
     textShadow: "2px 2px 4px black",
