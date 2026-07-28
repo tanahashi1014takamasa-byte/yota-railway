@@ -302,6 +302,7 @@ const shopVehicles = [
   trainSize: 400,
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
   price : 100,
+  offsetY: 40,
 },
   {
     name: "GSE70000形ロマンスカー",
@@ -1286,7 +1287,10 @@ setScene("loading");
         left: "50%",
         width: `${selectedTrain?.trainSize ?? 180}px`,
         transform: `
-  translate(calc(-50% + ${trainX}px), -50%)
+  translate(
+    calc(-50% + ${trainX}px),
+    calc(-50% + ${(selectedTrain?.offsetY ?? 0)}px)
+  )
   scaleX(${trainFlip ? -1 : 1})
 `,
        
