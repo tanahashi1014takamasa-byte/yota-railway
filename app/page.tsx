@@ -1551,6 +1551,18 @@ setSaveData((prev) => {
       ドライブゲーム
     </button>
 
+    <button
+  onClick={() => {
+    setScene("testVideo");
+  }}
+  style={{
+    fontSize: "30px",
+    padding: "20px 60px",
+  }}
+>
+  ▶ PLAY
+</button>
+
 
     <button
       onClick={() => {
@@ -1566,11 +1578,10 @@ setSaveData((prev) => {
 {scene === "testVideo" && (
   <div
     style={{
-      width: "100vw",
-      height: "100vh",
-      overflow: "hidden",
-      position: "relative",
-      background: "black",
+      width:"100vw",
+      height:"100vh",
+      position:"relative",
+      overflow:"hidden",
     }}
   >
     <video
@@ -1580,9 +1591,9 @@ setSaveData((prev) => {
       muted
       playsInline
       style={{
-        width: "100%",
-        height: "100%",
-        objectFit: "cover",
+        width:"100%",
+        height:"100%",
+        objectFit:"cover",
       }}
     />
   </div>
