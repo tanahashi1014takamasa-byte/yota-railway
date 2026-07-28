@@ -692,6 +692,7 @@ steam.play();
 
   customShopBgmRef.current?.play();
 
+  setShopMode("main");   // ←追加
   setLoadingNext("customShop");
   setScene("loading");
 }}
