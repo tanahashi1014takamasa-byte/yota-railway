@@ -10,6 +10,7 @@ export default function Home() {
   const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
   const [scene, setScene] = useState("opening");
   const [quizKappaMouth, setQuizKappaMouth] = useState(false);
+  const [introKappaMouth, setIntroKappaMouth] = useState(false);
   const [nextScene, setNextScene] = useState("");
   const [showTrainSelect, setShowTrainSelect] = useState(false);
 
@@ -101,6 +102,17 @@ useEffect(() => {
   if (scene === "quiz") {
     const timer = setInterval(() => {
       setQuizKappaMouth((mouth) => !mouth);
+    }, 200);
+
+    return () => clearInterval(timer);
+  }
+}, [scene]);
+
+
+useEffect(() => {
+  if (scene === "intro") {
+    const timer = setInterval(() => {
+      setIntroKappaMouth((mouth) => !mouth);
     }, 200);
 
     return () => clearInterval(timer);
