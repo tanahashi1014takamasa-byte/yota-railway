@@ -61,11 +61,14 @@ useEffect(() => {
 useEffect(() => {
   if (scene === "loading") {
     const timer = setTimeout(() => {
+
       if (loadingNext) {
         setScene(loadingNext);
+        setLoadingNext("");
       } else {
         setScene("frame");
       }
+
     }, 1500);
 
     return () => clearTimeout(timer);
