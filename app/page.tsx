@@ -671,13 +671,13 @@ steam.play();
   alt="カスタムショップ"
   
   width={180}
-  onClick={() => {
+ onClick={() => {
   bgmRef.current?.pause();
 
   customShopBgmRef.current?.play();
 
-  setNextScene("customShop");
-setScene("loading");
+  setLoadingNext("customShop");
+  setScene("loading");
 }}
 
   style={{
