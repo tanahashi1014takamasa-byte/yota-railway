@@ -1211,7 +1211,7 @@ steam.play();
   }}
 >
 
-<p>
+<p style={{ margin: "0" }}>
   🧼 きれい度：{saveData.condition.clean}
 </p>
 <div
@@ -1231,7 +1231,7 @@ steam.play();
 </div>
 
 
-<p>
+<p style={{ margin: "0" }}>
   🔩 調子：{saveData.condition.status}
 </p>
 <div
@@ -1251,7 +1251,7 @@ steam.play();
 </div>
 
 
-<p>
+<p style={{ margin: "0" }}>
   ⚡ エネルギー：{saveData.condition.energy}
 </p>
 <div
