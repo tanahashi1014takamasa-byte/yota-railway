@@ -329,21 +329,25 @@ const shopVehicles = [
   {
     name: "GSE70000形ロマンスカー",
     image: "/images/GSE_70000形_ロマンスカー.png",
-    trainSize: 400,
+    trainSize: 300,
     description: "GSE70000形ロマンスカー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
     price : 100,
+     offsetY: 80,
   },
   {
     name: "江ノ電",
     image: "/images/enoden.png",
     description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪",
     price : 100,
+    trainSize: 250,
+    offsetY: 80,
   },
   {
     name: "江ノ電ニキ",
     image: "/images/enodenniki.png",
     description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！",
     price : 100,
+    offsetY: 80,
   },
   {
     name: "メタルスラッグ",
