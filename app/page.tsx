@@ -1510,13 +1510,39 @@ setSaveData((prev) => {
   🚿 洗車
 </button>
 
-    <button>
-      🔩 点検
-    </button>
+    <button
+  onClick={() => {
+    setSaveData((data) => ({
+      ...data,
+      condition: {
+        ...data.condition,
+        status: Math.min(
+          100,
+          data.condition.status + 20
+        ),
+      },
+    }));
+  }}
+>
+  🔩 点検
+</button>
 
-    <button>
-      ⚡ チャージ
-    </button>
+    <button
+  onClick={() => {
+    setSaveData((data) => ({
+      ...data,
+      condition: {
+        ...data.condition,
+        energy: Math.min(
+          100,
+          data.condition.energy + 20
+        ),
+      },
+    }));
+  }}
+>
+  ⚡ チャージ
+</button>
 
     <button
       onClick={() => {
