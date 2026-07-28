@@ -1212,7 +1212,7 @@ steam.play();
 >
 
 <p style={{ margin: "0" }}>
-  🧼 きれい度：{saveData.condition.clean}
+  🧼 車両清掃：{saveData.condition.clean}
 </p>
 <div
   style={{
@@ -1232,7 +1232,7 @@ steam.play();
 
 
 <p style={{ margin: "0" }}>
-  🔩 調子：{saveData.condition.status}
+  🔩 整備状態：{saveData.condition.status}
 </p>
 <div
   style={{
