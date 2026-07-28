@@ -285,16 +285,20 @@ const trains = [
   {
     name: "ハムカッパでんしゃ",
     image: "/images/train_ver1.1.png",
+    trainSize: 150,
+    offsetY: 70,
   },
   {
     name: "しんかんせん",
     image: "/images/train_ver2.1.png",
+    trainSize: 150,
+    offsetY: 70,
   },
   {
     name: "トーマス",
     image: "/images/train_ver3.1.png",
      trainSize: 150,
-    offsetY: 60,
+    offsetY: 70,
   },
   {
     name: "よねづけんし",
