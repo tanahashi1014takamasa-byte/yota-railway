@@ -1529,6 +1529,11 @@ setSaveData((prev) => {
 
     <button
   onClick={() => {
+
+    const sound = new Audio("/sounds/charge.mp3");
+  sound.volume = 1.0;
+  sound.play();
+
     setSaveData((data) => ({
       ...data,
       condition: {
