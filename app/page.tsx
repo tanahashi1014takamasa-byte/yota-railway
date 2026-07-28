@@ -1177,6 +1177,7 @@ steam.play();
     fontSize: "18px",
     fontWeight: "bold",
     zIndex: 10,
+    margin: "0",
   }}
 >
   🚃 全体走行距離：{saveData.distance}km
@@ -1192,6 +1193,7 @@ steam.play();
     fontSize: "18px",
     fontWeight: "bold",
     zIndex: 10,
+    margin: "0",
   }}
 >
   💰 おかね：{saveData.money}
