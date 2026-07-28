@@ -135,9 +135,9 @@ useEffect(() => {
   retiredTrains: [],
   ownedVehicles: [] as any[],
   condition: {
-  clean: 100,
-  status: 100,
-  energy: 100,
+  clean: 50,
+  status: 50,
+  energy: 50,
 },
 });
 
