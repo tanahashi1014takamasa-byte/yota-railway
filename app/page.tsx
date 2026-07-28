@@ -1563,6 +1563,30 @@ setSaveData((prev) => {
   </div>
 )}
 
+{scene === "testVideo" && (
+  <div
+    style={{
+      width: "100vw",
+      height: "100vh",
+      overflow: "hidden",
+      position: "relative",
+      background: "black",
+    }}
+  >
+    <video
+      src="/videos/drivegame_movie.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+      }}
+    />
+  </div>
+)}
 
 {scene === "maintenance" && (
   <div
