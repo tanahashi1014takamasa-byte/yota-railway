@@ -291,8 +291,8 @@ const trains = [
   {
     name: "パトカー",
     image: "/images/train_ver2.1.gif",
-    trainSize: 150,
-    offsetY: 70,
+    trainSize: 250,
+    offsetY: 80,
   },
   {
     name: "トーマス",
