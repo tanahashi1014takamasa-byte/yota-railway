@@ -314,6 +314,7 @@ const trains = [
     image: "/images/train_ver1.1.gif",
     trainSize: 150,
     offsetY: 70,
+    zukanDescription: "ハムカッパが つくった\n\nふしぎな でんしゃ。\n\nよーたくんと いっしょに\nたびを する\nたいせつな なかまです。",
   },
   {
     name: "パトカー",
