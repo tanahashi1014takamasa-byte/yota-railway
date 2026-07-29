@@ -2230,6 +2230,14 @@ setSaveData((prev) => {
   sound.volume = 0.5;
   sound.play();
 
+  if (
+  saveData.ownedVehicles.some(
+    (v) => v.name === vehicle.name
+  )
+) {
+  return;
+}
+
   setCartItems((prev) => [
     ...prev,
     vehicle,
@@ -2248,9 +2256,12 @@ setSaveData((prev) => {
     <span style={{ width: "30px" }}>
 </span>
 
-    <span style={{ width: "180px" }}>
-      {vehicle.name}
-    </span>
+  <span style={{ width: "180px" }}>
+  {vehicle.name}
+  {saveData.ownedVehicles.some(
+    (v) => v.name === vehicle.name
+  ) && " ✅"}
+</span>
 
     <span>
       {vehicle.price}円
@@ -2418,7 +2429,12 @@ setSaveData((data) => ({
   money: data.money - total,
   ownedVehicles: [
     ...data.ownedVehicles,
-    ...cartItems,
+    ...cartItems.filter(
+      (cartVehicle) =>
+        !data.ownedVehicles.some(
+          (owned) => owned.name === cartVehicle.name
+        )
+    ),
   ],
 }));
 
