@@ -999,21 +999,21 @@ steam.play();
     />
 
     <div
-      style={{
-        position: "absolute",
-        right: "150px",
-        bottom: "230px",
-        background: "white",
-        color: "black",
-        padding: "12px 18px",
-        borderRadius: "20px",
-        border: "3px solid black",
-        fontSize: "18px",
-        fontWeight: "bold",
-        textAlign: "left",
-        width: "240px",
-      }}
-    >
+  style={{
+    position: "absolute",
+    right: "150px",
+    bottom: "230px",
+    background: "black",
+    color: "white",
+    padding: "8px 12px",
+    borderRadius: "15px",
+    border: "3px solid white",
+    fontSize: "16px",
+    fontWeight: "bold",
+    textAlign: "left",
+    width: "200px",
+  }}
+>
       電車がまいります…<br />
       黄色い点字ブロックの内側まで<br />
       お下がりください
