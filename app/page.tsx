@@ -7,9 +7,6 @@ export default function Home() {
   const bgmRef = useRef<HTMLAudioElement | null>(null);
   const customShopBgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
-  const img = new Image();
-img.src = "/images/駅員.png";
-imageCache.current.push(img);
   const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
   const [scene, setScene] = useState("opening");
   const [quizKappaMouth, setQuizKappaMouth] = useState(false);
@@ -27,6 +24,7 @@ imageCache.current.push(img);
   "/images/train_ver3.1.gif",
   "/images/yonezu_1.png",
   "/images/kappa_1.png",
+  "/images/駅員.png",
 ];
 
   images.forEach((src) => {
