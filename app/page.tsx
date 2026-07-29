@@ -340,6 +340,7 @@ const shopVehicles = [
     name: "江ノ電",
     image: "/images/enoden.png",
     description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪",
+    zukanDescription: "えのでんは、\nかまくらとふじさわをむすぶ\nてつどうです。\n1902ねんに かいぎょうし\nうみのちかくや\nまちなかを はしる\nめずらしい でんしゃです。",
     price : 100,
     trainSize: 200,
     offsetY: 55,
@@ -1837,9 +1838,15 @@ setSaveData((prev) => {
           {selectedZukanVehicle.name}
         </h2>
 
-        <p>
-          {selectedZukanVehicle.description}
-        </p>
+        <p
+  style={{
+    whiteSpace: "pre-line",
+    textAlign: "left",
+    lineHeight: "1.8",
+  }}
+>
+  {selectedZukanVehicle.zukanDescription}
+</p>
 
         <button
           onClick={()=>{
