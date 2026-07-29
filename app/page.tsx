@@ -393,7 +393,7 @@ const shopVehicles = [
   trainSize: 300,
   description: "個性や自由ではみ出していく\nはみ出しちゃいけないのは…\n車線だけなんだぜ\nいつかは花になる\nアマリリス～♪ハァッ！！！",
   price : 100,
-  offsetY: 65,
+  offsetY: 50,
 },
 {
     name: "アイシールド２１",
@@ -407,16 +407,18 @@ const shopVehicles = [
   name: "せいそう だいしゃニキ",
   image: "/images/清掃台車ニキ.png",
   speed: 7,
-  trainSize: 200,
+  trainSize: 100,
   description: "だいしゃ に のっては\nいけません！",
   price : 100,
+  offsetY: 65,
 },
 {
   name: "じぶんさがしニキ",
   image: "/images/自分探し.gif",
-  trainSize: 200,
+  trainSize: 170,
   description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい\n握りしめて～♪\nゆっくりゆっくり下ってく～♪",
   price : 100,
+  offsetY: 65,
 },
 
 {
@@ -438,6 +440,7 @@ const shopVehicles = [
   image: "/images/パックマン.gif",
   description: "……………………\nえー…これは\n…80年代の…ルンバ\nくわしいことは\nパパにきこう！",
   price : 100,
+  offsetY: 65,
 },
 
  {
@@ -446,6 +449,7 @@ const shopVehicles = [
   trainSize: 200,
   description: "やっ…！！！\nやっすいっすねぇえええ！！！",
   price : 100,
+  offsetY: 65,
 },
 ];
 
