@@ -920,40 +920,7 @@ steam.play();
   </button>
 ))}
 
-   <button
-  onClick={() => {
-
-    setSaveData({
-      ...saveData,
-      selectedTrain: saveData.mainTrain,
-    });
-
-    const steam = new Audio("/sounds/steam_train.mp3");
-    steam.volume = 0.3;
-    steam.play();
-
-    if (bgmRef.current) {
-      bgmRef.current.volume = 0.05;
-      bgmRef.current.play();
-    }
-
-    setScene("frame");
-  }}
- style={{
-  color: "white",
-  background: "black",
-  border: "2px solid white",
-  borderRadius: "10px",
-  fontSize: "20px",
-  padding: "10px 20px",
-  cursor: "pointer",
-}}
->
-   {saveData.mainTrain || "回送列車"}
-<br />
-走行距離：
-{saveData.vehicleDistances[saveData.mainTrain] ?? 0}km
-</button>
+   
     </div>
 )}
       {scene === "trainSelect" && (
