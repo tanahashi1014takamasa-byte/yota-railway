@@ -1589,24 +1589,13 @@ setSaveData((prev) => {
 
 
     <button
-      onClick={() => {
-        setScene("scrollGame");
-      }}
-      style={{
-        fontSize:"25px",
-        padding:"20px 50px",
-      }}
-    >
-      ドライブゲーム
-    </button>
-
-  <button
   onClick={() => {
     setScene("drive");
   }}
 >
-  ▶ PLAY
+  ドライブゲーム
 </button>
+
 
 
     <button
