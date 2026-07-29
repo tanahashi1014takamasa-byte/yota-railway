@@ -14,6 +14,7 @@ export default function Home() {
   const [loadingNext, setLoadingNext] = useState("");
   const [nextScene, setNextScene] = useState("");
   const [showTrainSelect, setShowTrainSelect] = useState(false);
+  const [selectedZukanVehicle, setSelectedZukanVehicle] = useState<any>(null);
 
   
 
@@ -1781,10 +1782,16 @@ setSaveData((prev) => {
     }}
   >
     <img
-      src={vehicle.image}
-      alt={vehicle.name}
-      width={80}
-    />
+  src={vehicle.image}
+  alt={vehicle.name}
+  width={80}
+  onClick={()=>{
+    setSelectedZukanVehicle(vehicle);
+  }}
+  style={{
+    cursor:"pointer",
+  }}
+/>
   </div>
 ))}
 
@@ -1801,6 +1808,49 @@ setSaveData((prev) => {
     >
       もどる
     </button>
+
+
+    {selectedZukanVehicle && (
+      <div
+        style={{
+          position:"fixed",
+          top:"50%",
+          left:"50%",
+          transform:"translate(-50%,-50%)",
+          width:"300px",
+          background:"black",
+          color:"white",
+          border:"3px solid white",
+          borderRadius:"15px",
+          padding:"20px",
+          textAlign:"center",
+          zIndex:100,
+        }}
+      >
+
+        <img
+          src={selectedZukanVehicle.image}
+          width={220}
+        />
+
+        <h2>
+          {selectedZukanVehicle.name}
+        </h2>
+
+        <p>
+          {selectedZukanVehicle.description}
+        </p>
+
+        <button
+          onClick={()=>{
+            setSelectedZukanVehicle(null);
+          }}
+        >
+          とじる
+        </button>
+
+      </div>
+    )}
 
   </div>
 )}
