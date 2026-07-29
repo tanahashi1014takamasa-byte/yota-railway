@@ -1878,7 +1878,7 @@ setSaveData((prev) => {
   }}
  style={{
   position:"absolute",
-  top:"-5px",
+  top:"5px",
   right:"5px",
   width:"35px",
   height:"35px",
@@ -1887,9 +1887,9 @@ setSaveData((prev) => {
   color:"white",
   border:"none",
   cursor:"pointer",
-}}
+ }}
 >
-  ×
+×
 </button>
 
 </div>
