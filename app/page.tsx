@@ -1148,11 +1148,7 @@ steam.play();
   }}
 >
 
-    {[
-      ...trains,
-      ...saveData.ownedVehicles
-    ].map((vehicle) => (
-
+   {saveData.ownedVehicles.map((vehicle) => (
       <button
         key={vehicle.name}
         onClick={() => {
