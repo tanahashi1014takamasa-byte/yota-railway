@@ -1770,7 +1770,10 @@ setSaveData((prev) => {
       }}
     >
 
-     {saveData.ownedVehicles.map((vehicle,index)=>(
+    {[
+  ...trains,
+  ...saveData.ownedVehicles
+].map((vehicle,index)=>(
   <div
     key={index}
     style={{
