@@ -1824,15 +1824,22 @@ setSaveData((prev) => {
 
 
     <button
-      onClick={()=>{
-        setScene("opening");
-      }}
-      style={{
-        marginTop:"40px",
-      }}
-    >
-      もどる
-    </button>
+  onClick={()=>{
+    setScene("opening");
+  }}
+  style={{
+    marginTop:"40px",
+    background:"black",
+    color:"white",
+    border:"3px solid white",
+    borderRadius:"10px",
+    fontSize:"24px",
+    padding:"15px 50px",
+    cursor:"pointer",
+  }}
+>
+  もどる
+</button>
 
 
     {selectedZukanVehicle && (
