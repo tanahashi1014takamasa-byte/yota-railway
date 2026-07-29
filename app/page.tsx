@@ -1738,37 +1738,57 @@ setSaveData((prev) => {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      justifyContent: "flex-start",
-      paddingTop: "50px",
+      paddingTop: "30px",
     }}
   >
 
-    <img
-      src="/images/collection.png"
-      alt="コレクション"
-      width={180}
+    {/* 図鑑タイトル画像予定 */}
+    <div
       style={{
+        width: "300px",
+        height: "80px",
+        border: "3px solid white",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: "28px",
         marginBottom: "30px",
-      }}
-    />
-
-    <p
-      style={{
-        fontSize: "24px",
       }}
     >
       のりものずかん
-    </p>
+    </div>
+
+
+    {/* 図鑑マス */}
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(3, 90px)",
+        gap: "15px",
+      }}
+    >
+
+      {[1,2,3,4,5,6].map((i)=>(
+        <div
+          key={i}
+          style={{
+            width:"90px",
+            height:"90px",
+            border:"2px solid white",
+          }}
+        >
+        </div>
+      ))}
+
+    </div>
 
 
     <button
-      onClick={() => {
+      onClick={()=>{
         setScene("opening");
       }}
       style={{
-        marginTop: "30px",
-        fontSize: "20px",
-        padding: "10px 30px",
+        marginTop:"40px",
       }}
     >
       もどる
