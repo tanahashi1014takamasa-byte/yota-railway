@@ -770,12 +770,13 @@ steam.play();
 {scene === "save" && saveLoaded && (
   <div
     style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      minHeight: "100vh",
-    }}
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "flex-start",
+  paddingTop: "50px",
+  minHeight: "100vh",
+}}
   >
     <p style={{ color: "white", fontSize: "22px" }}>
      <img
