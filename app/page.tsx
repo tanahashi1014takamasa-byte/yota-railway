@@ -1600,13 +1600,9 @@ setSaveData((prev) => {
       ドライブゲーム
     </button>
 
-    <button
+  <button
   onClick={() => {
-    setScene("testVideo");
-  }}
-  style={{
-    fontSize: "30px",
-    padding: "20px 60px",
+    setScene("drive");
   }}
 >
   ▶ PLAY
