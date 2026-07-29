@@ -1768,17 +1768,25 @@ setSaveData((prev) => {
       }}
     >
 
-      {[1,2,3,4,5,6].map((i)=>(
-        <div
-          key={i}
-          style={{
-            width:"90px",
-            height:"90px",
-            border:"2px solid white",
-          }}
-        >
-        </div>
-      ))}
+     {saveData.ownedVehicles.map((vehicle,index)=>(
+  <div
+    key={index}
+    style={{
+      width:"90px",
+      height:"90px",
+      border:"2px solid white",
+      display:"flex",
+      alignItems:"center",
+      justifyContent:"center",
+    }}
+  >
+    <img
+      src={vehicle.image}
+      alt={vehicle.name}
+      width={80}
+    />
+  </div>
+))}
 
     </div>
 
