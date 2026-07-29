@@ -777,11 +777,14 @@ steam.play();
       minHeight: "100vh",
     }}
   >
-    <p style={{ color: "white", fontSize: "24px" }}>
-      <img
+    <p style={{ color: "white", fontSize: "22px" }}>
+     <img
   src="/images/yota.png"
   width={300}
   alt="葉大鉄道"
+  style={{
+    marginBottom: "30px",
+  }}
 />
     </p>
 
