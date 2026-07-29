@@ -1868,7 +1868,7 @@ setSaveData((prev) => {
         <h2
   style={{
     marginTop: "10px",
-    fontWeight: "900",
+    fontWeight: "700",
     fontSize: "28px",
     textShadow: "2px 2px 3px black",
   }}
