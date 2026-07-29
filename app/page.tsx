@@ -1823,7 +1823,14 @@ setSaveData((prev) => {
     {[
   ...trains,
   ...saveData.ownedVehicles
-].map((vehicle,index)=>(
+]
+.filter(
+  (vehicle, index, self) =>
+    self.findIndex(
+      (v) => v.name === vehicle.name
+    ) === index
+)
+.map((vehicle,index)=>(
   <div
     key={index}
     style={{
