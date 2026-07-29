@@ -1624,7 +1624,7 @@ setSaveData((prev) => {
   </div>
 )}
 
-{scene === "testVideo" && (
+{scene === "drive" && (
   <div
     style={{
       width:"100vw",
@@ -1633,18 +1633,15 @@ setSaveData((prev) => {
       overflow:"hidden",
     }}
   >
-    <video
-      src="/videos/drivegame_movie.mp4"
-      autoPlay
-      loop
-      muted
-      playsInline
-      style={{
-        width:"100%",
-        height:"100%",
-        objectFit:"cover",
-      }}
-    />
+   <img
+  src="/images/road.gif"
+  alt="道路"
+  style={{
+    width:"100%",
+    height:"100%",
+    objectFit:"cover",
+  }}
+/>
   </div>
 )}
 
