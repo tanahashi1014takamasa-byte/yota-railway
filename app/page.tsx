@@ -990,6 +990,18 @@ steam.play();
     黄色い点字ブロックの内側まで
     <br />
     お下がりください
+
+    <img
+  src="/images/駅員.png"
+  alt="駅員"
+  style={{
+    width: "150px",
+    position: "absolute",
+    right: "20px",
+    bottom: "100px",
+  }}
+/>
+
   </div>
 )}
 
