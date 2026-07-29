@@ -1726,6 +1726,31 @@ setSaveData((prev) => {
   </div>
 )}
 
+{scene === "collection" && (
+  <div
+    style={{
+      minHeight: "100vh",
+      background: "black",
+      color: "white",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+    <h1>📖 のりものずかん</h1>
+
+    <button
+      onClick={() => {
+        setScene("opening");
+      }}
+    >
+      もどる
+    </button>
+  </div>
+)}
+
+
 {scene === "customShop" && (
   <div
     style={{
