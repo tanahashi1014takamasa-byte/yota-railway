@@ -662,7 +662,32 @@ const popKeyframes = `
   retiredTrains: [],
   money: 0,
   miles: 0,
-  ownedVehicles: [],
+  ownedVehicles: [
+  {
+    name: "ハムカッパでんしゃ",
+    image: "/images/train_ver1.1.gif",
+    trainSize: 150,
+    offsetY: 70,
+  },
+  {
+    name: "パトカー",
+    image: "/images/train_ver2.1.gif",
+    trainSize: 250,
+    offsetY: 80,
+  },
+  {
+    name: "トーマス",
+    image: "/images/train_ver3.1.gif",
+    trainSize: 150,
+    offsetY: 70,
+  },
+  {
+    name: "よねづけんし",
+    image: "/images/yonezu_1.png",
+    trainSize: 150,
+    offsetY: 60,
+  },
+] as any[],
   vehicleDistances: {},
   condition: {
   clean: 100,
