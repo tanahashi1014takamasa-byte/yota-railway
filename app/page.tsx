@@ -368,22 +368,23 @@ const shopVehicles = [
     image: "/images/ハイエース.png",
     description: "ハイエース！！\nすげーがんじょうだ！\nキャンプでつかう\nひともいれば\nバンドのきざいしゃにもなる\nタナハシも うんてんしたことあるぞ\n鞭を打つ代わりに投与～♪\n怪物って名前の飲料～♪",
     price : 100,
-    offsetY: 60,
+    offsetY: 65,
   },
    {
     name: "U.F.O.",
     image: "/images/UFO.png",
-    trainSize: 160,
+    trainSize: 130,
     description: "みかくにんひこうぶったい\nこれはまちがいなく\nみかくにんひこう…\nまちがいなく…\nみかくにん…???\nU.F.O.の軌道に乗って♪\nあーなーたーと逃避行～♪",
     price : 100,
-    offsetY: 60,
+    offsetY: 55,
   },
    {
     name: "キッチンカー（ケバブ）",
     image: "/images/ケバブ.png",
-    trainSize: 350,
+    trainSize: 200,
     description: "かまた駅のケバブは\nめっさ にく おおもり\nみなみすなまち駅は\nキャベツばっかり\nみなみせんじゅ駅のケバブは\nベリーグッドテイスト\nだにょ～ん\n",
     price : 100,
+    offsetY: 65,
   },
    {
   name: "オトナブルートレイン",
@@ -392,6 +393,7 @@ const shopVehicles = [
   trainSize: 300,
   description: "個性や自由ではみ出していく\nはみ出しちゃいけないのは…\n車線だけなんだぜ\nいつかは花になる\nアマリリス～♪ハァッ！！！",
   price : 100,
+  offsetY: 65,
 },
 {
     name: "アイシールド２１",
@@ -399,6 +401,7 @@ const shopVehicles = [
     speed: 20,
     description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ\n英雄だった\nホームやかいだんは\nはしらないでね！",
     price : 100,
+    offsetY: 65,
   },
 {
   name: "せいそう だいしゃニキ",
