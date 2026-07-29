@@ -148,7 +148,32 @@ useEffect(() => {
   miles: 0,
   vehicleDistances: {} as Record<string, number>,
   retiredTrains: [],
-  ownedVehicles: [] as any[],
+  ownedVehicles: [
+  {
+    name: "ハムカッパでんしゃ",
+    image: "/images/train_ver1.1.gif",
+    trainSize: 150,
+    offsetY: 70,
+  },
+  {
+    name: "パトカー",
+    image: "/images/train_ver2.1.gif",
+    trainSize: 250,
+    offsetY: 80,
+  },
+  {
+    name: "トーマス",
+    image: "/images/train_ver3.1.gif",
+    trainSize: 150,
+    offsetY: 70,
+  },
+  {
+    name: "よねづけんし",
+    image: "/images/yonezu_1.png",
+    trainSize: 150,
+    offsetY: 60,
+  },
+] as any[],
   condition: {
   clean: 100,
   status: 100,
