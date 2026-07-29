@@ -354,18 +354,21 @@ const shopVehicles = [
     image: "/images/メタスラ.gif",
     description: "これは…\nめっさカックィー メカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
     price : 100,
+    offsetY: 60,
   },
   {
     name: "メタルスラッグ２",
     image: "/images/メタスラ2.gif",
     description: "これは…\nあれだ…すげーメカだ\nうん…\nのってるのはマルコだ！！",
     price : 100,
+    offsetY: 60,
   },
   {
     name: "ハイエース",
     image: "/images/ハイエース.png",
     description: "ハイエース！！\nすげーがんじょうだ！\nキャンプでつかう\nひともいれば\nバンドのきざいしゃにもなる\nタナハシも うんてんしたことあるぞ\n鞭を打つ代わりに投与～♪\n怪物って名前の飲料～♪",
     price : 100,
+    offsetY: 60,
   },
    {
     name: "U.F.O.",
@@ -373,6 +376,7 @@ const shopVehicles = [
     trainSize: 160,
     description: "みかくにんひこうぶったい\nこれはまちがいなく\nみかくにんひこう…\nまちがいなく…\nみかくにん…???\nU.F.O.の軌道に乗って♪\nあーなーたーと逃避行～♪",
     price : 100,
+    offsetY: 60,
   },
    {
     name: "キッチンカー（ケバブ）",
