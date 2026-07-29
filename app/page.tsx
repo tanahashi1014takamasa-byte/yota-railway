@@ -1858,9 +1858,16 @@ setSaveData((prev) => {
           width={220}
         />
 
-        <h2>
-          {selectedZukanVehicle.name}
-        </h2>
+        <h2
+  style={{
+    marginTop: "10px",
+    fontWeight: "900",
+    fontSize: "28px",
+    textShadow: "2px 2px 3px black",
+  }}
+>
+  {selectedZukanVehicle.name}
+</h2>
 
         <p
   style={{
