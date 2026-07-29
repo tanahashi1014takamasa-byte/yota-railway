@@ -1051,6 +1051,14 @@ steam.play();
       🚃 のりかえ
     </p>
 
+    <div
+  style={{
+    maxHeight: "45vh",
+    overflowY: "auto",
+    margin: "15px 0",
+  }}
+>
+
     {[
       ...trains,
       ...saveData.ownedVehicles
@@ -1087,6 +1095,7 @@ steam.play();
 
     ))}
 
+</div>
 
     <button
       onClick={() => {
