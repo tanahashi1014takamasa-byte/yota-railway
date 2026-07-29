@@ -688,6 +688,9 @@ steam.play();
   src="/images/collection.png"
   alt="コレクション"
   width={180}
+  onClick={() => {
+    setScene("collection");
+  }}
   style={{
     cursor: "pointer",
     marginTop: "10px",
