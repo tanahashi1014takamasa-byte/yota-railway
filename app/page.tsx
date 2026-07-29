@@ -988,22 +988,38 @@ steam.play();
       justifyContent: "center",
     }}
   >
-    電車がまいります…
-    <br />
-    黄色い点字ブロックの内側まで
-    <br />
-    お下がりください
 
     <img
-  src="/images/駅員.png"
-  alt="駅員"
-  style={{
-    width: "150px",
-    position: "absolute",
-    right: "20px",
-    bottom: "100px",
-  }}
-/>
+      src="/images/駅員.png"
+      alt="駅員"
+      style={{
+        width: "150px",
+        position: "absolute",
+        right: "20px",
+        bottom: "100px",
+      }}
+    />
+
+    <div
+      style={{
+        position: "absolute",
+        right: "150px",
+        bottom: "230px",
+        background: "white",
+        color: "black",
+        padding: "12px 18px",
+        borderRadius: "20px",
+        border: "3px solid black",
+        fontSize: "18px",
+        fontWeight: "bold",
+        textAlign: "left",
+        width: "240px",
+      }}
+    >
+      電車がまいります…<br />
+      黄色い点字ブロックの内側まで<br />
+      お下がりください
+    </div>
 
   </div>
 )}
