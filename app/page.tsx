@@ -1909,15 +1909,28 @@ setSaveData((prev) => {
   {selectedZukanVehicle.zukanDescription}
 </p>
 
-        <button
-          onClick={()=>{
-            setSelectedZukanVehicle(null);
-          }}
-        >
-          とじる
-        </button>
+<button
+  onClick={()=>{
+    setSelectedZukanVehicle(null);
+  }}
+  style={{
+    position:"absolute",
+    top:"5px",
+    right:"5px",
+    width:"35px",
+    height:"35px",
+    fontSize:"25px",
+    borderRadius:"50%",
+    background:"black",
+    color:"white",
+    border:"2px solid white",
+    cursor:"pointer",
+  }}
+>
+  ×
+</button>
 
-      </div>
+</div>
     )}
 
   </div>
