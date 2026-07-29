@@ -393,7 +393,7 @@ const shopVehicles = [
   trainSize: 300,
   description: "個性や自由ではみ出していく\nはみ出しちゃいけないのは…\n車線だけなんだぜ\nいつかは花になる\nアマリリス～♪ハァッ！！！",
   price : 100,
-  offsetY: 30,
+  offsetY: 20,
 },
 {
     name: "アイシールド２１",
