@@ -1735,18 +1735,42 @@ setSaveData((prev) => {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      justifyContent: "center",
+      justifyContent: "flex-start",
+      paddingTop: "50px",
     }}
   >
-    <h1>📖 のりものずかん</h1>
+
+    <img
+      src="/images/collection.png"
+      alt="コレクション"
+      width={180}
+      style={{
+        marginBottom: "30px",
+      }}
+    />
+
+    <p
+      style={{
+        fontSize: "24px",
+      }}
+    >
+      のりものずかん
+    </p>
+
 
     <button
       onClick={() => {
         setScene("opening");
       }}
+      style={{
+        marginTop: "30px",
+        fontSize: "20px",
+        padding: "10px 30px",
+      }}
     >
       もどる
     </button>
+
   </div>
 )}
 
