@@ -321,18 +321,21 @@ const trains = [
     image: "/images/train_ver2.1.gif",
     trainSize: 250,
     offsetY: 80,
+    zukanDescription: "まちのへいわを\nまもる くるま。\n\nわるいひとを\nつかまえたり、\nこまっているひとを\nたすけたりするよ。\n\nサイレンをならして\nみんなのところへ\nかけつけるんだ！",
   },
   {
     name: "トーマス",
     image: "/images/train_ver3.1.gif",
      trainSize: 150,
     offsetY: 70,
+    zukanDescription: "げんきいっぱいの\nきかんしゃ。\n\nなかまたちといっしょに\nはたらくのがだいすき。\n\nじぶんのしごとを\nがんばる\nすごい きかんしゃだよ！",
   },
   {
     name: "よねづけんし",
     image: "/images/yonezu_1.png",
     trainSize: 150,
     offsetY: 60,
+    zukanDescription: "よねづけんしは\nうたを つくって\nうたう おんがくか。\n\nじぶんで えを かいたり、\nおんがくを つくったり\nしているよ。\n\n「Lemon」などの\nゆうめいな きょくを\nつくった ひとなんだ！\n\nテレビでは\nサメの かたちの のりものに\nのって うたうなど、\nおもしろい えんしゅつも\nしているよ！",
   },
 ];
 
