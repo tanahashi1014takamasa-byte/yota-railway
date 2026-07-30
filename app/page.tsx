@@ -355,6 +355,7 @@ const shopVehicles = [
   image: "/images/gal.png",
   trainSize: 250,
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
+  zukanDescription: "タナハシが\nギャルバンドHaze\nをききながら\nつくったでんしゃだ！",
   price : 100,
   offsetY: 80,
 },
