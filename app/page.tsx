@@ -1124,7 +1124,7 @@ steam.play();
   >
 
     <p style={{fontSize:"24px"}}>
-      🚃 のりかえ
+      　のりかえ
     </p>
 
     <div
@@ -1132,6 +1132,9 @@ steam.play();
     maxHeight: "45vh",
     overflowY: "auto",
     margin: "15px 0",
+    color: "white",
+  background: "black",
+  WebkitTextStroke: "2px black",
   }}
 >
 
@@ -1176,6 +1179,9 @@ steam.play();
       style={{
         marginTop:"10px",
         padding:"10px 30px",
+        color: "white",
+  background: "black",
+  WebkitTextStroke: "2px black",
       }}
     >
       とじる
