@@ -335,7 +335,7 @@ const trains = [
     image: "/images/yonezu_1.png",
     trainSize: 150,
     offsetY: 60,
-    zukanDescription: "よねづけんしは\nうたを つくって\nうたう おんがくか。\n\nじぶんで えを かいたり、\nおんがくを つくったり\nしているよ。\n\n「Lemon」などの\nゆうめいな きょくを\nつくった ひとなんだ！\n\nテレビでは\nサメの かたちの のりものに\nのって うたうなど、\nおもしろい えんしゅつも\nしているよ！",
+    zukanDescription: "よねづけんしは\nうたを つくって\nうたう おんがくか。\n「Lemon」などの\nゆうめいな きょくを\nつくった ひとなんだ！\n\nテレビでは\nサメの かたちの のりものに\nのって うたうこともあるよ！",
   },
 ];
 
@@ -1864,9 +1864,13 @@ setSaveData((prev) => {
       >
 
         <img
-          src={selectedZukanVehicle.image}
-          width={220}
-        />
+  src={selectedZukanVehicle.image}
+  width={220}
+  style={{
+    display: "block",
+    margin: "0 auto",
+  }}
+/>
 
         <h2
   style={{
@@ -1882,7 +1886,7 @@ setSaveData((prev) => {
         <p
   style={{
     whiteSpace: "pre-line",
-    textAlign: "left",
+    textAlign: "center",
     lineHeight: "1.8",
   }}
 >
