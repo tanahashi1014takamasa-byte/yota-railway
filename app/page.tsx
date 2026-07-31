@@ -1377,8 +1377,8 @@ steam.play();
   <div
     style={{
   position: "fixed",
-  right: "20px",
-  top: "80px",
+  right: "15px",
+  top: "75px",
       color: "white",
       background: "black",
       border: "3px solid white",
@@ -1386,12 +1386,7 @@ steam.play();
       fontSize: "10px",
       fontWeight: "bold",
       zIndex: 30,
-      textShadow: `
-        -2px -2px 0 black,
-         2px -2px 0 black,
-        -2px  2px 0 black,
-         2px  2px 0 black
-      `,
+      textShadow: "1px 1px 0 black",
     }}
   >
     {maintenanceMessages.map((msg, index) => (
