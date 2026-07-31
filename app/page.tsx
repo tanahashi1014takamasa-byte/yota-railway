@@ -1701,15 +1701,34 @@ setSaveData((prev) => {
     }}
   >
 
-   <img
-  src="/images/game_logo.png"
-  alt="ゲーム"
+ <div
   style={{
-    width: "450px",
-    height: "auto",
-    transform: "translateY(-90px)",
+    position: "relative",
+    display: "inline-block",
   }}
-/>
+>
+  <img
+    src="/images/game_logo.png"
+    alt="ゲーム"
+    style={{
+      width: "450px",
+      height: "auto",
+      transform: "translateY(-90px)",
+    }}
+  />
+
+  <img
+    src="/images/UFO.png"
+    alt="UFO"
+    style={{
+      position: "absolute",
+      width: "80px",
+      top: "-120px",
+      left: "0px",
+      animation: "ufoMove 3s linear infinite",
+    }}
+  />
+</div>
 
     <button
       onClick={() => {
@@ -1756,12 +1775,23 @@ setSaveData((prev) => {
 
 
     <button
-      onClick={() => {
-        setScene("frame");
-      }}
-    >
-      もどる
-    </button>
+  onClick={() => {
+    setScene("frame");
+  }}
+  style={{
+    fontSize: "22px",
+    padding: "12px 40px",
+    background: "black",
+    color: "white",
+    border: "4px solid white",
+    fontWeight: "bold",
+    fontFamily: "monospace",
+    borderRadius: "0px",
+    cursor: "pointer",
+  }}
+>
+  もどる
+</button>
 
   </div>
 )}
