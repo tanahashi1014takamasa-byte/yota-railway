@@ -1750,8 +1750,8 @@ setSaveData((prev) => {
     }));
 
     setMaintenanceMessages((prev) => [
-  ...prev,
-  "ピカピカ◎"
+  ...prev.filter((msg) => msg !== "🚿ピカピカ👍"),
+  "🚿ピカピカ👍"
 ]);
 
   }}
@@ -1793,8 +1793,8 @@ setSaveData((prev) => {
 }));
 
 setMaintenanceMessages((prev) => [
-  ...prev,
-  "メンテ◎"
+  ...prev.filter((msg) => msg !== "🛠️メンテ👍"),
+  "🛠️メンテ👍"
 ]);
 
   }}
@@ -1830,8 +1830,8 @@ setMaintenanceMessages((prev) => [
     }));
 
 setMaintenanceMessages((prev) => [
-  ...prev,
-  "チャージ◎"
+  ...prev.filter((msg) => msg !== "⚡チャージ👍"),
+  "⚡チャージ👍"
 ]);
 
   }}
