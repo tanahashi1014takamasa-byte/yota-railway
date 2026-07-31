@@ -1722,15 +1722,15 @@ setSaveData((prev) => {
     `,
   }}
 >
-  🚿 洗車
+   おそうじ
 </button>
 
-    <button
+   <button
   onClick={() => {
 
     const sound = new Audio("/sounds/air.mp3");
-  sound.volume = 1.0;
-  sound.play();
+    sound.volume = 1.0;
+    sound.play();
 
     setSaveData((data) => ({
       ...data,
@@ -1743,16 +1743,25 @@ setSaveData((prev) => {
       },
     }));
   }}
+  style={{
+    color: "white",
+    background: "black",
+    fontSize: "32px",
+    fontWeight: "bold",
+    border: "3px solid white",
+    borderRadius: "15px",
+    padding: "10px 30px",
+  }}
 >
-  🔩 点検
+  てんけん
 </button>
 
     <button
   onClick={() => {
 
     const sound = new Audio("/sounds/charge.mp3");
-  sound.volume = 1.0;
-  sound.play();
+    sound.volume = 1.0;
+    sound.play();
 
     setSaveData((data) => ({
       ...data,
@@ -1764,6 +1773,15 @@ setSaveData((prev) => {
         ),
       },
     }));
+  }}
+  style={{
+    color: "white",
+    background: "black",
+    fontSize: "32px",
+    fontWeight: "bold",
+    border: "3px solid white",
+    borderRadius: "15px",
+    padding: "10px 30px",
   }}
 >
   ⚡ チャージ
