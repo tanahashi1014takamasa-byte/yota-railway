@@ -1708,10 +1708,10 @@ setSaveData((prev) => {
       ...data,
       condition: {
         ...data.condition,
-        status: Math.min(
-          100,
-          data.condition.status + 20
-        ),
+        clean: Math.min(
+  100,
+  data.condition.clean + 20
+),
       },
     }));
   }}
@@ -1745,10 +1745,10 @@ setSaveData((prev) => {
   ...data,
   condition: {
     ...data.condition,
-    clean: Math.min(
-      100,
-      data.condition.clean + 20
-    ),
+    status: Math.min(
+  100,
+  data.condition.status + 20
+),
   },
 }));
   }}
