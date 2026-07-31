@@ -1804,7 +1804,7 @@ setSaveData((prev) => {
     }));
 
     setMaintenanceMessages((prev) => [
-  ...prev.filter((msg) => msg !== "🚿ピカピカ👍"),
+  ...prev.filter((msg) => msg !== "ピカピカ👍"),
   "ピカピカ👍"
 ]);
 
@@ -1847,7 +1847,7 @@ setSaveData((prev) => {
 }));
 
 setMaintenanceMessages((prev) => [
-  ...prev.filter((msg) => msg !== "🛠️メンテ👍"),
+  ...prev.filter((msg) => msg !== "メンテ👍"),
   "メンテ👍"
 ]);
 
@@ -1884,7 +1884,7 @@ setMaintenanceMessages((prev) => [
     }));
 
 setMaintenanceMessages((prev) => [
-  ...prev.filter((msg) => msg !== "⚡チャージ👍"),
+  ...prev.filter((msg) => msg !== "チャージ👍"),
   "チャージ👍"
 ]);
 
