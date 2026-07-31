@@ -45,15 +45,49 @@ useEffect(() => {
   if (savedData) {
   const data = JSON.parse(savedData);
 
-  setSaveData({
+  const now = Date.now();
+
+const elapsedMinutes = 10;
+
+const cleanLoss = Math.floor(elapsedMinutes * 1);
+const energyLoss = Math.floor(elapsedMinutes * 0.5);
+const statusLoss = Math.floor(elapsedMinutes / 12);
+
+const newCondition = {
+  clean: Math.max(
+    0,
+    (data.condition?.clean ?? 100) - cleanLoss
+  ),
+
+  energy: Math.max(
+    0,
+    (data.condition?.energy ?? 100) - energyLoss
+  ),
+
+  status: Math.max(
+    0,
+    (data.condition?.status ?? 100) - statusLoss
+  ),
+};
+
+setSaveData({
+  ...data,
+  condition: newCondition,
+  lastPlayed: now,
+});
+
+ setSaveData({
   ...data,
   money: data.money ?? 0,
   ownedVehicles: data.ownedVehicles ?? [],
-  condition: {
-  clean: 100,
-  status: 100,
-  energy: 100,
-},
+
+  condition: data.condition ?? {
+    clean: 100,
+    status: 100,
+    energy: 100,
+  },
+
+  lastPlayed: data.lastPlayed ?? Date.now(),
 });
 }
 
@@ -244,6 +278,9 @@ useEffect(() => {
   status: 100,
   energy: 100,
 },
+
+lastPlayed: Date.now(),
+
 });
 
 const [saveLoaded, setSaveLoaded] = useState(false);
@@ -780,6 +817,9 @@ const popKeyframes = `
   status: 100,
   energy: 100,
 },
+
+lastPlayed: Date.now(),
+
 });
 
     setMessageIndex(0);
