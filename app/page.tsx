@@ -1705,9 +1705,9 @@ setSaveData((prev) => {
   src="/images/game_logo.png"
   alt="ゲーム"
   style={{
-    width: "420px",
+    width: "450px",
     height: "auto",
-    transform: "translateY(-60px)",
+    transform: "translateY(-90px)",
   }}
 />
 
