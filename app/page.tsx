@@ -1701,13 +1701,13 @@ setSaveData((prev) => {
     }}
   >
 
-     <img
+   <img
   src="/images/game_logo.png"
   alt="ゲーム"
   style={{
-    width: "400px",
+    width: "220px",
     height: "auto",
-    margin: "0 auto",
+    transform: "translateY(-40px)",
   }}
 />
 
