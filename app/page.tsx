@@ -1719,9 +1719,16 @@ setSaveData((prev) => {
         setScene("quiz");
       }}
       style={{
-        fontSize:"25px",
-        padding:"20px 50px",
-      }}
+  fontSize: "25px",
+  padding: "20px 50px",
+  background: "black",
+  color: "white",
+  border: "4px solid white",
+  fontWeight: "bold",
+  fontFamily: "monospace",
+  borderRadius: "0px",
+  cursor: "pointer",
+}}
     >
       クイズゲーム
     </button>
@@ -1731,6 +1738,17 @@ setSaveData((prev) => {
   onClick={() => {
     setScene("drive");
   }}
+  style={{
+  fontSize: "25px",
+  padding: "20px 50px",
+  background: "black",
+  color: "white",
+  border: "4px solid white",
+  fontWeight: "bold",
+  fontFamily: "monospace",
+  borderRadius: "0px",
+  cursor: "pointer",
+}}
 >
   ドライブゲーム
 </button>
