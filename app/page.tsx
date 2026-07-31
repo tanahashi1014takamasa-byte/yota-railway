@@ -123,6 +123,16 @@ useEffect(() => {
   }
 }, [scene]);
 
+useEffect(() => {
+  if (maintenanceMessages.length > 0) {
+    const timer = setTimeout(() => {
+      setMaintenanceMessages([]);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }
+}, [maintenanceMessages]);
+
   const LEFT_WALL = -200;
   const RIGHT_WALL = 200;
   const [shopIndex, setShopIndex] = useState(0);
