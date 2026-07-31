@@ -1382,8 +1382,8 @@ steam.play();
       color: "white",
       background: "black",
       border: "3px solid white",
-      padding: "10px 20px",
-      fontSize: "24px",
+      padding: "8px 12px",
+      fontSize: "10px",
       fontWeight: "bold",
       zIndex: 30,
       textShadow: `
