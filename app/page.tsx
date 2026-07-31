@@ -1688,23 +1688,38 @@ setSaveData((prev) => {
 
     <h1>🔧 メンテナンス</h1>
 
-    <button
+   <button
   onClick={() => {
 
-    const sound = new Audio("/sounds/clean.mp3");
-  sound.volume = 1.0;
-  sound.play();
+    const sound = new Audio("/sounds/air.mp3");
+    sound.volume = 1.0;
+    sound.play();
 
     setSaveData((data) => ({
       ...data,
       condition: {
         ...data.condition,
-        clean: Math.min(
+        status: Math.min(
           100,
-          data.condition.clean + 20
+          data.condition.status + 20
         ),
       },
     }));
+  }}
+  style={{
+    color: "white",
+    background: "black",
+    fontSize: "32px",
+    fontWeight: "bold",
+    border: "3px solid white",
+    borderRadius: "15px",
+    padding: "10px 30px",
+    textShadow: `
+      -2px -2px 0 black,
+       2px -2px 0 black,
+      -2px  2px 0 black,
+       2px  2px 0 black
+    `,
   }}
 >
   🚿 洗車
