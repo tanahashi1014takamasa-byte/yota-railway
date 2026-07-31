@@ -182,7 +182,7 @@ useEffect(() => {
         ),
       },
     }));
-  }, 5000);
+  }, 43200000);
 
   return () => clearInterval(timer);
 }, []);
