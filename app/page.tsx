@@ -133,6 +133,23 @@ useEffect(() => {
   }
 }, [scene]);
 
+useEffect(() => {
+  const timer = setInterval(() => {
+    setSaveData((data) => ({
+      ...data,
+      condition: {
+        ...data.condition,
+        clean: Math.max(
+          0,
+          data.condition.clean - 1
+        ),
+      },
+    }));
+  }, 5000);
+
+  return () => clearInterval(timer);
+}, []);
+
   const LEFT_WALL = -200;
   const RIGHT_WALL = 200;
   const [shopIndex, setShopIndex] = useState(0);
