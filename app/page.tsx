@@ -137,13 +137,26 @@ useEffect(() => {
   const timer = setInterval(() => {
     setSaveData((data) => ({
       ...data,
-      condition: {
-        ...data.condition,
-        clean: Math.max(
-          0,
-          data.condition.clean - 1
-        ),
-      },
+
+
+     condition: {
+  ...data.condition,
+
+  clean: Math.max(
+    0,
+    data.condition.clean - 1
+  ),
+
+  status: Math.max(
+    0,
+    data.condition.status - 1
+  ),
+
+  energy: Math.max(
+    0,
+    data.condition.energy - 1
+  ),
+},
     }));
   }, 5000);
 
