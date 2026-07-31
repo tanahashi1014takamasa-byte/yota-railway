@@ -1376,9 +1376,10 @@ steam.play();
 {maintenanceMessages.length > 0 && (
   <div
     style={{
-      position: "absolute",
-      right: "40px",
-      top: "200px",
+  position: "absolute",
+  left: "auto",
+  right: "20px",
+  top: "300px",
       color: "white",
       background: "black",
       border: "3px solid white",
