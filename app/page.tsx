@@ -16,6 +16,7 @@ export default function Home() {
   const [nextScene, setNextScene] = useState("");
   const [showTrainSelect, setShowTrainSelect] = useState(false);
   const [selectedZukanVehicle, setSelectedZukanVehicle] = useState<any>(null);
+  const [announceMessage, setAnnounceMessage] = useState("");
 
   
 
@@ -1188,6 +1189,21 @@ steam.play();
     height: "100vh",
     objectFit: "fill",
     display: "block",
+  }}
+
+
+  
+/>
+
+<img
+  src="/images/announce.png"
+  alt="電光掲示板"
+  style={{
+    position: "absolute",
+    top: "80px",
+    right: "30px",
+    width: "200px",
+    zIndex: 10,
   }}
 />
 
