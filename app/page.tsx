@@ -9,6 +9,7 @@ export default function Home() {
   const imageCache = useRef<HTMLImageElement[]>([]);
   const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
   const [scene, setScene] = useState("opening");
+  const [maintenanceMessages, setMaintenanceMessages] = useState<string[]>([]);
   const [quizKappaMouth, setQuizKappaMouth] = useState(false);
   const [introKappaMouth, setIntroKappaMouth] = useState(false);
   const [loadingNext, setLoadingNext] = useState("");
@@ -1362,6 +1363,31 @@ steam.play();
   />
 </div>
 
+{maintenanceMessages.length > 0 && (
+  <div
+    style={{
+      position: "absolute",
+      right: "40px",
+      top: "200px",
+      color: "white",
+      background: "black",
+      border: "3px solid white",
+      padding: "10px 20px",
+      fontSize: "24px",
+      fontWeight: "bold",
+      zIndex: 30,
+      textShadow: `
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black
+      `,
+    }}
+  >
+
+  </div>
+)}
+
 </div>
 
      <div
@@ -1714,6 +1740,12 @@ setSaveData((prev) => {
 ),
       },
     }));
+
+    setMaintenanceMessages((prev) => [
+  ...prev,
+  "🚿ピカピカになりました！"
+]);
+
   }}
   style={{
     color: "white",
@@ -1751,6 +1783,12 @@ setSaveData((prev) => {
 ),
   },
 }));
+
+setMaintenanceMessages((prev) => [
+  ...prev,
+  "🛠️メンテかんりょう！"
+]);
+
   }}
   style={{
     color: "white",
@@ -1782,6 +1820,12 @@ setSaveData((prev) => {
         ),
       },
     }));
+
+setMaintenanceMessages((prev) => [
+  ...prev,
+  "⚡チャージOK！"
+]);
+
   }}
   style={{
     color: "white",
