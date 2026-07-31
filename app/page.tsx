@@ -1742,15 +1742,15 @@ setSaveData((prev) => {
     sound.play();
 
     setSaveData((data) => ({
-      ...data,
-      condition: {
-        ...data.condition,
-        status: Math.min(
-          100,
-          data.condition.status + 20
-        ),
-      },
-    }));
+  ...data,
+  condition: {
+    ...data.condition,
+    clean: Math.min(
+      100,
+      data.condition.clean + 20
+    ),
+  },
+}));
   }}
   style={{
     color: "white",
