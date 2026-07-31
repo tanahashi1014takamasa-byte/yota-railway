@@ -1701,7 +1701,15 @@ setSaveData((prev) => {
     }}
   >
 
-    <h1>🎮 ゲーム</h1>
+     <img
+  src="/images/game_logo.png"
+  alt="ゲーム"
+  style={{
+    width: "400px",
+    height: "auto",
+    margin: "0 auto",
+  }}
+/>
 
     <button
       onClick={() => {
