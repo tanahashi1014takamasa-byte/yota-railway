@@ -1687,7 +1687,7 @@ setSaveData((prev) => {
   >
 
     <img
-  src="/check.png"
+  src="/images/check.png"
   alt="メンテナンス"
   style={{
     width: "200px",
