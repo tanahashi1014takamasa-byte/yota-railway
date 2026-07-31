@@ -1796,12 +1796,17 @@ setSaveData((prev) => {
 </button>
 
     <button
-      onClick={() => {
-        setScene("frame");
-      }}
-    >
-      もどる
-    </button>
+  onClick={() => {
+    setScene("frame");
+  }}
+  style={{
+    fontSize: "28px",
+    marginTop: "20px",
+    padding: "10px 30px",
+  }}
+>
+  もどる
+</button>
 
   </div>
 )}
