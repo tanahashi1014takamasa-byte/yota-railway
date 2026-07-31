@@ -1793,7 +1793,7 @@ setSaveData((prev) => {
     padding: "10px 30px",
   }}
 >
-  ⚡チャージ⚡
+⚡チャージ⚡
 </button>
 
     <button
