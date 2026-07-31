@@ -1384,7 +1384,11 @@ steam.play();
       `,
     }}
   >
-
+    {maintenanceMessages.map((msg, index) => (
+      <div key={index}>
+        {msg}
+      </div>
+    ))}
   </div>
 )}
 
