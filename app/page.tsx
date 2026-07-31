@@ -1722,10 +1722,10 @@ setSaveData((prev) => {
     alt="UFO"
     style={{
       position: "absolute",
-      width: "80px",
+      width: "30px",
       top: "-120px",
       left: "0px",
-      animation: "ufoMove 3s linear infinite",
+      animation: "ufoMove 20s linear infinite",
     }}
   />
 </div>
