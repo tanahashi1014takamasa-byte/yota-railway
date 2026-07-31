@@ -1202,7 +1202,7 @@ steam.play();
     position: "absolute",
     top: "80px",
     right: "0px",
-    width: "150px",
+    width: "130px",
     zIndex: 10,
   }}
 />
