@@ -1751,7 +1751,7 @@ setSaveData((prev) => {
 
     setMaintenanceMessages((prev) => [
   ...prev,
-  "🚿ピカピカになりました！"
+  "ピカピカ◎"
 ]);
 
   }}
@@ -1794,7 +1794,7 @@ setSaveData((prev) => {
 
 setMaintenanceMessages((prev) => [
   ...prev,
-  "🛠️メンテかんりょう！"
+  "メンテ◎"
 ]);
 
   }}
@@ -1831,7 +1831,7 @@ setMaintenanceMessages((prev) => [
 
 setMaintenanceMessages((prev) => [
   ...prev,
-  "⚡チャージOK！"
+  "チャージ◎"
 ]);
 
   }}
