@@ -50,9 +50,9 @@ useEffect(() => {
   money: data.money ?? 0,
   ownedVehicles: data.ownedVehicles ?? [],
   condition: {
-  clean: 50,
-  status: 50,
-  energy: 50,
+  clean: 100,
+  status: 100,
+  energy: 100,
 },
 });
 }
@@ -137,26 +137,50 @@ useEffect(() => {
   const timer = setInterval(() => {
     setSaveData((data) => ({
       ...data,
+      condition: {
+        ...data.condition,
 
+        clean: Math.max(
+          0,
+          data.condition.clean - 1
+        ),
+      },
+    }));
+  }, 60000);
 
-     condition: {
-  ...data.condition,
+  return () => clearInterval(timer);
+}, []);
 
-  clean: Math.max(
-    0,
-    data.condition.clean - 1
-  ),
+useEffect(() => {
+  const timer = setInterval(() => {
+    setSaveData((data) => ({
+      ...data,
+      condition: {
+        ...data.condition,
 
-  status: Math.max(
-    0,
-    data.condition.status - 1
-  ),
+        energy: Math.max(
+          0,
+          data.condition.energy - 1
+        ),
+      },
+    }));
+  }, 120000);
 
-  energy: Math.max(
-    0,
-    data.condition.energy - 1
-  ),
-},
+  return () => clearInterval(timer);
+}, []);
+
+useEffect(() => {
+  const timer = setInterval(() => {
+    setSaveData((data) => ({
+      ...data,
+      condition: {
+        ...data.condition,
+
+        status: Math.max(
+          0,
+          data.condition.status - 20
+        ),
+      },
     }));
   }, 5000);
 
