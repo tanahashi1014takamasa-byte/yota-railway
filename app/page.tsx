@@ -47,7 +47,8 @@ useEffect(() => {
 
   const now = Date.now();
 
-const elapsedMinutes = 10;
+const elapsedMinutes =
+  (now - (data.lastPlayed ?? now)) / (1000 * 60);
 
 const cleanLoss = Math.floor(elapsedMinutes * 1);
 const energyLoss = Math.floor(elapsedMinutes * 0.5);
@@ -69,6 +70,8 @@ const newCondition = {
     (data.condition?.status ?? 100) - statusLoss
   ),
 };
+
+
 
 setSaveData({
   ...data,
