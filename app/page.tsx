@@ -1722,7 +1722,7 @@ setSaveData((prev) => {
     `,
   }}
 >
-   おそうじ
+   🚿おそうじ🚿
 </button>
 
    <button
@@ -1753,7 +1753,7 @@ setSaveData((prev) => {
     padding: "10px 30px",
   }}
 >
-  てんけん
+  🛠️てんけん🛠️
 </button>
 
     <button
@@ -1784,7 +1784,7 @@ setSaveData((prev) => {
     padding: "10px 30px",
   }}
 >
-  ⚡ チャージ
+  ⚡チャージ⚡
 </button>
 
     <button
