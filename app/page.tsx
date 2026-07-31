@@ -1717,7 +1717,7 @@ setSaveData((prev) => {
   style={{
     color: "white",
     background: "black",
-    fontSize: "32px",
+    fontSize: "20px",
     fontWeight: "bold",
     border: "3px solid white",
     borderRadius: "15px",
@@ -1789,7 +1789,7 @@ setSaveData((prev) => {
     fontWeight: "bold",
     border: "3px solid white",
     borderRadius: "15px",
-    padding: "5px 15px",
+    padding: "10px 30px",
   }}
 >
   ⚡チャージ⚡
