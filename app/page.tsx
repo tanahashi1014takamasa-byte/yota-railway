@@ -1682,6 +1682,7 @@ setSaveData((prev) => {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
+      alignItems: "center",
       gap: "20px",
     }}
   >
@@ -1717,7 +1718,7 @@ setSaveData((prev) => {
   style={{
     color: "white",
     background: "black",
-    fontSize: "20px",
+    fontSize: "32px",
     fontWeight: "bold",
     border: "3px solid white",
     borderRadius: "15px",
