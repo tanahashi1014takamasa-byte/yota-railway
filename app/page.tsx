@@ -1721,7 +1721,7 @@ setSaveData((prev) => {
     fontWeight: "bold",
     border: "3px solid white",
     borderRadius: "15px",
-    padding: "10px 30px",
+    padding: "5px 15px",
     textShadow: `
       -2px -2px 0 black,
        2px -2px 0 black,
@@ -1758,7 +1758,7 @@ setSaveData((prev) => {
     fontWeight: "bold",
     border: "3px solid white",
     borderRadius: "15px",
-    padding: "10px 30px",
+    padding: "5px 15px",
   }}
 >
   🛠️てんけん🛠️
@@ -1789,7 +1789,7 @@ setSaveData((prev) => {
     fontWeight: "bold",
     border: "3px solid white",
     borderRadius: "15px",
-    padding: "10px 30px",
+    padding: "5px 15px",
   }}
 >
   ⚡チャージ⚡
