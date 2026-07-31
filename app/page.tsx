@@ -1686,7 +1686,15 @@ setSaveData((prev) => {
     }}
   >
 
-    <h1>🔧 メンテナンス</h1>
+    <img
+  src="/check.png"
+  alt="メンテナンス"
+  style={{
+    width: "200px",
+    height: "auto",
+    margin: "0 auto",
+  }}
+/>
 
    <button
   onClick={() => {
