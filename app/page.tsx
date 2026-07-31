@@ -1378,15 +1378,14 @@ steam.play();
     style={{
   position: "fixed",
   right: "15px",
-  top: "75px",
-      color: "white",
-      background: "black",
-      border: "3px solid white",
-      padding: "8px 12px",
-      fontSize: "10px",
+  top: "95px",
+     color: "white",
+background: "black",
+border: "2px solid white",
+fontSize: "16px",
       fontWeight: "bold",
       zIndex: 30,
-      textShadow: "1px 1px 0 black",
+      textShadow: "none",
     }}
   >
     {maintenanceMessages.map((msg, index) => (
