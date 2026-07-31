@@ -79,18 +79,14 @@ setSaveData({
   lastPlayed: now,
 });
 
- setSaveData({
+setSaveData({
   ...data,
   money: data.money ?? 0,
   ownedVehicles: data.ownedVehicles ?? [],
 
-  condition: data.condition ?? {
-    clean: 100,
-    status: 100,
-    energy: 100,
-  },
+  condition: newCondition,
 
-  lastPlayed: data.lastPlayed ?? Date.now(),
+  lastPlayed: now,
 });
 }
 
