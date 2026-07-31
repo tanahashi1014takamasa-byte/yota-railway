@@ -1690,7 +1690,7 @@ setSaveData((prev) => {
   src="/images/check.png"
   alt="メンテナンス"
   style={{
-    width: "200px",
+    width: "400px",
     height: "auto",
     margin: "0 auto",
   }}
