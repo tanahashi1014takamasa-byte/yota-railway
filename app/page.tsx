@@ -1505,13 +1505,13 @@ steam.play();
 {maintenanceMessages.length > 0 && (
   <div
     style={{
-  position: "fixed",
-  right: "15px",
-  top: "95px",
-     color: "white",
-background: "black",
-border: "2px solid white",
-fontSize: "16px",
+      position: "fixed",
+      right: "15px",
+      top: "95px",
+      color: "white",
+      background: "black",
+      border: "2px solid white",
+      fontSize: "16px",
       fontWeight: "bold",
       zIndex: 30,
       textShadow: "none",
