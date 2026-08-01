@@ -2250,6 +2250,7 @@ setMaintenanceMessages((prev) => [
 <img
   src="/images/sell.png"
   alt="売却"
+  onClick={() => setScene("delorean")}
   style={{
     position: "absolute",
     top: "65px",
@@ -2748,6 +2749,16 @@ setCartItems([]);
 />
         </>
       )}
+
+      {scene === "delorean" && (
+  <>
+    <img
+      src="/images/derolian_2.png"
+      alt="デロリアン"
+      width={300}
+    />
+  </>
+)}
 
     </main>
     </>
