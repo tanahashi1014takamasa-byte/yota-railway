@@ -2804,13 +2804,17 @@ setCartItems([]);
 style={{
   marginTop: "30px",
   width: "80%",
-  height: "120px",
+  minHeight: "120px",
   padding: "20px",
   background: "black",
   color: "white",
   border: "5px solid white",
   fontSize: "24px",
   textAlign: "center",
+
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 }}
 >
         {deloreanMessages[deloreanIndex]}
