@@ -2821,8 +2821,9 @@ style={{
   textAlign: "center",
 
   display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
+flexDirection: "column",
+alignItems: "center",
+justifyContent: "center",
 }}
 >
         <div>
