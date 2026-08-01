@@ -2802,6 +2802,13 @@ setCartItems([]);
 
       {/* セリフ */}
     <div
+onClick={() => {
+  if (deloreanIndex < deloreanMessages.length - 1) {
+    setDeloreanIndex(deloreanIndex + 1);
+  } else {
+    setScene("frame");
+  }
+}}
 style={{
   marginTop: "30px",
   width: "80%",
@@ -2832,17 +2839,6 @@ style={{
 </div>
       </div>
 
-<button
-  onClick={() => {
-    if (deloreanIndex < deloreanMessages.length - 1) {
-      setDeloreanIndex(deloreanIndex + 1);
-    } else {
-      setScene("frame");
-    }
-  }}
->
-  次へ
-</button>
 
     </div>
   </>
