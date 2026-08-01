@@ -18,8 +18,15 @@ export default function Home() {
   const [selectedZukanVehicle, setSelectedZukanVehicle] = useState<any>(null);
   const [announceMessage, setAnnounceMessage] = useState("");
   const [deloreanMouth, setDeloreanMouth] = useState(false);
+  const [deloreanIndex, setDeloreanIndex] = useState(0);
 
-  
+  const deloreanMessages = [
+  "よーたのおじいちゃんからプレゼント届いてたぞ",
+  "これマジすげー！",
+  "未来とか過去の乗り物見れるから、めっさ便利だわ",
+  "おれっちもあとであそばせてくれ",
+  "のりかえボタンにいれとくね",
+];
 
   useEffect(() => {
   const images = [
@@ -2801,8 +2808,20 @@ setCartItems([]);
           textAlign: "center",
         }}
       >
-        なんじゃこれは！？
+        {deloreanMessages[deloreanIndex]}
       </div>
+
+<button
+  onClick={() => {
+    if (deloreanIndex < deloreanMessages.length - 1) {
+      setDeloreanIndex(deloreanIndex + 1);
+    } else {
+      setScene("frame");
+    }
+  }}
+>
+  次へ
+</button>
 
     </div>
   </>
