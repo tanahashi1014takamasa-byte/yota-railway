@@ -17,6 +17,7 @@ export default function Home() {
   const [showTrainSelect, setShowTrainSelect] = useState(false);
   const [selectedZukanVehicle, setSelectedZukanVehicle] = useState<any>(null);
   const [announceMessage, setAnnounceMessage] = useState("");
+  const [deloreanMouth, setDeloreanMouth] = useState(false);
 
   
 
@@ -220,6 +221,18 @@ useEffect(() => {
 
   return () => clearInterval(timer);
 }, []);
+
+
+useEffect(() => {
+  if (scene === "delorean") {
+    const timer = setInterval(() => {
+      setDeloreanMouth((prev) => !prev);
+    }, 500);
+
+    return () => clearInterval(timer);
+  }
+}, [scene]);
+
 
   const LEFT_WALL = -200;
   const RIGHT_WALL = 200;
@@ -2750,13 +2763,48 @@ setCartItems([]);
         </>
       )}
 
-      {scene === "delorean" && (
+     {scene === "delorean" && (
   <>
-    <img
-      src="/images/derolian_2.png"
-      alt="デロリアン"
-      width={300}
-    />
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+        background: "black",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+
+      {/* デロリアン＋博士 */}
+      <img
+        src={
+          deloreanMouth
+            ? "/images/derolian_3.png"
+            : "/images/derolian_2.png"
+        }
+        alt="デロリアン"
+        width={300}
+      />
+
+      {/* セリフ */}
+      <div
+        style={{
+          marginTop: "30px",
+          width: "80%",
+          padding: "20px",
+          background: "black",
+          color: "white",
+          border: "5px solid white",
+          fontSize: "24px",
+          textAlign: "center",
+        }}
+      >
+        なんじゃこれは！？
+      </div>
+
+    </div>
   </>
 )}
 
