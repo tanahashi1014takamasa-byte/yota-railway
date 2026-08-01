@@ -2814,7 +2814,7 @@ onClick={() => {
 style={{
   marginTop: "20px",
   width: "70%",
-  height: "80px",
+  minHeight: "80px",
   padding: "10px",
   background: "black",
   color: "white",
