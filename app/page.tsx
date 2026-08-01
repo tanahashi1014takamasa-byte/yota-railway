@@ -2780,12 +2780,12 @@ setCartItems([]);
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "flex-start",
       }}
     >
 
       {/* デロリアン＋博士 */}
-      <img
+    <img
   src={
     deloreanMouth
       ? "/images/derolian_3.png"
@@ -2796,6 +2796,7 @@ setCartItems([]);
   style={{
     height: "300px",
     objectFit: "contain",
+    marginTop: "150px",
   }}
 />
 
