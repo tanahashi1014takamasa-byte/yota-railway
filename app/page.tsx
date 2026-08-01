@@ -2785,7 +2785,7 @@ setCartItems([]);
     >
 
       {/* デロリアン＋博士 */}
-    <img
+  <img
   src={
     deloreanMouth
       ? "/images/derolian_3.png"
@@ -2796,7 +2796,8 @@ setCartItems([]);
   style={{
     height: "300px",
     objectFit: "contain",
-    marginTop: "150px",
+    position: "absolute",
+    top: "150px",
   }}
 />
 
@@ -2810,7 +2811,8 @@ onClick={() => {
   }
 }}
 style={{
-  marginTop: "30px",
+  position: "absolute",
+  top: "500px",
   width: "80%",
   minHeight: "120px",
   padding: "20px",
