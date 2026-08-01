@@ -1900,7 +1900,7 @@ setSaveData((prev) => {
       minHeight: "100vh",
       display: "flex",
       flexDirection: "column",
-      justifyContent: "center",
+      justifyContent: "flex-start",
       alignItems: "center",
       gap: "20px",
       paddingTop: "200px",
