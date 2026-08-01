@@ -2781,6 +2781,7 @@ setCartItems([]);
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "flex-start",
+        overflow: "hidden",
       }}
     >
 
