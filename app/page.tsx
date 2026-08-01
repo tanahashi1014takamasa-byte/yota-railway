@@ -2785,7 +2785,7 @@ setCartItems([]);
     >
 
       {/* デロリアン＋博士 */}
-  <img
+ <img
   src={
     deloreanMouth
       ? "/images/derolian_3.png"
@@ -2796,13 +2796,13 @@ setCartItems([]);
   style={{
     height: "300px",
     objectFit: "contain",
-    position: "absolute",
-    top: "150px",
+    marginTop: "120px",
+    flexShrink: 0,
   }}
 />
 
       {/* セリフ */}
-    <div
+  <div
 onClick={() => {
   if (deloreanIndex < deloreanMessages.length - 1) {
     setDeloreanIndex(deloreanIndex + 1);
@@ -2811,36 +2811,32 @@ onClick={() => {
   }
 }}
 style={{
-  position: "absolute",
-  top: "500px",
-  width: "80%",
-  minHeight: "120px",
-  padding: "20px",
+  marginTop: "20px",
+  width: "70%",
+  height: "80px",
+  padding: "10px",
   background: "black",
   color: "white",
   border: "5px solid white",
-  fontSize: "24px",
+  fontSize: "20px",
   textAlign: "center",
 
   display: "flex",
-flexDirection: "column",
-alignItems: "center",
-justifyContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+
+  flexShrink: 0,
 }}
 >
-        <div>
-  {deloreanMessages[deloreanIndex]}
-</div>
+  <div>
+    {deloreanMessages[deloreanIndex]}
+  </div>
 
-<div
-  style={{
-    marginTop: "10px",
-    fontSize: "24px",
-  }}
->
-  ▽
+  <div>
+    ▽
+  </div>
 </div>
-      </div>
 
 
     </div>
