@@ -2818,7 +2818,18 @@ style={{
   justifyContent: "center",
 }}
 >
-        {deloreanMessages[deloreanIndex]}
+        <div>
+  {deloreanMessages[deloreanIndex]}
+</div>
+
+<div
+  style={{
+    marginTop: "10px",
+    fontSize: "24px",
+  }}
+>
+  ▽
+</div>
       </div>
 
 <button
