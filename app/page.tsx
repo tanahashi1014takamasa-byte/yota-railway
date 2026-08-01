@@ -2786,28 +2786,33 @@ setCartItems([]);
 
       {/* デロリアン＋博士 */}
       <img
-        src={
-          deloreanMouth
-            ? "/images/derolian_3.png"
-            : "/images/derolian_2.png"
-        }
-        alt="デロリアン"
-        width={300}
-      />
+  src={
+    deloreanMouth
+      ? "/images/derolian_3.png"
+      : "/images/derolian_2.png"
+  }
+  alt="デロリアン"
+  width={300}
+  style={{
+    height: "300px",
+    objectFit: "contain",
+  }}
+/>
 
       {/* セリフ */}
-      <div
-        style={{
-          marginTop: "30px",
-          width: "80%",
-          padding: "20px",
-          background: "black",
-          color: "white",
-          border: "5px solid white",
-          fontSize: "24px",
-          textAlign: "center",
-        }}
-      >
+    <div
+style={{
+  marginTop: "30px",
+  width: "80%",
+  height: "120px",
+  padding: "20px",
+  background: "black",
+  color: "white",
+  border: "5px solid white",
+  fontSize: "24px",
+  textAlign: "center",
+}}
+>
         {deloreanMessages[deloreanIndex]}
       </div>
 
