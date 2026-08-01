@@ -21,11 +21,11 @@ export default function Home() {
   const [deloreanIndex, setDeloreanIndex] = useState(0);
 
   const deloreanMessages = [
-  "よーたのおじいちゃんからプレゼント届いてたぞ",
+  "よーたのおじいちゃんから\nプレゼント届いてたぞ",
   "これマジすげー！",
-  "未来とか過去の乗り物見れるから、めっさ便利だわ",
-  "おれっちもあとであそばせてくれ",
-  "のりかえボタンにいれとくね",
+  "未来とか過去の乗り物見れるから\nめっさ便利だわ",
+  "おれっちもあとで\nあそばせてくれ",
+  "のりかえボタンに\nいれとくね",
 ];
 
   useEffect(() => {
@@ -2830,9 +2830,13 @@ style={{
   flexShrink: 0,
 }}
 >
-  <div>
-    {deloreanMessages[deloreanIndex]}
-  </div>
+  <div
+  style={{
+    whiteSpace: "pre-line",
+  }}
+>
+  {deloreanMessages[deloreanIndex]}
+</div>
 
   <div>
     ▽
