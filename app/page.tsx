@@ -1979,12 +1979,12 @@ setSaveData((prev) => {
   src="/images/鳩に豆鉄砲車.png"
   alt="車"
   style={{
-    position:"absolute",
-    bottom:`${100 - carY}px`,
-    left:`calc(50% + ${carX}px)`,
-    transform:"translateX(-50%)",
-    width:"120px",
-  }}
+  position:"absolute",
+  bottom:"300px",
+  left:`calc(50% + ${carX}px)`,
+  transform:"translateX(-50%)",
+  width:"120px",
+}}
 />
     )}
 
