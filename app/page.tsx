@@ -625,11 +625,11 @@ const shopVehicles = [
  {
   name: "ねぶた祭",
   image: "/images/ねぶた祭.png",
-  trainSize: 300,
+  trainSize: 250,
   description: "ねぶた祭は\n秋に開催される\n伝統行事だよ。\n\nおおきな ねぶたを\nはこびながら\nお祝いする しきだよ。",
   zukanDescription: "ねぶた祭まつりは\nあきにかいさいされる\nでんとうぎょうじだよ。\n\nおおきな ねぶたを\nはこびながら\nお祝いする しきだよ。",
   price : 100,
-  offsetY: 65,
+  offsetY: 85,
 },
  {
   name: "忍者",
