@@ -299,9 +299,15 @@ useEffect(() => {
   energy: 100,
 },
 
+eventFlags: {
+  delorean: false,
+},
+
 lastPlayed: Date.now(),
 
 });
+
+
 
 const [saveLoaded, setSaveLoaded] = useState(false);
 
@@ -877,6 +883,10 @@ const popKeyframes = `
   clean: 100,
   status: 100,
   energy: 100,
+},
+
+eventFlags: {
+  delorean: false,
 },
 
 lastPlayed: Date.now(),
@@ -2857,8 +2867,18 @@ onClick={() => {
   // デロリアン入手
 setSaveData((data) => {
 
+  if (data.eventFlags.delorean) {
+    return data;
+  }
+
   return {
     ...data,
+
+    eventFlags: {
+      ...data.eventFlags,
+      delorean: true,
+    },
+
     ownedVehicles: [
       ...data.ownedVehicles,
       {
