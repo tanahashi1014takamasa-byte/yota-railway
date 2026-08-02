@@ -1995,8 +1995,8 @@ setSaveData((prev) => {
     left:"50%",
     transform:"translateX(-50%)",
     display:"grid",
-    gridTemplateColumns:"80px 80px 80px",
-    gridTemplateRows:"80px 80px 80px",
+    gridTemplateColumns:"100px 100px 100px",
+    gridTemplateRows:"100px 100px 100px",
     gap:"5px",
   }}
 >
@@ -2006,7 +2006,7 @@ setSaveData((prev) => {
     onClick={() => setCarY(carY + 20)}
     style={{gridColumn:"2"}}
   >
-    ▲
+    △
   </button>
 
 
@@ -2015,7 +2015,7 @@ setSaveData((prev) => {
     onClick={() => setCarX(carX - 20)}
     style={{gridColumn:"1", gridRow:"2"}}
   >
-    ◀
+    ◁
   </button>
 
 
@@ -2024,7 +2024,7 @@ setSaveData((prev) => {
     onClick={() => setCarY(carY - 20)}
     style={{gridColumn:"2", gridRow:"3"}}
   >
-    ▼
+    ▽
   </button>
 
 
@@ -2033,7 +2033,7 @@ setSaveData((prev) => {
     onClick={() => setCarX(carX + 20)}
     style={{gridColumn:"3", gridRow:"2"}}
   >
-    ▶
+    ▷
   </button>
 
 
