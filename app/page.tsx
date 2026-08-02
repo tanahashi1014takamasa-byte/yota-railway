@@ -19,6 +19,7 @@ export default function Home() {
   const [announceMessage, setAnnounceMessage] = useState("");
   const [deloreanMouth, setDeloreanMouth] = useState(false);
   const [deloreanIndex, setDeloreanIndex] = useState(0);
+  const [driveStarted, setDriveStarted] = useState(false);
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
@@ -1933,14 +1934,11 @@ setSaveData((prev) => {
 {scene === "drive" && (
   <div
     style={{
-      width: "100vw",
-      height: "100vh",
-      background: "black",
-      overflow: "hidden",
-      position: "relative",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
+      width:"100vw",
+      height:"100vh",
+      background:"black",
+      position:"relative",
+      overflow:"hidden",
     }}
   >
 
@@ -1948,11 +1946,43 @@ setSaveData((prev) => {
       src="/images/road_1.gif"
       alt="道路"
       style={{
-        width: "100%",
-        height: "20%",
-        objectFit: "cover",
+        width:"100%",
+        height:"70%",
+        objectFit:"cover",
       }}
     />
+
+
+    {!driveStarted && (
+      <button
+        onClick={() => setDriveStarted(true)}
+        style={{
+          position:"absolute",
+          top:"50%",
+          left:"50%",
+          transform:"translate(-50%,-50%)",
+          fontSize:"30px",
+          padding:"20px 60px",
+        }}
+      >
+        PLAY
+      </button>
+    )}
+
+
+    {driveStarted && (
+      <img
+        src="/images/鳩に豆鉄砲車.png"
+        alt="車"
+        style={{
+          position:"absolute",
+          bottom:"100px",
+          left:"50%",
+          transform:"translateX(-50%)",
+          width:"120px",
+        }}
+      />
+    )}
 
   </div>
 )}
