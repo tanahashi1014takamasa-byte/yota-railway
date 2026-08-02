@@ -1926,23 +1926,24 @@ setSaveData((prev) => {
     style={{
       width: "100vw",
       height: "100vh",
+      background: "black",
       overflow: "hidden",
       position: "relative",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     }}
   >
 
     <img
-  src="/images/road_1.gif"
-  alt="道路"
-  style={{
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "auto",
-    height: "100%",
-  }}
-/>
+      src="/images/road_1.gif"
+      alt="道路"
+      style={{
+        width: "100%",
+        height: "70%",
+        objectFit: "cover",
+      }}
+    />
 
   </div>
 )}
