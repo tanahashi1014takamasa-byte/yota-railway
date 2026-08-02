@@ -2855,34 +2855,44 @@ onClick={() => {
 } else {
 
   // デロリアン入手
-  setSaveData((data) => {
+setSaveData((data) => {
 
-    // すでに持っている場合は追加しない
-    if (
-      data.ownedVehicles.some(
-        (vehicle) => vehicle.name === "デロリアン"
-      )
-    ) {
-      return data;
-    }
-
+  if (
+    data.ownedVehicles.some(
+      (vehicle) => vehicle.name === "デロリアン"
+    )
+  ) {
     return {
       ...data,
-      ownedVehicles: [
-        ...data.ownedVehicles,
-        {
-  name: "デロリアン",
-  image: "/images/derolian_1.png",
-  trainSize: 300,
-  offsetY: 70,
-  speed: 10,
-  description:
-    "未来からやってきたタイムマシン。時空を超える特別な乗り物。"
-},
-      ],
+      ownedVehicles: data.ownedVehicles.map((vehicle) =>
+        vehicle.name === "デロリアン"
+          ? {
+              ...vehicle,
+              description:
+                "未来からやってきたタイムマシン。時空を超える特別な乗り物。"
+            }
+          : vehicle
+      ),
     };
+  }
 
-  });
+  return {
+    ...data,
+    ownedVehicles: [
+      ...data.ownedVehicles,
+      {
+        name: "デロリアン",
+        image: "/images/derolian_1.png",
+        trainSize: 300,
+        offsetY: 70,
+        speed: 10,
+        description:
+          "未来からやってきたタイムマシン。時空を超える特別な乗り物。",
+      },
+    ],
+  };
+
+});
 
 
   customShopBgmRef.current?.pause();
