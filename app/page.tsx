@@ -1631,7 +1631,8 @@ top: "180px",
   src={selectedTrain?.image}
   alt="選んだ電車"
   className={
-    selectedTrain?.image.includes("Shinkarion_4.png")
+    selectedTrain?.image.includes("Shinkarion_4.png")||
+  selectedTrain?.image.includes("derolian_1.png")
       ? "floating-train"
       : ""
   }
@@ -1980,41 +1981,61 @@ setSaveData((prev) => {
   alt="車"
   style={{
   position:"absolute",
-  bottom:"300px",
+  bottom:"200px",
   left:`calc(50% + ${carX}px)`,
   transform:"translateX(-50%)",
   width:"120px",
 }}
 />
     )}
-
-    <div
+<div
   style={{
     position:"absolute",
     bottom:"20px",
     left:"50%",
     transform:"translateX(-50%)",
     display:"grid",
-    gridTemplateColumns:"60px 60px 60px",
+    gridTemplateColumns:"80px 80px 80px",
+    gridTemplateRows:"80px 80px 80px",
     gap:"5px",
   }}
 >
 
-<button onClick={() => setCarY(carY + 20)}>
-↑
-</button>
+  {/* 上 */}
+  <button
+    onClick={() => setCarY(carY + 20)}
+    style={{gridColumn:"2"}}
+  >
+    ▲
+  </button>
 
-<button onClick={() => setCarX(carX - 20)}>
-←
-</button>
 
-<button onClick={() => setCarY(carY - 20)}>
-↓
-</button>
+  {/* 左 */}
+  <button
+    onClick={() => setCarX(carX - 20)}
+    style={{gridColumn:"1", gridRow:"2"}}
+  >
+    ◀
+  </button>
 
-<button onClick={() => setCarX(carX + 20)}>
-→
-</button>
+
+  {/* 下 */}
+  <button
+    onClick={() => setCarY(carY - 20)}
+    style={{gridColumn:"2", gridRow:"3"}}
+  >
+    ▼
+  </button>
+
+
+  {/* 右 */}
+  <button
+    onClick={() => setCarX(carX + 20)}
+    style={{gridColumn:"3", gridRow:"2"}}
+  >
+    ▶
+  </button>
+
 
 </div>
 
