@@ -1940,7 +1940,7 @@ setSaveData((prev) => {
       alt="道路"
       style={{
         width: "100%",
-        height: "40%",
+        height: "20%",
         objectFit: "cover",
       }}
     />
