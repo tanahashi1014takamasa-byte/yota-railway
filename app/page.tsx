@@ -340,15 +340,7 @@ speed = vehicleSpeed;
 }));
 
 
-useEffect(() => {
-  if (!saveLoaded) return;
 
-  localStorage.setItem(
-    "yotaRailwaySave",
-    JSON.stringify(saveData)
-  );
-
-}, [saveData, saveLoaded]);
 
         return x - speed;
       });
