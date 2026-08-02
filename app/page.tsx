@@ -1624,9 +1624,14 @@ top: "180px",
   />
 </div>
 
-    <img
+ <img
   src={selectedTrain?.image}
   alt="選んだ電車"
+  className={
+    selectedTrain?.image.includes("Shinkarion_4.png")
+      ? "floating-train"
+      : ""
+  }
   style={{
     position: "absolute",
     top: "43%",

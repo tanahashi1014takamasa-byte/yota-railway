@@ -69,3 +69,21 @@ body {
     filter: drop-shadow(0 0 5px yellow);
   }
 }
+
+.floating-train {
+  animation: floatTrain 1.5s ease-in-out infinite;
+}
+
+@keyframes floatTrain {
+  0% {
+    margin-top: 0px;
+  }
+
+  50% {
+    margin-top: -10px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
