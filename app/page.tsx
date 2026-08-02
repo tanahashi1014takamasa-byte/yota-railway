@@ -1275,17 +1275,7 @@ steam.play();
   
 />
 
-<img
-  src="/images/announce.png"
-  alt="電光掲示板"
-  style={{
-    position: "absolute",
-    top: "80px",
-    right: "0px",
-    width: "125px",
-    zIndex: 10,
-  }}
-/>
+
 
 <button
   onClick={() => {
