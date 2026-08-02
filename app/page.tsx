@@ -301,6 +301,7 @@ useEffect(() => {
 
 eventFlags: {
   delorean: false,
+  tenVehicle: false,
 },
 
 lastPlayed: Date.now(),
@@ -887,6 +888,7 @@ const popKeyframes = `
 
 eventFlags: {
   delorean: false,
+  tenVehicle: false,
 },
 
 lastPlayed: Date.now(),
@@ -2337,9 +2339,11 @@ setMaintenanceMessages((prev) => [
   left: "calc(50% - 170px)",
   width: "70px",
   cursor: "pointer",
-  animation: saveData.eventFlags.delorean
-    ? "none"
-    : "blink 1s infinite",
+  animation:
+  saveData.ownedVehicles.length >= 10 &&
+  !saveData.eventFlags.tenVehicle
+    ? "blink 1s infinite"
+    : "none",
 }}
 />
 
