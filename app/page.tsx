@@ -1981,7 +1981,7 @@ setSaveData((prev) => {
   alt="車"
   style={{
   position:"absolute",
-  bottom:"200px",
+  bottom:`${100 + carY}px`,
   left:`calc(50% + ${carX}px)`,
   transform:"translateX(-50%)",
   width:"120px",
@@ -1995,16 +1995,21 @@ setSaveData((prev) => {
     left:"50%",
     transform:"translateX(-50%)",
     display:"grid",
-    gridTemplateColumns:"100px 100px 100px",
-    gridTemplateRows:"100px 100px 100px",
+    gridTemplateColumns:"50px 50px 50px",
+    gridTemplateRows:"50px 50px 50px",
     gap:"5px",
   }}
 >
 
   {/* 上 */}
   <button
-    onClick={() => setCarY(carY + 20)}
-    style={{gridColumn:"2"}}
+    onClick={() => setCarY(carY + 100)}
+    style={{gridColumn:"2"
+      ,
+    width:"80px",
+    height:"80px",
+    fontSize:"40px",
+    }}
   >
     △
   </button>
@@ -2013,7 +2018,10 @@ setSaveData((prev) => {
   {/* 左 */}
   <button
     onClick={() => setCarX(carX - 20)}
-    style={{gridColumn:"1", gridRow:"2"}}
+    style={{gridColumn:"1", gridRow:"2",
+    width:"80px",
+    height:"80px",
+    fontSize:"40px",}}
   >
     ◁
   </button>
@@ -2021,8 +2029,11 @@ setSaveData((prev) => {
 
   {/* 下 */}
   <button
-    onClick={() => setCarY(carY - 20)}
-    style={{gridColumn:"2", gridRow:"3"}}
+    onClick={() => setCarY(carY - 100)}
+    style={{gridColumn:"2", gridRow:"3",
+    width:"80px",
+    height:"80px",
+    fontSize:"40px",}}
   >
     ▽
   </button>
@@ -2031,7 +2042,10 @@ setSaveData((prev) => {
   {/* 右 */}
   <button
     onClick={() => setCarX(carX + 20)}
-    style={{gridColumn:"3", gridRow:"2"}}
+    style={{gridColumn:"3", gridRow:"2",
+    width:"80px",
+    height:"80px",
+    fontSize:"40px",}}
   >
     ▷
   </button>
