@@ -1625,24 +1625,28 @@ top: "180px",
 </div>
 
     <img
-      src={selectedTrain?.image}
-      alt="選んだ電車"
-      style={{
-        position: "absolute",
-        top: "43%",
-        left: "50%",
-        width: `${selectedTrain?.trainSize ?? 180}px`,
-        transform: `
-  translate(
-    calc(-50% + ${trainX}px),
-    calc(-50% + ${(selectedTrain?.offsetY ?? 0)}px)
-  )
-  scaleX(${trainFlip ? -1 : 1})
-`,
-       
-        
-      }}
-    />
+  src={selectedTrain?.image}
+  alt="選んだ電車"
+  style={{
+    position: "absolute",
+    top: "43%",
+    left: "50%",
+    width: `${selectedTrain?.trainSize ?? 180}px`,
+    transform: `
+      translate(
+        calc(-50% + ${trainX}px),
+        calc(-50% + ${(selectedTrain?.offsetY ?? 0)}px)
+      )
+      scaleX(${
+        selectedTrain?.image.includes("Shinkarion_4.png")
+          ? 1
+          : trainFlip
+            ? -1
+            : 1
+      })
+    `,
+  }}
+/>
   </div>
 )}
 
