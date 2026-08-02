@@ -2332,12 +2332,15 @@ setMaintenanceMessages((prev) => [
   setScene("delorean");
 }}
   style={{
-    position: "absolute",
-    top: "65px",
-    left: "calc(50% - 170px)",
-    width: "70px",
-    cursor: "pointer",
-  }}
+  position: "absolute",
+  top: "65px",
+  left: "calc(50% - 170px)",
+  width: "70px",
+  cursor: "pointer",
+  animation: saveData.eventFlags.delorean
+    ? "none"
+    : "blink 1s infinite",
+}}
 />
 
 <img
