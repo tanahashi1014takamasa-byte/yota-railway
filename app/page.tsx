@@ -2862,21 +2862,10 @@ setSaveData((data) => {
       (vehicle) => vehicle.name === "デロリアン"
     )
   ) {
-    return {
-      ...data,
-      ownedVehicles: data.ownedVehicles.map((vehicle) =>
-        vehicle.name === "デロリアン"
-          ? {
-              ...vehicle,
-              description:
-                "未来からやってきたタイムマシン。時空を超える特別な乗り物。"
-            }
-          : vehicle
-      ),
-    };
+    return data;
   }
 
-  return {
+  const newData = {
     ...data,
     ownedVehicles: [
       ...data.ownedVehicles,
@@ -2892,6 +2881,12 @@ setSaveData((data) => {
     ],
   };
 
+  localStorage.setItem(
+    "yotaRailwaySave",
+    JSON.stringify(newData)
+  );
+
+  return newData;
 });
 
 
