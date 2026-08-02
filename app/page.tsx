@@ -1463,7 +1463,7 @@ steam.play();
     margin: "0",
   }}
 >
-  🚃 全体走行距離：{saveData.distance}km
+  🚃 全体走行距離：{saveData.distance.toFixed(1)}km
 </p>
 
 <p
