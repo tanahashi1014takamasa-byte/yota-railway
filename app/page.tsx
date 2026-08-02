@@ -2857,15 +2857,7 @@ onClick={() => {
   // デロリアン入手
 setSaveData((data) => {
 
-  if (
-    data.ownedVehicles.some(
-      (vehicle) => vehicle.name === "デロリアン"
-    )
-  ) {
-    return data;
-  }
-
-  const newData = {
+  return {
     ...data,
     ownedVehicles: [
       ...data.ownedVehicles,
@@ -2874,19 +2866,10 @@ setSaveData((data) => {
         image: "/images/derolian_1.png",
         trainSize: 300,
         offsetY: 70,
-        speed: 10,
-        description:
-          "未来からやってきたタイムマシン。時空を超える特別な乗り物。",
       },
     ],
   };
 
-  localStorage.setItem(
-    "yotaRailwaySave",
-    JSON.stringify(newData)
-  );
-
-  return newData;
 });
 
 
