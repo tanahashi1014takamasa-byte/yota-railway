@@ -339,6 +339,17 @@ speed = vehicleSpeed;
   },
 }));
 
+
+useEffect(() => {
+  if (!saveLoaded) return;
+
+  localStorage.setItem(
+    "yotaRailwaySave",
+    JSON.stringify(saveData)
+  );
+
+}, [saveData, saveLoaded]);
+
         return x - speed;
       });
 
@@ -2845,11 +2856,23 @@ setCartItems([]);
       {/* セリフ */}
   <div
 onClick={() => {
-  if (deloreanIndex < deloreanMessages.length - 1) {
-    setDeloreanIndex(deloreanIndex + 1);
-  } else {
-    setScene("frame");
+ if (deloreanIndex < deloreanMessages.length - 1) {
+  setDeloreanIndex(deloreanIndex + 1);
+} else {
+
+  // カスタムショップBGM停止
+  customShopBgmRef.current?.pause();
+  customShopBgmRef.current!.currentTime = 0;
+
+  // メインBGM再開
+  if (bgmRef.current) {
+    bgmRef.current.volume = 0.05;
+    bgmRef.current.currentTime = 0;
+    bgmRef.current.play();
   }
+
+  setScene("frame");
+}
 }}
 style={{
   marginTop: "20px",
