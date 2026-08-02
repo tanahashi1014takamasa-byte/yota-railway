@@ -1935,11 +1935,12 @@ setSaveData((prev) => {
       src="/images/road.gif"
       alt="道路"
       style={{
-        position:"absolute",
-        width:"100%",
-        height:"100%",
-        objectFit:"cover",
-      }}
+  position:"absolute",
+  width:"100%",
+  height:"100%",
+  objectFit:"cover",
+  zIndex:10,
+}}
     />
 
   </div>
