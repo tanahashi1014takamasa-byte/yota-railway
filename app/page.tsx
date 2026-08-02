@@ -633,7 +633,7 @@ const shopVehicles = [
 },
  {
   name: "忍者",
-  image: "/images/忍者.png",
+  image: "/images/忍者.gif",
   trainSize: 150,
   description: "俺は…\nお前とも戦いたい！",
   zukanDescription: "にんじゃは にほんに\nだいみょうにつかえ\nじょうほうあつめや\nおんみつこうどうをおこなった\nとくべつなひとたちだ\n",
@@ -642,7 +642,7 @@ const shopVehicles = [
 },
  {
   name: "千鳥",
-  image: "/images/千鳥.png",
+  image: "/images/千鳥.gif",
   trainSize: 150,
   description: "逆だったかもしれねぇ…",
   zukanDescription: "手を雷のチャクラで覆い\n猛烈なスピードで突撃して\n相手を貫く\n一点集中型の\n強力な攻撃忍術。",
