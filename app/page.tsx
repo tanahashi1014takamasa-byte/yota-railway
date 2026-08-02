@@ -671,7 +671,7 @@ const shopVehicles = [
 },
 {
   name: "シンカリオン",
-  image: "/images/Shinkarion.png",
+  image: "/images/Shinkarion2.png",
   trainSize: 220,
   description: "おー！\nカックィーな！\nタナハシの時代は\nビーストウォーズが\n流行ってたぞ！\nあとメダロットな！",
   zukanDescription: "あきたしんかんせん\nE6けいこまちが\nロボットに へんけいする\nシンカリオンだよ。\n\nしんかんせんの すがたで\nはしることもできるし、\nロボットの すがたで\nてきを たおすこともできるよ。",
