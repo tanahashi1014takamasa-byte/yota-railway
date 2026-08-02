@@ -672,11 +672,11 @@ const shopVehicles = [
 {
   name: "シンカリオン",
   image: "/images/新幹線変形ロボ シンカリオン DXS02 E6こまち_1.png",
-  trainSize: 150,
+  trainSize: 120,
   description: "おー！\nカックィーな！\nタナハシの時代は\nビーストウォーズが\n流行ってたぞ！\nあとメダロットな！",
   zukanDescription: "あきたしんかんせん\nE6けいこまちが\nロボットに へんけいする\nシンカリオンだよ。\n\nしんかんせんの すがたで\nはしることもできるし、\nロボットの すがたで\nてきを たおすこともできるよ。",
   price : 100,
-  offsetY: 110,
+  offsetY: 40,
 },
 ];
 
