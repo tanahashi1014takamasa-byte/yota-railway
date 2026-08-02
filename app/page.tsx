@@ -2324,9 +2324,13 @@ setMaintenanceMessages((prev) => [
   src="/images/sell.png"
   alt="売却"
   onClick={() => {
-    setDeloreanIndex(0);
-    setScene("delorean");
-  }}
+  if (saveData.eventFlags.delorean) {
+    return;
+  }
+
+  setDeloreanIndex(0);
+  setScene("delorean");
+}}
   style={{
     position: "absolute",
     top: "65px",
