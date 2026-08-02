@@ -133,6 +133,8 @@ useEffect(() => {
   const [showTrains, setShowTrains] = useState(false);
   const [doctorPage, setDoctorPage] = useState(0);
   const [vehicleDescription, setVehicleDescription] = useState("");
+  const [carX, setCarX] = useState(0);
+  const [carY, setCarY] = useState(0);
   const [doctorTalking, setDoctorTalking] = useState(false);
   useEffect(() => {
   setDoctorTalking(true);
@@ -1942,6 +1944,8 @@ setSaveData((prev) => {
     }}
   >
 
+
+
     <img
       src="/images/road_1.gif"
       alt="道路"
@@ -1971,18 +1975,48 @@ setSaveData((prev) => {
 
 
     {driveStarted && (
-      <img
-        src="/images/鳩に豆鉄砲車.png"
-        alt="車"
-        style={{
-          position:"absolute",
-          bottom:"100px",
-          left:"50%",
-          transform:"translateX(-50%)",
-          width:"120px",
-        }}
-      />
+    <img
+  src="/images/鳩に豆鉄砲車.png"
+  alt="車"
+  style={{
+    position:"absolute",
+    bottom:`${100 - carY}px`,
+    left:`calc(50% + ${carX}px)`,
+    transform:"translateX(-50%)",
+    width:"120px",
+  }}
+/>
     )}
+
+    <div
+  style={{
+    position:"absolute",
+    bottom:"20px",
+    left:"50%",
+    transform:"translateX(-50%)",
+    display:"grid",
+    gridTemplateColumns:"60px 60px 60px",
+    gap:"5px",
+  }}
+>
+
+<button onClick={() => setCarY(carY + 20)}>
+↑
+</button>
+
+<button onClick={() => setCarX(carX - 20)}>
+←
+</button>
+
+<button onClick={() => setCarY(carY - 20)}>
+↓
+</button>
+
+<button onClick={() => setCarX(carX + 20)}>
+→
+</button>
+
+</div>
 
   </div>
 )}
