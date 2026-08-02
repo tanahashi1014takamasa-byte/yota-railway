@@ -2324,7 +2324,10 @@ setMaintenanceMessages((prev) => [
   src="/images/sell.png"
   alt="売却"
   onClick={() => {
-  if (saveData.eventFlags.delorean) {
+  if (
+    saveData.ownedVehicles.length < 10 ||
+    saveData.eventFlags.delorean
+  ) {
     return;
   }
 
