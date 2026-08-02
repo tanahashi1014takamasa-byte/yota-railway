@@ -1972,8 +1972,8 @@ setSaveData((prev) => {
     }));
 
     setMaintenanceMessages((prev) => [
-  ...prev.filter((msg) => msg !== "ピカピカ👍"),
-  "ピカピカ👍"
+  ...prev.filter((msg) => msg !== "ピカピカ⭕"),
+  "ピカピカ⭕"
 ]);
 
   }}
@@ -2015,8 +2015,8 @@ setSaveData((prev) => {
 }));
 
 setMaintenanceMessages((prev) => [
-  ...prev.filter((msg) => msg !== "メンテ👍"),
-  "メンテ👍"
+  ...prev.filter((msg) => msg !== "メンテ⭕"),
+  "メンテ⭕"
 ]);
 
   }}
@@ -2052,8 +2052,8 @@ setMaintenanceMessages((prev) => [
     }));
 
 setMaintenanceMessages((prev) => [
-  ...prev.filter((msg) => msg !== "チャージ👍"),
-  "チャージ👍"
+  ...prev.filter((msg) => msg !== "チャージ⭕"),
+  "チャージ⭕"
 ]);
 
   }}
