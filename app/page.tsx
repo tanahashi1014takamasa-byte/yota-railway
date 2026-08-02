@@ -622,6 +622,42 @@ const shopVehicles = [
   price : 100,
   offsetY: 65,
 },
+ {
+  name: "ねぶた祭",
+  image: "/images/ねぶた祭.png",
+  trainSize: 300,
+  description: "ねぶた祭は\n秋に開催される\n伝統行事だよ。\n\nおおきな ねぶたを\nはこびながら\nお祝いする しきだよ。",
+  zukanDescription: "ねぶた祭まつりは\nあきにかいさいされる\nでんとうぎょうじだよ。\n\nおおきな ねぶたを\nはこびながら\nお祝いする しきだよ。",
+  price : 100,
+  offsetY: 65,
+},
+ {
+  name: "忍者",
+  image: "/images/忍者.png",
+  trainSize: 150,
+  description: "俺は…\nお前とも戦いたい！",
+  zukanDescription: "にんじゃは にほんに\nだいみょうにつかえ\nじょうほうあつめや\nおんみつこうどうをおこなった\nとくべつなひとたちだ\n",
+  price : 100,
+  offsetY: 65,
+},
+ {
+  name: "千鳥",
+  image: "/images/千鳥.png",
+  trainSize: 150,
+  description: "逆だったかもしれねぇ…",
+  zukanDescription: "手を雷のチャクラで覆い\n猛烈なスピードで突撃して\n相手を貫く\n一点集中型の\n強力な攻撃忍術。",
+  price : 100,
+  offsetY: 65,
+},
+ {
+  name: "フェラーリ",
+  image: "/images/フェラーリ.png",
+  trainSize: 200,
+  description: "めっさ高くてかっこいい車だよ！\nはやくて\nうんてんしやすい\nイタリアの車だよ！",
+  zukanDescription: "フェラーリは\nイタリアの\nこうきゅう じどうしゃ\nブランドだよ。",
+  price : 100,
+  offsetY: 65,
+},
 ];
 
 
