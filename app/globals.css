@@ -55,17 +55,17 @@ body {
 
 @keyframes blink {
   0% {
-    opacity: 1;
-    filter: drop-shadow(0 0 0px white);
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px yellow);
   }
 
   50% {
-    opacity: 0.5;
-    filter: drop-shadow(0 0 20px yellow);
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 35px orange);
   }
 
   100% {
-    opacity: 1;
-    filter: drop-shadow(0 0 0px white);
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px yellow);
   }
 }
