@@ -1921,30 +1921,29 @@ setSaveData((prev) => {
   </div>
 )}
 
-{scene === "driveOpening" && (
+{scene === "drive" && (
   <div
     style={{
-      position:"relative",
-      width:"100vw",
-      height:"100vh",
-      overflow:"hidden",
+      width: "100vw",
+      height: "100vh",
+      overflow: "hidden",
+      position: "relative",
     }}
   >
 
     <img
-      src="/images/road.gif"
+      src="/images/road_1.gif"
       alt="道路"
       style={{
-  position:"absolute",
-  width:"100%",
-  height:"100%",
-  objectFit:"cover",
-  zIndex:10,
-}}
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+      }}
     />
 
   </div>
 )}
+
 
 {scene === "maintenance" && (
   <div
