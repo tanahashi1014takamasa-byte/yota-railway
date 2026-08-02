@@ -487,7 +487,7 @@ const shopVehicles = [
   trainSize: 250,
   description: "これはギャルのでんしゃ\nギャルでん\n季節や気圧にやられる～♪\nうちらまだまだかわいい～♪",
   zukanDescription: "タナハシが\nギャルバンドHaze\nをききながら\nつくったでんしゃだ！",
-  price : 100,
+  price : 150,
   offsetY: 80,
 },
   {
@@ -496,7 +496,7 @@ const shopVehicles = [
     trainSize: 300,
     description: "GSE70000形ロマンスカー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
     zukanDescription: "GSE70000がたは\nおだきゅうの\nロマンスカー。\n\nまえと うしろに\nおおきな まどの\nてんぼうせきが ある\nとくべつな でんしゃだよ。\n\nはこねへ むかう\nおきゃくさんを\nのせて はしっているんだ！",
-    price : 100,
+    price : 200,
      offsetY: 80,
   },
   {
@@ -504,7 +504,7 @@ const shopVehicles = [
     image: "/images/enoden.png",
     description: "江ノ電だね\nえのでんは、うみのちかくをはしる\nかわいいでんしゃだよ！\nかまくらとふじさわのあいだをはしっているよ。\n割とよくある日々のすれ違いを～♪",
     zukanDescription: "えのでんは、\nかまくらとふじさわをむすぶ\nてつどうです。\n1902ねんに かいぎょうし\nうみのちかくや\nまちなかを はしる\nめずらしい でんしゃです。",
-    price : 100,
+    price : 200,
     trainSize: 200,
     offsetY: 55,
   },
@@ -513,7 +513,7 @@ const shopVehicles = [
     image: "/images/enodenniki.png",
     description: "これは江ノ電ニキだ\nあの どうがをきっかけに\nタコスが\nめっさ売れたらしい\nえのしまドリームだね！",
     zukanDescription: "えのでんニキは\n\n2021ねんに\nえのしま でんてつの\nしゃしんを とっていた ばしょで\nネットで ゆうめいに なった\nひとだよ。\n\nじてんしゃに のった すがたが\nたくさんの ひとの\nきおくに のこった\nネットの にんきものなんだ！",
-    price : 100,
+    price : 1000,
     offsetY: 60,
   },
   {
@@ -521,7 +521,7 @@ const shopVehicles = [
     image: "/images/メタスラ.gif",
     description: "これは…\nめっさカックィー メカだ\nだれかになんかいわれたら\nタナハシのせいにしよう！\n",
     zukanDescription: "スラグフライヤー！！\n\nゲーム「メタルスラッグ」に\nとうじょうする\nひこうきの のりもの。\n\nそらを とびながら\nてきを こうげきできる\nたのもしい へいきだよ。\n\nメタルスラッグの\nせかいで かつやくする\nとくべつな ひこうきなんだ！",
-    price : 100,
+    price : 300,
     offsetY: 60,
   },
   {
@@ -529,7 +529,7 @@ const shopVehicles = [
     image: "/images/メタスラ2.gif",
     description: "これは…\nあれだ…すげーメカだ\nうん…\nのってるのはマルコだ！！",
     zukanDescription: "ドリルスラッグ！\n\nゲーム「メタルスラッグ」に\nとうじょうする\nドリルの のりもの。\n\nじめんの なかを\nすすむことができて、\nドリルで てきを\nこうげきするんだ。\n\nちからづよく\nじめんを ほる\nめずらしい スラッグだよ！",
-    price : 100,
+    price : 300,
     offsetY: 60,
   },
   {
@@ -537,7 +537,7 @@ const shopVehicles = [
     image: "/images/ハイエース.png",
     description: "ハイエース！！\nすげーがんじょうだ！\nキャンプでつかう\nひともいれば\nバンドのきざいしゃにもなる\nタナハシも うんてんしたことあるぞ\n鞭を打つ代わりに投与～♪\n怪物って名前の飲料～♪",
     zukanDescription: "ハイエースは\n\nトヨタが つくっている\nおおきな くるま。\n\nひとを のせたり、\nにもつを はこんだり、\nいろいろな しごとで\nつかわれているよ。\n\nながいあいだ\nみんなに あいされている\nべんりな くるまなんだ！",
-    price : 100,
+    price : 2000,
     offsetY: 65,
   },
    {
@@ -546,7 +546,7 @@ const shopVehicles = [
     trainSize: 130,
     description: "みかくにんひこうぶったい\nこれはまちがいなく\nみかくにんひこう…\nまちがいなく…\nみかくにん…???\nU.F.O.の軌道に乗って♪\nあーなーたーと逃避行～♪",
     zukanDescription: "U.F.O.は\n\nそらを とぶ\nふしぎな のりもの。\n\nまるい かたちをしていて\nちじょうでは みられない\nふしぎな うごきをするよ。\n\nどこから きたのかは\nまだ ひみつの\nなぞの のりものなんだ！",
-    price : 100,
+    price : 1000,
     offsetY: 55,
   },
    {
@@ -565,7 +565,7 @@ const shopVehicles = [
   trainSize: 300,
   description: "個性や自由ではみ出していく\nはみ出しちゃいけないのは…\n車線だけなんだぜ\nいつかは花になる\nアマリリス～♪ハァッ！！！",
   zukanDescription: "あたらしいがっこうのりーだーずは\n4にんぐみの\nおんがくぐるーぷだよ。\n\nどくとくな\nだんすや ぱふぉーまんすで\nにんきに なったんだ。\n\n「おとなぶるー」などの\nきょくで せかいでも\nしられるように なったよ。",
-  price : 100,
+  price : 50000,
   offsetY: 20,
 },
 {
@@ -574,7 +574,7 @@ const shopVehicles = [
     speed: 20,
     description: "ヤー！！ハー！！\nビビりでパシりな小市民は\nアメフトの世界じゃ\n英雄だった\nホームやかいだんは\nはしらないでね！",
     zukanDescription: "あいしーるど21は\nあめりかんふっとぼーるを\nだいざいにした\nまんがの たいとるだよ。\nでんせつの\n「こうそくのらんなー」として\nしられているよ。",
-    price : 100,
+    price : 10000,
     offsetY: 65,
   },
 {
@@ -593,7 +593,7 @@ const shopVehicles = [
   trainSize: 170,
   description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい\n握りしめて～♪\nゆっくりゆっくり下ってく～♪",
   zukanDescription: "じぶんさがしニキは\nじぶんの みちを さがして\nあたらしい けいけんを する\nじぶんの ことを\nみつけていく たびなんだ。",
-  price : 100,
+  price : 200,
   offsetY: 65,
 },
 
@@ -603,7 +603,7 @@ const shopVehicles = [
   trainSize: 350,
   description: "……………………\nえ…なにこれ…\nこわ\nこんなのつくったかな…",
   zukanDescription: "つくったきおくがありません！\nにんげんってこわいよね！",
-  price : 100,
+  price : 10000,
 },
 {
   name: "回転寿司",
@@ -611,14 +611,14 @@ const shopVehicles = [
   trainSize: 450,
   description: "おすしー！\nむしろ…おしすー！\nすし なら\nまいにちだってくえるぜ\nはむかっぱも\nすしはだいすきだってさ",
   zukanDescription: "かいてんずしは\nおすしが のった おさらが\nれーんの うえを まわる\nおみせの しくみだよ。\n\nはじめての かいてんずしは\n1958ねんに おおさかで\nうまれたと いわれているよ。",
-  price : 100,
+  price : 2000,
 },
 {
   name: "パックマン",
   image: "/images/パックマン.gif",
   description: "……………………\nえー…これは\n…80年代の…ルンバ\nくわしいことは\nパパにきこう！",
   zukanDescription: "ぱっくまんは\n1980ねんに とうじょうした\nせかいで ゆうめいな\nげーむの きゃらくたーだよ。\n\nまるい かたちで\nめんを たべながら\nおばけから にげる\nげーむなんだ。",
-  price : 100,
+  price : 500,
   offsetY: 65,
 },
 
@@ -628,7 +628,7 @@ const shopVehicles = [
   trainSize: 200,
   description: "やっ…！！！\nやっすいっすねぇえええ！！！",
   zukanDescription: "メロンはスーパーかやおやさんでかおうね！",
-  price : 100,
+  price : 500,
   offsetY: 65,
 },
  {
@@ -637,7 +637,7 @@ const shopVehicles = [
   trainSize: 250,
   description: "ねぶた祭は\n秋に開催される\n伝統行事だよ。\n\nおおきな ねぶたを\nはこびながら\nお祝いする しきだよ。",
   zukanDescription: "ねぶた祭まつりは\nあきにかいさいされる\nでんとうぎょうじだよ。\n\nおおきな ねぶたを\nはこびながら\nお祝いする しきだよ。",
-  price : 100,
+  price : 30000,
   offsetY: 40,
 },
  {
@@ -656,7 +656,7 @@ const shopVehicles = [
   speed: 7,
   description: "逆だったかもしれねぇ…",
   zukanDescription: "手を雷のチャクラで覆い\n猛烈なスピードで突撃して\n相手を貫く\n一点集中型の\n強力な攻撃忍術。",
-  price : 100,
+  price : 1000,
   offsetY: 65,
 },
  {
@@ -666,8 +666,17 @@ const shopVehicles = [
   speed: 7,
   description: "めっさ高くてかっこいい車だよ！\nはやくて\nうんてんしやすい\nイタリアの車だよ！",
   zukanDescription: "フェラーリは\nイタリアの\nこうきゅう じどうしゃ\nブランドだよ。",
-  price : 100,
+  price : 20000,
   offsetY: 65,
+},
+{
+  name: "シンカリオン",
+  image: "/images/新幹線変形ロボ シンカリオン DXS02 E6こまち_1.png",
+  trainSize: 250,
+  description: "おー！\nカックィーな！\nタナハシの時代は\nビーストウォーズが\n流行ってたぞ！\nあとメダロットな！",
+  zukanDescription: "あきたしんかんせん\nE6けいこまちが\nロボットに へんけいする\nシンカリオンだよ。\n\nしんかんせんの すがたで\nはしることもできるし、\nロボットの すがたで\nてきを たおすこともできるよ。",
+  price : 100,
+  offsetY: 80,
 },
 ];
 
