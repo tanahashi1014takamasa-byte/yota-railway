@@ -301,7 +301,6 @@ useEffect(() => {
 
 eventFlags: {
   delorean: false,
-  tenVehicle: false,
 },
 
 lastPlayed: Date.now(),
@@ -888,7 +887,6 @@ const popKeyframes = `
 
 eventFlags: {
   delorean: false,
-  tenVehicle: false,
 },
 
 lastPlayed: Date.now(),
@@ -2326,27 +2324,19 @@ setMaintenanceMessages((prev) => [
   src="/images/sell.png"
   alt="売却"
   onClick={() => {
-  if (saveData.eventFlags.delorean) {
-    return;
-  }
 
-  setDeloreanIndex(0);
-  setScene("delorean");
-}}
-  style={{
-  position: "absolute",
-  top: "65px",
-  left: "calc(50% - 170px)",
-  width: "70px",
-  cursor: "pointer",
-  animation:
-  saveData.ownedVehicles.length >= 10 &&
-  !saveData.eventFlags.tenVehicle
-    ? "blink 1s infinite"
-    : "none",
-}}
+    if (saveData.ownedVehicles.length < 10) {
+      return;
+    }
+
+    if (saveData.eventFlags.delorean) {
+      return;
+    }
+
+    setDeloreanIndex(0);
+    setScene("delorean");
+  }}
 />
-
 <img
   src="/images/buy.png"
   alt="購入"
