@@ -2884,6 +2884,8 @@ onClick={() => {
   trainSize: 300,
   offsetY: 70,
   speed: 10,
+  description:
+    "未来からやってきたタイムマシン。時空を超える特別な乗り物。"
 },
       ],
     };
