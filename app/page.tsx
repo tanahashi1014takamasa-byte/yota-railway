@@ -2323,7 +2323,10 @@ setMaintenanceMessages((prev) => [
 <img
   src="/images/sell.png"
   alt="売却"
-  onClick={() => setScene("delorean")}
+  onClick={() => {
+    setDeloreanIndex(0);
+    setScene("delorean");
+  }}
   style={{
     position: "absolute",
     top: "65px",
