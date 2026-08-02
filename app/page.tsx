@@ -634,7 +634,7 @@ const shopVehicles = [
  {
   name: "忍者",
   image: "/images/忍者.gif",
-  trainSize: 150,
+  trainSize: 100,
   speed: 7,
   description: "俺は…\nお前とも戦いたい！",
   zukanDescription: "にんじゃは にほんに\nだいみょうにつかえ\nじょうほうあつめや\nおんみつこうどうをおこなった\nとくべつなひとたちだ\n",
