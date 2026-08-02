@@ -632,12 +632,12 @@ const shopVehicles = [
   offsetY: 85,
 },
  {
-  name: "忍者",
-  image: "/images/忍者.gif",
+  name: "船",
+  image: "/images/船.gif",
   trainSize: 100,
   speed: 7,
-  description: "俺は…\nお前とも戦いたい！",
-  zukanDescription: "にんじゃは にほんに\nだいみょうにつかえ\nじょうほうあつめや\nおんみつこうどうをおこなった\nとくべつなひとたちだ\n",
+  description: "ふねは みずのうえを はしる のりものだよ。\n\nおおきな ふねは\nひとや にもつを\nながいあいだ はこんで\nうみを わたることができるよ。",
+  zukanDescription: "船は\nみずのうえを はしる のりものだよ。\n\nおおきな ふねは\nひとや にもつを\nながいあいだ はこんで\nうみを わたることができるよ。",
   price : 100,
   offsetY: 65,
 },
@@ -1952,7 +1952,7 @@ setSaveData((prev) => {
     width: "400px",
     height: "auto",
     margin: "0 auto",
-    marginTop: "-50px", // 上へ50px
+    marginTop: "-100px", // 上へ50px
   }}
 />
 
