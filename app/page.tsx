@@ -1952,6 +1952,7 @@ setSaveData((prev) => {
     width: "400px",
     height: "auto",
     margin: "0 auto",
+    marginTop: "-50px", // 上へ50px
   }}
 />
 
