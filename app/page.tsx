@@ -336,7 +336,7 @@ speed = vehicleSpeed;
 
         setSaveData((data) => ({
   ...data,
-  distance: data.distance + 1,
+ distance: Number((data.distance + 0.1).toFixed(1)),
   money: data.money + 1,
   vehicleDistances: {
     ...data.vehicleDistances,
@@ -359,7 +359,7 @@ speed = vehicleSpeed;
 
         setSaveData((data) => ({
   ...data,
-  distance: data.distance + 1,
+ distance: Number((data.distance + 0.1).toFixed(1)),
   money: data.money + 1,
   vehicleDistances: {
     ...data.vehicleDistances,
