@@ -2858,13 +2858,42 @@ setCartItems([]);
 onClick={() => {
  if (deloreanIndex < deloreanMessages.length - 1) {
   setDeloreanIndex(deloreanIndex + 1);
+
+
 } else {
 
-  // カスタムショップBGM停止
+  // デロリアン入手
+  setSaveData((data) => {
+
+    // すでに持っている場合は追加しない
+    if (
+      data.ownedVehicles.some(
+        (vehicle) => vehicle.name === "デロリアン"
+      )
+    ) {
+      return data;
+    }
+
+    return {
+      ...data,
+      ownedVehicles: [
+        ...data.ownedVehicles,
+        {
+  name: "デロリアン",
+  image: "/images/derolian_1.png",
+  trainSize: 300,
+  offsetY: 70,
+  speed: 10,
+},
+      ],
+    };
+
+  });
+
+
   customShopBgmRef.current?.pause();
   customShopBgmRef.current!.currentTime = 0;
 
-  // メインBGM再開
   if (bgmRef.current) {
     bgmRef.current.volume = 0.05;
     bgmRef.current.currentTime = 0;
@@ -2873,6 +2902,8 @@ onClick={() => {
 
   setScene("frame");
 }
+
+
 }}
 style={{
   marginTop: "20px",
