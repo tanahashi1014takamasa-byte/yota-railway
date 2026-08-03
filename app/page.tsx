@@ -20,6 +20,8 @@ export default function Home() {
   const [deloreanMouth, setDeloreanMouth] = useState(false);
   const [deloreanIndex, setDeloreanIndex] = useState(0);
   const [driveStarted, setDriveStarted] = useState(false);
+  const [mileX, setMileX] = useState(0);
+  const [mileY, setMileY] = useState(0);
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
@@ -1995,8 +1997,26 @@ setSaveData((prev) => {
   transform:"translateX(-50%)",
   width:"150px",
 }}
+
+
+
 />
+
     )}
+
+{driveStarted && (
+  <img
+    src="/images/✈.png"
+    alt="マイル"
+    style={{
+      position:"absolute",
+      top:`${mileY}px`,
+      left:`${mileX}px`,
+      width:"50px",
+    }}
+  />
+)}
+
 <div
   style={{
     position:"absolute",
