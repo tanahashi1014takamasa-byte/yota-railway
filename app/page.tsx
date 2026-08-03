@@ -2075,7 +2075,30 @@ setSaveData((prev) => {
     gridTemplateRows:"50px 50px 50px",
     gap:"5px",
   }}
+
+
+  
 >
+
+
+{gameOver && (
+  <div
+    style={{
+      position:"absolute",
+      top:"40%",
+      left:"0",
+      width:"100%",
+      textAlign:"center",
+      color:"white",
+      fontSize:"36px",
+      fontWeight:"bold",
+      zIndex:100,
+    }}
+  >
+    岩にぶつかった！<br />
+    またあそぼう！
+  </div>
+)}
 
   {/* 上 */}
   <button
