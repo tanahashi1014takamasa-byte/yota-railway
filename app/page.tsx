@@ -2009,9 +2009,7 @@ setSaveData((prev) => {
     width:"80px",
     height:"80px",
     fontSize:"40px",
-    background:"white",
-    color:"black",
-    border:"3px solid black",
+    color:"white",
     }}
   >
     △
@@ -2025,9 +2023,8 @@ setSaveData((prev) => {
     width:"80px",
     height:"80px",
     fontSize:"40px",
-  background:"white",
-    color:"black",
-    border:"3px solid black",}}
+    color:"white",
+}}
   >
     ◁
   </button>
@@ -2040,9 +2037,8 @@ setSaveData((prev) => {
     width:"80px",
     height:"80px",
     fontSize:"40px",
-    background:"white",
-    color:"black",
-    border:"3px solid black",}}
+    color:"white",
+}}
   >
     ▽
   </button>
@@ -2055,9 +2051,8 @@ setSaveData((prev) => {
     width:"80px",
     height:"80px",
     fontSize:"40px",
-    background:"white",
-    color:"black",
-    border:"3px solid black",}}
+    color:"white",
+}}
   >
     ▷
   </button>
