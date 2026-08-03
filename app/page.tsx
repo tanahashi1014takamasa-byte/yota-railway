@@ -2084,7 +2084,8 @@ setSaveData((prev) => {
 {gameOver && (
   <div
   onClick={() => {
-  setScene("opening");
+  setGameOver(false);
+  setScene("frame");
 }}
     style={{
       position:"absolute",
