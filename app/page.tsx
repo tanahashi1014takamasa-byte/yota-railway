@@ -1992,7 +1992,7 @@ setSaveData((prev) => {
   style={{
     position:"absolute",
     bottom:"20px",
-    left:"45%",
+    left:"47%",
     transform:"translateX(-50%)",
     display:"grid",
     gridTemplateColumns:"50px 50px 50px",
