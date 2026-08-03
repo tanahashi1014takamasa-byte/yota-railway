@@ -2086,12 +2086,15 @@ setSaveData((prev) => {
     style={{
       position:"absolute",
       top:"40%",
-      left:"0",
-      width:"100%",
-      textAlign:"center",
+      left:"50%",
+      transform:"translate(-50%, -50%)",
+      background:"rgba(0,0,0,0.7)",
+      padding:"30px 50px",
+      borderRadius:"20px",
       color:"white",
       fontSize:"36px",
       fontWeight:"bold",
+      textAlign:"center",
       zIndex:100,
     }}
   >
