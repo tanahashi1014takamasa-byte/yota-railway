@@ -1981,7 +1981,7 @@ setSaveData((prev) => {
   alt="車"
   style={{
   position:"absolute",
-  bottom:`${100 + carY}px`,
+  bottom:`${250 + carY}px`,
   left:`calc(50% + ${carX}px)`,
   transform:"translateX(-50%)",
   width:"100px",
@@ -1992,7 +1992,7 @@ setSaveData((prev) => {
   style={{
     position:"absolute",
     bottom:"20px",
-    left:"50%",
+    left:"40%",
     transform:"translateX(-50%)",
     display:"grid",
     gridTemplateColumns:"50px 50px 50px",
