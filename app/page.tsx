@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 export default function Home() {
 
   const bgmRef = useRef<HTMLAudioElement | null>(null);
+  const engineRef = useRef<HTMLAudioElement | null>(null);
   const customShopBgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
   const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
@@ -828,6 +829,15 @@ const popKeyframes = `
   loop
   preload="auto"
 />
+
+
+<audio
+  ref={engineRef}
+  src="/sounds/engine_1.mp3"
+  loop
+  preload="auto"
+/>
+
 
     <audio
   ref={customShopBgmRef}
@@ -2024,6 +2034,8 @@ setSaveData((prev) => {
   setGameOver(false);
   setObstacleX(900);
   setDriveStarted(true);
+
+  engineRef.current?.play();
 }}
     style={{
       position:"absolute",
