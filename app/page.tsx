@@ -2085,18 +2085,15 @@ setSaveData((prev) => {
   <div
     style={{
       position:"absolute",
-      top:"40%",
+      top:"50%",
       left:"50%",
       transform:"translate(-50%, -50%)",
-      width:"80%",
-      background:"rgba(0,0,0,0.7)",
-      padding:"30px 50px",
-      borderRadius:"20px",
       color:"white",
-      fontSize:"36px",
+      fontSize:"24px",
       fontWeight:"bold",
       textAlign:"center",
       zIndex:100,
+      whiteSpace:"nowrap",
     }}
   >
     岩にぶつかった！<br />
