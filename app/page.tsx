@@ -170,6 +170,27 @@ useEffect(() => {
 
 }, [driveStarted, gameOver]);
 
+useEffect(() => {
+
+  if (!driveStarted || gameOver) return;
+
+const carLeft = window.innerWidth * 0.2 + carX;
+  const carBottom = 300 + carY;
+
+  const rockLeft = obstacleX;
+const rockTop = obstacleY;
+
+if (
+  rockLeft < carLeft + 150 &&
+  rockLeft + 80 > carLeft &&
+  rockTop < carBottom + 150 &&
+  rockTop + 80 > carBottom
+) {
+  setGameOver(true);
+}
+
+
+}, [carX, carY, driveStarted, gameOver]);
 
 
 
