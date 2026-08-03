@@ -2089,11 +2089,9 @@ setSaveData((prev) => {
       left:"50%",
       transform:"translate(-50%, -50%)",
       color:"white",
-      fontSize:"24px",
-      fontWeight:"bold",
+      fontSize:"30px",
       textAlign:"center",
       zIndex:100,
-      whiteSpace:"nowrap",
     }}
   >
     岩にぶつかった！<br />
