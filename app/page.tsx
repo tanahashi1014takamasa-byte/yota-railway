@@ -189,6 +189,11 @@ if (
   rockTop + 80 > carBottom
 ) {
   setGameOver(true);
+
+  setSaveData((data) => ({
+    ...data,
+    miles: data.miles + driveDistance
+  }));
 }
 
 
@@ -2026,7 +2031,7 @@ setSaveData((prev) => {
     textShadow:"2px 2px 3px black",
   }}
 >
-  ✈️ {driveDistance}
+  ✈️ {driveDistance}マイル
 </p>
 
 
