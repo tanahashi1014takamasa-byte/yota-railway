@@ -153,10 +153,8 @@ useEffect(() => {
 
       if (x < -100) {
         // 右側に再出現
-        setObstacleY(
-  Math.random() < 0.5
-    ? 250
-    : 400
+    setObstacleY(
+  Math.floor(Math.random() * 150) + 250
 );
 
         return 900;
