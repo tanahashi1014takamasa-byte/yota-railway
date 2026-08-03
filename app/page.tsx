@@ -2087,8 +2087,9 @@ setSaveData((prev) => {
 
 {gameOver && (
   <div
-  onClick={() => {
+ onClick={() => {
   setGameOver(false);
+  setDriveStarted(false);
   setScene("frame");
 }}
     style={{
