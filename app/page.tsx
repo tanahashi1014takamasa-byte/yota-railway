@@ -2018,16 +2018,18 @@ setSaveData((prev) => {
 
   {/* 左 */}
   <button
-    onClick={() => setCarY(carY - 20)}
-    style={{gridColumn:"1", gridRow:"2",
+  onClick={() => setCarX(carX - 20)}
+  style={{
+    gridColumn:"1",
+    gridRow:"2",
     width:"80px",
     height:"80px",
     fontSize:"40px",
     color:"white",
-}}
-  >
-    ◁
-  </button>
+  }}
+>
+  ◁
+</button>
 
 
   {/* 下 */}
