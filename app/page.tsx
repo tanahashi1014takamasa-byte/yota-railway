@@ -357,8 +357,6 @@ speed = vehicleSpeed;
 
 
 
-
-
         return x - speed;
       });
 
