@@ -25,7 +25,7 @@ export default function Home() {
 const spawnMile = () => {
   setMileX(900);
   setMileY(
-    Math.floor(Math.random() * 80) + 700
+    Math.floor(Math.random() * 80) + 600
   );
 };
 
@@ -2034,7 +2034,7 @@ setSaveData((prev) => {
     alt="マイル"
     style={{
       position:"absolute",
-      top:`${mileY + 150}px`,
+      top:`${mileY + 120}px`,
       left:`${mileX}px`,
       width:"40px",
     }}
