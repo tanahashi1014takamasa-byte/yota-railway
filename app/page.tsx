@@ -2036,7 +2036,7 @@ setSaveData((prev) => {
 
 {driveStarted && (
   <img
-    src="/images/mile.png"
+    src="/images/air_mile.png"
     alt="マイル"
     style={{
       position:"absolute",
