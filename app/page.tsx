@@ -21,6 +21,7 @@ export default function Home() {
   const [deloreanIndex, setDeloreanIndex] = useState(0);
   const [driveStarted, setDriveStarted] = useState(false);
   
+  
 
 
   const deloreanMessages = [
@@ -2020,7 +2021,10 @@ setSaveData((prev) => {
   <img
     src="/images/start.png"
     alt="スタート"
-    onClick={() => setDriveStarted(true)}
+    onClick={() => {
+  setGameOver(false);
+  setDriveStarted(true);
+}}
     style={{
       position:"absolute",
       top:"50%",
