@@ -1974,7 +1974,7 @@ setSaveData((prev) => {
       top:"50%",
       left:"50%",
       transform:"translate(-50%,-50%)",
-      width:"250px",
+      width:"150px",
       cursor:"pointer",
     }}
   />
