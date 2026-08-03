@@ -20,8 +20,12 @@ export default function Home() {
   const [deloreanMouth, setDeloreanMouth] = useState(false);
   const [deloreanIndex, setDeloreanIndex] = useState(0);
   const [driveStarted, setDriveStarted] = useState(false);
-  const [mileX, setMileX] = useState(0);
-  const [mileY, setMileY] = useState(0);
+  const [mileX, setMileX] = useState(200);
+const [mileY, setMileY] = useState(200);
+const spawnMile = () => {
+  setMileX(Math.floor(Math.random() * 250) + 50);
+  setMileY(200);
+};
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
@@ -1962,7 +1966,10 @@ setSaveData((prev) => {
 
 {!driveStarted && (
   <button
-    onClick={() => setDriveStarted(true)}
+    onClick={() => {
+  setDriveStarted(true);
+  spawnMile();
+}}
    style={{
   position: "absolute",
   top: "50%",
