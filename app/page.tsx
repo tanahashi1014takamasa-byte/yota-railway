@@ -152,8 +152,10 @@ useEffect(() => {
 
     setObstacleX((x) => {
 
-      if (x < -100) {
-  setObstacleY(300);
+     if (x < -100) {
+  setObstacleY(
+    Math.floor(Math.random() * 80) + 220
+  );
 
   return 900;
 }
