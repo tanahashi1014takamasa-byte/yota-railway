@@ -20,12 +20,8 @@ export default function Home() {
   const [deloreanMouth, setDeloreanMouth] = useState(false);
   const [deloreanIndex, setDeloreanIndex] = useState(0);
   const [driveStarted, setDriveStarted] = useState(false);
-  const [mileX, setMileX] = useState(200);
-const [mileY, setMileY] = useState(200);
-const spawnMile = () => {
-  setMileX(Math.floor(Math.random() * 250) + 50);
-  setMileY(200);
-};
+  
+
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
@@ -142,27 +138,39 @@ useEffect(() => {
   const [carX, setCarX] = useState(0);
   const [carY, setCarY] = useState(0);
   const [doctorTalking, setDoctorTalking] = useState(false);
+  const [obstacleX, setObstacleX] = useState(900);
+  const [obstacleY, setObstacleY] = useState(300);
+  const [gameOver, setGameOver] = useState(false);
 
 
 
-useEffect(() => {
-  if (!driveStarted) return;
+  useEffect(() => {
+  if (!driveStarted || gameOver) return;
 
   const timer = setInterval(() => {
-    setMileX((x) => {
 
-      if (x < -50) {
-        return 850;
+    setObstacleX((x) => {
+
+      if (x < -100) {
+        // 右側に再出現
+        setObstacleY(
+          Math.floor(Math.random() * 150) + 250
+        );
+
+        return 900;
       }
 
-      return x - 5;
+      return x - 8;
     });
 
   }, 50);
 
+
   return () => clearInterval(timer);
 
-}, [driveStarted]);
+}, [driveStarted, gameOver]);
+
+
 
 
   useEffect(() => {
@@ -2024,13 +2032,13 @@ setSaveData((prev) => {
 
 {driveStarted && (
   <img
-    src="/images/air_mile.png"
-    alt="マイル"
+    src="/images/obstacle.png"
+    alt="障害物"
     style={{
       position:"absolute",
-      top:`${mileY}px`,
-      left:`${mileX}px`,
-      width:"50px",
+      left:`${obstacleX}px`,
+      bottom:`${obstacleY}px`,
+      width:"80px",
     }}
   />
 )}
