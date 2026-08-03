@@ -20,20 +20,12 @@ export default function Home() {
   const [deloreanMouth, setDeloreanMouth] = useState(false);
   const [deloreanIndex, setDeloreanIndex] = useState(0);
   const [driveStarted, setDriveStarted] = useState(false);
-  const [mileX, setMileX] = useState(900);
-  const [mileY, setMileY] = useState(300);
+  const [mileX, setMileX] = useState(200);
+const [mileY, setMileY] = useState(200);
 const spawnMile = () => {
-  setMileX(900);
-  setMileY(
-    Math.floor(Math.random() * 80) + 630
-  );
+  setMileX(Math.floor(Math.random() * 250) + 50);
+  setMileY(200);
 };
-
-const [miles, setMiles] = useState([
-  { id:1, x:900, y:500 },
-  { id:2, x:1100, y:550 },
-  { id:3, x:1300, y:600 },
-]);
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
@@ -152,18 +144,14 @@ useEffect(() => {
   const [doctorTalking, setDoctorTalking] = useState(false);
 
 
+
 useEffect(() => {
   if (!driveStarted) return;
 
   const timer = setInterval(() => {
-
     setMileX((x) => {
 
       if (x < -50) {
-        setMileY(
-  Math.floor(Math.random() * 80) + 200
-);
-
         return 850;
       }
 
@@ -2040,8 +2028,8 @@ setSaveData((prev) => {
     alt="マイル"
     style={{
       position:"absolute",
-      top:"500px",
-      left:"500px",
+      top:`${mileY}px`,
+      left:`${mileX}px`,
       width:"50px",
     }}
   />
