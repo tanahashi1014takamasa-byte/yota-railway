@@ -2086,7 +2086,7 @@ setSaveData((prev) => {
     style={{
       position:"absolute",
       top:"50%",
-      left:"50%",
+      left:"55%",
       transform:"translate(-50%, -50%)",
       color:"white",
       fontSize:"28px",
