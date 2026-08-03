@@ -2034,7 +2034,7 @@ setSaveData((prev) => {
     alt="マイル"
     style={{
       position:"absolute",
-      top:`${mileY + 140}px`,
+      top:`${mileY + 90}px`,
       left:`${mileX}px`,
       width:"40px",
     }}
