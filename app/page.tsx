@@ -1984,7 +1984,7 @@ setSaveData((prev) => {
   bottom:`${100 + carY}px`,
   left:`calc(50% + ${carX}px)`,
   transform:"translateX(-50%)",
-  width:"120px",
+  width:"100px",
 }}
 />
     )}
@@ -2003,12 +2003,15 @@ setSaveData((prev) => {
 
   {/* 上 */}
   <button
-    onClick={() => setCarY(carY + 100)}
+    onClick={() => setCarY(carY + 40)}
     style={{gridColumn:"2"
       ,
     width:"80px",
     height:"80px",
     fontSize:"40px",
+    background:"white",
+    color:"black",
+    border:"3px solid black",
     }}
   >
     △
@@ -2017,11 +2020,14 @@ setSaveData((prev) => {
 
   {/* 左 */}
   <button
-    onClick={() => setCarX(carX - 20)}
+    onClick={() => setCarY(carY - 40)}
     style={{gridColumn:"1", gridRow:"2",
     width:"80px",
     height:"80px",
-    fontSize:"40px",}}
+    fontSize:"40px",
+  background:"white",
+    color:"black",
+    border:"3px solid black",}}
   >
     ◁
   </button>
@@ -2033,7 +2039,10 @@ setSaveData((prev) => {
     style={{gridColumn:"2", gridRow:"3",
     width:"80px",
     height:"80px",
-    fontSize:"40px",}}
+    fontSize:"40px",
+    background:"white",
+    color:"black",
+    border:"3px solid black",}}
   >
     ▽
   </button>
@@ -2045,7 +2054,10 @@ setSaveData((prev) => {
     style={{gridColumn:"3", gridRow:"2",
     width:"80px",
     height:"80px",
-    fontSize:"40px",}}
+    fontSize:"40px",
+    background:"white",
+    color:"black",
+    border:"3px solid black",}}
   >
     ▷
   </button>
