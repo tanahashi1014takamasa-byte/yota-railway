@@ -2084,7 +2084,7 @@ setSaveData((prev) => {
 {gameOver && (
   <div
   onClick={() => {
-  setScene("main");
+  setScene("opening");
 }}
     style={{
       position:"absolute",
