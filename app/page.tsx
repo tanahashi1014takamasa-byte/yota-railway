@@ -20,11 +20,13 @@ export default function Home() {
   const [deloreanMouth, setDeloreanMouth] = useState(false);
   const [deloreanIndex, setDeloreanIndex] = useState(0);
   const [driveStarted, setDriveStarted] = useState(false);
-  const [mileX, setMileX] = useState(200);
-const [mileY, setMileY] = useState(200);
+  const [mileX, setMileX] = useState(900);
+  const [mileY, setMileY] = useState(300);
 const spawnMile = () => {
-  setMileX(Math.floor(Math.random() * 250) + 50);
-  setMileY(200);
+  setMileX(900);
+  setMileY(
+    Math.floor(Math.random() * 80) + 700
+  );
 };
 
   const deloreanMessages = [
@@ -2032,7 +2034,7 @@ setSaveData((prev) => {
     alt="マイル"
     style={{
       position:"absolute",
-      top:`${mileY + 100}px`,
+      top:`${mileY + 150}px`,
       left:`${mileX}px`,
       width:"40px",
     }}
