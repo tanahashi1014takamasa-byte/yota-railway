@@ -1981,8 +1981,8 @@ setSaveData((prev) => {
   alt="車"
   style={{
   position:"absolute",
-  bottom:`${250 + carY}px`,
-  left:`calc(50% + ${carX}px)`,
+  bottom:`${450 + carY}px`,
+  left:`calc(20% + ${carX}px)`,
   transform:"translateX(-50%)",
   width:"100px",
 }}
