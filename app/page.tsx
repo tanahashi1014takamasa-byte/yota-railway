@@ -29,6 +29,12 @@ const spawnMile = () => {
   );
 };
 
+const [miles, setMiles] = useState([
+  { id:1, x:900, y:500 },
+  { id:2, x:1100, y:550 },
+  { id:3, x:1300, y:600 },
+]);
+
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
   "これマジすげー！",
@@ -2029,16 +2035,21 @@ setSaveData((prev) => {
     )}
 
 {driveStarted && (
-  <img
-    src="/images/✈.png"
-    alt="マイル"
-    style={{
-      position:"absolute",
-      top:`${mileY + 90}px`,
-      left:`${mileX}px`,
-      width:"40px",
-    }}
-  />
+  <>
+    {miles.map((mile) => (
+      <img
+        key={mile.id}
+        src="/images/mile.png"
+        alt="マイル"
+        style={{
+          position:"absolute",
+          top:`${mile.y}px`,
+          left:`${mile.x}px`,
+          width:"50px",
+        }}
+      />
+    ))}
+  </>
 )}
 
 <div
