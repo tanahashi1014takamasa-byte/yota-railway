@@ -2003,7 +2003,7 @@ setSaveData((prev) => {
 
   {/* 上 */}
   <button
-    onClick={() => setCarY(carY + 40)}
+    onClick={() => setCarY(carY + 20)}
     style={{gridColumn:"2"
       ,
     width:"80px",
@@ -2018,7 +2018,7 @@ setSaveData((prev) => {
 
   {/* 左 */}
   <button
-    onClick={() => setCarY(carY - 40)}
+    onClick={() => setCarY(carY - 20)}
     style={{gridColumn:"1", gridRow:"2",
     width:"80px",
     height:"80px",
@@ -2032,7 +2032,7 @@ setSaveData((prev) => {
 
   {/* 下 */}
   <button
-    onClick={() => setCarY(carY - 100)}
+    onClick={() => setCarY(carY - 20)}
     style={{gridColumn:"2", gridRow:"3",
     width:"80px",
     height:"80px",
