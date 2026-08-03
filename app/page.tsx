@@ -2026,7 +2026,7 @@ setSaveData((prev) => {
     textShadow:"2px 2px 3px black",
   }}
 >
-  ✈️ マイル：{saveData.miles}
+  ✈️ {driveDistance}
 </p>
 
 
