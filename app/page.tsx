@@ -149,7 +149,15 @@ useEffect(() => {
   if (!driveStarted) return;
 
   const timer = setInterval(() => {
-    setMileX((x) => x - 5);
+    setMileX((x) => {
+
+      if (x < -50) {
+        return 850;
+      }
+
+      return x - 5;
+    });
+
   }, 50);
 
   return () => clearInterval(timer);
