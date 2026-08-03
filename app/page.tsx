@@ -2035,21 +2035,16 @@ setSaveData((prev) => {
     )}
 
 {driveStarted && (
-  <>
-    {miles.map((mile) => (
-      <img
-        key={mile.id}
-        src="/images/mile.png"
-        alt="マイル"
-        style={{
-          position:"absolute",
-          top:`${mile.y}px`,
-          left:`${mile.x}px`,
-          width:"50px",
-        }}
-      />
-    ))}
-  </>
+  <img
+    src="/images/mile.png"
+    alt="マイル"
+    style={{
+      position:"absolute",
+      top:"500px",
+      left:"500px",
+      width:"50px",
+    }}
+  />
 )}
 
 <div
