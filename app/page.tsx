@@ -144,14 +144,18 @@ useEffect(() => {
   const [doctorTalking, setDoctorTalking] = useState(false);
 
 
-
 useEffect(() => {
   if (!driveStarted) return;
 
   const timer = setInterval(() => {
+
     setMileX((x) => {
 
       if (x < -50) {
+        setMileY(
+          Math.floor(Math.random() * 250) + 100
+        );
+
         return 850;
       }
 
