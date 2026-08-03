@@ -7,7 +7,6 @@ export default function Home() {
   const bgmRef = useRef<HTMLAudioElement | null>(null);
   const customShopBgmRef = useRef<HTMLAudioElement | null>(null);
   const imageCache = useRef<HTMLImageElement[]>([]);
-  const engineRef = useRef<HTMLAudioElement | null>(null);
   const [leverState, setLeverState] = useState<"center" | "left" | "right">("center");
   const [scene, setScene] = useState("opening");
   const [maintenanceMessages, setMaintenanceMessages] = useState<string[]>([]);
@@ -141,7 +140,7 @@ useEffect(() => {
   const [carY, setCarY] = useState(0);
   const [doctorTalking, setDoctorTalking] = useState(false);
   const [obstacleX, setObstacleX] = useState(900);
-  const [obstacleY, setObstacleY] = useState(180);
+  const [obstacleY, setObstacleY] = useState(300);
   const [gameOver, setGameOver] = useState(false);
 
 
@@ -828,12 +827,6 @@ const popKeyframes = `
   ref={bgmRef}
   src="/sounds/bgm_op_ver1.mp3"
   loop
-  preload="auto"
-/>
-
-<audio
-  ref={engineRef}
-  src="/sounds/engine.mp3"
   preload="auto"
 />
 
@@ -2029,11 +2022,6 @@ setSaveData((prev) => {
     src="/images/start.png"
     alt="スタート"
     onClick={() => {
-  if (engineRef.current) {
-    engineRef.current.currentTime = 0;
-    engineRef.current.play();
-  }
-
   setGameOver(false);
   setObstacleX(900);
   setDriveStarted(true);
@@ -2048,6 +2036,7 @@ setSaveData((prev) => {
     }}
   />
 )}
+
 
     {driveStarted && (
     <img
