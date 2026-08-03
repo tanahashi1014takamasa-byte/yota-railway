@@ -1993,7 +1993,7 @@ setSaveData((prev) => {
   bottom:`${300 + carY}px`,
   left:`calc(20% + ${carX}px)`,
   transform:"translateX(-50%)",
-  width:"170px",
+  width:"150px",
 }}
 />
     )}
