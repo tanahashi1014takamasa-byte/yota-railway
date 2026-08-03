@@ -153,13 +153,10 @@ useEffect(() => {
     setObstacleX((x) => {
 
       if (x < -100) {
-        // 右側に再出現
-    setObstacleY(
-  Math.floor(Math.random() * 270) + 150
-);
+  setObstacleY(300);
 
-        return 900;
-      }
+  return 900;
+}
 
       return x - 8;
     });
