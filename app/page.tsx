@@ -21,7 +21,7 @@ export default function Home() {
   const [deloreanMouth, setDeloreanMouth] = useState(false);
   const [deloreanIndex, setDeloreanIndex] = useState(0);
   const [driveStarted, setDriveStarted] = useState(false);
-  
+  const [driveDistance, setDriveDistance] = useState(0);
   
 
 
@@ -146,26 +146,27 @@ useEffect(() => {
 
 
 
-  useEffect(() => {
+useEffect(() => {
   if (!driveStarted || gameOver) return;
 
   const timer = setInterval(() => {
 
     setObstacleX((x) => {
 
-     if (x < -100) {
-  setObstacleY(
-    Math.floor(Math.random() * 80) + 220
-  );
+      if (x < -100) {
+        setObstacleY(
+          Math.floor(Math.random() * 80) + 220
+        );
 
-  return 900;
-}
+        return 900;
+      }
+
+      setDriveDistance((d) => d + 1);
 
       return x - 8;
     });
 
   }, 50);
-
 
   return () => clearInterval(timer);
 
@@ -2013,6 +2014,20 @@ setSaveData((prev) => {
     }}
   >
 
+<p
+  style={{
+    position:"absolute",
+    top:"20px",
+    left:"20px",
+    color:"white",
+    fontSize:"28px",
+    fontWeight:"bold",
+    zIndex:10,
+    textShadow:"2px 2px 3px black",
+  }}
+>
+  ✈️ マイル：{saveData.miles}
+</p>
 
 
     <img
@@ -2030,9 +2045,10 @@ setSaveData((prev) => {
   <img
     src="/images/start.png"
     alt="スタート"
-    onClick={() => {
+ onClick={() => {
   setGameOver(false);
   setObstacleX(900);
+  setDriveDistance(0);
   setDriveStarted(true);
 
   engineRef.current?.play();
