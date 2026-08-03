@@ -181,9 +181,9 @@ const carLeft = window.innerWidth * 0.2 + carX;
 const rockTop = obstacleY;
 
 if (
-  rockLeft < carLeft + 150 &&
+  rockLeft < carLeft + 80 &&
   rockLeft + 80 > carLeft &&
-  rockTop < carBottom + 150 &&
+  rockTop < carBottom + 80 &&
   rockTop + 80 > carBottom
 ) {
   setGameOver(true);
