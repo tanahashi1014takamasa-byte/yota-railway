@@ -1965,31 +1965,19 @@ setSaveData((prev) => {
 
 
 {!driveStarted && (
-  <button
-    onClick={() => {
-  setDriveStarted(true);
-  spawnMile();
-}}
-   style={{
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  padding: "18px 60px",
-  background: "black",
-  color: "white",
-  border: "4px solid white",
-  borderRadius: "0",
-  fontSize: "32px",
-  fontWeight: "bold",
-  fontFamily: "monospace",
-  letterSpacing: "4px",
-  cursor: "pointer",
-  whiteSpace: "nowrap",
-}}
-  >
-    スタート
-  </button>
+  <img
+    src="/images/start.png"
+    alt="スタート"
+    onClick={() => setDriveStarted(true)}
+    style={{
+      position:"absolute",
+      top:"50%",
+      left:"50%",
+      transform:"translate(-50%,-50%)",
+      width:"250px",
+      cursor:"pointer",
+    }}
+  />
 )}
 
 
