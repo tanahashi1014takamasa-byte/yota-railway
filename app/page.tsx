@@ -142,6 +142,21 @@ useEffect(() => {
   const [carX, setCarX] = useState(0);
   const [carY, setCarY] = useState(0);
   const [doctorTalking, setDoctorTalking] = useState(false);
+
+
+
+useEffect(() => {
+  if (!driveStarted) return;
+
+  const timer = setInterval(() => {
+    setMileX((x) => x - 5);
+  }, 50);
+
+  return () => clearInterval(timer);
+
+}, [driveStarted]);
+
+
   useEffect(() => {
   setDoctorTalking(true);
 
