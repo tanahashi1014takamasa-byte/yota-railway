@@ -153,7 +153,7 @@ useEffect(() => {
 
       if (x < -50) {
         setMileY(
-  Math.floor(Math.random() * 80) + 300
+  Math.floor(Math.random() * 80) + 200
 );
 
         return 850;
