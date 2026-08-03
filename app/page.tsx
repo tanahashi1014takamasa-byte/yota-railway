@@ -3013,8 +3013,8 @@ setSaveData((data) => {
       {
         name: "デロリアン",
         image: "/images/derolian_1.png",
-        trainSize: 300,
-        offsetY: 70,
+        trainSize: 250,
+        offsetY: 55,
       },
     ],
   };
