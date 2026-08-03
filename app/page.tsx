@@ -1958,21 +1958,21 @@ setSaveData((prev) => {
     />
 
 
-    {!driveStarted && (
-      <button
-        onClick={() => setDriveStarted(true)}
-        style={{
-          position:"absolute",
-          top:"50%",
-          left:"50%",
-          transform:"translate(-50%,-50%)",
-          fontSize:"30px",
-          padding:"20px 60px",
-        }}
-      >
-        PLAY
-      </button>
-    )}
+  {!driveStarted && (
+  <img
+    src="/images/start.png"
+    alt="START"
+    onClick={() => setDriveStarted(true)}
+    style={{
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      width: "250px", // 好きな大きさに調整
+      cursor: "pointer",
+    }}
+  />
+)}
 
 
     {driveStarted && (
