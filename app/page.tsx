@@ -2083,6 +2083,9 @@ setSaveData((prev) => {
 
 {gameOver && (
   <div
+  onClick={() => {
+  setScene("main");
+}}
     style={{
       position:"absolute",
       top:"50%",
