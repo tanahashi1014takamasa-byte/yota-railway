@@ -2088,6 +2088,7 @@ setSaveData((prev) => {
       top:"40%",
       left:"50%",
       transform:"translate(-50%, -50%)",
+      width:"80%",
       background:"rgba(0,0,0,0.7)",
       padding:"30px 50px",
       borderRadius:"20px",
