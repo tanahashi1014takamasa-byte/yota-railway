@@ -355,6 +355,17 @@ speed = vehicleSpeed;
 }));
 
 
+useEffect(() => {
+  if (!driveStarted) return;
+
+  const timer = setInterval(() => {
+    setMileY((y) => y + 5);
+  }, 50);
+
+  return () => clearInterval(timer);
+
+}, [driveStarted]);
+
 
 
         return x - speed;
