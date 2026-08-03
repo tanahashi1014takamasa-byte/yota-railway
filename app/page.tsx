@@ -2024,7 +2024,6 @@ setSaveData((prev) => {
     onClick={() => {
   setGameOver(false);
   setObstacleX(900);
-  setObstacleY(Math.floor(Math.random() * 270) + 150);
   setDriveStarted(true);
 }}
     style={{
