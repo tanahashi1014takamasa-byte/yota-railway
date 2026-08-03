@@ -144,39 +144,31 @@ useEffect(() => {
 
 
 
- useEffect(() => {
+  useEffect(() => {
   if (!driveStarted || gameOver) return;
 
   const timer = setInterval(() => {
 
-    // 当たり判定
-    if (
-      Math.abs(carX - obstacleX) < 80 &&
-      Math.abs(carY - obstacleY) < 80
-    ) {
-      setGameOver(true);
-    }
-
     setObstacleX((x) => {
 
       if (x < -100) {
-
         // 右側に再出現
-        setObstacleY(
-          Math.floor(Math.random() * 270) + 150
-        );
+    setObstacleY(
+  Math.floor(Math.random() * 270) + 150
+);
 
         return 900;
       }
 
-      return x - 5;
+      return x - 8;
     });
 
   }, 50);
 
+
   return () => clearInterval(timer);
 
-}, [driveStarted, gameOver, carX, carY, obstacleX, obstacleY]);
+}, [driveStarted, gameOver]);
 
 
 
