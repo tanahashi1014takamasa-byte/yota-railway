@@ -141,7 +141,7 @@ useEffect(() => {
   const [carY, setCarY] = useState(0);
   const [doctorTalking, setDoctorTalking] = useState(false);
   const [obstacleX, setObstacleX] = useState(900);
-  const [obstacleY, setObstacleY] = useState(300);
+  const [obstacleY, setObstacleY] = useState(180);
   const [gameOver, setGameOver] = useState(false);
 
 
