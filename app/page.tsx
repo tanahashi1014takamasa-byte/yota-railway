@@ -2084,11 +2084,20 @@ setSaveData((prev) => {
 {gameOver && (
   <div
     style={{
+      position:"absolute",
       top:"50%",
       left:"50%",
+      transform:"translate(-50%, -50%)",
       color:"white",
-      fontSize:"20px",
+      fontSize:"28px",
+      fontWeight:"bold",
       textAlign:"center",
+      whiteSpace:"nowrap",
+      background:"black",
+      padding:"20px 40px",
+      border:"4px solid white",
+      borderRadius:"10px",
+      zIndex:100,
     }}
   >
     岩にぶつかった！<br />
