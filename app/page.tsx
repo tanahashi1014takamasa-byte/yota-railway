@@ -359,8 +359,8 @@ useEffect(() => {
   if (!driveStarted) return;
 
   const timer = setInterval(() => {
-    setMileY((y) => y + 5);
-  }, 50);
+    setMileY((y) => y + 2);
+  }, 100);
 
   return () => clearInterval(timer);
 
