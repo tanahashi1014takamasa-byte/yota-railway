@@ -188,12 +188,14 @@ if (
   rockTop < carBottom + 80 &&
   rockTop + 80 > carBottom
 ) {
-  setGameOver(true);
 
   setSaveData((data) => ({
     ...data,
-    miles: data.miles + driveDistance
+    distance: data.distance + driveDistance,
+    miles: data.miles + driveDistance,
   }));
+
+  setGameOver(true);
 }
 
 
@@ -2120,7 +2122,10 @@ setSaveData((prev) => {
 
 {gameOver && (
   <div
- onClick={() => {
+onClick={() => {
+  engineRef.current?.pause();
+  engineRef.current!.currentTime = 0;
+
   setGameOver(false);
   setDriveStarted(false);
   setScene("frame");
