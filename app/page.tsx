@@ -3148,11 +3148,11 @@ setCartItems([]);
     <p
   style={{
     position:"absolute",
-    top:"45px",
+    top:"65px",
     left:"50%",
     transform:"translateX(-50%)",
     color:"white",
-    fontSize:"24px",
+    fontSize:"28px",
     fontWeight:"bold",
     fontFamily:"'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif",
     textShadow:"2px 2px 3px black",
