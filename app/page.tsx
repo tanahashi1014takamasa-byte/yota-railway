@@ -3158,7 +3158,8 @@ setCartItems([]);
   style={{
     position:"absolute",
     top:"10px",
-    left:"20px",
+    left:"50%",
+    transform:"translateX(-50%)",
     color:"white",
     fontSize:"28px",
     fontWeight:"bold",
