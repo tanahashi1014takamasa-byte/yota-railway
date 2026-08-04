@@ -3556,24 +3556,6 @@ style={{
     Math.floor(Math.random() * gachaItems.length)
   ];
 
-setSaveData((data) => {
-
-  const alreadyOwned = data.ownedVehicles.some(
-    (vehicle) => vehicle.name === prize.name
-  );
-
-  if (alreadyOwned) {
-    return data;
-  }
-
-  return {
-    ...data,
-    ownedVehicles: [
-      ...data.ownedVehicles,
-      prize,
-    ],
-  };
-});
 
 setScene("gachaResult");
 
