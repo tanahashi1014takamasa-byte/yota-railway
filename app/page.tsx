@@ -457,10 +457,10 @@ const saveGame = () => {
   sound.volume = 0.5;
   sound.play();
 
-  // localStorage.setItem(
-  //   "yotaRailwaySave",
-  //   JSON.stringify(saveData)
-  // );
+  localStorage.setItem(
+    "yotaRailwaySave",
+    JSON.stringify(saveData)
+  );
 
 };
 
@@ -560,76 +560,66 @@ const gachaItems = [
     trainSize:150,
     offsetY:70,
   },
- {
-  name:"メリーゴーランド",
-  image:"/images/メリーゴーランド.png",
-  gif:"/images/メリーゴーランド_1.gif",
-  trainSize:250,
-  offsetY:40,
-},
-{
-  name:"スクールバス",
-  image:"/images/スクールバス.png",
-  gif:"/images/スクールバス.gif",
-  trainSize:250,
-  offsetY:40,
-},
-{
-  name:"スケートネキ",
-  image:"/images/スケートネキ.png",
-  gif:"/images/スケートネキ.gif",
-  trainSize:250,
-  offsetY:40,
-},
-{
-  name:"ハリケーン",
-  image:"/images/ハリケーン.png",
-  gif:"/images/ハリケーン.gif",
-  trainSize:250,
-  offsetY:40,
-},
-{
-  name:"ピザ回すニキ",
-  image:"/images/ピザ回すニキ.png",
-  gif:"/images/ピザ回すニキ.gif",
-  trainSize:250,
-  offsetY:40,
-},
-{
-  name:"フラフープネキ",
-  image:"/images/フラフープネキ.png",
-  gif:"/images/フラフープネキ.gif",
-  trainSize:250,
-  offsetY:40,
-},
-{
-  name:"ヘリコプター",
-  image:"/images/ヘリコプター.png",
-  gif:"/images/ヘリコプター.gif",
-  trainSize:250,
-  offsetY:40,
-},
-{
-  name:"メリーゴーランド_2",
-  image:"/images/メリーゴーランド_2.png",
-  gif:"/images/メリーゴーランド_2.gif",
-  trainSize:250,
-  offsetY:40,
-},
-{
-  name:"ユニコーン",
-  image:"/images/ユニコーン.png",
-  gif:"/images/ユニコーン.gif",
-  trainSize:250,
-  offsetY:40,
-},
-{
-  name:"舞妓さん",
-  image:"/images/舞妓さん.png",
-  gif:"/images/舞妓さん.gif",
-  trainSize:250,
-  offsetY:40,
-},
+  {
+    name:"メリーゴーランド",
+    image:"/images/メリーゴーランド_1.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"スクールバス",
+    image:"/images/スクールバス.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"スケートネキ",
+    image:"/images/スケートネキ.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"ハリケーン",
+    image:"/images/ハリケーン.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"ピザ回すニキ",
+    image:"/images/ピザ回すニキ.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"フラフープネキ",
+    image:"/images/フラフープネキ.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"ヘリコプター",
+    image:"/images/ヘリコプター.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+  {
+    name:"メリーゴーランド_2",
+    image:"/images/メリーゴーランド_2.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+  {
+    name:"ユニコーン",
+    image:"/images/ユニコーン.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+  {
+    name:"舞妓さん",
+    image:"/images/舞妓さん.gif",
+    trainSize:250,
+    offsetY:40,
+  },
 ];
 
 
@@ -1821,7 +1811,7 @@ top: "180px",
 </div>
 
  <img
-  src={selectedTrain?.gif ?? selectedTrain?.image}
+  src={selectedTrain?.image}
   alt="選んだ電車"
   className={
     selectedTrain?.image.includes("Shinkarion_4.png")||
@@ -3552,12 +3542,11 @@ style={{
   ponSoundRef.current?.play();
 
   const prize =
-  gachaItems[
-    Math.floor(Math.random() * gachaItems.length)
-  ];
+    gachaItems[
+      Math.floor(Math.random() * gachaItems.length)
+    ];
 
-
-setScene("gachaResult");
+  setGachaPrize(prize);
 
   setScene("gachaResult");
 }}
