@@ -576,13 +576,6 @@ const gachaItems = [
     zukanDescription:"スクールバスは\n主に児童・生徒を学校へ\n送迎するために運行される\n専用のバスです"
   },
    {
-    name:"スケートネキ",
-    image:"/images/スケートネキ.gif",
-    trainSize:100,
-    offsetY:40,
-    zukanDescription:"スケートが大好きなお姉さんだ！\nスケートのことはよく分からねえが\nお姉さんは好きだぜ"
-  },
-   {
     name:"ハリケーン",
     image:"/images/ハリケーン.gif",
     trainSize:200,
@@ -597,39 +590,11 @@ const gachaItems = [
     zukanDescription:"ピザ回しとは\nピザ生地を空中に投げて\n回転させながら\n均等に伸ばす技術のことです\n真鶴で食べたピザは美味かったぞ"
   },
    {
-    name:"フラフープネキ",
-    image:"/images/フラフープネキ.gif",
-    trainSize:100,
-    offsetY:40,
-    zukanDescription:"フラフープが大好きなお姉さんだ！\nポポウ！ポウポウ！ポウ！！"
-  },
-   {
     name:"ヘリコプター",
     image:"/images/ヘリコプター.gif",
     trainSize:150,
     offsetY:40,
     zukanDescription:"ヘリコプターは\n回転翼（ローター）を\nエンジンで回転させて\n揚力を得て飛行する\n航空機の一種です"
-  },
-  {
-    name:"メリーゴーランド_2",
-    image:"/images/メリーゴーランド_2.gif",
-    trainSize:250,
-    offsetY:40,
-    zukanDescription:"まわれまーわれー♪\nメリゴーランド♪\nけして離さないように～♪"
-  },
-  {
-    name:"ユニコーン",
-    image:"/images/ユニコーン.gif",
-    trainSize:150,
-    offsetY:40,
-    zukanDescription:"ヨーロッパの伝承に\n登場する空想上の動物です。\n馬のような体に\n額から1本のねじれた\n長い角が生えている姿で\n描かれるのが一般的です"
-  },
-  {
-    name:"舞妓さん",
-    image:"/images/舞妓さん.gif",
-    trainSize:150,
-    offsetY:40,
-    zukanDescription:"おばんどす～\n女に二言はない\nあんたに決めた"
   },
   {
     name:"よねづけんし（レモンカラー）",
