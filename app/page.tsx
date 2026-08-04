@@ -583,7 +583,7 @@ const gachaItems = [
     zukanDescription:"ピザ回しとは\nピザ生地を空中に投げて\n回転させながら\n均等に伸ばす技術のことです\n真鶴で食べたピザは美味かったぞ"
   },
   {
-    name:"よねづけんし（レモンカラー）",
+    name:"よねづけんし（レモン）",
     image:"/images/yonezu_lemon.png",
     trainSize:150,
     offsetY:50,
