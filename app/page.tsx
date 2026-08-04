@@ -3411,7 +3411,7 @@ style={{
     width={120}
     onClick={() => {
   ponSoundRef.current?.play();
-  setShowCapsule(false);
+  setScene("gachaResult");
 }}
     style={{
       position:"absolute",
@@ -3442,6 +3442,33 @@ style={{
   なにがでるかなー？
 </div>
 
+
+
+  </div>
+)}
+
+{scene === "gachaResult" && (
+  <div
+    style={{
+      width:"100vw",
+      height:"100vh",
+      background:"black",
+      position:"relative",
+      overflow:"hidden",
+    }}
+  >
+
+    <img
+  src="/images/新幹線変形ロボ_シンカリオン.png"
+  alt="シンカリオン"
+  style={{
+    position:"absolute",
+    top:"50%",
+    left:"50%",
+    transform:"translate(-50%,-50%)",
+    width:"300px",
+  }}
+/>
 
   </div>
 )}
