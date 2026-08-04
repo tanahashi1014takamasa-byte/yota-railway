@@ -557,7 +557,7 @@ const gachaItems = [
   {
     name:"新幹線変形ロボ シンカリオン",
     image:"/images/新幹線変形ロボ_シンカリオン.png",
-    trainSize:150,
+    trainSize:250,
     offsetY:70,
     zukanDescription:"正体不明の敵（巨大怪物体やアンノウンなど）\nから日本を守るため\n新幹線をベースに開発された\nロボット「シンカリオン」"
   },
@@ -599,8 +599,8 @@ const gachaItems = [
   {
     name:"セーヌ川の水面の下で",
     image:"/images/セーヌ川の水面の下で.png",
-    trainSize:200,
-    offsetY:50,
+    trainSize:300,
+    offsetY:60,
     zukanDescription:"化け鮫のテーマに乗って\n何も知らない赤ずきんちゃん\nオオカミといけない恋をしようよ"
   },
   {
