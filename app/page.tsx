@@ -1781,8 +1781,12 @@ top: "180px",
   }}
 >
 
-   <img
-  src={quizKappaMouth ? "/images/quizkappa2.png" : "/images/quizkappa1.png"}
+<img
+  src={
+    gachaKappaMouth
+      ? "/images/quizkappa2.png"
+      : "/images/quizkappa1.png"
+  }
   width={120}
   alt="ハムカッパ"
   style={{
@@ -3392,14 +3396,18 @@ style={{
 <div
   style={{
     position:"absolute",
-    bottom:"180px",
-    left:"20px",
-    background:"white",
-    color:"black",
+    bottom:"300px",
+    left:"50%",
+    transform:"translateX(-50%)",
+    background:"black",
+    color:"white",
     padding:"15px 25px",
+    border:"3px solid white",
     borderRadius:"20px",
     fontSize:"24px",
     fontWeight:"bold",
+    textAlign:"center",
+    whiteSpace:"nowrap",
   }}
 >
   なにがでるかなー？
