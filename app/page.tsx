@@ -3624,7 +3624,7 @@ setScene("gachaResult");
   >
 
     <img
-      src={gachaPrize.image}
+      src="/images/新幹線変形ロボ_シンカリオン.png"
       alt={gachaPrize.name}
       style={{
         position:"absolute",
