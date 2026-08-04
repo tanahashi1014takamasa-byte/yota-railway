@@ -3171,19 +3171,14 @@ setCartItems([]);
     />
 
     <button
-  onClick={() => {
-    gachaSoundRef.current?.play();
-    setGachaRolling(true);
+ onClick={() => {
+  gachaSoundRef.current?.play();
+  setGachaRolling(true);
 
-    setTimeout(() => {
-  setScene("gachaHam");
-
-  setInterval(() => {
-    setGachaKappaMouth((v) => !v);
-  }, 300);
-
-}, 2000);
-  }}
+  setTimeout(() => {
+    setScene("gachaHam");
+  }, 2000);
+}}
   style={{
     position:"absolute",
     top:"80%",
