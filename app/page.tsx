@@ -509,7 +509,16 @@ const qLine = currentLines.find((line) =>
   }
 }, [scene, quizIndex]);
 
+useEffect(() => {
+  if (scene !== "gachaHam") return;
 
+  const timer = setInterval(() => {
+    setGachaKappaMouth((v) => !v);
+  }, 300);
+
+  return () => clearInterval(timer);
+
+}, [scene]);
 
 const trains = [
   
@@ -3167,8 +3176,13 @@ setCartItems([]);
     setGachaRolling(true);
 
     setTimeout(() => {
-      setScene("gachaHam");
-    }, 2000);
+  setScene("gachaHam");
+
+  setInterval(() => {
+    setGachaKappaMouth((v) => !v);
+  }, 300);
+
+}, 2000);
   }}
   style={{
     position:"absolute",
@@ -3359,7 +3373,11 @@ style={{
   >
 
     <img
-      src="/images/quizkappa1.png"
+  src={
+    gachaKappaMouth
+      ? "/images/quizkappa2.png"
+      : "/images/quizkappa1.png"
+  }
       alt="ハムカッパ"
       width={120}
       style={{
@@ -3368,6 +3386,23 @@ style={{
         left:"20px",
       }}
     />
+
+<div
+  style={{
+    position:"absolute",
+    bottom:"180px",
+    left:"20px",
+    background:"white",
+    color:"black",
+    padding:"15px 25px",
+    borderRadius:"20px",
+    fontSize:"24px",
+    fontWeight:"bold",
+  }}
+>
+  なにがでるかなー？
+</div>
+
 
   </div>
 )}
