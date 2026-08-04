@@ -2520,6 +2520,11 @@ setMaintenanceMessages((prev) => [
   }}
 />
 
+
+<p>
+  {selectedZukanVehicle.description}
+</p>
+
         <h2
   style={{
     marginTop: "10px",
@@ -3264,6 +3269,7 @@ setSaveData((data) => {
         image: "/images/derolian_1.png",
         trainSize: 250,
         offsetY: 40,
+        description: "未来からやってきたタイムマシン型の特別車両！"
       },
     ],
   };
