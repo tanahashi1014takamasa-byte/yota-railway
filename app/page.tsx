@@ -3565,9 +3565,10 @@ style={{
     />
 
     <div
-  onClick={() => {
-    setScene("gacha");
-  }}
+ onClick={() => {
+  setGachaRolling(false);
+  setScene("gacha");
+}}
 
   style={{
     position:"absolute",
