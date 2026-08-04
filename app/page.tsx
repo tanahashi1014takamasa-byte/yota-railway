@@ -575,25 +575,25 @@ const gachaItems = [
    {
     name:"スケートネキ",
     image:"/images/スケートネキ.gif",
-    trainSize:250,
+    trainSize:100,
     offsetY:40,
   },
    {
     name:"ハリケーン",
     image:"/images/ハリケーン.gif",
-    trainSize:250,
+    trainSize:200,
     offsetY:40,
   },
    {
     name:"ピザ回すニキ",
     image:"/images/ピザ回すニキ.gif",
-    trainSize:250,
+    trainSize:200,
     offsetY:40,
   },
    {
     name:"フラフープネキ",
     image:"/images/フラフープネキ.gif",
-    trainSize:250,
+    trainSize:100,
     offsetY:40,
   },
    {
@@ -618,6 +618,30 @@ const gachaItems = [
     name:"舞妓さん",
     image:"/images/舞妓さん.gif",
     trainSize:250,
+    offsetY:40,
+  },
+  {
+    name:"よねづけんし（レモンカラー）",
+    image:"/images/yonezu_lemon.png",
+    trainSize:200,
+    offsetY:40,
+  },
+  {
+    name:"ゴースト",
+    image:"/images/ゴースト.gif",
+    trainSize:200,
+    offsetY:40,
+  },
+  {
+    name:"セーヌ川の水面の下で",
+    image:"/images/セーヌ川の水面の下で.png",
+    trainSize:200,
+    offsetY:40,
+  },
+  {
+    name:"ハニーハント号",
+    image:"/images/honeyhunt.png",
+    trainSize:200,
     offsetY:40,
   },
 ];
