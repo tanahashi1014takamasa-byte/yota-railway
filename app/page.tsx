@@ -3154,6 +3154,20 @@ setCartItems([]);
     }}
   >
 
+    <p
+  style={{
+    position:"absolute",
+    top:"10px",
+    left:"20px",
+    color:"white",
+    fontSize:"28px",
+    fontWeight:"bold",
+    zIndex:10,
+  }}
+>
+  ✈️ {saveData.miles}マイル
+</p>
+
     <img
       src={
     gachaRolling
