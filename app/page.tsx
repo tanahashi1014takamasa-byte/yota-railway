@@ -1056,7 +1056,7 @@ steam.play();
 />
 
 <img
-  src="/images/capsule_machine.png"
+  src="/images/capsule_toy.png"
   alt="ガチャ"
   width={180}
   onClick={() => {
@@ -3132,7 +3132,19 @@ setCartItems([]);
       overflow:"hidden",
     }}
   >
-    ガチャ画面
+
+    <img
+      src="/images/capsule_machine.png"
+      alt="ガチャマシン"
+      style={{
+        position:"absolute",
+        top:"50%",
+        left:"50%",
+        transform:"translate(-50%,-50%)",
+        width:"300px",
+      }}
+    />
+
   </div>
 )}
 
