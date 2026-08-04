@@ -23,6 +23,7 @@ export default function Home() {
   const [driveStarted, setDriveStarted] = useState(false);
   const [driveDistance, setDriveDistance] = useState(0);
   const [gachaRolling, setGachaRolling] = useState(false);
+  const gachaSoundRef = useRef<HTMLAudioElement | null>(null);
 
 
   const deloreanMessages = [
@@ -840,6 +841,12 @@ const popKeyframes = `
 
 
 <audio
+  ref={gachaSoundRef}
+  src="/sounds/gatyagatya.mp3"
+/>
+
+
+<audio
   ref={engineRef}
   src="/sounds/engine_1.mp3"
   loop
@@ -1241,9 +1248,7 @@ steam.play();
   }}
 >
 
-<p style={{ color: "white", fontSize: "24px" }}>
-      すきな のりものを えらんでね！
-    </p>
+
     
     {showTrains && trains.map((train) => (
   <div
@@ -3155,9 +3160,10 @@ setCartItems([]);
     />
 
     <button
-    onClick={() => {
-    setGachaRolling(true);
-  }}
+   onClick={() => {
+  gachaSoundRef.current?.play();
+  setGachaRolling(true);
+}}
   style={{
     position:"absolute",
     top:"80%",
