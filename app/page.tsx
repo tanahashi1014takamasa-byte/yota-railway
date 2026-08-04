@@ -3398,7 +3398,7 @@ style={{
 
     bottom:"80px",
 
-    left:"230px",
+    left:"210px",
 
     cursor:"pointer",
 
