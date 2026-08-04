@@ -3541,10 +3541,22 @@ style={{
 
   ponSoundRef.current?.play();
 
-  const prize =
-    gachaItems[
-      Math.floor(Math.random() * gachaItems.length)
-    ];
+ const availableItems = gachaItems.filter(
+  (item) =>
+    !saveData.ownedVehicles.some(
+      (v) => v.name === item.name
+    )
+);
+
+if (availableItems.length === 0) {
+  alert("もう全部集まりました！");
+  return;
+}
+
+const prize =
+  availableItems[
+    Math.floor(Math.random() * availableItems.length)
+  ];
 
   setGachaPrize(prize);
 
