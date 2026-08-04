@@ -1787,13 +1787,9 @@ top: "180px",
       ? "/images/quizkappa2.png"
       : "/images/quizkappa1.png"
   }
-  width={120}
   alt="ハムカッパ"
-  style={{
-    position: "absolute",
-    bottom: "50px",
-    left: "20px",
-  }}
+  width={100}
+  loading="eager"
 />
 
 <div
@@ -3376,20 +3372,18 @@ style={{
     }}
   >
 
- <img
+<img
   src={
     gachaKappaMouth
       ? "/images/quizkappa2.png"
       : "/images/quizkappa1.png"
   }
   alt="ハムカッパ"
-  width={120}
-  height={120}
+  width={100}
   style={{
     position:"absolute",
     bottom:"50px",
     left:"20px",
-    objectFit:"contain",
   }}
 />
 
