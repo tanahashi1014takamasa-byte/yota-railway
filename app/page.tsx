@@ -3336,7 +3336,7 @@ setCartItems([]);
   }}
 style={{
     position:"absolute",
-    top:"92%",
+    top:"87%",
     left:"50%",
     transform:"translateX(-50%)",
     background:"black",
