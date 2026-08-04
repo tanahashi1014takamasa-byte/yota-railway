@@ -1059,13 +1059,19 @@ steam.play();
   src="/images/capsule_toy.png"
   alt="ガチャ"
   width={180}
+  onClick={() => {
+    setScene("gacha");
+  }}
   style={{
-    cursor: "pointer",
-    marginTop: "10px",
+    cursor:"pointer",
+    marginTop:"10px",
   }}
 />
 
   </>
+
+
+
 )}
 
 {scene === "intro" && (
@@ -2741,6 +2747,8 @@ setMaintenanceMessages((prev) => [
 </div>
 
 
+
+
     </div>
 
 
@@ -3114,7 +3122,19 @@ setCartItems([]);
   </div>
 )}
 
-
+{scene === "gacha" && (
+  <div
+    style={{
+      width:"100vw",
+      height:"100vh",
+      background:"black",
+      position:"relative",
+      overflow:"hidden",
+    }}
+  >
+    ガチャ画面
+  </div>
+)}
 
       {scene === "running" && (
         <>
