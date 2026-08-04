@@ -571,7 +571,7 @@ const gachaItems = [
    {
     name:"スクールバス",
     image:"/images/スクールバス.gif",
-    trainSize:250,
+    trainSize:150,
     offsetY:40,
     zukanDescription:"スクールバスは\n主に児童・生徒を学校へ\n送迎するために運行される\n専用のバスです"
   },
@@ -606,7 +606,7 @@ const gachaItems = [
    {
     name:"ヘリコプター",
     image:"/images/ヘリコプター.gif",
-    trainSize:200,
+    trainSize:150,
     offsetY:40,
     zukanDescription:"ヘリコプターは\n回転翼（ローター）を\nエンジンで回転させて\n揚力を得て飛行する\n航空機の一種です"
   },
@@ -620,28 +620,28 @@ const gachaItems = [
   {
     name:"ユニコーン",
     image:"/images/ユニコーン.gif",
-    trainSize:200,
+    trainSize:150,
     offsetY:40,
     zukanDescription:"ヨーロッパの伝承に\n登場する空想上の動物です。\n馬のような体に\n額から1本のねじれた\n長い角が生えている姿で\n描かれるのが一般的です"
   },
   {
     name:"舞妓さん",
     image:"/images/舞妓さん.gif",
-    trainSize:200,
+    trainSize:150,
     offsetY:40,
     zukanDescription:"おばんどす～\n女に二言はない\nあんたに決めた"
   },
   {
     name:"よねづけんし（レモンカラー）",
     image:"/images/yonezu_lemon.png",
-    trainSize:200,
+    trainSize:150,
     offsetY:40,
     zukanDescription:"切り分け果実の片方の様に…\n今でもあなたはわたしの光"
   },
   {
     name:"ゴースト",
     image:"/images/ゴースト.gif",
-    trainSize:200,
+    trainSize:150,
     offsetY:40,
     zukanDescription:"イエーイ！\nゴーストバスターズ！！"
   },
@@ -655,7 +655,7 @@ const gachaItems = [
   {
     name:"ハニーハント号",
     image:"/images/honeyhunt.png",
-    trainSize:200,
+    trainSize:150,
     offsetY:40,
     zukanDescription:"ハニーハント号は\nはちみつを あつめる ための\nでんしゃだよ。\n\nはちみつを あつめて\nおもいでの かわいさを\nかんじる ことができるんだ！"
   },
