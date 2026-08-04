@@ -3542,11 +3542,21 @@ style={{
   ponSoundRef.current?.play();
 
   const prize =
-    gachaItems[
-      Math.floor(Math.random() * gachaItems.length)
-    ];
+  gachaItems[
+    Math.floor(Math.random() * gachaItems.length)
+  ];
 
-  setGachaPrize(prize);
+setGachaPrize(prize);
+
+setSaveData((data) => ({
+  ...data,
+  ownedVehicles: [
+    ...data.ownedVehicles,
+    prize,
+  ],
+}));
+
+setScene("gachaResult");
 
   setScene("gachaResult");
 }}
