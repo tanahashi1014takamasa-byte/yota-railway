@@ -24,6 +24,8 @@ export default function Home() {
   const [driveDistance, setDriveDistance] = useState(0);
   const [gachaRolling, setGachaRolling] = useState(false);
   const gachaSoundRef = useRef<HTMLAudioElement | null>(null);
+  const [gachaKappaMouth, setGachaKappaMouth] = useState(false);
+  
 
 
   const deloreanMessages = [
@@ -3160,10 +3162,14 @@ setCartItems([]);
     />
 
     <button
-   onClick={() => {
-  gachaSoundRef.current?.play();
-  setGachaRolling(true);
-}}
+  onClick={() => {
+    gachaSoundRef.current?.play();
+    setGachaRolling(true);
+
+    setTimeout(() => {
+      setScene("gachaHam");
+    }, 2000);
+  }}
   style={{
     position:"absolute",
     top:"80%",
@@ -3327,11 +3333,43 @@ style={{
   <div>
     ▽
   </div>
+
+
+
+
 </div>
 
 
+
     </div>
+
+    
   </>
+  
+)}
+{scene === "gachaHam" && (
+  <div
+    style={{
+      width:"100vw",
+      height:"100vh",
+      background:"black",
+      position:"relative",
+      overflow:"hidden",
+    }}
+  >
+
+    <img
+      src="/images/quizkappa1.png"
+      alt="ハムカッパ"
+      width={120}
+      style={{
+        position:"absolute",
+        bottom:"50px",
+        left:"20px",
+      }}
+    />
+
+  </div>
 )}
 
     </main>
