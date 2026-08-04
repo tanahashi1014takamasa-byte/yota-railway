@@ -457,10 +457,10 @@ const saveGame = () => {
   sound.volume = 0.5;
   sound.play();
 
-  localStorage.setItem(
-    "yotaRailwaySave",
-    JSON.stringify(saveData)
-  );
+  // localStorage.setItem(
+  //   "yotaRailwaySave",
+  //   JSON.stringify(saveData)
+  // );
 
 };
 
@@ -3624,7 +3624,7 @@ setScene("gachaResult");
   >
 
     <img
-      src="/images/新幹線変形ロボ_シンカリオン.png"
+      src={gachaPrize.image}
       alt={gachaPrize.name}
       style={{
         position:"absolute",
