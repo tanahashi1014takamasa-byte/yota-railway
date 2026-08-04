@@ -2116,9 +2116,9 @@ onClick={() => {
 }}
     style={{
       position:"absolute",
-      top:"0%",
-      left:"55%",
-      transform:"translate(-50%, -50%)",
+      top:"15%",
+      left:"50%",
+      transform:"translateX(-50%)",
       color:"white",
       fontSize:"28px",
       fontWeight:"bold",
