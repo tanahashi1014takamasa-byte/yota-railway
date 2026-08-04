@@ -27,6 +27,7 @@ export default function Home() {
   const [gachaKappaMouth, setGachaKappaMouth] = useState(false);
   const [showCapsule, setShowCapsule] = useState(true);
   const ponSoundRef = useRef<HTMLAudioElement | null>(null);
+  const [gachaPrize, setGachaPrize] = useState<any>(null);
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
@@ -549,6 +550,21 @@ const trains = [
     trainSize: 150,
     offsetY: 60,
     zukanDescription: "よねづけんしは\nうたを つくって\nうたう おんがくか。\n「Lemon」などの\nゆうめいな きょくを\nつくった ひとなんだ！\n\nテレビでは\nサメの かたちの のりものに\nのって うたうこともあるよ！",
+  },
+];
+
+const gachaItems = [
+  {
+    name:"新幹線変形ロボ シンカリオン",
+    image:"/images/新幹線変形ロボ_シンカリオン.png",
+    trainSize:150,
+    offsetY:70,
+  },
+  {
+    name:"メリーゴーランド",
+    image:"/images/メリーゴーランド_1.gif",
+    trainSize:250,
+    offsetY:40,
   },
 ];
 
@@ -3410,7 +3426,16 @@ style={{
     alt="カプセル"
     width={120}
     onClick={() => {
+
   ponSoundRef.current?.play();
+
+  const prize =
+    gachaItems[
+      Math.floor(Math.random() * gachaItems.length)
+    ];
+
+  setGachaPrize(prize);
+
   setScene("gachaResult");
 }}
     style={{
@@ -3459,8 +3484,8 @@ style={{
   >
 
     <img
-  src="/images/新幹線変形ロボ_シンカリオン.png"
-  alt="シンカリオン"
+  src={gachaPrize.image}
+  alt={gachaPrize.name}
   style={{
     position:"absolute",
     top:"50%",
