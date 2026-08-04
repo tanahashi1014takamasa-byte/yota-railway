@@ -3148,7 +3148,7 @@ setCartItems([]);
     <button
   style={{
     position:"absolute",
-    top:"90%",
+    top:"80%",
     left:"50%",
     transform:"translateX(-50%)",
     background:"black",
