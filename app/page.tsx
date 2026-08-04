@@ -566,6 +566,60 @@ const gachaItems = [
     trainSize:250,
     offsetY:40,
   },
+   {
+    name:"スクールバス",
+    image:"/images/スクールバス.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"スケートネキ",
+    image:"/images/スケートネキ.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"ハリケーン",
+    image:"/images/ハリケーン.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"ピザ回すニキ",
+    image:"/images/ピザ回すニキ.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"フラフープネキ",
+    image:"/images/フラフープネキ.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+   {
+    name:"ヘリコプター",
+    image:"/images/ヘリコプター.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+  {
+    name:"メリーゴーランド_2",
+    image:"/images/メリーゴーランド_2.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+  {
+    name:"ユニコーン",
+    image:"/images/ユニコーン.gif",
+    trainSize:250,
+    offsetY:40,
+  },
+  {
+    name:"舞妓さん",
+    image:"/images/舞妓さん.gif",
+    trainSize:250,
+    offsetY:40,
+  },
 ];
 
 
