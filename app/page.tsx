@@ -3372,20 +3372,22 @@ style={{
     }}
   >
 
-    <img
+ <img
   src={
     gachaKappaMouth
       ? "/images/quizkappa2.png"
       : "/images/quizkappa1.png"
   }
-      alt="ハムカッパ"
-      width={120}
-      style={{
-        position:"absolute",
-        bottom:"50px",
-        left:"20px",
-      }}
-    />
+  alt="ハムカッパ"
+  width={120}
+  height={120}
+  style={{
+    position:"absolute",
+    bottom:"50px",
+    left:"20px",
+    objectFit:"contain",
+  }}
+/>
 
 <div
   style={{
