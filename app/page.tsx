@@ -1055,6 +1055,16 @@ steam.play();
   }}
 />
 
+<img
+  src="/images/capsule_toy.png"
+  alt="ガチャ"
+  width={180}
+  style={{
+    cursor: "pointer",
+    marginTop: "10px",
+  }}
+/>
+
   </>
 )}
 
