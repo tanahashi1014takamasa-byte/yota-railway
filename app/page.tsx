@@ -1056,7 +1056,7 @@ steam.play();
 />
 
 <img
-  src="/images/capsule_toy.png"
+  src="/images/capsule_machine.png"
   alt="ガチャ"
   width={180}
   onClick={() => {
