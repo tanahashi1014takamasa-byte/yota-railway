@@ -25,8 +25,8 @@ export default function Home() {
   const [gachaRolling, setGachaRolling] = useState(false);
   const gachaSoundRef = useRef<HTMLAudioElement | null>(null);
   const [gachaKappaMouth, setGachaKappaMouth] = useState(false);
-  
-
+  const [showCapsule, setShowCapsule] = useState(true);
+  const ponSoundRef = useRef<HTMLAudioElement | null>(null);
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
@@ -870,6 +870,11 @@ const popKeyframes = `
   src="/sounds/BackToTheFuture.mp3"
   loop
   preload="auto"
+/>
+
+<audio
+  ref={ponSoundRef}
+  src="/sounds/pon.mp3"
 />
 
 
@@ -3399,27 +3404,23 @@ style={{
   }}
 />
 
-   <img
-
-  src="/images/cap.png"
-
-  alt="カプセル"
-
-  width={120}
-
-  style={{
-
-    position:"absolute",
-
-    bottom:"80px",
-
-    left:"190px",
-
-    cursor:"pointer",
-
-  }}
-
-/>
+ {showCapsule && (
+  <img
+    src="/images/cap.png"
+    alt="カプセル"
+    width={120}
+    onClick={() => {
+  ponSoundRef.current?.play();
+  setShowCapsule(false);
+}}
+    style={{
+      position:"absolute",
+      bottom:"50px",
+      left:"180px",
+      cursor:"pointer",
+    }}
+  />
+)}
 
 <div
   style={{
