@@ -3549,6 +3549,23 @@ style={{
   }}
 />
 
+<h2
+  style={{
+    position:"absolute",
+    top:"73%",
+    left:"50%",
+    transform:"translateX(-50%)",
+    color:"white",
+    fontSize:"32px",
+    fontWeight:"bold",
+    textAlign:"center",
+    textShadow:"2px 2px 4px black",
+    whiteSpace:"nowrap",
+  }}
+>
+  {gachaPrize.name}
+</h2>
+
   </div>
 )}
 
