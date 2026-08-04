@@ -3145,6 +3145,25 @@ setCartItems([]);
       }}
     />
 
+    <button
+  style={{
+    position:"absolute",
+    top:"70%",
+    left:"50%",
+    transform:"translateX(-50%)",
+    background:"black",
+    color:"white",
+    fontSize:"28px",
+    fontWeight:"bold",
+    padding:"12px 40px",
+    border:"4px solid white",
+    borderRadius:"10px",
+    cursor:"pointer",
+  }}
+>
+  まわす
+</button>
+
     <p
   style={{
     position:"absolute",
