@@ -3141,9 +3141,25 @@ setCartItems([]);
         top:"50%",
         left:"50%",
         transform:"translate(-50%,-50%)",
-        width:"300px",
+        width:"200px",
       }}
     />
+
+    <p
+  style={{
+    position:"absolute",
+    top:"30px",
+    left:"50%",
+    transform:"translateX(-50%)",
+    color:"white",
+    fontSize:"32px",
+    fontWeight:"bold",
+    fontFamily:"'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif",
+    textShadow:"2px 2px 3px black",
+  }}
+>
+  １回 500マイル
+</p>
 
   </div>
 )}
