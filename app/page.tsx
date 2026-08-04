@@ -3312,8 +3312,48 @@ setCartItems([]);
   １回 500マイル
 </p>
 
+<p
+  style={{
+    position:"absolute",
+    top:"75px",
+    left:"50%",
+    transform:"translateX(-50%)",
+    color:"white",
+    fontSize:"32px",
+    fontWeight:"bold",
+    fontFamily:"'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif",
+    textShadow:"2px 2px 3px black",
+    whiteSpace:"nowrap",
+  }}
+>
+  １回 500マイル
+</p>
+
+
+<button
+  onClick={() => {
+    setScene("opening");
+  }}
+  style={{
+    position:"absolute",
+    top:"50px",
+    left:"50px",
+    background:"black",
+    color:"white",
+    border:"3px solid white",
+    padding:"10px 25px",
+    fontSize:"24px",
+    fontWeight:"bold",
+    cursor:"pointer",
+  }}
+>
+  もどる
+</button>
+
   </div>
 )}
+
+
 
       {scene === "running" && (
         <>
