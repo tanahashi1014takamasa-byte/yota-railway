@@ -569,13 +569,6 @@ const gachaItems = [
     zukanDescription:"メリーゴーランド\nは、遊園地やテーマパークにある\n代表的な遊具のひとつで\n「回転木馬」とも呼ばれます"
   },
    {
-    name:"スクールバス",
-    image:"/images/スクールバス.gif",
-    trainSize:150,
-    offsetY:40,
-    zukanDescription:"スクールバスは\n主に児童・生徒を学校へ\n送迎するために運行される\n専用のバスです"
-  },
-   {
     name:"ハリケーン",
     image:"/images/ハリケーン.gif",
     trainSize:200,
@@ -589,18 +582,11 @@ const gachaItems = [
     offsetY:40,
     zukanDescription:"ピザ回しとは\nピザ生地を空中に投げて\n回転させながら\n均等に伸ばす技術のことです\n真鶴で食べたピザは美味かったぞ"
   },
-   {
-    name:"ヘリコプター",
-    image:"/images/ヘリコプター.gif",
-    trainSize:150,
-    offsetY:40,
-    zukanDescription:"ヘリコプターは\n回転翼（ローター）を\nエンジンで回転させて\n揚力を得て飛行する\n航空機の一種です"
-  },
   {
     name:"よねづけんし（レモンカラー）",
     image:"/images/yonezu_lemon.png",
     trainSize:150,
-    offsetY:40,
+    offsetY:50,
     zukanDescription:"切り分け果実の片方の様に…\n今でもあなたはわたしの光"
   },
   {
@@ -614,14 +600,14 @@ const gachaItems = [
     name:"セーヌ川の水面の下で",
     image:"/images/セーヌ川の水面の下で.png",
     trainSize:200,
-    offsetY:40,
+    offsetY:50,
     zukanDescription:"化け鮫のテーマに乗って\n何も知らない赤ずきんちゃん\nオオカミといけない恋をしようよ"
   },
   {
     name:"ハニーハント号",
     image:"/images/honeyhunt.png",
     trainSize:150,
-    offsetY:40,
+    offsetY:50,
     zukanDescription:"ハニーハント号は\nはちみつを あつめる ための\nでんしゃだよ。\n\nはちみつを あつめて\nおもいでの かわいさを\nかんじる ことができるんだ！"
   },
 ];
