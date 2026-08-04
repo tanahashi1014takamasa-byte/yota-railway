@@ -559,90 +559,105 @@ const gachaItems = [
     image:"/images/新幹線変形ロボ_シンカリオン.png",
     trainSize:150,
     offsetY:70,
+    zukanDescription:"正体不明の敵（巨大怪物体やアンノウンなど）\nから日本を守るため\n新幹線をベースに開発された\nロボット「シンカリオン」"
   },
   {
     name:"メリーゴーランド",
     image:"/images/メリーゴーランド_1.gif",
-    trainSize:250,
+    trainSize:200,
     offsetY:40,
+    zukanDescription:"メリーゴーランド\nは、遊園地やテーマパークにある\n代表的な遊具のひとつで\n「回転木馬」とも呼ばれます"
   },
    {
     name:"スクールバス",
     image:"/images/スクールバス.gif",
     trainSize:250,
     offsetY:40,
+    zukanDescription:"スクールバスは\n主に児童・生徒を学校へ\n送迎するために運行される\n専用のバスです"
   },
    {
     name:"スケートネキ",
     image:"/images/スケートネキ.gif",
     trainSize:100,
     offsetY:40,
+    zukanDescription:"スケートが大好きなお姉さんだ！\nスケートのことはよく分からねえが\nお姉さんは好きだぜ"
   },
    {
     name:"ハリケーン",
     image:"/images/ハリケーン.gif",
     trainSize:200,
     offsetY:40,
+    zukanDescription:"ハリケーン\nは\n主に北大西洋や\n北東太平洋で発生する\n発達した熱帯低気圧のことです"
   },
    {
     name:"ピザ回すニキ",
     image:"/images/ピザ回すニキ.gif",
     trainSize:200,
     offsetY:40,
+    zukanDescription:"ピザ回しとは\nピザ生地を空中に投げて\n回転させながら\n均等に伸ばす技術のことです\n真鶴で食べたピザは美味かったぞ"
   },
    {
     name:"フラフープネキ",
     image:"/images/フラフープネキ.gif",
     trainSize:100,
     offsetY:40,
+    zukanDescription:"フラフープが大好きなお姉さんだ！\nポポウ！ポウポウ！ポウ！！"
   },
    {
     name:"ヘリコプター",
     image:"/images/ヘリコプター.gif",
-    trainSize:250,
+    trainSize:200,
     offsetY:40,
+    zukanDescription:"ヘリコプターは\n回転翼（ローター）を\nエンジンで回転させて\n揚力を得て飛行する\n航空機の一種です"
   },
   {
     name:"メリーゴーランド_2",
     image:"/images/メリーゴーランド_2.gif",
     trainSize:250,
     offsetY:40,
+    zukanDescription:"まわれまーわれー♪\nメリゴーランド♪\nけして離さないように～♪"
   },
   {
     name:"ユニコーン",
     image:"/images/ユニコーン.gif",
-    trainSize:250,
+    trainSize:200,
     offsetY:40,
+    zukanDescription:"ヨーロッパの伝承に\n登場する空想上の動物です。\n馬のような体に\n額から1本のねじれた\n長い角が生えている姿で\n描かれるのが一般的です"
   },
   {
     name:"舞妓さん",
     image:"/images/舞妓さん.gif",
-    trainSize:250,
+    trainSize:200,
     offsetY:40,
+    zukanDescription:"おばんどす～\n女に二言はない\nあんたに決めた"
   },
   {
     name:"よねづけんし（レモンカラー）",
     image:"/images/yonezu_lemon.png",
     trainSize:200,
     offsetY:40,
+    zukanDescription:"切り分け果実の片方の様に…\n今でもあなたはわたしの光"
   },
   {
     name:"ゴースト",
     image:"/images/ゴースト.gif",
     trainSize:200,
     offsetY:40,
+    zukanDescription:"イエーイ！\nゴーストバスターズ！！"
   },
   {
     name:"セーヌ川の水面の下で",
     image:"/images/セーヌ川の水面の下で.png",
     trainSize:200,
     offsetY:40,
+    zukanDescription:"化け鮫のテーマに乗って\n何も知らない赤ずきんちゃん\nオオカミといけない恋をしようよ"
   },
   {
     name:"ハニーハント号",
     image:"/images/honeyhunt.png",
     trainSize:200,
     offsetY:40,
+    zukanDescription:"ハニーハント号は\nはちみつを あつめる ための\nでんしゃだよ。\n\nはちみつを あつめて\nおもいでの かわいさを\nかんじる ことができるんだ！"
   },
 ];
 
