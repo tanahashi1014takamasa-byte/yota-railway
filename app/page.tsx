@@ -3170,17 +3170,7 @@ setCartItems([]);
       }}
     />
 
-    <img
-  src="/images/cap.png"
-  alt="カプセル"
-  width={120}
-  style={{
-    position:"absolute",
-    bottom:"50px",
-    left:"180px",
-    cursor:"pointer",
-  }}
-/>
+ 
 
     <button
  onClick={() => {
@@ -3392,6 +3382,28 @@ style={{
     bottom:"50px",
     left:"20px",
   }}
+/>
+
+   <img
+
+  src="/images/cap.png"
+
+  alt="カプセル"
+
+  width={120}
+
+  style={{
+
+    position:"absolute",
+
+    bottom:"80px",
+
+    left:"250px",
+
+    cursor:"pointer",
+
+  }}
+
 />
 
 <div
