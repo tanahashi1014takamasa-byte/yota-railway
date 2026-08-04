@@ -3479,7 +3479,17 @@ style={{
     src="/images/cap.png"
     alt="カプセル"
     width={120}
-    onClick={() => {
+   onClick={() => {
+
+  if (saveData.miles < 500) {
+    alert("マイルが足りません");
+    return;
+  }
+
+  setSaveData((data) => ({
+    ...data,
+    miles: data.miles - 500,
+  }));
 
   ponSoundRef.current?.play();
 
