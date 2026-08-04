@@ -22,7 +22,7 @@ export default function Home() {
   const [deloreanIndex, setDeloreanIndex] = useState(0);
   const [driveStarted, setDriveStarted] = useState(false);
   const [driveDistance, setDriveDistance] = useState(0);
-  
+  const [gachaRolling, setGachaRolling] = useState(false);
 
 
   const deloreanMessages = [
@@ -3134,7 +3134,11 @@ setCartItems([]);
   >
 
     <img
-      src="/images/capsule_machine.png"
+      src={
+    gachaRolling
+      ? "/images/capsule_machine.gif"
+      : "/images/capsule_machine.png"
+  }
       alt="ガチャマシン"
       style={{
         position:"absolute",
@@ -3146,6 +3150,9 @@ setCartItems([]);
     />
 
     <button
+    onClick={() => {
+    setGachaRolling(true);
+  }}
   style={{
     position:"absolute",
     top:"80%",
