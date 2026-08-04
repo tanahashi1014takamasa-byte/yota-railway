@@ -3279,7 +3279,7 @@ setCartItems([]);
 }}
   style={{
     position:"absolute",
-    top:"80%",
+    top:"72%",
     left:"50%",
     transform:"translateX(-50%)",
     background:"black",
