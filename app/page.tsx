@@ -3137,7 +3137,7 @@ setCartItems([]);
       src={
     gachaRolling
       ? "/images/capsule_machine.gif"
-      : "/images/capsule_machine.png"
+      : "/images/capsule_machine_1.png"
   }
       alt="ガチャマシン"
       style={{
