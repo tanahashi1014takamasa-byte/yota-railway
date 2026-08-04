@@ -3570,7 +3570,33 @@ style={{
     whiteSpace: "nowrap",
   }}
 >
+ <div
+  onClick={() => {
+    setScene("gacha");
+  }}
+  style={{
+    position: "absolute",
+    top: "73%",
+    left: "50%",
+    transform: "translateX(-50%)",
+
+    background: "black",
+    color: "white",
+    border: "3px solid white",
+    borderRadius: "15px",
+
+    padding: "12px 24px",
+
+    fontSize: "30px",
+    fontWeight: "bold",
+
+    textAlign: "center",
+    whiteSpace: "nowrap",
+    cursor: "pointer",
+  }}
+>
   {gachaPrize.name}
+</div>
 </div>
 
   </div>
