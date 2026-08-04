@@ -2103,22 +2103,6 @@ setSaveData((prev) => {
   />
 )}
 
-<div
-  style={{
-    position:"absolute",
-    bottom:"20px",
-    left:"47%",
-    transform:"translateX(-50%)",
-    display:"grid",
-    gridTemplateColumns:"50px 50px 50px",
-    gridTemplateRows:"50px 50px 50px",
-    gap:"5px",
-  }}
-
-
-  
->
-
 
 {gameOver && (
   <div
@@ -2151,6 +2135,26 @@ onClick={() => {
     またあそぼう！
   </div>
 )}
+
+
+<div
+  style={{
+    position:"absolute",
+    bottom:"20px",
+    left:"47%",
+    transform:"translateX(-50%)",
+    display:"grid",
+    gridTemplateColumns:"50px 50px 50px",
+    gridTemplateRows:"50px 50px 50px",
+    gap:"5px",
+  }}
+
+
+  
+>
+
+
+
 
   {/* 上 */}
   <button
