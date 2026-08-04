@@ -3549,28 +3549,24 @@ style={{
     />
 
     <div
-      onClick={() => {
-        setScene("gacha");
-      }}
-      style={{
-        position:"absolute",
-        top:"73%",
-        left:"50%",
-        transform:"translateX(-50%)",
-        background:"black",
-        color:"white",
-        border:"3px solid white",
-        borderRadius:"15px",
-        padding:"10px 20px",
-        fontSize:"24px",
-        fontWeight:"bold",
-        textAlign:"center",
-        whiteSpace:"nowrap",
-        cursor:"pointer",
-      }}
-    >
-      {gachaPrize.name}
-    </div>
+  onClick={() => {
+    setScene("gacha");
+  }}
+  style={{
+    position:"absolute",
+    top:"73%",
+    left:"50%",
+    transform:"translateX(-50%)",
+    color:"white",
+    fontSize:"24px",
+    fontWeight:"bold",
+    textAlign:"center",
+    whiteSpace:"nowrap",
+    cursor:"pointer",
+  }}
+>
+  {gachaPrize.name}
+</div>
 
   </div>
 )}
