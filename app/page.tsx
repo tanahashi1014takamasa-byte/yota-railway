@@ -3334,18 +3334,19 @@ setCartItems([]);
   onClick={() => {
     setScene("opening");
   }}
-  style={{
-    position:"absolute",
-    top:"50px",
-    left:"50px",
-    background:"black",
-    color:"white",
-    border:"3px solid white",
-    padding:"10px 25px",
-    fontSize:"24px",
-    fontWeight:"bold",
-    cursor:"pointer",
-  }}
+ style={{
+  position:"absolute",
+  top:"82%",
+  left:"50%",
+  transform:"translateX(-50%)",
+  background:"black",
+  color:"white",
+  border:"3px solid white",
+  padding:"10px 25px",
+  fontSize:"24px",
+  fontWeight:"bold",
+  cursor:"pointer",
+}}
 >
   もどる
 </button>
