@@ -2132,7 +2132,7 @@ onClick={() => {
 }}
     style={{
       position:"absolute",
-      top:"50%",
+      top:"0%",
       left:"55%",
       transform:"translate(-50%, -50%)",
       color:"white",
@@ -3173,7 +3173,7 @@ setSaveData((data) => {
       {
         name: "デロリアン",
         image: "/images/derolian_1.png",
-        trainSize: 200,
+        trainSize: 250,
         offsetY: 40,
       },
     ],
