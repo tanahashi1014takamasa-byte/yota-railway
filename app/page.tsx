@@ -3262,8 +3262,14 @@ setCartItems([]);
 
  
 
-    <button
+  <button
  onClick={() => {
+
+  if (saveData.miles < 500) {
+    alert("マイルが足りません");
+    return;
+  }
+
   gachaSoundRef.current?.play();
   setGachaRolling(true);
 
