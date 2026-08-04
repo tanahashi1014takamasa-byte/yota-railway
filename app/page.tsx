@@ -3548,7 +3548,15 @@ style={{
 
   setGachaPrize(prize);
 
-  setScene("gachaResult");
+setSaveData((data) => ({
+  ...data,
+  ownedVehicles: [
+    ...data.ownedVehicles,
+    prize,
+  ],
+}));
+
+setScene("gachaResult");
 }}
     style={{
       position:"absolute",
