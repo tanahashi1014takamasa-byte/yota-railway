@@ -938,24 +938,7 @@ const popKeyframes = `
 />
 
 
-<button
-  onClick={() => {
-    window.location.reload();
-  }}
-  style={{
-    position: "fixed",
-    top: "5px",
-    left: "20px",
-    fontSize: "30px",
-    color: "white",
-    background: "transparent",
-    border: "none",
-    zIndex: 10000,
-    cursor: "pointer",
-  }}
->
-  ↻
-</button>
+
 
 
 
