@@ -597,11 +597,11 @@ const gachaItems = [
     zukanDescription:"イエーイ！\nゴーストバスターズ！！"
   },
   {
-    name:"セーヌ川の水面の下で",
-    image:"/images/セーヌ川の水面の下で.png",
+    name:"サメトラック",
+    image:"/images/サメのトラック.png",
     trainSize:300,
     offsetY:60,
-    zukanDescription:"化け鮫のテーマに乗って\n何も知らない赤ずきんちゃん\nオオカミといけない恋をしようよ"
+    zukanDescription:"鳥→ジョーズ→ディープブルー\n→シャークネード→ロスト・バケーション\n→海底47m→MEG ザ・モンスター\n→セーヌ川の水面の下に→悪魔の口"
   },
   {
     name:"ハニーハント号",
