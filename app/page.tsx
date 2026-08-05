@@ -1851,14 +1851,14 @@ top: "180px",
 >
 
 <img
-  src={
-    gachaKappaMouth
-      ? "/images/quizkappa2.png"
-      : "/images/quizkappa1.png"
-  }
+  src={quizKappaMouth ? "/images/quizkappa2.png" : "/images/quizkappa1.png"}
+  width={120}
   alt="ハムカッパ"
-  width={100}
-  loading="eager"
+  style={{
+    position: "absolute",
+    bottom: "50px",
+    left: "20px",
+  }}
 />
 
 <div
