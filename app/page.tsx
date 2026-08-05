@@ -1862,19 +1862,20 @@ top: "180px",
 />
 
 <div
-  style={{
-    position: "absolute",
-    bottom: "100px",
-    left: "140px",
-    background: "black",
-    color: "white",
-    border: "3px solid white",
-    borderRadius: "20px",
-    padding: "10px 15px",
-    fontSize: "18px",
-    maxWidth: "350px",
-    textAlign: "left",
-  }}
+style={{
+  position: "absolute",
+  bottom: "100px",
+  left: "140px",
+  background: "black",
+  color: "white",
+  border: "3px solid white",
+  borderRadius: "20px",
+  padding: "10px 15px",
+  fontSize: "14px",
+  maxWidth: "300px",
+  lineHeight: "1.5",
+  textAlign: "left",
+}}
 >
 {quizResult ? quizResult : quizQuestion || "クイズじゅんび中..."}
 </div>
