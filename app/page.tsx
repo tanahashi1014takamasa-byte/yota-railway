@@ -28,12 +28,15 @@ export default function Home() {
   const [showCapsule, setShowCapsule] = useState(true);
   const ponSoundRef = useRef<HTMLAudioElement | null>(null);
   const [gachaPrize, setGachaPrize] = useState<any>(null);
+  const [quizQuestions, setQuizQuestions] = useState<string[]>([]);
+  
+  
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
-  "これマジすげー！",
-  "未来とか過去の乗り物見れるから\nめっさ便利だわ",
-  "おれっちもあとで\nあそばせてくれ",
+  "あ！これ！あああ！あっ！ああ！",
+  "すっげ！これ！！ああああ！？",
+  "いいなー！\nあとでおれもあそばせてくれ",
   "のりかえボタンに\nいれとくね",
 ];
 
@@ -472,7 +475,17 @@ useEffect(() => {
   const lines = text.split("\n");
   const questions = text.split("\n\n");
 
-  const currentQuestion = questions[quizIndex];
+// 最初だけ100問から4問選ぶ
+if (quizQuestions.length === 0) {
+  const shuffled = [...questions]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 4);
+
+  setQuizQuestions(shuffled);
+  return;
+}
+
+const currentQuestion = quizQuestions[quizIndex];
 const currentLines = currentQuestion.split("\n");
 
 const qLine = currentLines.find((line) =>
@@ -485,18 +498,11 @@ const qLine = currentLines.find((line) =>
     );
   }
 
-    const ansLine = currentLines.find((line) =>
+const ansLine = currentLines.find((line) =>
   line.startsWith("ANS:")
 );
 
-  if (ansLine) {
-    setQuizCorrect(
-      Number(ansLine.replace("ANS:", "").trim())
-    );
-  }
-
-
- const answers = currentLines
+const answers = currentLines
   .filter((line) =>
     /^[ABCD]:/.test(line)
   )
@@ -505,10 +511,25 @@ const qLine = currentLines.find((line) =>
     line.substring(2).trim()
   );
 
-  setQuizAnswers(answers);
+if (ansLine) {
+  const correctIndex = Number(
+    ansLine.replace("ANS:", "").trim()
+  );
+
+  const correctAnswer = answers[correctIndex];
+
+  const shuffledAnswers = [...answers]
+    .sort(() => Math.random() - 0.5);
+
+  setQuizAnswers(shuffledAnswers);
+
+  setQuizCorrect(
+    shuffledAnswers.indexOf(correctAnswer)
+  );
+}
 });
   }
-}, [scene, quizIndex]);
+}, [scene, quizIndex, quizQuestions]);
 
 useEffect(() => {
   if (scene !== "gachaHam") return;
@@ -1887,12 +1908,12 @@ top: "180px",
 
   if (quizIndex + 1 >= 4) {
   setQuizFinished(true);
-  setQuizQuestion("10マイルゲット！！\nまたあそぼう！おつハム～");
+  setQuizQuestion("100マイルゲット！！\nまたあそぼう！おつハム～");
 
 setSaveData((prev) => {
   const newData = {
     ...prev,
-    miles: prev.miles + 10,
+    miles: prev.miles + 100,
   };
 
   localStorage.setItem(
@@ -2026,11 +2047,12 @@ setSaveData((prev) => {
 
     <button
       onClick={() => {
-        setQuizIndex(0);
-        setQuizFinished(false);
-        setQuizResult("");
-        setScene("quiz");
-      }}
+  setQuizQuestions([]);
+  setQuizIndex(0);
+  setQuizFinished(false);
+  setQuizResult("");
+  setScene("quiz");
+}}
       style={{
   fontSize: "25px",
   padding: "20px 50px",
