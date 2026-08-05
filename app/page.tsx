@@ -3521,10 +3521,10 @@ style={{
     )
 );
 
-if (availableItems.length === 0) {
-  alert("もう全部集まりました！");
-  return;
-}
+if (availableItems.length === 0) 
+  { const ok = window.confirm("もう全部集まりました！"); 
+    if (ok) { setScene("opening"); } 
+    return; }
 
 const prize =
   availableItems[
