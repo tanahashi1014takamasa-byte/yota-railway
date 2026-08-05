@@ -624,13 +624,6 @@ const gachaItems = [
     offsetY:60,
     zukanDescription:"鳥→ジョーズ→ディープブルー\n→シャークネード→ロスト・バケーション\n→海底47m→MEG ザ・モンスター\n→セーヌ川の水面の下に→悪魔の口"
   },
-  {
-    name:"ハニーハント号",
-    image:"/images/honeyhunt.png",
-    trainSize:150,
-    offsetY:50,
-    zukanDescription:"ハニーハント号は\nはちみつを あつめる ための\nでんしゃだよ。\n\nはちみつを あつめて\nおもいでの かわいさを\nかんじる ことができるんだ！"
-  },
 ];
 
 
@@ -644,6 +637,24 @@ const shopVehicles = [
   zukanDescription: "D51-498は\nむかし つくられた\nにほんの じょうききかんしゃ。\n\nたくさんの かもつを\nはこんだ D51がたの\nなかまなんだ。\n\nいまでも イベントなどで\nはしる すがたを\nみることができる\nすごい きかんしゃだよ！",
   price : 100,
 },
+  {
+    name: "923形ドクターイエロー",
+    image: "/images/923形ドクターイエロー.png",
+    trainSize: 300,
+    description: "923形ドクターイエロー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
+    zukanDescription: "923形ドクターイエロー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
+    price : 200,
+     offsetY: 80,
+  },
+  {
+    name: "アンパンマン列車",
+    image: "/images/アンパンマン列車.png",
+    trainSize: 300,
+    description: "JR四国が運行する\n「アンパンマン」のイラストやデザインが\n外観や車内に施された\n特急・トロッコ列車！！",
+    zukanDescription: "アンパンマン列車は\nJR四国が運行する\n特急・トロッコ列車だよ。\n\n「アンパンマン」のイラストやデザインが\n外観や車内に施されているよ。",
+    price : 200,
+     offsetY: 80,
+  },
   {
   name: "ギャルでん",
   image: "/images/gal.png",
@@ -827,7 +838,7 @@ const shopVehicles = [
   image: "/images/f40.png",
   trainSize: 200,
   speed: 7,
-  description: "めっさ高くてかっこいい車だよ！\nはやくて\nうんてんしやすい\nイタリアの車だよ！",
+  description: "めっさたかい車だ！\nあの子の未来も\n買えてしまうぞ！",
   zukanDescription: "フェラーリは\nイタリアの\nこうきゅう じどうしゃ\nブランドだよ。",
   price : 20000,
   offsetY: 65,
@@ -841,6 +852,51 @@ const shopVehicles = [
   price : 100,
   offsetY: 10,
 },
+ {
+    name: "スペーシアX",
+    image: "/images/スペーシアX.png",
+    description: "東武鉄道が2023年7月15日に\n運行を開始した新型特急だ！\n「移動そのものを楽しむ列車」\nをコンセプトに開発されたぞ！",
+    zukanDescription: "\n",
+    price : 200,
+    trainSize: 200,
+    offsetY: 55,
+  },
+  {
+    name: "観光特急しまかぜ",
+    image: "/images/観光特急しまかぜ.png",
+    description: "近畿日本鉄道（近鉄）が\n運行するフラッグシップ観光特急だ！\n\n\n\n",
+    zukanDescription: "「最高級のおもてなし」\nをコンセプトに、\n伊勢神宮や伊勢志摩への\n旅そのものを楽しめる列車として\n2013年3月にデビュー",
+    price : 200,
+    trainSize: 200,
+    offsetY: 55,
+  },
+  {
+    name: "ラビュー_Laview",
+    image: "/images/ラビュー_Laview.png",
+    description: "西武鉄道001系 Laviewは\n西武鉄道が2019年に導入した\n最新型の特急車両\n「今までに見たことのない新しい車両」\nをコンセプトに作られたんだ！",
+    zukanDescription: "西武鉄道001系 Laviewは\n西武鉄道が2019年に導入した\n最新型の特急車両\n「今までに見たことのない新しい車両」\nをコンセプトに作られたんだ！",
+    price : 200,
+    trainSize: 200,
+    offsetY: 55,
+  },
+  {
+    name: "ゆふ",
+    image: "/images/ゆふ.png",
+    description: "JR九州が運行する\n観光地アクセス型の特急列車です。\n九州を代表する\n温泉観光特急だ！\n",
+    zukanDescription: "「ゆふ」は、沿線に\nそびえる名峰 由布岳（ゆふだけ）\nに由来しています",
+    price : 200,
+    trainSize: 200,
+    offsetY: 55,
+  },
+  {
+    name: "ソニック",
+    image: "/images/ソニック.png",
+    description: "JR九州を代表する\n高速特急列車です\n青い車体の883系ソニック\n鉄道ファンに特に人気だ！",
+    zukanDescription: "「Sonic」は英語で、\n音速・高速で進むもの\nという意味です。\nその名の通り、博多〜大分間を\n高速で結ぶ「速さ」をイメージした\n列車名になっています。",
+    price : 200,
+    trainSize: 200,
+    offsetY: 55,
+  },
 ];
 
 
