@@ -1051,18 +1051,7 @@ const popKeyframes = `
     overflow: "hidden",
   }}
 >
-<style>
-{`
-@keyframes fly {
-  from {
-    transform: translateX(-50px);
-  }
-  to {
-    transform: translateX(100vw);
-  }
-}
-`}
-</style>
+
 
 
 {scene === "opening" && (

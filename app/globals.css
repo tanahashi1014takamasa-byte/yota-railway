@@ -87,3 +87,21 @@ body {
     margin-top: 0px;
   }
 }
+
+@keyframes fly {
+  0% {
+    transform: translate(100vw, 0px);
+  }
+  25% {
+    transform: translate(75vw, -10px);
+  }
+  50% {
+    transform: translate(50vw, 10px);
+  }
+  75% {
+    transform: translate(25vw, -10px);
+  }
+  100% {
+    transform: translate(-100px, 0px);
+  }
+}
