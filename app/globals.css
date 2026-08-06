@@ -124,22 +124,22 @@ body {
 
 @keyframes planeFly {
   0% {
-    transform: translateX(-100px) translateY(0px);
+    transform: translate( -100px, 0px);
   }
 
   25% {
-    transform: translateX(25vw) translateY(-5px);
+    transform: translate(25vw, -5px);
   }
 
   50% {
-    transform: translateX(50vw) translateY(5px);
+    transform: translate(50vw, 5px);
   }
 
   75% {
-    transform: translateX(75vw) translateY(-3px);
+    transform: translate(75vw, -3px);
   }
 
   100% {
-    transform: translateX(100vw) translateY(0px);
+    transform: translate(100vw, 0px);
   }
 }
