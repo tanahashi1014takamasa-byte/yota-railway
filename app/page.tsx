@@ -762,6 +762,7 @@ const shopVehicles = [
   name: "スパイダーマン",
   image: "/images/スパイダーマン.gif",
   trainSize: 170,
+  speed: 5,
   description: "陰キャ？クソナード？\n言わせとけ！！\nあの子をまもれるのは…\n臆病者の君だけなんだぜ！！",
   zukanDescription: "大いなる力には\n大いなる責任が伴う\n\nスパイダーマンは\nニューヨークの街を守る\nスーパーヒーローだよ。\n\nクモのような能力で\nビルのあいだを\nすいすいと かけぬけるんだ！",
   price : 200,
