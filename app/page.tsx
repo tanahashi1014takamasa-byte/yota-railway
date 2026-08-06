@@ -1047,8 +1047,23 @@ const popKeyframes = `
     background: "black",
     paddingTop: "0px",
     margin: "0",
+    position: "relative",
+    overflow: "hidden",
   }}
 >
+
+<img
+  id="hikakin"
+  src="/images/ヒカキン.png"
+  alt=""
+  style={{
+    position: "absolute",
+    width: "30px",
+    top: "50px",
+    left: "0px",
+    zIndex: 0,
+  }}
+/>
 
       {scene === "opening" && (
   <>
