@@ -3503,16 +3503,16 @@ setSaveData((data) => {
       delorean: true,
     },
 
-    ownedVehicles: [
-      ...data.ownedVehicles,
-      {
-        name: "デロリアン",
-        image: "/images/derolian_1.png",
-        trainSize: 250,
-        offsetY: 40,
-        description: "未来からやってきたタイムマシン型の特別車両！"
-      },
-    ],
+ownedVehicles: [
+  ...data.ownedVehicles,
+  {
+    name: "デロリアン",
+    image: "/images/derolian_1.png",
+    trainSize: 250,
+    offsetY: 40,
+    zukanDescription: "デロリアンは\n映画「バック・トゥ・ザ・フューチャー」に登場する\nタイムマシンだよ。\n\n車を改造してつくられた\n未来へ行くことができる\n特別な のりものなんだ！",
+  },
+],
   };
 
 });
