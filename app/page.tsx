@@ -1052,17 +1052,32 @@ const popKeyframes = `
   }}
 >
 
+<style>
+{`
+@keyframes fly {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+`}
+</style>
+
+
 <img
   id="hikakin"
   src="/images/ヒカキン.png"
   alt=""
-  style={{
-    position: "absolute",
-    width: "30px",
-    top: "50px",
-    left: "0px",
-    zIndex: 0,
-  }}
+style={{
+  position: "absolute",
+  width: "50px",
+  top: "50px",
+  left: "0px",
+  zIndex: 0,
+  animation: "fly 10s linear infinite",
+}}
 />
 
       {scene === "opening" && (
