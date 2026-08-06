@@ -2585,9 +2585,7 @@ setMaintenanceMessages((prev) => [
 />
 
 
-<p>
-  {selectedZukanVehicle.description}
-</p>
+
 
         <h2
   style={{
