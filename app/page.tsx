@@ -1968,12 +1968,12 @@ top: "180px",
 
   if (quizIndex + 1 >= 4) {
   setQuizFinished(true);
-  setQuizQuestion("10マイルゲット！！\nまたあそぼう！おつハム～");
+  setQuizQuestion("100マイルゲット！！\nまたあそぼう！おつハム～");
 
 setSaveData((prev) => {
   const newData = {
     ...prev,
-    miles: prev.miles + 10,
+    miles: prev.miles + 100,
   };
 
   localStorage.setItem(
