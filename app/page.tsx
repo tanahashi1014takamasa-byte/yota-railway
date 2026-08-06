@@ -31,9 +31,10 @@ export default function Home() {
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
-  "これマジすげー！",
-  "未来とか過去の乗り物見れるから\nめっさ便利だわ",
-  "おれっちもあとで\nあそばせてくれ",
+  "あ！これ！うっわ！すっげ！お！",
+  "あっ！ああ！あっ！\nくれ！！おれに！！",
+  "おれにくれええええ！！\nま！ああああ！！！",
+  "なんてな。これはよーたのものだぜ",
   "のりかえボタンに\nいれとくね",
 ];
 
@@ -765,7 +766,7 @@ const shopVehicles = [
   description: "名前以外知らん！！\nくわしいことは\nパパにきこう！",
   zukanDescription: "FF7の主人公\nバスターソードをはじめ\n大型の大剣を武器に戦う金髪の青年",
   price : 200,
-  offsetY: 30,
+  offsetY: 15,
 },
 {
   name: "サンジ",
@@ -774,7 +775,7 @@ const shopVehicles = [
   description: "女の嘘は\n許すのが男だ",
   zukanDescription: "恋はいつでも\nハリケーンなんだよ",
   price : 200,
-  offsetY: 35,
+  offsetY: 20,
 },
 {
   name: "ヴィンスモーク・サンジ",
