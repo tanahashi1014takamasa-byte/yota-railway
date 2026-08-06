@@ -603,13 +603,6 @@ const gachaItems = [
     offsetY:60,
     zukanDescription:"鳥→ジョーズ→ディープブルー\n→シャークネード→ロスト・バケーション\n→海底47m→MEG ザ・モンスター\n→セーヌ川の水面の下に→悪魔の口"
   },
-  {
-    name:"ハニーハント号",
-    image:"/images/honeyhunt.png",
-    trainSize:150,
-    offsetY:50,
-    zukanDescription:"ハニーハント号は\nはちみつを あつめる ための\nでんしゃだよ。\n\nはちみつを あつめて\nおもいでの かわいさを\nかんじる ことができるんだ！"
-  },
 ];
 
 
@@ -753,6 +746,24 @@ const shopVehicles = [
   trainSize: 170,
   description: "きままなひとりたび！\nこの長い長い下り坂を～♪\n君を自転車の後ろに載せて～♪\nブレーキいっぱい\n握りしめて～♪\nゆっくりゆっくり下ってく～♪",
   zukanDescription: "じぶんさがしニキは\nじぶんの みちを さがして\nあたらしい けいけんを する\nじぶんの ことを\nみつけていく たびなんだ。",
+  price : 200,
+  offsetY: 65,
+},
+{
+  name: "ブレイクダンスニキ",
+  image: "/images/ブレイクダンスニキ.gif",
+  trainSize: 170,
+  description: "めっさカックィーな\nこれができたら\n憧れのあの子も一発だな",
+  zukanDescription: "クルクルクルクルクル～",
+  price : 200,
+  offsetY: 65,
+},
+{
+  name: "スパイダーマン",
+  image: "/images/スパイダーマン.gif",
+  trainSize: 170,
+  description: "陰キャ？クソナード？\n言わせとけ！！\nあの子をまもれるのは…\n臆病者の君だけなんだぜ！！",
+  zukanDescription: "大いなる力には\n大いなる責任が伴う\n\nスパイダーマンは\nニューヨークの街を守る\nスーパーヒーローだよ。\n\nクモのような能力で\nビルのあいだを\nすいすいと かけぬけるんだ！",
   price : 200,
   offsetY: 65,
 },
