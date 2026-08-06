@@ -1081,6 +1081,19 @@ const popKeyframes = `
   </div>
 )}
 
+<img
+  id="airplane"
+  src="/images/airplane_1.png"
+  alt=""
+  style={{
+    position: "absolute",
+    width: "80px",
+    top: "100px",
+    left: "0px",
+    animation: "planeFly 15s linear infinite",
+  }}
+/>
+
 
 
  {scene === "opening" && (
