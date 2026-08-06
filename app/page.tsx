@@ -1085,13 +1085,14 @@ const popKeyframes = `
   id="airplane"
   src="/images/airplane_1.png"
   alt=""
-  style={{
-    position: "absolute",
-    width: "80px",
-    top: "100px",
-    left: "0px",
-    animation: "planeFly 15s linear infinite",
-  }}
+ style={{
+  position: "absolute",
+  width: "80px",
+  top: "100px",
+  left: "0px",
+  animation: "planeFly 15s linear infinite",
+  willChange: "transform",
+}}
 />
 
 
