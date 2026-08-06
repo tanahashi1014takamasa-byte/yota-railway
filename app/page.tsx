@@ -643,7 +643,7 @@ const shopVehicles = [
     trainSize: 300,
     description: "923形ドクターイエロー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
     zukanDescription: "923形ドクターイエロー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
-    price : 200,
+    price : 300,
      offsetY: 80,
   },
   {
@@ -858,8 +858,8 @@ const shopVehicles = [
     description: "東武鉄道が2023年7月15日に\n運行を開始した新型特急だ！\n「移動そのものを楽しむ列車」\nをコンセプトに開発されたぞ！",
     zukanDescription: "\n",
     price : 200,
-    trainSize: 200,
-    offsetY: 55,
+    trainSize: 300,
+    offsetY: 75,
   },
   {
     name: "観光特急しまかぜ",
@@ -867,8 +867,8 @@ const shopVehicles = [
     description: "近畿日本鉄道（近鉄）が\n運行するフラッグシップ観光特急だ！\n\n\n\n",
     zukanDescription: "「最高級のおもてなし」\nをコンセプトに、\n伊勢神宮や伊勢志摩への\n旅そのものを楽しめる列車として\n2013年3月にデビュー",
     price : 200,
-    trainSize: 200,
-    offsetY: 55,
+    trainSize: 300,
+    offsetY: 75,
   },
   {
     name: "ラビュー_Laview",
@@ -876,8 +876,8 @@ const shopVehicles = [
     description: "西武鉄道001系 Laviewは\n西武鉄道が2019年に導入した\n最新型の特急車両\n「今までに見たことのない新しい車両」\nをコンセプトに作られたんだ！",
     zukanDescription: "西武鉄道001系 Laviewは\n西武鉄道が2019年に導入した\n最新型の特急車両\n「今までに見たことのない新しい車両」\nをコンセプトに作られたんだ！",
     price : 200,
-    trainSize: 200,
-    offsetY: 55,
+    trainSize: 300,
+    offsetY: 75,
   },
   {
     name: "ゆふ",
@@ -885,8 +885,8 @@ const shopVehicles = [
     description: "JR九州が運行する\n観光地アクセス型の特急列車です。\n九州を代表する\n温泉観光特急だ！\n",
     zukanDescription: "「ゆふ」は、沿線に\nそびえる名峰 由布岳（ゆふだけ）\nに由来しています",
     price : 200,
-    trainSize: 200,
-    offsetY: 55,
+    trainSize: 300,
+    offsetY: 75,
   },
   {
     name: "ソニック",
@@ -894,8 +894,8 @@ const shopVehicles = [
     description: "JR九州を代表する\n高速特急列車です\n青い車体の883系ソニック\n鉄道ファンに特に人気だ！",
     zukanDescription: "「Sonic」は英語で、\n音速・高速で進むもの\nという意味です。\nその名の通り、博多〜大分間を\n高速で結ぶ「速さ」をイメージした\n列車名になっています。",
     price : 200,
-    trainSize: 200,
-    offsetY: 55,
+    trainSize: 300,
+    offsetY: 75,
   },
 ];
 
