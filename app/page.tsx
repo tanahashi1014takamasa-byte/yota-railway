@@ -28,15 +28,12 @@ export default function Home() {
   const [showCapsule, setShowCapsule] = useState(true);
   const ponSoundRef = useRef<HTMLAudioElement | null>(null);
   const [gachaPrize, setGachaPrize] = useState<any>(null);
-  const [quizQuestions, setQuizQuestions] = useState<string[]>([]);
-  
-  
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
-  "あ！これ！あああ！あっ！ああ！",
-  "すっげ！これ！！ああああ！？",
-  "いいなー！\nあとでおれもあそばせてくれ",
+  "これマジすげー！",
+  "未来とか過去の乗り物見れるから\nめっさ便利だわ",
+  "おれっちもあとで\nあそばせてくれ",
   "のりかえボタンに\nいれとくね",
 ];
 
@@ -475,17 +472,7 @@ useEffect(() => {
   const lines = text.split("\n");
   const questions = text.split("\n\n");
 
-// 最初だけ100問から4問選ぶ
-if (quizQuestions.length === 0) {
-  const shuffled = [...questions]
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 4);
-
-  setQuizQuestions(shuffled);
-  return;
-}
-
-const currentQuestion = quizQuestions[quizIndex];
+  const currentQuestion = questions[quizIndex];
 const currentLines = currentQuestion.split("\n");
 
 const qLine = currentLines.find((line) =>
@@ -498,11 +485,18 @@ const qLine = currentLines.find((line) =>
     );
   }
 
-const ansLine = currentLines.find((line) =>
+    const ansLine = currentLines.find((line) =>
   line.startsWith("ANS:")
 );
 
-const answers = currentLines
+  if (ansLine) {
+    setQuizCorrect(
+      Number(ansLine.replace("ANS:", "").trim())
+    );
+  }
+
+
+ const answers = currentLines
   .filter((line) =>
     /^[ABCD]:/.test(line)
   )
@@ -511,25 +505,10 @@ const answers = currentLines
     line.substring(2).trim()
   );
 
-if (ansLine) {
-  const correctIndex = Number(
-    ansLine.replace("ANS:", "").trim()
-  );
-
-  const correctAnswer = answers[correctIndex];
-
-  const shuffledAnswers = [...answers]
-    .sort(() => Math.random() - 0.5);
-
-  setQuizAnswers(shuffledAnswers);
-
-  setQuizCorrect(
-    shuffledAnswers.indexOf(correctAnswer)
-  );
-}
+  setQuizAnswers(answers);
 });
   }
-}, [scene, quizIndex, quizQuestions]);
+}, [scene, quizIndex]);
 
 useEffect(() => {
   if (scene !== "gachaHam") return;
@@ -624,6 +603,13 @@ const gachaItems = [
     offsetY:60,
     zukanDescription:"鳥→ジョーズ→ディープブルー\n→シャークネード→ロスト・バケーション\n→海底47m→MEG ザ・モンスター\n→セーヌ川の水面の下に→悪魔の口"
   },
+  {
+    name:"ハニーハント号",
+    image:"/images/honeyhunt.png",
+    trainSize:150,
+    offsetY:50,
+    zukanDescription:"ハニーハント号は\nはちみつを あつめる ための\nでんしゃだよ。\n\nはちみつを あつめて\nおもいでの かわいさを\nかんじる ことができるんだ！"
+  },
 ];
 
 
@@ -638,24 +624,6 @@ const shopVehicles = [
   price : 100,
 },
   {
-    name: "923形ドクターイエロー",
-    image: "/images/923形ドクターイエロー.png",
-    trainSize: 300,
-    description: "923形ドクターイエロー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
-    zukanDescription: "923形ドクターイエロー!!\nオレンジいろの かっこいい\nロマンスカーだよ。",
-    price : 300,
-     offsetY: 80,
-  },
-  {
-    name: "アンパンマン列車",
-    image: "/images/アンパンマン列車.png",
-    trainSize: 300,
-    description: "JR四国が運行する\n「アンパンマン」のイラストやデザインが\n外観や車内に施された\n特急・トロッコ列車！！",
-    zukanDescription: "アンパンマン列車は\nJR四国が運行する\n特急・トロッコ列車だよ。",
-    price : 200,
-     offsetY: 80,
-  },
-  {
   name: "ギャルでん",
   image: "/images/gal.png",
   trainSize: 250,
@@ -669,7 +637,7 @@ const shopVehicles = [
     image: "/images/GSE_70000形_ロマンスカー.png",
     trainSize: 300,
     description: "GSE70000形ロマンスカー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
-    zukanDescription: "GSE70000がたは\nおだきゅうの\nロマンスカー",
+    zukanDescription: "GSE70000がたは\nおだきゅうの\nロマンスカー。\n\nまえと うしろに\nおおきな まどの\nてんぼうせきが ある\nとくべつな でんしゃだよ。\n\nはこねへ むかう\nおきゃくさんを\nのせて はしっているんだ！",
     price : 200,
      offsetY: 80,
   },
@@ -838,7 +806,7 @@ const shopVehicles = [
   image: "/images/f40.png",
   trainSize: 200,
   speed: 7,
-  description: "めっさたかい車だ！\nあの子の未来も\n買えてしまうぞ！",
+  description: "めっさ高くてかっこいい車だよ！\nはやくて\nうんてんしやすい\nイタリアの車だよ！",
   zukanDescription: "フェラーリは\nイタリアの\nこうきゅう じどうしゃ\nブランドだよ。",
   price : 20000,
   offsetY: 65,
@@ -852,51 +820,6 @@ const shopVehicles = [
   price : 100,
   offsetY: 10,
 },
- {
-    name: "スペーシアX",
-    image: "/images/スペーシアX.png",
-    description: "東武鉄道が2023年7月15日に\n運行を開始した新型特急だ！\n「移動そのものを楽しむ列車」\nをコンセプトに開発されたぞ！",
-    zukanDescription: "新型特急\nスペーシアX!!!",
-    price : 200,
-    trainSize: 300,
-    offsetY: 75,
-  },
-  {
-    name: "観光特急しまかぜ",
-    image: "/images/観光特急しまかぜ.png",
-    description: "近畿日本鉄道（近鉄）が\n運行するフラッグシップ観光特急だ！",
-    zukanDescription: "「最高級のおもてなし」\nをコンセプトに、\n伊勢神宮や伊勢志摩への\n旅そのものを楽しめる列車として\n2013年3月にデビュー",
-    price : 200,
-    trainSize: 300,
-    offsetY: 75,
-  },
-  {
-    name: "ラビュー_Laview",
-    image: "/images/ラビュー_Laview.png",
-    description: "西武鉄道001系 Laviewは\n西武鉄道が2019年に導入した\n最新型の特急車両\n「今までに見たことのない新しい車両」\nをコンセプトに作られたんだ！",
-    zukanDescription: "「今までに見たことのない新しい車両」\nをコンセプトに作られたんだ！",
-    price : 200,
-    trainSize: 300,
-    offsetY: 75,
-  },
-  {
-    name: "ゆふ",
-    image: "/images/ゆふ.png",
-    description: "JR九州が運行する\n観光地アクセス型の特急列車です。\n九州を代表する\n温泉観光特急だ！\n",
-    zukanDescription: "「ゆふ」は、沿線に\nそびえる名峰 由布岳（ゆふだけ）\nに由来しています",
-    price : 200,
-    trainSize: 300,
-    offsetY: 75,
-  },
-  {
-    name: "ソニック",
-    image: "/images/ソニック.png",
-    description: "JR九州を代表する\n高速特急列車です\n青い車体の883系ソニック\n鉄道ファンに特に人気だ！",
-    zukanDescription: "「Sonic」は英語で、\n音速・高速で進むもの\nという意味です。\nその名の通り、博多〜大分間を\n高速で結ぶ「速さ」をイメージした\n列車名になっています。",
-    price : 200,
-    trainSize: 300,
-    offsetY: 75,
-  },
 ];
 
 
@@ -1907,31 +1830,30 @@ top: "180px",
 >
 
 <img
-  src={quizKappaMouth ? "/images/quizkappa2.png" : "/images/quizkappa1.png"}
-  width={120}
+  src={
+    gachaKappaMouth
+      ? "/images/quizkappa2.png"
+      : "/images/quizkappa1.png"
+  }
   alt="ハムカッパ"
-  style={{
-    position: "absolute",
-    bottom: "50px",
-    left: "20px",
-  }}
+  width={100}
+  loading="eager"
 />
 
 <div
-style={{
-  position: "absolute",
-  bottom: "100px",
-  left: "140px",
-  background: "black",
-  color: "white",
-  border: "3px solid white",
-  borderRadius: "20px",
-  padding: "10px 15px",
-  fontSize: "14px",
-  maxWidth: "300px",
-  lineHeight: "1.5",
-  textAlign: "left",
-}}
+  style={{
+    position: "absolute",
+    bottom: "100px",
+    left: "140px",
+    background: "black",
+    color: "white",
+    border: "3px solid white",
+    borderRadius: "20px",
+    padding: "10px 15px",
+    fontSize: "18px",
+    maxWidth: "350px",
+    textAlign: "left",
+  }}
 >
 {quizResult ? quizResult : quizQuestion || "クイズじゅんび中..."}
 </div>
@@ -1965,12 +1887,12 @@ style={{
 
   if (quizIndex + 1 >= 4) {
   setQuizFinished(true);
-  setQuizQuestion("100マイルゲット！！\nまたあそぼう！おつハム～");
+  setQuizQuestion("10マイルゲット！！\nまたあそぼう！おつハム～");
 
 setSaveData((prev) => {
   const newData = {
     ...prev,
-    miles: prev.miles + 100,
+    miles: prev.miles + 10,
   };
 
   localStorage.setItem(
@@ -2104,12 +2026,11 @@ setSaveData((prev) => {
 
     <button
       onClick={() => {
-  setQuizQuestions([]);
-  setQuizIndex(0);
-  setQuizFinished(false);
-  setQuizResult("");
-  setScene("quiz");
-}}
+        setQuizIndex(0);
+        setQuizFinished(false);
+        setQuizResult("");
+        setScene("quiz");
+      }}
       style={{
   fontSize: "25px",
   padding: "20px 50px",
