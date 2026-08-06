@@ -1094,11 +1094,15 @@ const popKeyframes = `
 
  {scene === "opening" && (
   <div
-    style={{
-      position: "relative",
-      zIndex: 2,
-    }}
-  >
+  style={{
+    position: "relative",
+    zIndex: 2,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    width: "100%",
+  }}
+>
     <img
       src="/images/logo.png"
       alt="ロゴ"
