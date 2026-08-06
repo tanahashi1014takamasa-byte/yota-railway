@@ -1075,7 +1075,7 @@ style={{
   width: "50px",
   top: "50px",
   left: "0px",
-  zIndex: 0,
+  zIndex: -1,
   animation: "fly 10s linear infinite",
 }}
 />
