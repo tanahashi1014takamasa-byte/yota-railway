@@ -1052,44 +1052,7 @@ const popKeyframes = `
   }}
 >
 
-<style>
-{`
-@keyframes fly {
-  from {
-    transform: translateX(-50px);
-  }
-  to {
-    transform: translateX(100vw);
-  }
-}
-`}
-</style>
 
-
-<div
-  style={{
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    zIndex: 1,
-    pointerEvents: "none",
-  }}
->
-  <img
-    id="hikakin"
-    src="/images/ヒカキン.png"
-    alt=""
-    style={{
-      position: "absolute",
-      width: "30px",
-      top: "50px",
-      left: "0px",
-      animation: "fly 10s linear infinite",
-    }}
-  />
-</div>
 
       {scene === "opening" && (
   <>
@@ -1274,7 +1237,47 @@ steam.play();
 
 
 
+
 )}
+
+<style>
+{`
+@keyframes fly {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+`}
+</style>
+
+
+<div
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: 1,
+    pointerEvents: "none",
+  }}
+>
+  <img
+    id="hikakin"
+    src="/images/ヒカキン.png"
+    alt=""
+    style={{
+      position: "absolute",
+      width: "50px",
+      top: "50px",
+      left: "0px",
+      animation: "fly 10s linear infinite",
+    }}
+  />
+</div>
 
 {scene === "intro" && (
 
