@@ -28,10 +28,11 @@ export default function Home() {
   const [showCapsule, setShowCapsule] = useState(true);
   const ponSoundRef = useRef<HTMLAudioElement | null>(null);
   const [gachaPrize, setGachaPrize] = useState<any>(null);
+  const [skyObject, setSkyObject] = useState("");
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
-  "あ！これ！うっわ！すっげ！お！",
+  "あ！これ！うわ！すっげ！！",
   "あっ！ああ！あっ！\nくれ！！おれに！！",
   "おれにくれええええ！！\nま！ああああ！！！",
   "なんてな。これはよーたのものだぜ",
@@ -520,6 +521,20 @@ useEffect(() => {
 
   return () => clearInterval(timer);
 
+}, [scene]);
+
+useEffect(() => {
+  if (scene === "opening") {
+    const objects = [
+      "hikakin",
+      "airplane",
+    ];
+
+    const randomObject =
+      objects[Math.floor(Math.random() * objects.length)];
+
+    setSkyObject(randomObject);
+  }
 }, [scene]);
 
 const trains = [
@@ -1054,7 +1069,7 @@ const popKeyframes = `
 
 
 
-{scene === "opening" && (
+{scene === "opening" && skyObject === "hikakin" && (
   <div
     style={{
       position: "absolute",
@@ -1067,7 +1082,6 @@ const popKeyframes = `
     }}
   >
     <img
-      id="hikakin"
       src="/images/ヒカキン.png"
       alt=""
       style={{
@@ -1080,20 +1094,33 @@ const popKeyframes = `
     />
   </div>
 )}
-
-<img
-  id="airplane"
-  src="/images/airplane_1.png"
-  alt=""
- style={{
-  position: "absolute",
-  width: "80px",
-  top: "100px",
-  left: "0px",
-  animation: "planeFly 15s linear infinite",
-  willChange: "transform",
-}}
-/>
+{scene === "opening" && skyObject === "airplane" && (
+  <div
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      zIndex: 0,
+      pointerEvents: "none",
+    }}
+  >
+    <img
+      id="airplane"
+      src="/images/airplane_1.png"
+      alt=""
+      style={{
+        position: "absolute",
+        width: "80px",
+        top: "100px",
+        left: "0px",
+        animation: "planeFly 15s linear infinite",
+        willChange: "transform",
+      }}
+    />
+  </div>
+)}
 
 
 
