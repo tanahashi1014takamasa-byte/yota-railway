@@ -628,7 +628,7 @@ const shopVehicles = [
     image: "/images/923形ドクターイエロー.png",
     trainSize: 300,
     description: "923形ドクターイエロー!!\nオレンジいろの かっこいい\nロマンスカーだよ。\nおおきな まどから けしきを\nながめながら、\nすてきな たびに つれていって\nくれる でんしゃだよ。",
-    zukanDescription: "923形ドクターイエロー!!\nオレンジいろの かっこいい\nロマンスカーだよ。",
+    zukanDescription: "923形ドクターイエロー!!\n黄色い車体\n新幹線の安全を守る\nお医者さんのような存在\nという意味で呼ばれているんだ",
     price : 300,
      offsetY: 80,
   },
@@ -1895,13 +1895,18 @@ top: "180px",
 
 <img
   src={
-    gachaKappaMouth
+    quizKappaMouth
       ? "/images/quizkappa2.png"
       : "/images/quizkappa1.png"
   }
   alt="ハムカッパ"
   width={100}
   loading="eager"
+  style={{
+    position:"absolute",
+    bottom:"50px",
+    left:"20px",
+  }}
 />
 
 <div
