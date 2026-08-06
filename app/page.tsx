@@ -765,7 +765,7 @@ const shopVehicles = [
   description: "名前以外知らん！！\nくわしいことは\nパパにきこう！",
   zukanDescription: "FF7の主人公\nバスターソードをはじめ\n大型の大剣を武器に戦う金髪の青年",
   price : 200,
-  offsetY: 45,
+  offsetY: 30,
 },
 {
   name: "サンジ",
@@ -774,7 +774,7 @@ const shopVehicles = [
   description: "女の嘘は\n許すのが男だ",
   zukanDescription: "恋はいつでも\nハリケーンなんだよ",
   price : 200,
-  offsetY: 45,
+  offsetY: 35,
 },
 {
   name: "ヴィンスモーク・サンジ",
