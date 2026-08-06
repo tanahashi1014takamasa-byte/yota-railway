@@ -1095,17 +1095,18 @@ const popKeyframes = `
   </div>
 )}
 {scene === "opening" && skyObject === "airplane" && (
-  <div
-    style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      zIndex: 0,
-      pointerEvents: "none",
-    }}
-  >
+<div
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: 0,
+    pointerEvents: "none",
+    transform: "translateZ(0)",
+  }}
+>
     <img
       id="airplane"
       src="/images/airplane_1.png"
