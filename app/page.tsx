@@ -1065,30 +1065,32 @@ const popKeyframes = `
 </style>
 
 
-<div
-  style={{
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    zIndex: 0,
-    pointerEvents: "none",
-  }}
->
-  <img
-    id="hikakin"
-    src="/images/ヒカキン.png"
-    alt=""
+{scene === "opening" && (
+  <div
     style={{
       position: "absolute",
-      width: "50px",
-      top: "50px",
-      left: "0px",
-      animation: "fly 10s linear infinite",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      zIndex: 0,
+      pointerEvents: "none",
     }}
-  />
-</div>
+  >
+    <img
+      id="hikakin"
+      src="/images/ヒカキン.png"
+      alt=""
+      style={{
+        position: "absolute",
+        width: "50px",
+        top: "50px",
+        left: "0px",
+        animation: "fly 10s linear infinite",
+      }}
+    />
+  </div>
+)}
 
 
 
