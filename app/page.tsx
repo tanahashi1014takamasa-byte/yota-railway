@@ -759,6 +759,15 @@ const shopVehicles = [
   offsetY: 65,
 },
 {
+  name: "クラウド・ストライフ",
+  image: "/images/クラウド・ストライフ.gif",
+  trainSize: 200,
+  description: "名前以外知らん！！\nくわしいことは\nパパにきこう！",
+  zukanDescription: "FF7の主人公\nバスターソードをはじめ\n大型の大剣を武器に戦う金髪の青年",
+  price : 200,
+  offsetY: 65,
+},
+{
   name: "スパイダーマン",
   image: "/images/スパイダーマン.gif",
   trainSize: 170,
