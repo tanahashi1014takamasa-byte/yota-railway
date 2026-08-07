@@ -531,8 +531,7 @@ useEffect(() => {
   "airplane",
   "airplane",
   "helicopter",
-  "unicorn",
-  "unicorn",
+  "helicopter",
   "unicorn",
 ];
 
