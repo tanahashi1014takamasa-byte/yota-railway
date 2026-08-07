@@ -2704,10 +2704,15 @@ setMaintenanceMessages((prev) => [
       justifyContent:"center",
     }}
   >
-    <img
+ <img
   src={vehicle.image}
   alt={vehicle.name}
-  width={80}
+  width={
+    vehicle.image === "/images/ハムカッパぐんだん_1.gif" ||
+    vehicle.image === "/images/ハムカッパぐんだん_2.gif"
+      ? 120
+      : 80
+  }
   onClick={()=>{
     setSelectedZukanVehicle(vehicle);
   }}
