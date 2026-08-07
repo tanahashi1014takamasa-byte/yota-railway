@@ -531,6 +531,7 @@ useEffect(() => {
   "airplane",
   "airplane",
   "helicopter",
+  "unicorn",
 ];
 
     const randomObject =
@@ -1149,6 +1150,36 @@ const popKeyframes = `
         top: "100px",
         left: "0px",
         animation: "helicopterFly 15s linear infinite",
+        willChange: "transform",
+      }}
+    />
+  </div>
+)}
+
+
+{scene === "opening" && skyObject === "unicorn" && (
+<div
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: 0,
+    pointerEvents: "none",
+    transform: "translateZ(0)",
+  }}
+>
+    <img
+      id="unicorn"
+      src="/images/ユニコーン.gif"
+      alt=""
+      style={{
+        position: "absolute",
+        width: "120px",
+        top: "150px",
+        left: "0px",
+        animation: "unicornFly 15s linear infinite",
         willChange: "transform",
       }}
     />
