@@ -934,15 +934,6 @@ const shopVehicles = [
     trainSize: 300,
     offsetY: 75,
   },
-   {
-    name: "東京さくらトラム",
-    image: "/images/東京さくらトラム.png",
-    description: "東京都内を走る人気の路面電車\n黄色い車体が目を引き\n街の景色をゆっくり走る姿は\n多くの人に親しまれているぞ！\n",
-    zukanDescription: "東京に残る数少ない路面電車で\n三ノ輪橋駅～早稲田駅の\n約12.2kmを結んでいます。\n沿線にはバラや桜の名所があり\n地元の人や観光客にも人気です。",
-    price : 200,
-    trainSize: 300,
-    offsetY: 75,
-  },
   
 ];
 
