@@ -131,13 +131,3 @@ body {
     transform: translateX(100vw);
   }
 }
-
-@keyframes helicopterFly {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100px);
-  }
-}
