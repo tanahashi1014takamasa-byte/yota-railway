@@ -933,6 +933,15 @@ const shopVehicles = [
     trainSize: 300,
     offsetY: 75,
   },
+    {
+    name: "東京さくらトラム",
+    image: "/images/東京さくらトラム.png",
+    description: "東京都内を走る\n人気の路面電車。\n黄色い車体が目を引く\n昔ながらの雰囲気を残した電車だよ。\n",
+    zukanDescription: "「東京さくらトラム」は、とうきょうを はしる\nめずらしい ろめんでんしゃだよ\nきいろい しゃたいが\nとても かわいくて\nまちの なかを のんびり\nはしっているんだ！",
+    price : 200,
+    trainSize: 300,
+    offsetY: 75,
+  },
   
 ];
 
