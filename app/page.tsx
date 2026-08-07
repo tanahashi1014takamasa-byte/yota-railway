@@ -818,7 +818,7 @@ const shopVehicles = [
   image: "/images/ハムカッパぐんだん_2.gif",
   trainSize: 800,
   description: "ハムカッパぐんだんだ！！\nなまえは図鑑に載ってるから\nパパといっしょにかんがえよう！",
-  zukanDescription: "左から寿限無ハムカッパ\nカムチャッカ・ハムカッパ\n生ハムハムカッパ\nマダムハムカッパ\nハムカツハムカッパ",
+  zukanDescription: "左から寿限無ハムカッパ\nカムチャッカ・ハムカッパ\nフライング・ハムカッパ\n生ハムハムカッパ\nマダムハムカッパ\nハムカツハムカッパ",
   price : 200,
   offsetY: 95,
 },
