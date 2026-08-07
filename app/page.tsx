@@ -814,6 +814,33 @@ const shopVehicles = [
   price : 10000,
 },
 {
+  name: "ヴィンスモーク・サンジ",
+  image: "/images/サンジ_2.gif",
+  trainSize: 200,
+  description: "女の嘘は…許すのが男だ",
+  zukanDescription: "誇り高き海のコックさんだ！\n食いモンを粗末にすんじゃねえぞ！！",
+  price : 200,
+  offsetY: 55,
+},
+{
+  name: "ハムカッパぐんだん_2",
+  image: "/images/ハムカッパぐんだん_2.gif",
+  trainSize: 200,
+  description: "ハムカッパぐんだんだ！！\nなまえは図鑑に載ってるから\nパパといっしょにかんがえよう！",
+  zukanDescription: "左から寿限無ハムカッパ\nカムチャッカ・ハムカッパ\n生ハムハムカッパ\nマダムハムカッパ\nハムカツハムカッパ",
+  price : 200,
+  offsetY: 55,
+},
+{
+  name: "ハムカッパぐんだん_1", //
+  image: "/images/ハムカッパぐんだん_1.gif",
+  trainSize: 200,
+  description: "ハムカッパぐんだんだ！！\nなまえは図鑑に載ってるから\nパパといっしょにかんがえよう！",
+  zukanDescription: "左から無無明亦無（むむみょうやくむ）ハムカッパ\nサムスハムカッパ\nラム酒ハムカッパ\nイチゴジャムハムカッパ\nハムカッパ",
+  price : 200,
+  offsetY: 55,
+},
+{
   name: "回転寿司",
   image: "/images/回転寿司.gif",
   trainSize: 450,
