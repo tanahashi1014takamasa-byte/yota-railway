@@ -1102,37 +1102,6 @@ const popKeyframes = `
     />
   </div>
 )}
-{scene === "opening" && skyObject === "airplane" && (
-<div
-  style={{
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    zIndex: 0,
-    pointerEvents: "none",
-    transform: "translateZ(0)",
-  }}
->
-    <img
-      id="airplane"
-      src="/images/airplane_1.png"
-      alt=""
-      style={{
-        position: "absolute",
-        width: "80px",
-        top: "100px",
-        left: "0px",
-        animation: "planeFly 15s linear infinite",
-        willChange: "transform",
-      }}
-    />
-  </div>
-)}
-
-
-
 
 
 
