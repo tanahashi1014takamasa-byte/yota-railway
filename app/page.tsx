@@ -825,20 +825,20 @@ const shopVehicles = [
 {
   name: "ハムカッパぐんだん_2",
   image: "/images/ハムカッパぐんだん_2.gif",
-  trainSize: 200,
+  trainSize: 800,
   description: "ハムカッパぐんだんだ！！\nなまえは図鑑に載ってるから\nパパといっしょにかんがえよう！",
   zukanDescription: "左から寿限無ハムカッパ\nカムチャッカ・ハムカッパ\n生ハムハムカッパ\nマダムハムカッパ\nハムカツハムカッパ",
   price : 200,
-  offsetY: 55,
+  offsetY: 75,
 },
 {
   name: "ハムカッパぐんだん_1", //
   image: "/images/ハムカッパぐんだん_1.gif",
-  trainSize: 200,
+  trainSize: 1000,
   description: "ハムカッパぐんだんだ！！\nなまえは図鑑に載ってるから\nパパといっしょにかんがえよう！",
   zukanDescription: "左から無無明亦無（むむみょうやくむ）ハムカッパ\nサムスハムカッパ\nラム酒ハムカッパ\nイチゴジャムハムカッパ\nハムカッパ",
   price : 200,
-  offsetY: 55,
+  offsetY: 65,
 },
 {
   name: "回転寿司",
