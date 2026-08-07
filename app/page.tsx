@@ -530,8 +530,6 @@ useEffect(() => {
   "airplane",
   "airplane",
   "airplane",
-  "helicopter",
-  "unicorn",
 ];
 
     const randomObject =
