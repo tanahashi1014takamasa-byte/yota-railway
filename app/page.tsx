@@ -28,23 +28,7 @@ export default function Home() {
   const [showCapsule, setShowCapsule] = useState(true);
   const ponSoundRef = useRef<HTMLAudioElement | null>(null);
   const [gachaPrize, setGachaPrize] = useState<any>(null);
-  const [skyObject, setSkyObject] = useState<any>(null);
-  const skyObjects = [
-  {
-    name: "hikakin",
-    image: "/images/ヒカキン.png",
-    width: "50px",
-    top: "50px",
-    animation: "fly 10s linear infinite",
-  },
-  {
-    name: "airplane",
-    image: "/images/airplane_1.png",
-    width: "80px",
-    top: "100px",
-    animation: "planeFly 15s linear infinite",
-  },
-];
+  const [skyObject, setSkyObject] = useState("");
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
@@ -539,13 +523,16 @@ useEffect(() => {
 
 }, [scene]);
 
-
-
 useEffect(() => {
   if (scene === "opening") {
+    const objects = [
+      "hikakin",
+      "airplane",
+      "helicopter",
+    ];
 
     const randomObject =
-      skyObjects[Math.floor(Math.random() * skyObjects.length)];
+      objects[Math.floor(Math.random() * objects.length)];
 
     setSkyObject(randomObject);
   }
@@ -1131,6 +1118,35 @@ const popKeyframes = `
         top: "100px",
         left: "0px",
         animation: "planeFly 15s linear infinite",
+        willChange: "transform",
+      }}
+    />
+  </div>
+)}
+
+{scene === "opening" && skyObject === "helicopter" && (
+<div
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: 0,
+    pointerEvents: "none",
+    transform: "translateZ(0)",
+  }}
+>
+    <img
+      id="airplane"
+      src="/images/helicopter.png"
+      alt=""
+      style={{
+        position: "absolute",
+        width: "80px",
+        top: "100px",
+        left: "0px",
+        animation: "helicopterFly 15s linear infinite",
         willChange: "transform",
       }}
     />
