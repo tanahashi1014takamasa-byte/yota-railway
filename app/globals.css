@@ -141,12 +141,3 @@ body {
     transform: translateX(-100px);
   }
 }
-@keyframes unicornFly {
-  0% {
-    transform: translateX(100vw);
-  }
-
-  100% {
-    transform: translateX(-100px);
-  }
-}
