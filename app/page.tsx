@@ -28,7 +28,23 @@ export default function Home() {
   const [showCapsule, setShowCapsule] = useState(true);
   const ponSoundRef = useRef<HTMLAudioElement | null>(null);
   const [gachaPrize, setGachaPrize] = useState<any>(null);
-  const [skyObject, setSkyObject] = useState("");
+  const [skyObject, setSkyObject] = useState<any>(null);
+  const skyObjects = [
+  {
+    name: "hikakin",
+    image: "/images/ヒカキン.png",
+    width: "50px",
+    top: "50px",
+    animation: "fly 10s linear infinite",
+  },
+  {
+    name: "airplane",
+    image: "/images/airplane_1.png",
+    width: "80px",
+    top: "100px",
+    animation: "planeFly 15s linear infinite",
+  },
+];
 
   const deloreanMessages = [
   "よーたのおじいちゃんから\nプレゼント届いてたぞ",
@@ -523,15 +539,13 @@ useEffect(() => {
 
 }, [scene]);
 
+
+
 useEffect(() => {
   if (scene === "opening") {
-    const objects = [
-      "hikakin",
-      "airplane",
-    ];
 
     const randomObject =
-      objects[Math.floor(Math.random() * objects.length)];
+      skyObjects[Math.floor(Math.random() * skyObjects.length)];
 
     setSkyObject(randomObject);
   }
