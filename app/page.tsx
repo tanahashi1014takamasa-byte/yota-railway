@@ -1114,7 +1114,7 @@ const popKeyframes = `
       style={{
         position: "absolute",
         width: "80px",
-        top: "400px",
+        top: "100px",
         left: "0px",
         animation: "planeFly 15s linear infinite",
         willChange: "transform",
