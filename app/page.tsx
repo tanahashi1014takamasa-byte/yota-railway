@@ -1066,7 +1066,7 @@ const popKeyframes = `
     paddingTop: "0px",
     margin: "0",
     position: "relative",
-    overflow: "hidden",
+    overflowY: "auto",
   }}
 >
 
