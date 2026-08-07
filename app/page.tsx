@@ -527,6 +527,9 @@ useEffect(() => {
   if (scene === "opening") {
     const objects = [
   "hikakin",
+  "none",
+  "none",
+  "none",
 ];
 
     const randomObject =
