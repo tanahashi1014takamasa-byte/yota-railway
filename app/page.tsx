@@ -594,10 +594,10 @@ const gachaItems = [
     zukanDescription:"ハリケーン\nは\n主に北大西洋や\n北東太平洋で発生する\n発達した熱帯低気圧のことです"
   },
    {
-    name:"ピザ回すニキ",
+    name:"ピザ回しニキ",
     image:"/images/ピザ回すニキ.gif",
     trainSize:200,
-    offsetY:40,
+    offsetY:37,
     zukanDescription:"ピザ回しとは\nピザ生地を空中に投げて\n回転させながら\n均等に伸ばす技術のことです\n真鶴で食べたピザは美味かったぞ"
   },
   {
@@ -773,6 +773,15 @@ const shopVehicles = [
   trainSize: 170,
   description: "めっさカックィーな\nこれができたら\n憧れのあの子も一発だな",
   zukanDescription: "クルクルクルクルクル～",
+  price : 200,
+  offsetY: 65,
+},
+{
+  name: "なみのりピカチュウ",
+  image: "/images/なみのりピカチュウ.gif",
+  trainSize: 170,
+  description: "きゃわきゃわ～\nなみのりしてる\nピカちゃんだ！",
+  zukanDescription: "なみのり電気ネズミ",
   price : 200,
   offsetY: 65,
 },
