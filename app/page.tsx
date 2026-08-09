@@ -813,6 +813,15 @@ const shopVehicles = [
   offsetY: 55,
 },
 {
+  name: "Ado",
+  image: "/images/Ado.gif",
+  trainSize: 160,
+  description: "あ！\nやせいのAdoだ！\nナーナーナーナー♪Ready for my show～♪",
+  zukanDescription: "Adoは\nせかいで ゆうめいな\nにほんの アーティスト\n\n「うっせぇわ」などの\nきょくで \nしられるように なったよ。",
+  price : 2000,
+  offsetY: 55,
+},
+{
   name: "クラウド・ストライフ",
   image: "/images/クラウド・ストライフ.gif",
   trainSize: 250,
