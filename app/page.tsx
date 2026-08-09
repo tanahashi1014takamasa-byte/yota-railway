@@ -822,6 +822,15 @@ const shopVehicles = [
   offsetY: 25,
 },
 {
+  name: "MJ",
+  image: "/images/MJ.gif",
+  trainSize: 130,
+  description: "マイコーっ！！\nマイコーっ！！！\nマイコーっ！！\nマイコーっ！！\nマイコーっ！！\nマイコーっ！！\n♪",
+  zukanDescription: "R.I.P",
+  price : 300,
+  offsetY: 25,
+},
+{
   name: "クラウド・ストライフ",
   image: "/images/クラウド・ストライフ.gif",
   trainSize: 250,
