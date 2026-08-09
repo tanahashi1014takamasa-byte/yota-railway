@@ -939,7 +939,18 @@ const shopVehicles = [
   zukanDescription: "ハチ公見てなよ。\nあんたの望みは絶対叶えてやるから",
   price : 200,
   offsetY: 65,
-}, {
+}, 
+{
+  name: "コナン君",
+  image: "/images/コナン君.png",
+  trainSize: 200,
+  speed: 7,
+  description: "真実は人の数だけあるし\nたった一つしかないのは事実だけど\n真実はいつもひとつ\nということがコナン君にとっての真実なのさ",
+  zukanDescription: "爆走スケートメガネ小僧",
+  price : 200,
+  offsetY: 65,
+},
+{
   name: "透明人間",
   image: "/images/透明人間.png",
   trainSize: 200,
