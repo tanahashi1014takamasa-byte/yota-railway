@@ -944,7 +944,7 @@ const shopVehicles = [
   image: "/images/透明人間.png",
   trainSize: 200,
   speed: 7,
-  description: "出た！透明人間だ！\nすげーだろ\nあ？マジだって(笑)みたらわかるだろ(笑)\nつーか1億だから！1億あんのか！？\nおれなんか実家に3億あっからよ",
+  description: "出た！透明人間だ！\nすげーだろ\nあ？マジだって(笑)みたらわかるだろ(笑)\nつーか1億だから！1億あんのか！？\nおれなんか実家に3億あっからよ。\nあっ！！ああああ！あ！ああ！あぁぁ！",
   zukanDescription: "たとえばあの子が透明少女",
   price : 100000000,
   offsetY: 65,
