@@ -614,6 +614,34 @@ const gachaItems = [
     offsetY:40,
     zukanDescription:"イエーイ！\nゴーストバスターズ！！"
   },
+    {
+    name:"初音ミク",
+    image:"/images/初音ミク.gif",
+    trainSize:150,
+    offsetY:40,
+    zukanDescription:"ポポウ！ポウポウ！ポッピポぅぅぅぅぅ！！！"
+  },
+    {
+    name:"ブランコネキ",
+    image:"/images/ブランコネキ.gif",
+    trainSize:150,
+    offsetY:40,
+    zukanDescription:"揺動式遊戯器具"
+  },
+    {
+    name:"ダンスダンスレボネキ",
+    image:"/images/ダンスダンスレボネキ.gif",
+    trainSize:150,
+    offsetY:40,
+    zukanDescription:"アイヤイヤ～♪"
+  },
+    {
+    name:"デンプシーロール",
+    image:"/images/デンプシーロール.gif",
+    trainSize:150,
+    offsetY:40,
+    zukanDescription:"古のフィニッシュブローだ！\n頭を八の字にローリングしながら\nシフトウェイトし\n左右のフックを連打しまくる\n攻防一体の必殺技だ"
+  },
   {
     name:"サメトラック",
     image:"/images/サメのトラック.png",
