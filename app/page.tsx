@@ -931,6 +931,15 @@ const shopVehicles = [
   offsetY: 65,
 },
  {
+  name: "石焼き芋",
+  image: "/images/石焼き芋.png",
+  trainSize: 200,
+  description: "俺はいつか高速道路で\n石焼き芋を売ってみたんだ\nいしやぁぁぁぁきぃぃぃもおおお！！\nおいもぉぉぉおお！！",
+  zukanDescription: "ぶっちゃけ街中で石焼き芋屋さん見たことねえわ\n売ってたとしても夕飯との調整がムズイよな",
+  price : 500,
+  offsetY: 65,
+},
+ {
   name: "ねぶた祭",
   image: "/images/nebuta.png",
   trainSize: 250,
