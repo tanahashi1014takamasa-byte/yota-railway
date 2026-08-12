@@ -631,8 +631,8 @@ const gachaItems = [
     {
     name:"ダンスダンスレボネキ",
     image:"/images/ダンスダンスレボネキ.gif",
-    trainSize:150,
-    offsetY:40,
+    trainSize:180,
+    offsetY:50,
     zukanDescription:"アイヤイヤ～♪"
   },
     {
