@@ -642,6 +642,20 @@ const gachaItems = [
     offsetY:50,
     zukanDescription:"パーマがとってもオシャレだね！♪"
   },
+   {
+    name:"無人島",
+    image:"/images/無人島.gif",
+    trainSize:180,
+    offsetY:50,
+    zukanDescription:"……え？こいつのせいで無人島じゃなくね？\nなんだコイツ…"
+  },
+   {
+    name:"洗濯機",
+    image:"/images/洗濯機.gif",
+    trainSize:180,
+    offsetY:50,
+    zukanDescription:"めっさ便利だよな洗濯機\nPL学園では、一年生は洗濯板とタワシで\n三年生のユニフォームを毎日洗ってたらしいぜ"
+  },
     {
     name:"デンプシーロール",
     image:"/images/デンプシーロール.gif",
