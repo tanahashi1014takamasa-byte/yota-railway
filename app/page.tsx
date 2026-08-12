@@ -940,6 +940,15 @@ const shopVehicles = [
   offsetY: 65,
 },
  {
+  name: "ミスタードーナツ",
+  image: "/images/ミスタードーナツ.png",
+  trainSize: 200,
+  description: "めっさ美味いよな\nあれがすきだわ\nしろい…かたまり…\nまるい…かたまってるやつ",
+  zukanDescription: "ドーナツだ！！\nドーナッツではないぞ！！",
+  price : 500,
+  offsetY: 65,
+},
+ {
   name: "ねぶた祭",
   image: "/images/nebuta.png",
   trainSize: 250,
