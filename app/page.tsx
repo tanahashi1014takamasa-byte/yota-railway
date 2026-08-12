@@ -638,8 +638,8 @@ const gachaItems = [
     {
     name:"デンプシーロール",
     image:"/images/デンプシーロール.gif",
-    trainSize:150,
-    offsetY:40,
+    trainSize:180,
+    offsetY:50,
     zukanDescription:"古のフィニッシュブローだ！\n頭を八の字にローリングしながら\nシフトウェイトし\n左右のフックを連打しまくる\n攻防一体の必殺技だ"
   },
   {
