@@ -635,6 +635,13 @@ const gachaItems = [
     offsetY:50,
     zukanDescription:"アイヤイヤ～♪"
   },
+   {
+    name:"vaundy",
+    image:"/images/vaundy.gif",
+    trainSize:180,
+    offsetY:50,
+    zukanDescription:"パーマがとってもオシャレだね！♪"
+  },
     {
     name:"デンプシーロール",
     image:"/images/デンプシーロール.gif",
